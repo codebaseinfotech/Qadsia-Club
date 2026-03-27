@@ -42,6 +42,8 @@ class HomeVC: UIViewController {
     @IBAction func tappedTStore(_ sender: Any) {
     }
     @IBAction func tappedTProfile(_ sender: Any) {
+        let vc = ProfileVC()
+        navigationController?.pushViewController(vc, animated: false)
     }
     
     
