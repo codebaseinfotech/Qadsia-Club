@@ -381,6 +381,8 @@
                         <userDefinedRuntimeAttribute type="number" keyPath="cutSize">
                             <real key="value" value="12"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="cutTopLeft" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="cutBottomRight" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
