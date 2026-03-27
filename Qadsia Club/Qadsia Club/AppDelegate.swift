@@ -40,7 +40,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func setUpHome() {
-        
+        let nav = UINavigationController(rootViewController: HomeVC())
+        nav.navigationBar.isHidden = true
+        window?.rootViewController = nav
+        window?.makeKeyAndVisible()
     }
 
 }

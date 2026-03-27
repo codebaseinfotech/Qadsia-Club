@@ -47,7 +47,7 @@ class LoginMobileVC: UIViewController {
     @IBAction func btnProceedTapped(_ sender: UIButton) {
         let phoneNumber = txtPhoneNumber.text ?? ""
         
-        let popupVC = SentOTPPopupVC()
+        /*let popupVC = SentOTPPopupVC()
         popupVC.modalPresentationStyle = .overFullScreen
         popupVC.modalTransitionStyle = .crossDissolve
         popupVC.flow = .login
@@ -55,7 +55,9 @@ class LoginMobileVC: UIViewController {
             self?.navigateToOTPVC(phoneNumber: phoneNumber, flow: flow)
         }
         
-        present(popupVC, animated: true)
+        present(popupVC, animated: true)*/
+        
+        AppDelegate.appDelegate.setUpHome()
     }
 
     private func navigateToOTPVC(phoneNumber: String, flow: OTPFlow) {
