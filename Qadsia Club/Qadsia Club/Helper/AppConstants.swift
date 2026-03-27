@@ -18,6 +18,8 @@ let PRIMARY_COLOR = UIColor(red: 71/255, green: 68/255, blue: 85/255, alpha: 1)
 class AppManager {
     static var shared = AppManager()
     
+    var loginFlow: LoginFlow = .newUser
+    
     var delivery_day_slot_id: Int = 0
     var booked_slot_time: String = ""
     var delivery_date: String = ""

