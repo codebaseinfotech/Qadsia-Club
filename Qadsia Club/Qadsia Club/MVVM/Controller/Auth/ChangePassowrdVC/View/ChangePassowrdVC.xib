@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mulish-Bold.ttf">
+            <string>Mulish-Bold</string>
+        </array>
+        <array key="Mulish-SemiBold.ttf">
+            <string>Mulish-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangePassowrdVC" customModule="Qadsia" customModuleProvider="target">
+            <connections>
+                <outlet property="txtConfirmPassword" destination="1YC-4N-YXa" id="DSL-CW-Kih"/>
+                <outlet property="txtPassword" destination="gFD-CG-kyb" id="KhT-a8-qyR"/>
+                <outlet property="view" destination="WC6-97-eE4" id="bUG-Ky-MgQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="WC6-97-eE4">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="tAz-Jw-utf">
+                    <rect key="frame" x="0.0" y="452" width="393" height="400"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="400" id="uFY-m5-Glg"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="MXT-Vc-M02">
+                    <rect key="frame" x="20" y="283" width="353" height="154"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="166-ic-8dz">
+                            <rect key="frame" x="0.0" y="0.0" width="353" height="68"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rr-Cf-VEq">
+                                    <rect key="frame" x="0.0" y="0.0" width="353" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="16"/>
+                                    <color key="textColor" name="Black"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSz-KR-gVA">
+                                    <rect key="frame" x="0.0" y="28.333333333333311" width="353" height="39.666666666666657"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_password" translatesAutoresizingMaskIntoConstraints="NO" id="a5z-3D-VJW">
+                                            <rect key="frame" x="12" y="10" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="1z0-Rj-w6X"/>
+                                                <constraint firstAttribute="height" constant="20" id="eHa-xd-10U"/>
+                                            </constraints>
+                                        </imageView>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gFD-CG-kyb">
+                                            <rect key="frame" x="38" y="5.0000000000000018" width="277" height="29.666666666666671"/>
+                                            <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtn-YW-Ltn">
+                                            <rect key="frame" x="321" y="10" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="4H0-Hf-ZK0"/>
+                                                <constraint firstAttribute="height" constant="20" id="yhX-dL-bTp"/>
+                                            </constraints>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" image="ic_close_eye"/>
+                                            <connections>
+                                                <action selector="tappedPasswordShow:" destination="-1" eventType="touchUpInside" id="dsC-42-h6R"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="gFD-CG-kyb" firstAttribute="leading" secondItem="a5z-3D-VJW" secondAttribute="trailing" constant="6" id="BDR-RE-F46"/>
+                                        <constraint firstItem="a5z-3D-VJW" firstAttribute="leading" secondItem="gSz-KR-gVA" secondAttribute="leading" constant="12" id="Dnc-Ck-v89"/>
+                                        <constraint firstItem="a5z-3D-VJW" firstAttribute="centerY" secondItem="gSz-KR-gVA" secondAttribute="centerY" id="FqB-Pv-CKc"/>
+                                        <constraint firstItem="rtn-YW-Ltn" firstAttribute="leading" secondItem="gFD-CG-kyb" secondAttribute="trailing" constant="6" id="WuQ-6e-Q6z"/>
+                                        <constraint firstAttribute="trailing" secondItem="rtn-YW-Ltn" secondAttribute="trailing" constant="12" id="eF5-CL-gSx"/>
+                                        <constraint firstAttribute="bottom" secondItem="gFD-CG-kyb" secondAttribute="bottom" constant="5" id="eHH-7n-Wcw"/>
+                                        <constraint firstItem="rtn-YW-Ltn" firstAttribute="centerY" secondItem="gSz-KR-gVA" secondAttribute="centerY" id="kpi-i4-PD0"/>
+                                        <constraint firstItem="gFD-CG-kyb" firstAttribute="top" secondItem="gSz-KR-gVA" secondAttribute="top" constant="5" id="r7M-bz-Xtm"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="68" id="Qyf-T4-hqV"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="62V-qd-HVm">
+                            <rect key="frame" x="0.0" y="86" width="353" height="68"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mch-1H-G74">
+                                    <rect key="frame" x="0.0" y="0.0" width="353" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="16"/>
+                                    <color key="textColor" name="Black"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rys-Hp-LYf">
+                                    <rect key="frame" x="0.0" y="28.333333333333311" width="353" height="39.666666666666657"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_password" translatesAutoresizingMaskIntoConstraints="NO" id="BTu-Uw-rot">
+                                            <rect key="frame" x="12" y="10" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="0pp-6J-cW3"/>
+                                                <constraint firstAttribute="height" constant="20" id="vQZ-FX-EXF"/>
+                                            </constraints>
+                                        </imageView>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1YC-4N-YXa">
+                                            <rect key="frame" x="38" y="5.0000000000000018" width="277" height="29.666666666666671"/>
+                                            <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwE-c0-4bE">
+                                            <rect key="frame" x="321" y="10" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="BZh-L2-3kd"/>
+                                                <constraint firstAttribute="width" constant="20" id="nJO-cP-4R3"/>
+                                            </constraints>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" image="ic_close_eye"/>
+                                            <connections>
+                                                <action selector="tappedConfirmPasswordShow:" destination="-1" eventType="touchUpInside" id="dYc-TM-LsD"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="BTu-Uw-rot" firstAttribute="leading" secondItem="rys-Hp-LYf" secondAttribute="leading" constant="12" id="2Ae-ku-Uk8"/>
+                                        <constraint firstAttribute="trailing" secondItem="RwE-c0-4bE" secondAttribute="trailing" constant="12" id="Nnf-sm-sDA"/>
+                                        <constraint firstItem="RwE-c0-4bE" firstAttribute="centerY" secondItem="rys-Hp-LYf" secondAttribute="centerY" id="SEK-PF-t1w"/>
+                                        <constraint firstAttribute="bottom" secondItem="1YC-4N-YXa" secondAttribute="bottom" constant="5" id="erJ-Jh-PMY"/>
+                                        <constraint firstItem="BTu-Uw-rot" firstAttribute="centerY" secondItem="rys-Hp-LYf" secondAttribute="centerY" id="m6i-Mv-a5k"/>
+                                        <constraint firstItem="RwE-c0-4bE" firstAttribute="leading" secondItem="1YC-4N-YXa" secondAttribute="trailing" constant="6" id="tyh-DL-LdU"/>
+                                        <constraint firstItem="1YC-4N-YXa" firstAttribute="top" secondItem="rys-Hp-LYf" secondAttribute="top" constant="5" id="vLl-Da-Pgd"/>
+                                        <constraint firstItem="1YC-4N-YXa" firstAttribute="leading" secondItem="BTu-Uw-rot" secondAttribute="trailing" constant="6" id="x55-CY-ghO"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="68" id="zkU-mY-A1J"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lF5-Vq-XwI" customClass="CutCornerView" customModule="Qadsia" customModuleProvider="target">
+                    <rect key="frame" x="203" y="463" width="170" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylD-3b-yuh">
+                            <rect key="frame" x="0.0" y="0.0" width="170" height="40"/>
+                            <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Save">
+                                <color key="titleColor" name="Black"/>
+                            </state>
+                            <connections>
+                                <action selector="tappedSave:" destination="-1" eventType="touchUpInside" id="7rU-4H-czn"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="Primary"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ylD-3b-yuh" secondAttribute="bottom" id="JHR-TD-05p"/>
+                        <constraint firstItem="ylD-3b-yuh" firstAttribute="top" secondItem="lF5-Vq-XwI" secondAttribute="top" id="NzP-vO-JJw"/>
+                        <constraint firstAttribute="width" constant="170" id="XXY-DW-I6r"/>
+                        <constraint firstItem="ylD-3b-yuh" firstAttribute="leading" secondItem="lF5-Vq-XwI" secondAttribute="leading" id="cpT-P1-ORF"/>
+                        <constraint firstAttribute="trailing" secondItem="ylD-3b-yuh" secondAttribute="trailing" id="qhu-GD-yg6"/>
+                        <constraint firstAttribute="height" constant="40" id="qvw-sA-GDn"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cutSize">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lor-1E-jUT">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="250"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tickets - Login Header" translatesAutoresizingMaskIntoConstraints="NO" id="mXm-Kf-b6c">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="250"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ekL-9Z-T8f">
+                            <rect key="frame" x="15" y="55" width="35" height="35"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_back" translatesAutoresizingMaskIntoConstraints="NO" id="kue-Hp-Dtd">
+                                    <rect key="frame" x="5.6666666666666679" y="5.6666666666666643" width="24" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="24" id="Sgn-JT-NqP"/>
+                                        <constraint firstAttribute="height" constant="24" id="vql-qX-Fgz"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZj-Cb-LR8">
+                                    <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title=" "/>
+                                    <connections>
+                                        <action selector="tappedBack:" destination="-1" eventType="touchUpInside" id="Vuq-pN-yVG"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="kue-Hp-Dtd" firstAttribute="centerX" secondItem="ekL-9Z-T8f" secondAttribute="centerX" id="IQX-eZ-wWt"/>
+                                <constraint firstAttribute="trailing" secondItem="oZj-Cb-LR8" secondAttribute="trailing" id="K1d-Vg-dZi"/>
+                                <constraint firstItem="oZj-Cb-LR8" firstAttribute="leading" secondItem="ekL-9Z-T8f" secondAttribute="leading" id="L2D-n5-IEu"/>
+                                <constraint firstItem="oZj-Cb-LR8" firstAttribute="top" secondItem="ekL-9Z-T8f" secondAttribute="top" id="ZHT-ey-usT"/>
+                                <constraint firstAttribute="width" constant="35" id="fmK-av-5FE"/>
+                                <constraint firstAttribute="height" constant="35" id="lNq-JQ-sOK"/>
+                                <constraint firstItem="kue-Hp-Dtd" firstAttribute="centerY" secondItem="ekL-9Z-T8f" secondAttribute="centerY" id="oGA-yh-hgT"/>
+                                <constraint firstAttribute="bottom" secondItem="oZj-Cb-LR8" secondAttribute="bottom" id="zf1-4b-lNW"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwF-gY-FsE">
+                            <rect key="frame" x="75.000000000000014" y="107.33333333333333" width="243.33333333333337" height="35.333333333333329"/>
+                            <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="28"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="ekL-9Z-T8f" firstAttribute="top" secondItem="lor-1E-jUT" secondAttribute="top" constant="55" id="CLe-N4-wwZ"/>
+                        <constraint firstAttribute="trailing" secondItem="mXm-Kf-b6c" secondAttribute="trailing" id="JrD-pP-hYK"/>
+                        <constraint firstItem="mXm-Kf-b6c" firstAttribute="top" secondItem="lor-1E-jUT" secondAttribute="top" id="Ooo-re-s8b"/>
+                        <constraint firstAttribute="bottom" secondItem="mXm-Kf-b6c" secondAttribute="bottom" id="SWo-Ni-QTI"/>
+                        <constraint firstItem="TwF-gY-FsE" firstAttribute="centerY" secondItem="lor-1E-jUT" secondAttribute="centerY" id="TAh-2j-UPI"/>
+                        <constraint firstAttribute="height" constant="250" id="WMg-OH-y2J"/>
+                        <constraint firstItem="TwF-gY-FsE" firstAttribute="centerX" secondItem="lor-1E-jUT" secondAttribute="centerX" id="WwU-jt-iut"/>
+                        <constraint firstItem="ekL-9Z-T8f" firstAttribute="leading" secondItem="lor-1E-jUT" secondAttribute="leading" constant="15" id="aSa-SA-Npg"/>
+                        <constraint firstItem="mXm-Kf-b6c" firstAttribute="leading" secondItem="lor-1E-jUT" secondAttribute="leading" id="uqQ-NC-veJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="emO-pM-zaw"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="lF5-Vq-XwI" firstAttribute="top" secondItem="MXT-Vc-M02" secondAttribute="bottom" constant="26" id="0tw-oR-pjP"/>
+                <constraint firstItem="lor-1E-jUT" firstAttribute="leading" secondItem="WC6-97-eE4" secondAttribute="leading" id="4pu-i3-jja"/>
+                <constraint firstItem="tAz-Jw-utf" firstAttribute="leading" secondItem="emO-pM-zaw" secondAttribute="leading" id="GXl-8d-CON"/>
+                <constraint firstItem="emO-pM-zaw" firstAttribute="trailing" secondItem="lF5-Vq-XwI" secondAttribute="trailing" constant="20" id="Hho-hQ-2Jh"/>
+                <constraint firstItem="MXT-Vc-M02" firstAttribute="top" secondItem="lor-1E-jUT" secondAttribute="bottom" constant="33" id="Nv6-Qu-7Tg"/>
+                <constraint firstItem="tAz-Jw-utf" firstAttribute="trailing" secondItem="emO-pM-zaw" secondAttribute="trailing" id="PpF-m7-laT"/>
+                <constraint firstItem="lor-1E-jUT" firstAttribute="top" secondItem="WC6-97-eE4" secondAttribute="top" id="PtH-Rv-J1X"/>
+                <constraint firstItem="emO-pM-zaw" firstAttribute="trailing" secondItem="lor-1E-jUT" secondAttribute="trailing" id="YET-Fa-eTF"/>
+                <constraint firstItem="emO-pM-zaw" firstAttribute="trailing" secondItem="MXT-Vc-M02" secondAttribute="trailing" constant="20" id="Zp1-Pw-wsO"/>
+                <constraint firstItem="MXT-Vc-M02" firstAttribute="leading" secondItem="emO-pM-zaw" secondAttribute="leading" constant="20" id="hOt-QY-Gy9"/>
+                <constraint firstAttribute="bottom" secondItem="tAz-Jw-utf" secondAttribute="bottom" id="xzE-1Y-rxh"/>
+            </constraints>
+            <point key="canvasLocation" x="71" y="136"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Login_bottom" width="1500" height="1470"/>
+        <image name="Tickets - Login Header" width="1500" height="948"/>
+        <image name="ic_back" width="96" height="96"/>
+        <image name="ic_close_eye" width="20" height="20"/>
+        <image name="ic_password" width="20" height="20"/>
+        <namedColor name="Black">
+            <color red="0.0078431372549019607" green="0.0078431372549019607" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary">
+            <color red="0.99215686274509807" green="0.72549019607843135" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

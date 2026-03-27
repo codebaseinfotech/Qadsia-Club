@@ -102,6 +102,19 @@ class OTPVC: UIViewController {
     @objc private func resendOTPTapped() {
         // Handle resend OTP action
         print("Resend OTP tapped")
+        
+        let popupVC = SentOTPPopupVC()
+        popupVC.modalPresentationStyle = .overFullScreen
+        popupVC.modalTransitionStyle = .crossDissolve
+        popupVC.flow = .sendResetOtp
+        popupVC.onProceed = { [weak self] flow in
+            let popupVC = SentOTPPopupVC()
+            popupVC.modalPresentationStyle = .overFullScreen
+            popupVC.modalTransitionStyle = .crossDissolve
+            popupVC.flow = .sentSuccessOtp
+            self?.present(popupVC, animated: true)
+        }
+        present(popupVC, animated: true)
     }
 
     @IBAction func btnBackTapped(_ sender: UIButton) {
@@ -112,23 +125,8 @@ class OTPVC: UIViewController {
         switch flow {
         case .login: break
         case .resetPassword:
-            let popupVC = SentOTPPopupVC()
-            popupVC.modalPresentationStyle = .overFullScreen
-            popupVC.modalTransitionStyle = .crossDissolve
-            popupVC.flow = .sendResetOtp
-            popupVC.onProceed = { [weak self] flow in
-               
-                let popupVC = SentOTPPopupVC()
-                popupVC.modalPresentationStyle = .overFullScreen
-                popupVC.modalTransitionStyle = .crossDissolve
-                popupVC.flow = .sentSuccessOtp
-                popupVC.onProceed = { [weak self] flow in
-                   
-                    
-                }
-                self?.present(popupVC, animated: true)
-            }
-            present(popupVC, animated: true)
+            let vc = ChangePassowrdVC()
+            self.navigationController?.pushViewController(vc, animated: true)
             
         case .newRegistration:
             let vc = NewRegisterVC()
