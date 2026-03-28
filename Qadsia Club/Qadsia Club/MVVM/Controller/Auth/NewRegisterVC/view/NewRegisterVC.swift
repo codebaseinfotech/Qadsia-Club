@@ -50,6 +50,8 @@ class NewRegisterVC: UIViewController {
         popupVC.flow = .newRegistration
         popupVC.onProceed = { [weak self] flow in
            
+            AppManager.shared.loginFlow = .existingUser
+            
             AppDelegate.appDelegate.setUpLogin()
         }
         present(popupVC, animated: true)

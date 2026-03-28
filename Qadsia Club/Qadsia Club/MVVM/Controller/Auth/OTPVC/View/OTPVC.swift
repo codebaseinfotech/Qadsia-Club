@@ -122,22 +122,40 @@ class OTPVC: UIViewController {
     }
     
     @IBAction func tappedVerify(_ sender: Any) {
-        switch flow {
-        case .login: break
-        case .resetPassword:
+        
+        switch AppManager.shared.loginFlow {
+        case .existingUser:
+            
             let vc = ChangePassowrdVC()
             self.navigationController?.pushViewController(vc, animated: true)
             
-        case .newRegistration:
+        case .newUser:
+ 
             let vc = NewRegisterVC()
             self.navigationController?.pushViewController(vc, animated: true)
+
             
-        case .sendResetOtp: break
-            
-        case .sentSuccessOtp: break
-    
         }
         
+//        switch flow {
+//        case .login: break
+//        case .resetPassword:
+//            let vc = ChangePassowrdVC()
+//            self.navigationController?.pushViewController(vc, animated: true)
+//            
+//        case .newRegistration:
+//            let vc = NewRegisterVC()
+//            self.navigationController?.pushViewController(vc, animated: true)
+//            
+//        case .sendResetOtp: break
+//            
+//        case .sentSuccessOtp: break
+//    
+//        }
+        
+    //    let vc = NewRegisterVC()
+    //    self.navigationController?.pushViewController(vc, animated: true)
+
     }
     
 }

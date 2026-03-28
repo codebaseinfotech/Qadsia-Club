@@ -6,88 +6,56 @@
 //
 
 import UIKit
-import ImageIO
+import AVFoundation
 
 class ViewController: UIViewController {
 
-    private var gifImageView: UIImageView?
+    private var player: AVPlayer?
+    private var playerLayer: AVPlayerLayer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
+        setupSplashVideo()
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        setupSplashGif()
-    }
-
-    private func setupSplashGif() {
-        guard let gifPath = Bundle.main.path(forResource: "SplashVideo2", ofType: "gif"),
-              let gifData = NSData(contentsOfFile: gifPath) as Data? else {
-            print("❌ GIF file not found in bundle!")
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                self.navigateToLogin()
-            }
+    private func setupSplashVideo() {
+        guard let videoPath = Bundle.main.path(forResource: "SplashVideo3", ofType: "mp4") else {
+            print("❌ Video file not found!")
+            navigateToLogin()
             return
         }
-        print("✅ GIF found at: \(gifPath)")
 
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.clipsToBounds = true
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(imageView)
-        gifImageView = imageView
+        let url = URL(fileURLWithPath: videoPath)
+        let playerItem = AVPlayerItem(url: url)
+        let player = AVPlayer(playerItem: playerItem)
+        self.player = player
 
-        NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: view.topAnchor),
-            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: -50),
-            imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0)
-        ])
+        let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.frame = view.bounds
+        playerLayer.videoGravity = .resizeAspectFill
+        view.layer.addSublayer(playerLayer)
+        self.playerLayer = playerLayer
 
-        if let (images, duration) = loadGifFrames(from: gifData) {
-            imageView.animationImages = images
-            imageView.animationDuration = duration
-            imageView.animationRepeatCount = 1
-            imageView.startAnimating()
+        NotificationCenter.default.addObserver(self,
+            selector: #selector(videoDidFinish),
+            name: .AVPlayerItemDidPlayToEndTime,
+            object: playerItem)
 
-            DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
-                self.navigateToLogin()
-            }
-        } else {
-            DispatchQueue.main.asyncAfter(deadline: .now()) {
-                self.navigateToLogin()
-            }
-        }
+        player.play()
     }
 
-    private func loadGifFrames(from data: Data) -> ([UIImage], TimeInterval)? {
-        guard let source = CGImageSourceCreateWithData(data as CFData, nil) else { return nil }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        playerLayer?.frame = view.bounds
+    }
 
-        let count = CGImageSourceGetCount(source)
-        var images: [UIImage] = []
-        var totalDuration: TimeInterval = 0
-
-        for i in 0..<count {
-            if let cgImage = CGImageSourceCreateImageAtIndex(source, i, nil) {
-                images.append(UIImage(cgImage: cgImage))
-
-                if let properties = CGImageSourceCopyPropertiesAtIndex(source, i, nil) as? [String: Any],
-                   let gifProperties = properties[kCGImagePropertyGIFDictionary as String] as? [String: Any] {
-                    let frameDuration = (gifProperties[kCGImagePropertyGIFUnclampedDelayTime as String] as? Double)
-                        ?? (gifProperties[kCGImagePropertyGIFDelayTime as String] as? Double)
-                        ?? 0.1
-                    totalDuration += frameDuration
-                }
-            }
-        }
-
-        return images.isEmpty ? nil : (images, totalDuration)
+    @objc private func videoDidFinish() {
+        navigateToLogin()
     }
 
     private func navigateToLogin() {
+        NotificationCenter.default.removeObserver(self)
         let loginVC = LoginMobileVC(nibName: "LoginMobileVC", bundle: nil)
         let nav = UINavigationController(rootViewController: loginVC)
         nav.navigationBar.isHidden = true
