@@ -74,11 +74,9 @@
 		0ABA3FE82F763B2D00D25F03 /* NewRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3F9A2F763B2D00D25F03 /* NewRegisterVC.xib */; };
 		0ABA3FEB2F763B2D00D25F03 /* ResetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3FA02F763B2D00D25F03 /* ResetPasswordVC.xib */; };
 		0ABA3FEC2F763B2D00D25F03 /* SentOTPPopupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3FA22F763B2D00D25F03 /* SentOTPPopupVC.xib */; };
-		0ABA3FED2F763B2D00D25F03 /* SplashVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3FA32F763B2D00D25F03 /* SplashVideo.mp4 */; };
-		0ABA3FEE2F763B2D00D25F03 /* SplashVideo2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3FA42F763B2D00D25F03 /* SplashVideo2.gif */; };
 		0ABA3FF52F763C3600D25F03 /* CutCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3FF42F763C3600D25F03 /* CutCornerView.swift */; };
 		0ABA3FFA2F763CC600D25F03 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABA3FF92F763CC600D25F03 /* Alamofire */; };
-		39D1D99A2F7739A70055CCF1 /* SplashVideo3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 39D1D9992F7739A70055CCF1 /* SplashVideo3.mp4 */; };
+		39D1D99A2F7739A70055CCF1 /* SplashVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 39D1D9992F7739A70055CCF1 /* SplashVideo.mp4 */; };
 		39D22EA92F76956F00D7721C /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D22EA52F76956F00D7721C /* HomeHeaderView.swift */; };
 		39D22EAA2F76956F00D7721C /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D22EA62F76956F00D7721C /* HomeHeaderView.xib */; };
 		39D22EB22F76956F00D7721C /* HomeListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D22EAB2F76956F00D7721C /* HomeListTVCell.swift */; };
@@ -168,11 +166,9 @@
 		0ABA3FA02F763B2D00D25F03 /* ResetPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPasswordVC.xib; sourceTree = "<group>"; };
 		0ABA3FA12F763B2D00D25F03 /* SentOTPPopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentOTPPopupVC.swift; sourceTree = "<group>"; };
 		0ABA3FA22F763B2D00D25F03 /* SentOTPPopupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SentOTPPopupVC.xib; sourceTree = "<group>"; };
-		0ABA3FA32F763B2D00D25F03 /* SplashVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SplashVideo.mp4; sourceTree = "<group>"; };
-		0ABA3FA42F763B2D00D25F03 /* SplashVideo2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SplashVideo2.gif; sourceTree = "<group>"; };
 		0ABA3FA72F763B2D00D25F03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0ABA3FF42F763C3600D25F03 /* CutCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutCornerView.swift; sourceTree = "<group>"; };
-		39D1D9992F7739A70055CCF1 /* SplashVideo3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SplashVideo3.mp4; sourceTree = "<group>"; };
+		39D1D9992F7739A70055CCF1 /* SplashVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SplashVideo.mp4; sourceTree = "<group>"; };
 		39D22EA52F76956F00D7721C /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		39D22EA62F76956F00D7721C /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
 		39D22EAB2F76956F00D7721C /* HomeListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListTVCell.swift; sourceTree = "<group>"; };
@@ -530,9 +526,7 @@
 				0ABA3F922F763B2D00D25F03 /* Info.plist */,
 				0ABA3F942F763B2D00D25F03 /* LaunchScreen.storyboard */,
 				0ABA3F982F763B2D00D25F03 /* Main.storyboard */,
-				0ABA3FA32F763B2D00D25F03 /* SplashVideo.mp4 */,
-				0ABA3FA42F763B2D00D25F03 /* SplashVideo2.gif */,
-				39D1D9992F7739A70055CCF1 /* SplashVideo3.mp4 */,
+				39D1D9992F7739A70055CCF1 /* SplashVideo.mp4 */,
 				0ABA3FA72F763B2D00D25F03 /* ViewController.swift */,
 			);
 			path = "Qadsia Club";
@@ -756,7 +750,7 @@
 				0ABA3FD92F763B2D00D25F03 /* Mulish-ExtraLightItalic.ttf in Resources */,
 				0A96E3792F76574C00B3DADB /* OTPVC.xib in Resources */,
 				0ABA3FDA2F763B2D00D25F03 /* Mulish-Italic.ttf in Resources */,
-				39D1D99A2F7739A70055CCF1 /* SplashVideo3.mp4 in Resources */,
+				39D1D99A2F7739A70055CCF1 /* SplashVideo.mp4 in Resources */,
 				0ABA3FDB2F763B2D00D25F03 /* Mulish-Light.ttf in Resources */,
 				0ABA3FDC2F763B2D00D25F03 /* Mulish-LightItalic.ttf in Resources */,
 				0ABA3FDD2F763B2D00D25F03 /* Mulish-Medium.ttf in Resources */,
@@ -775,8 +769,6 @@
 				0ABA3FEC2F763B2D00D25F03 /* SentOTPPopupVC.xib in Resources */,
 				39D22EB42F76956F00D7721C /* HomeListTVCell.xib in Resources */,
 				39D22EB52F76956F00D7721C /* UpcomingMatchesCVCell.xib in Resources */,
-				0ABA3FED2F763B2D00D25F03 /* SplashVideo.mp4 in Resources */,
-				0ABA3FEE2F763B2D00D25F03 /* SplashVideo2.gif in Resources */,
 				39D22EAA2F76956F00D7721C /* HomeHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

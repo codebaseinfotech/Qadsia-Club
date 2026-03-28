@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
 
     private func setupSplashVideo() {
-        guard let videoPath = Bundle.main.path(forResource: "SplashVideo3", ofType: "mp4") else {
+        guard let videoPath = Bundle.main.path(forResource: "SplashVideo", ofType: "mp4") else {
             print("❌ Video file not found!")
             navigateToLogin()
             return
@@ -32,7 +32,8 @@ class ViewController: UIViewController {
         self.player = player
 
         let playerLayer = AVPlayerLayer(player: player)
-        playerLayer.frame = view.bounds
+        let leftPadding: CGFloat = -50 // Shift video to left (adjust value as needed)
+        playerLayer.frame = CGRect(x: leftPadding, y: 0, width: view.bounds.width - leftPadding, height: view.bounds.height)
         playerLayer.videoGravity = .resizeAspectFill
         view.layer.addSublayer(playerLayer)
         self.playerLayer = playerLayer
@@ -47,7 +48,8 @@ class ViewController: UIViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        playerLayer?.frame = view.bounds
+        let leftPadding: CGFloat = -50 // Shift video to left (adjust value as needed)
+        playerLayer?.frame = CGRect(x: leftPadding, y: 0, width: view.bounds.width - leftPadding, height: view.bounds.height)
     }
 
     @objc private func videoDidFinish() {
