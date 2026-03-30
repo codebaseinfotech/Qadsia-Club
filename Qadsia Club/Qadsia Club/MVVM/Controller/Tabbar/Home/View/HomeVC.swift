@@ -30,6 +30,15 @@ class HomeVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if  AppDelegate.appDelegate.isLogin == true {
+            lblUserName.text = "Hello, Ahmed"
+         }
+        else {
+            lblUserName.text = "Hello, Guest"
+         }
+    }
 
     // MARK: - Action Method
     @IBAction func tappedCart(_ sender: Any) {

