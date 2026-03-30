@@ -33,7 +33,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O6z-SL-BW1">
                         <rect key="frame" x="0.0" y="0.0" width="160" height="246"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_dummy_list" translatesAutoresizingMaskIntoConstraints="NO" id="u9Y-sv-6xP">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_store" translatesAutoresizingMaskIntoConstraints="NO" id="u9Y-sv-6xP">
                                 <rect key="frame" x="0.0" y="0.0" width="160" height="127"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="127" id="ywY-x7-cnv"/>
@@ -52,6 +52,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HWD-VB-rMP" customClass="CutCornerView" customModule="Qadsia" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="133" width="158" height="111"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_cell_bg" translatesAutoresizingMaskIntoConstraints="NO" id="vW2-Rk-kyf">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="111"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="83" id="S1v-PT-7ty"/>
+                                        </constraints>
+                                    </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J8J-SY-1b4" customClass="CutCornerView" customModule="Qadsia" customModuleProvider="target">
                                         <rect key="frame" x="41" y="69" width="107" height="32"/>
                                         <subviews>
@@ -104,6 +110,9 @@
                                     <constraint firstItem="Zft-h0-hU8" firstAttribute="top" secondItem="HWD-VB-rMP" secondAttribute="top" constant="10" id="3it-zx-ZYA"/>
                                     <constraint firstAttribute="trailing" secondItem="Zft-h0-hU8" secondAttribute="trailing" constant="10" id="7xK-fe-4Gp"/>
                                     <constraint firstItem="Zft-h0-hU8" firstAttribute="leading" secondItem="HWD-VB-rMP" secondAttribute="leading" constant="10" id="8jQ-0U-BL9"/>
+                                    <constraint firstItem="vW2-Rk-kyf" firstAttribute="top" secondItem="HWD-VB-rMP" secondAttribute="top" id="Gtk-Re-vsY"/>
+                                    <constraint firstItem="vW2-Rk-kyf" firstAttribute="leading" secondItem="HWD-VB-rMP" secondAttribute="leading" id="IPp-JT-vsg"/>
+                                    <constraint firstAttribute="bottom" secondItem="vW2-Rk-kyf" secondAttribute="bottom" id="Uks-qz-2xd"/>
                                     <constraint firstAttribute="trailing" secondItem="J8J-SY-1b4" secondAttribute="trailing" constant="10" id="Yv6-Wb-Pdx"/>
                                     <constraint firstAttribute="bottom" secondItem="J8J-SY-1b4" secondAttribute="bottom" constant="10" id="qGx-JU-nJY"/>
                                     <constraint firstItem="J8J-SY-1b4" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Zft-h0-hU8" secondAttribute="bottom" constant="15" id="vh2-fj-Zgf"/>
@@ -155,7 +164,8 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="ic_dummy_list" width="331" height="132"/>
+        <image name="ic_cell_bg" width="83" height="104"/>
+        <image name="ic_store" width="640" height="508"/>
         <namedColor name="Gray">
             <color red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
