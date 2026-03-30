@@ -30,6 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.isEnabled = true
         IQKeyboardManager.shared.resignOnTouchOutside = true
         IQKeyboardToolbarManager.shared.isEnabled = true
+        
+        setUpHome()
 
         return true
     }

