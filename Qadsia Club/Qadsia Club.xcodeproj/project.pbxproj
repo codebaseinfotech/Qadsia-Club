@@ -99,6 +99,10 @@
 		BCC0D6882F7A894200684B7D /* TrendyNewsCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC0D6842F7A894200684B7D /* TrendyNewsCVCell.swift */; };
 		BCC0D6892F7A894200684B7D /* StoreCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC0D6822F7A894200684B7D /* StoreCVCell.xib */; };
 		BCC0D68A2F7A894200684B7D /* TrendyNewsCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC0D6852F7A894200684B7D /* TrendyNewsCVCell.xib */; };
+		BCC0D6942F7A898800684B7D /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC0D68F2F7A898800684B7D /* NotificationVC.swift */; };
+		BCC0D6952F7A898800684B7D /* NotificationListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC0D68B2F7A898800684B7D /* NotificationListTVCell.swift */; };
+		BCC0D6962F7A898800684B7D /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC0D6902F7A898800684B7D /* NotificationVC.xib */; };
+		BCC0D6972F7A898800684B7D /* NotificationListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC0D68C2F7A898800684B7D /* NotificationListTVCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -198,6 +202,10 @@
 		BCC0D6822F7A894200684B7D /* StoreCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreCVCell.xib; sourceTree = "<group>"; };
 		BCC0D6842F7A894200684B7D /* TrendyNewsCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendyNewsCVCell.swift; sourceTree = "<group>"; };
 		BCC0D6852F7A894200684B7D /* TrendyNewsCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendyNewsCVCell.xib; sourceTree = "<group>"; };
+		BCC0D68B2F7A898800684B7D /* NotificationListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListTVCell.swift; sourceTree = "<group>"; };
+		BCC0D68C2F7A898800684B7D /* NotificationListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationListTVCell.xib; sourceTree = "<group>"; };
+		BCC0D68F2F7A898800684B7D /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		BCC0D6902F7A898800684B7D /* NotificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +236,7 @@
 		0A4F52B92F7677CA00DF695B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BCC0D6932F7A898800684B7D /* SubVC */,
 				0A4F52BA2F7677CD00DF695B /* View */,
 				39D22EB12F76956F00D7721C /* Cell */,
 				39D22EA82F76956F00D7721C /* HomeHeaderView */,
@@ -758,6 +767,49 @@
 			path = TrendyNewsCVCell;
 			sourceTree = "<group>";
 		};
+		BCC0D68D2F7A898800684B7D /* NotificationListTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				BCC0D68B2F7A898800684B7D /* NotificationListTVCell.swift */,
+				BCC0D68C2F7A898800684B7D /* NotificationListTVCell.xib */,
+			);
+			path = NotificationListTVCell;
+			sourceTree = "<group>";
+		};
+		BCC0D68E2F7A898800684B7D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BCC0D68D2F7A898800684B7D /* NotificationListTVCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BCC0D6912F7A898800684B7D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCC0D68F2F7A898800684B7D /* NotificationVC.swift */,
+				BCC0D6902F7A898800684B7D /* NotificationVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCC0D6922F7A898800684B7D /* NotificationVC */ = {
+			isa = PBXGroup;
+			children = (
+				BCC0D68E2F7A898800684B7D /* Cell */,
+				BCC0D6912F7A898800684B7D /* View */,
+			);
+			path = NotificationVC;
+			sourceTree = "<group>";
+		};
+		BCC0D6932F7A898800684B7D /* SubVC */ = {
+			isa = PBXGroup;
+			children = (
+				BCC0D6922F7A898800684B7D /* NotificationVC */,
+			);
+			path = SubVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -868,6 +920,8 @@
 				39D22EAA2F76956F00D7721C /* HomeHeaderView.xib in Resources */,
 				BCC0D6892F7A894200684B7D /* StoreCVCell.xib in Resources */,
 				BCC0D68A2F7A894200684B7D /* TrendyNewsCVCell.xib in Resources */,
+				BCC0D6962F7A898800684B7D /* NotificationVC.xib in Resources */,
+				BCC0D6972F7A898800684B7D /* NotificationListTVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -879,6 +933,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ABA3FA92F763B2D00D25F03 /* APIClient.swift in Sources */,
+				BCC0D6942F7A898800684B7D /* NotificationVC.swift in Sources */,
+				BCC0D6952F7A898800684B7D /* NotificationListTVCell.swift in Sources */,
 				0ABA3FAA2F763B2D00D25F03 /* Constants.swift in Sources */,
 				0ABA3FAB2F763B2D00D25F03 /* NetConnection.swift in Sources */,
 				397F834A2F7A4D6F00A07157 /* MyTicketListTVCell.swift in Sources */,
