@@ -33,10 +33,10 @@ class HomeVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         if  AppDelegate.appDelegate.isLogin == true {
-            lblUserName.text = "Hello, Ahmed"
+            lblUserName.text = "Welcome, Ahmed"
          }
         else {
-            lblUserName.text = "Hello, Guest"
+            lblUserName.text = "Welcome, Guest"
          }
     }
 

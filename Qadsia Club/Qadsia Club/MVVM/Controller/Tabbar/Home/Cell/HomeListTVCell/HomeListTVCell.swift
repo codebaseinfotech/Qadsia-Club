@@ -75,7 +75,7 @@ class HomeListTVCell: UITableViewCell {
 extension HomeListTVCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch type {
-        case .upcomingMatches: return 2
+        case .upcomingMatches: return 1
         case .trendyNews: return 4
         case .store: return 4
         }
