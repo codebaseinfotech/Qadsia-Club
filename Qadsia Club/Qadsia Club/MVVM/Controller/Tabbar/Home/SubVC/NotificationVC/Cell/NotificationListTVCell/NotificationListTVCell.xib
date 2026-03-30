@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mulish-Medium.ttf">
+            <string>Mulish-Medium</string>
+        </array>
+        <array key="Mulish-SemiBold.ttf">
+            <string>Mulish-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NotificationListTVCell" customModule="Qadsia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="seX-jX-Nxm">
+                        <rect key="frame" x="20" y="5" width="280" height="77"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2b-xo-vsL" customClass="CutCornerView" customModule="Qadsia" customModuleProvider="target">
+                                <rect key="frame" x="2" y="3" width="278" height="74"/>
+                                <color key="backgroundColor" name="Primary"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cutSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="cutBottomRight" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ri5-Xq-GRU" customClass="CutCornerView" customModule="Qadsia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="278" height="75"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_noti_bg" translatesAutoresizingMaskIntoConstraints="NO" id="YFL-rr-kXV">
+                                        <rect key="frame" x="211" y="0.0" width="67" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="67" id="POl-cv-bEN"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rPK-yf-lqz">
+                                        <rect key="frame" x="10" y="10" width="258" height="55"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="v24-eC-tCL">
+                                                <rect key="frame" x="0.0" y="0.0" width="258" height="42"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Your ticket is confirmed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slu-lN-Nf0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="258" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Qadsia SC vs Al Arabi — 12 Feb at 7:30 PM." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LxA-6x-r4t">
+                                                        <rect key="frame" x="0.0" y="24.333333333333336" width="258" height="17.666666666666664"/>
+                                                        <fontDescription key="fontDescription" name="Mulish-Medium" family="Mulish" pointSize="14"/>
+                                                        <color key="textColor" name="Gray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2 hours ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGl-az-4hn">
+                                                <rect key="frame" x="0.0" y="50" width="258" height="5"/>
+                                                <fontDescription key="fontDescription" name="Mulish-Medium" family="Mulish" pointSize="12"/>
+                                                <color key="textColor" name="Gray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rPK-yf-lqz" secondAttribute="trailing" constant="10" id="2TA-t3-CAV"/>
+                                    <constraint firstItem="rPK-yf-lqz" firstAttribute="leading" secondItem="ri5-Xq-GRU" secondAttribute="leading" constant="10" id="5Xa-T1-uGN"/>
+                                    <constraint firstAttribute="trailing" secondItem="YFL-rr-kXV" secondAttribute="trailing" id="Rmh-et-bUH"/>
+                                    <constraint firstAttribute="bottom" secondItem="YFL-rr-kXV" secondAttribute="bottom" id="Wgq-Sb-eQg"/>
+                                    <constraint firstAttribute="bottom" secondItem="rPK-yf-lqz" secondAttribute="bottom" constant="10" id="b2b-27-olV"/>
+                                    <constraint firstItem="rPK-yf-lqz" firstAttribute="top" secondItem="ri5-Xq-GRU" secondAttribute="top" constant="10" id="j9u-Y0-32N"/>
+                                    <constraint firstItem="YFL-rr-kXV" firstAttribute="top" secondItem="ri5-Xq-GRU" secondAttribute="top" id="xeh-Tc-rvC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cutSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="cutBottomRight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="ViewBorder"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q2b-xo-vsL" firstAttribute="top" secondItem="seX-jX-Nxm" secondAttribute="top" constant="3" id="Lut-hT-aTc"/>
+                            <constraint firstAttribute="trailing" secondItem="ri5-Xq-GRU" secondAttribute="trailing" constant="2" id="S40-RU-gRk"/>
+                            <constraint firstItem="q2b-xo-vsL" firstAttribute="leading" secondItem="seX-jX-Nxm" secondAttribute="leading" constant="2" id="Ytf-Bb-Wnw"/>
+                            <constraint firstItem="ri5-Xq-GRU" firstAttribute="top" secondItem="seX-jX-Nxm" secondAttribute="top" id="bRd-rI-zb4"/>
+                            <constraint firstItem="ri5-Xq-GRU" firstAttribute="leading" secondItem="seX-jX-Nxm" secondAttribute="leading" id="h7h-nY-0uo"/>
+                            <constraint firstAttribute="trailing" secondItem="q2b-xo-vsL" secondAttribute="trailing" id="kcY-pr-8nY"/>
+                            <constraint firstAttribute="bottom" secondItem="ri5-Xq-GRU" secondAttribute="bottom" constant="2" id="rkH-OA-X22"/>
+                            <constraint firstAttribute="bottom" secondItem="q2b-xo-vsL" secondAttribute="bottom" id="uW5-S0-2rE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="seX-jX-Nxm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="2Tz-5Q-U2r"/>
+                    <constraint firstAttribute="bottom" secondItem="seX-jX-Nxm" secondAttribute="bottom" constant="5" id="AKZ-Go-f8o"/>
+                    <constraint firstAttribute="trailing" secondItem="seX-jX-Nxm" secondAttribute="trailing" constant="20" id="bQw-Cv-QLk"/>
+                    <constraint firstItem="seX-jX-Nxm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="eso-2M-Qar"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblMsg" destination="LxA-6x-r4t" id="jKr-iO-AtP"/>
+                <outlet property="lblTime" destination="TGl-az-4hn" id="gBb-9R-Fgs"/>
+                <outlet property="lblTitle" destination="Slu-lN-Nf0" id="cTF-RK-UtS"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="118"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_noti_bg" width="67" height="84"/>
+        <namedColor name="Gray">
+            <color red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary">
+            <color red="0.99215686274509807" green="0.72549019607843135" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ViewBorder">
+            <color red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
