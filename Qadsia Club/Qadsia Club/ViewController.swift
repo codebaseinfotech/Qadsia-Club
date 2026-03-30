@@ -58,7 +58,7 @@ class ViewController: UIViewController {
 
     private func navigateToLogin() {
         NotificationCenter.default.removeObserver(self)
-        let loginVC = LoginMobileVC(nibName: "LoginMobileVC", bundle: nil)
+        let loginVC = HomeVC(nibName: "HomeVC", bundle: nil)
         let nav = UINavigationController(rootViewController: loginVC)
         nav.navigationBar.isHidden = true
         nav.modalPresentationStyle = .fullScreen

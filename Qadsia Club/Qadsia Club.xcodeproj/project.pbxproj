@@ -95,6 +95,10 @@
 		BC11AFEF2F74E6B300552BDB /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = BC11AFEE2F74E6B300552BDB /* SVProgressHUD */; };
 		BC11AFF22F74E6C500552BDB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BC11AFF12F74E6C500552BDB /* Kingfisher */; };
 		BC11AFF52F74E6D700552BDB /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BC11AFF42F74E6D700552BDB /* IQKeyboardManagerSwift */; };
+		BCC0D6872F7A894200684B7D /* StoreCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC0D6812F7A894200684B7D /* StoreCVCell.swift */; };
+		BCC0D6882F7A894200684B7D /* TrendyNewsCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC0D6842F7A894200684B7D /* TrendyNewsCVCell.swift */; };
+		BCC0D6892F7A894200684B7D /* StoreCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC0D6822F7A894200684B7D /* StoreCVCell.xib */; };
+		BCC0D68A2F7A894200684B7D /* TrendyNewsCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC0D6852F7A894200684B7D /* TrendyNewsCVCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -190,6 +194,10 @@
 		39D22EBC2F7695D000D7721C /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		39D22EBD2F7695D000D7721C /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		BC0179162F34972300F1ED81 /* Qadsia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qadsia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC0D6812F7A894200684B7D /* StoreCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCVCell.swift; sourceTree = "<group>"; };
+		BCC0D6822F7A894200684B7D /* StoreCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreCVCell.xib; sourceTree = "<group>"; };
+		BCC0D6842F7A894200684B7D /* TrendyNewsCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendyNewsCVCell.swift; sourceTree = "<group>"; };
+		BCC0D6852F7A894200684B7D /* TrendyNewsCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendyNewsCVCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -690,6 +698,8 @@
 		39D22EB12F76956F00D7721C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				BCC0D6832F7A894200684B7D /* StoreCVCell */,
+				BCC0D6862F7A894200684B7D /* TrendyNewsCVCell */,
 				39D22EAD2F76956F00D7721C /* HomeListTVCell */,
 				39D22EB02F76956F00D7721C /* UpcomingMatchesCVCell */,
 			);
@@ -728,6 +738,24 @@
 				BC0179162F34972300F1ED81 /* Qadsia.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BCC0D6832F7A894200684B7D /* StoreCVCell */ = {
+			isa = PBXGroup;
+			children = (
+				BCC0D6812F7A894200684B7D /* StoreCVCell.swift */,
+				BCC0D6822F7A894200684B7D /* StoreCVCell.xib */,
+			);
+			path = StoreCVCell;
+			sourceTree = "<group>";
+		};
+		BCC0D6862F7A894200684B7D /* TrendyNewsCVCell */ = {
+			isa = PBXGroup;
+			children = (
+				BCC0D6842F7A894200684B7D /* TrendyNewsCVCell.swift */,
+				BCC0D6852F7A894200684B7D /* TrendyNewsCVCell.xib */,
+			);
+			path = TrendyNewsCVCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -838,6 +866,8 @@
 				39D22EB42F76956F00D7721C /* HomeListTVCell.xib in Resources */,
 				39D22EB52F76956F00D7721C /* UpcomingMatchesCVCell.xib in Resources */,
 				39D22EAA2F76956F00D7721C /* HomeHeaderView.xib in Resources */,
+				BCC0D6892F7A894200684B7D /* StoreCVCell.xib in Resources */,
+				BCC0D68A2F7A894200684B7D /* TrendyNewsCVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -875,6 +905,8 @@
 				0ABA3FBB2F763B2D00D25F03 /* AGDesignable.swift in Sources */,
 				0ABA3FBC2F763B2D00D25F03 /* AppConstants.swift in Sources */,
 				0ABA3FBD2F763B2D00D25F03 /* AppUtilites.swift in Sources */,
+				BCC0D6872F7A894200684B7D /* StoreCVCell.swift in Sources */,
+				BCC0D6882F7A894200684B7D /* TrendyNewsCVCell.swift in Sources */,
 				0ABA3FBE2F763B2D00D25F03 /* ExpandableLabel.swift in Sources */,
 				0ABA3FC02F763B2D00D25F03 /* DPDConstants.swift in Sources */,
 				39D22EA92F76956F00D7721C /* HomeHeaderView.swift in Sources */,
