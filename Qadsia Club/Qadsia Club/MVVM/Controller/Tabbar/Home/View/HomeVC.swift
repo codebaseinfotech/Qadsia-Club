@@ -49,6 +49,11 @@ class HomeVC: UIViewController {
 
 // MARK: - tv Delegate & DataSource
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -66,4 +71,22 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 35
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = Bundle.main.loadNibNamed("HomeHeaderView", owner: nil, options: nil)?.first as? HomeHeaderView
+        
+        headerView?.btnSeeAll.isHidden = section == 0 ? false : true
+        
+        switch section {
+        case 0: headerView?.lblName.text = "Upcoming matches"
+        case 1: headerView?.lblName.text = "Trendy News"
+        case 2: headerView?.lblName.text = "Store"
+        default: break
+        }
+        
+        return headerView
+    }
 }

