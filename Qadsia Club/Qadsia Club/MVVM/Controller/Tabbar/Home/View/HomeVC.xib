@@ -34,10 +34,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3e-xD-kBb">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="180"/>
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="130"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tickets - Login Header" translatesAutoresizingMaskIntoConstraints="NO" id="Q8V-AJ-oC5">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="180"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="130"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, Ahmed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAj-dF-hoL" userLabel="Login">
                             <rect key="frame" x="20" y="54.000000000000007" width="253" height="30.333333333333336"/>
@@ -170,11 +170,11 @@
                         <constraint firstItem="qNv-7V-c1m" firstAttribute="leading" secondItem="U3e-xD-kBb" secondAttribute="leading" constant="20" id="kBa-S9-YNk"/>
                         <constraint firstItem="SAj-dF-hoL" firstAttribute="top" secondItem="U3e-xD-kBb" secondAttribute="top" constant="54" id="kTR-Dh-eSS"/>
                         <constraint firstAttribute="bottom" secondItem="Q8V-AJ-oC5" secondAttribute="bottom" id="yan-Zh-PgC"/>
-                        <constraint firstAttribute="height" constant="180" id="zhp-eK-ZWU"/>
+                        <constraint firstAttribute="height" constant="130" id="zhp-eK-ZWU"/>
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iMM-gH-Eye">
-                    <rect key="frame" x="0.0" y="188" width="393" height="607"/>
+                    <rect key="frame" x="0.0" y="138" width="393" height="657"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p7Q-7g-SAr">
