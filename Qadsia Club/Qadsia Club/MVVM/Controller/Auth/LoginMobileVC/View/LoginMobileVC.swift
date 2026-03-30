@@ -50,6 +50,8 @@ class LoginMobileVC: UIViewController {
         switch AppManager.shared.loginFlow {
         case .existingUser:
             
+            AppDelegate.appDelegate.isLogin = true
+            
             svMainPassword.isHidden = false
             AppDelegate.appDelegate.setUpHome()
         case .newUser:
@@ -91,5 +93,29 @@ class LoginMobileVC: UIViewController {
         let imageName = sender.isSelected ? "ic_open_eye" : "ic_close_eye"
         sender.setImage(UIImage(named: imageName), for: .normal)
     }
+    
+    
+    @IBAction func clickedTicket(_ sender: Any) {
+    }
+    
+    @IBAction func clickedNews(_ sender: Any) {
+    }
+    
+    @IBAction func clickedHome(_ sender: Any) {
+        let vc = HomeVC()
+        navigationController?.pushViewController(vc, animated: false)
+    }
+    
+    
+    @IBAction func clickedStore(_ sender: Any) {
+    }
+    
+    @IBAction func clickedProfile(_ sender: Any) {
+//        let vc = ProfileVC()
+//        navigationController?.pushViewController(vc, animated: false)
+    }
+    
+    
+    
     
 }

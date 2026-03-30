@@ -27,6 +27,8 @@ class HomeListTVCell: UITableViewCell {
     @IBOutlet weak var heightCollectionView: NSLayoutConstraint!
     
     var onHeightUpdate: (() -> Void)?
+    var onBookNowTapped: (() -> Void)?
+
     var type: HomeListTVCellType = .upcomingMatches {
         didSet {
             DispatchQueue.main.async {
@@ -83,6 +85,10 @@ extension HomeListTVCell: UICollectionViewDelegate, UICollectionViewDataSource {
         switch type {
         case .upcomingMatches:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: UpcomingMatchesCVCell.identifier, for: indexPath) as! UpcomingMatchesCVCell
+            
+            cell.onBookNowTapped = { [weak self] in
+                self?.onBookNowTapped?()
+            }
             
             return cell
             

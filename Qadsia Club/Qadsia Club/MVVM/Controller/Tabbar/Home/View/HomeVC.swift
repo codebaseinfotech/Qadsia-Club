@@ -47,8 +47,15 @@ class HomeVC: UIViewController {
     @IBAction func tappedTStore(_ sender: Any) {
     }
     @IBAction func tappedTProfile(_ sender: Any) {
-        let vc = ProfileVC()
-        navigationController?.pushViewController(vc, animated: false)
+        if  AppDelegate.appDelegate.isLogin == true {
+            let vc = ProfileVC()
+            navigationController?.pushViewController(vc, animated: false)
+        }
+        else {
+            let vc = LoginMobileVC()
+            navigationController?.pushViewController(vc, animated: false)
+        }
+        
     }
     
     
@@ -80,6 +87,13 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
             DispatchQueue.main.async {
                 tableView.beginUpdates()
                 tableView.endUpdates()
+            }
+        }
+        
+        cell.onBookNowTapped = { [weak self] in
+            if AppDelegate.appDelegate.isLogin == false {
+                let vc = LoginMobileVC()
+                self?.navigationController?.pushViewController(vc, animated: false)
             }
         }
         

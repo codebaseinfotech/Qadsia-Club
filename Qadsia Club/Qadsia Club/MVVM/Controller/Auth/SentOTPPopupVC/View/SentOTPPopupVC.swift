@@ -92,9 +92,7 @@ class SentOTPPopupVC: UIViewController {
         if flow == .newRegistration {
             AppManager.shared.loginFlow = .newUser
         }
-        dismiss(animated: true) { [weak self] in
-            guard let self = self else { return }
-            self.onProceed?(self.flow)
-        }
+        onProceed?(flow)
+        dismiss(animated: true)
     }
 }

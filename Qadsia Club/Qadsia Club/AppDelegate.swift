@@ -13,7 +13,8 @@ import IQKeyboardToolbarManager
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var isLogin = false
+    
     static var appDelegate: AppDelegate {
         get {
             return UIApplication.shared.delegate as! AppDelegate
@@ -30,8 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.isEnabled = true
         IQKeyboardManager.shared.resignOnTouchOutside = true
         IQKeyboardToolbarManager.shared.isEnabled = true
-        
-        setUpHome()
 
         return true
     }

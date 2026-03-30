@@ -17,13 +17,14 @@ class UpcomingMatchesCVCell: UICollectionViewCell {
     @IBOutlet weak var imgSTeamLogo: UIImageView!
     @IBOutlet weak var lblSTeamName: UILabel!
     @IBOutlet weak var lblWithIn: UILabel!
-    
+    var onBookNowTapped: (() -> Void)?
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     @IBAction func tappedBookNow(_ sender: Any) {
+        onBookNowTapped?()
     }
-    
 }
