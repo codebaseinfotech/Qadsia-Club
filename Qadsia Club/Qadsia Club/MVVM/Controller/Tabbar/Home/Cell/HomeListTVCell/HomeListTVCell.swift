@@ -7,11 +7,19 @@
 
 import UIKit
 
+enum HomeListTVCellType {
+    case upcomingMatches
+    case trendyNews
+    case store
+}
+
 class HomeListTVCell: UITableViewCell {
 
     @IBOutlet weak var collectionViewList: UICollectionView! {
         didSet {
             collectionViewList.register(UpcomingMatchesCVCell.nib, forCellWithReuseIdentifier: UpcomingMatchesCVCell.identifier)
+            collectionViewList.register(TrendyNewsCVCell.nib, forCellWithReuseIdentifier: TrendyNewsCVCell.identifier)
+            collectionViewList.register(StoreCVCell.nib, forCellWithReuseIdentifier: StoreCVCell.identifier)
             collectionViewList.delegate = self
             collectionViewList.dataSource = self
         }
@@ -19,6 +27,14 @@ class HomeListTVCell: UITableViewCell {
     @IBOutlet weak var heightCollectionView: NSLayoutConstraint!
     
     var onHeightUpdate: (() -> Void)?
+    var type: HomeListTVCellType = .upcomingMatches {
+        didSet {
+            DispatchQueue.main.async {
+                self.collectionViewList.reloadData()
+                self.updateCollectionViewHeight()
+            }
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -56,13 +72,31 @@ class HomeListTVCell: UITableViewCell {
 
 extension HomeListTVCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        switch type {
+        case .upcomingMatches: return 2
+        case .trendyNews: return 4
+        case .store: return 4
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: UpcomingMatchesCVCell.identifier, for: indexPath) as! UpcomingMatchesCVCell
+        switch type {
+        case .upcomingMatches:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: UpcomingMatchesCVCell.identifier, for: indexPath) as! UpcomingMatchesCVCell
+            
+            return cell
+            
+        case .trendyNews:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TrendyNewsCVCell.identifier, for: indexPath) as! TrendyNewsCVCell
+            
+            return cell
+            
+        case .store:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StoreCVCell.identifier, for: indexPath) as! StoreCVCell
+            
+            return cell
+        }
         
-        return cell
     }
     
     
@@ -93,9 +127,18 @@ extension HomeListTVCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
+        switch type {
+        case .upcomingMatches:
+            let width = collectionView.frame.width-40
+            return CGSize(width: width, height: 258)
+        case .trendyNews:
+            let width = (collectionView.frame.width - 60) / 2
+            return CGSize(width: width, height: 183)
+        case .store:
+            let width = (collectionView.frame.width - 60) / 2
+            return CGSize(width: width, height: 246)
+        }
         
-        let width = collectionView.frame.width-40
-        return CGSize(width: width, height: 258)
     }
     
 }

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mulish-SemiBold.ttf">
+            <string>Mulish-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TrendyNewsCVCell" customModule="Qadsia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="183"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="183"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JtU-ET-60m">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="183"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2kR-Cp-35X" customClass="CutCornerView" customModule="Qadsia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="2" width="160" height="134"/>
+                                <color key="backgroundColor" name="Primary"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="hlT-MK-fi6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cutSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="cutBottomRight" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ts5-Wg-ljd" customClass="CutCornerView" customModule="Qadsia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="158" height="134"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_dummy_list" translatesAutoresizingMaskIntoConstraints="NO" id="AQx-EV-Mvn">
+                                        <rect key="frame" x="0.0" y="0.0" width="158" height="134"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="AQx-EV-Mvn" firstAttribute="top" secondItem="ts5-Wg-ljd" secondAttribute="top" id="O7G-Me-7ZS"/>
+                                    <constraint firstAttribute="height" constant="134" id="fQ7-ff-XNT"/>
+                                    <constraint firstAttribute="bottom" secondItem="AQx-EV-Mvn" secondAttribute="bottom" id="oYI-f5-GqG"/>
+                                    <constraint firstAttribute="trailing" secondItem="AQx-EV-Mvn" secondAttribute="trailing" id="wbs-ER-j2d"/>
+                                    <constraint firstItem="AQx-EV-Mvn" firstAttribute="leading" secondItem="ts5-Wg-ljd" secondAttribute="leading" id="ztq-fD-NrW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cutSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="cutBottomRight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="ViewBorder"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5t5-Fh-XDn">
+                                <rect key="frame" x="0.0" y="146" width="160" height="37"/>
+                                <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5t5-Fh-XDn" firstAttribute="top" secondItem="2kR-Cp-35X" secondAttribute="bottom" constant="10" id="5kj-i5-YaX"/>
+                            <constraint firstAttribute="trailing" secondItem="ts5-Wg-ljd" secondAttribute="trailing" constant="2" id="6rc-EL-MeV"/>
+                            <constraint firstItem="2kR-Cp-35X" firstAttribute="leading" secondItem="JtU-ET-60m" secondAttribute="leading" id="BMD-vv-xit"/>
+                            <constraint firstAttribute="trailing" secondItem="5t5-Fh-XDn" secondAttribute="trailing" id="QFD-Jz-lWJ"/>
+                            <constraint firstItem="2kR-Cp-35X" firstAttribute="top" secondItem="JtU-ET-60m" secondAttribute="top" constant="2" id="c5C-7z-n1M"/>
+                            <constraint firstAttribute="bottom" secondItem="5t5-Fh-XDn" secondAttribute="bottom" id="dYh-DS-lqE"/>
+                            <constraint firstAttribute="trailing" secondItem="2kR-Cp-35X" secondAttribute="trailing" id="fb7-EN-F39"/>
+                            <constraint firstItem="5t5-Fh-XDn" firstAttribute="leading" secondItem="JtU-ET-60m" secondAttribute="leading" id="pqJ-3Y-nEQ"/>
+                            <constraint firstItem="ts5-Wg-ljd" firstAttribute="leading" secondItem="JtU-ET-60m" secondAttribute="leading" id="tKQ-1K-zvJ"/>
+                            <constraint firstItem="ts5-Wg-ljd" firstAttribute="top" secondItem="JtU-ET-60m" secondAttribute="top" id="vvY-0n-2rW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="JtU-ET-60m" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0Wl-w8-iti"/>
+                <constraint firstItem="JtU-ET-60m" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8gd-KC-mkW"/>
+                <constraint firstAttribute="trailing" secondItem="JtU-ET-60m" secondAttribute="trailing" id="pfW-0b-uyt"/>
+                <constraint firstAttribute="bottom" secondItem="JtU-ET-60m" secondAttribute="bottom" id="xPl-sn-SPH"/>
+            </constraints>
+            <connections>
+                <outlet property="imgPic" destination="AQx-EV-Mvn" id="aBZ-Rf-zzj"/>
+                <outlet property="lblName" destination="5t5-Fh-XDn" id="R26-DN-vOB"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="154"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_dummy_list" width="331" height="132"/>
+        <namedColor name="Primary">
+            <color red="0.99215686274509807" green="0.72549019607843135" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ViewBorder">
+            <color red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
