@@ -10,6 +10,7 @@ import UIKit
 @IBDesignable
 class CutCornerView: UIView {
 
+    // MARK: - Cut Settings
     @IBInspectable var cutSize: CGFloat = 12 {
         didSet { setNeedsLayout() }
     }
@@ -18,6 +19,18 @@ class CutCornerView: UIView {
     @IBInspectable var cutTopRight: Bool = false
     @IBInspectable var cutBottomLeft: Bool = false
     @IBInspectable var cutBottomRight: Bool = false
+
+    // MARK: - Border Settings
+    @IBInspectable var borderColor1: UIColor = .gray {
+        didSet { setNeedsLayout() }
+    }
+
+    @IBInspectable var borderWidth1: CGFloat = 1 {
+        didSet { setNeedsLayout() }
+    }
+
+    // MARK: - Private Layer
+    private var borderLayer: CAShapeLayer?
 
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -32,16 +45,10 @@ class CutCornerView: UIView {
         let path = UIBezierPath()
 
         // Start Point
-        path.move(to: CGPoint(
-            x: cutTopLeft ? cut : 0,
-            y: 0
-        ))
+        path.move(to: CGPoint(x: cutTopLeft ? cut : 0, y: 0))
 
         // Top Edge
-        path.addLine(to: CGPoint(
-            x: cutTopRight ? w - cut : w,
-            y: 0
-        ))
+        path.addLine(to: CGPoint(x: cutTopRight ? w - cut : w, y: 0))
 
         // Top Right Cut
         if cutTopRight {
@@ -49,10 +56,7 @@ class CutCornerView: UIView {
         }
 
         // Right Edge
-        path.addLine(to: CGPoint(
-            x: w,
-            y: cutBottomRight ? h - cut : h
-        ))
+        path.addLine(to: CGPoint(x: w, y: cutBottomRight ? h - cut : h))
 
         // Bottom Right Cut
         if cutBottomRight {
@@ -60,10 +64,7 @@ class CutCornerView: UIView {
         }
 
         // Bottom Edge
-        path.addLine(to: CGPoint(
-            x: cutBottomLeft ? cut : 0,
-            y: h
-        ))
+        path.addLine(to: CGPoint(x: cutBottomLeft ? cut : 0, y: h))
 
         // Bottom Left Cut
         if cutBottomLeft {
@@ -71,10 +72,7 @@ class CutCornerView: UIView {
         }
 
         // Left Edge
-        path.addLine(to: CGPoint(
-            x: 0,
-            y: cutTopLeft ? cut : 0
-        ))
+        path.addLine(to: CGPoint(x: 0, y: cutTopLeft ? cut : 0))
 
         // Top Left Cut
         if cutTopLeft {
@@ -83,9 +81,22 @@ class CutCornerView: UIView {
 
         path.close()
 
+        // MARK: - Mask Layer (for cutting shape)
         let maskLayer = CAShapeLayer()
         maskLayer.path = path.cgPath
         layer.mask = maskLayer
+
+        // MARK: - Remove old border
+        borderLayer?.removeFromSuperlayer()
+
+        // MARK: - Border Layer
+        let border = CAShapeLayer()
+        border.path = path.cgPath
+        border.fillColor = UIColor.clear.cgColor
+        border.strokeColor = borderColor?.cgColor
+        border.lineWidth = borderWidth
+
+        layer.addSublayer(border)
+        borderLayer = border
     }
 }
-

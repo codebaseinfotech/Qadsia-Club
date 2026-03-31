@@ -40,13 +40,13 @@
                             <rect key="frame" x="0.0" y="0.0" width="393" height="130"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, Ahmed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAj-dF-hoL" userLabel="Login">
-                            <rect key="frame" x="20" y="54.000000000000007" width="253" height="30.333333333333336"/>
+                            <rect key="frame" x="20" y="60.000000000000007" width="253" height="30.333333333333336"/>
                             <fontDescription key="fontDescription" name="Mulish-ExtraBold" family="Mulish" pointSize="24"/>
                             <color key="textColor" name="Black"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2u4-8O-ev3">
-                            <rect key="frame" x="283" y="54" width="90" height="40"/>
+                            <rect key="frame" x="283" y="60" width="90" height="40"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0to-N1-6l4">
                                     <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -105,7 +105,7 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qNv-7V-c1m">
-                            <rect key="frame" x="20" y="100.33333333333333" width="353" height="0.0"/>
+                            <rect key="frame" x="20" y="106.33333333333333" width="353" height="0.0"/>
                             <subviews>
                                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dhi-NG-a4e">
                                     <rect key="frame" x="0.0" y="0.0" width="0.0" height="34"/>
@@ -168,7 +168,7 @@
                         <constraint firstAttribute="trailing" secondItem="2u4-8O-ev3" secondAttribute="trailing" constant="20" id="aXd-bV-j7V"/>
                         <constraint firstItem="2u4-8O-ev3" firstAttribute="leading" secondItem="SAj-dF-hoL" secondAttribute="trailing" constant="10" id="bY3-sy-gkS"/>
                         <constraint firstItem="qNv-7V-c1m" firstAttribute="leading" secondItem="U3e-xD-kBb" secondAttribute="leading" constant="20" id="kBa-S9-YNk"/>
-                        <constraint firstItem="SAj-dF-hoL" firstAttribute="top" secondItem="U3e-xD-kBb" secondAttribute="top" constant="54" id="kTR-Dh-eSS"/>
+                        <constraint firstItem="SAj-dF-hoL" firstAttribute="top" secondItem="U3e-xD-kBb" secondAttribute="top" constant="60" id="kTR-Dh-eSS"/>
                         <constraint firstAttribute="bottom" secondItem="Q8V-AJ-oC5" secondAttribute="bottom" id="yan-Zh-PgC"/>
                         <constraint firstAttribute="height" constant="130" id="zhp-eK-ZWU"/>
                     </constraints>
