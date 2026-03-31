@@ -106,10 +106,14 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         }
         
         cell.onBookNowTapped = { [weak self] in
-            if AppDelegate.appDelegate.isLogin == false {
+            
+            guard AppDelegate.appDelegate.isLogin else {
                 let vc = LoginMobileVC()
                 self?.navigationController?.pushViewController(vc, animated: false)
+                return
             }
+            let vc = MatchListVC()
+            self?.navigationController?.pushViewController(vc, animated: true)
         }
         
         return cell
