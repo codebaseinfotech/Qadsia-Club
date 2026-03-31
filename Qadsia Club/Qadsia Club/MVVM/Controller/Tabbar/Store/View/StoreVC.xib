@@ -268,18 +268,18 @@
                                     <rect key="frame" x="0.0" y="0.0" width="86" height="70"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="TWx-o7-huZ">
-                                            <rect key="frame" x="20.333333333333332" y="12.000000000000004" width="45.666666666666671" height="46.333333333333343"/>
+                                            <rect key="frame" x="17.000000000000004" y="12.000000000000004" width="52.333333333333343" height="46.333333333333343"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_Un_Ticket" translatesAutoresizingMaskIntoConstraints="NO" id="fgn-jN-C72">
-                                                    <rect key="frame" x="11.666666666666668" y="0.0" width="22.000000000000004" height="22"/>
+                                                    <rect key="frame" x="15" y="0.0" width="22" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="22" id="Zc0-On-kmJ"/>
                                                         <constraint firstAttribute="height" constant="22" id="rcI-Qs-AO6"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ticket" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YED-o7-PP5">
-                                                    <rect key="frame" x="0.0" y="26" width="45.666666666666664" height="20.333333333333329"/>
-                                                    <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="16"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tickets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YED-o7-PP5">
+                                                    <rect key="frame" x="0.0" y="26" width="52.333333333333336" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" name="Mulish-Medium" family="Mulish" pointSize="16"/>
                                                     <color key="textColor" name="Tabbar_Un"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
