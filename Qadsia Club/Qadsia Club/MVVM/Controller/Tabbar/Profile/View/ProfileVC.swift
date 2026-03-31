@@ -66,15 +66,24 @@ class ProfileVC: UIViewController {
     }
     
     @IBAction func tappedHelpAndSupport(_ sender: Any) {
+        let vc = LegalInfoVC()
+        vc.legalInfoView = .helpAndSupport
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func tappedContactUs(_ sender: Any) {
     }
     
     @IBAction func tappedTerm(_ sender: Any) {
+        let vc = LegalInfoVC()
+        vc.legalInfoView = .termsAndConditions
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func tappedPrivacyPolicy(_ sender: Any) {
+        let vc = LegalInfoVC()
+        vc.legalInfoView = .privacyPolicy
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     

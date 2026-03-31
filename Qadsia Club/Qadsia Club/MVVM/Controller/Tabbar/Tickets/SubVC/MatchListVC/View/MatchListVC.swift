@@ -42,6 +42,12 @@ extension MatchListVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: MatchListTVCell.identifier) as! MatchListTVCell
         
+        cell.clickedBookNow = {
+            let vc = LegalInfoVC()
+            vc.legalInfoView = .matchList
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
         return cell
      }
     

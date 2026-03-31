@@ -1,5 +1,5 @@
 //
-//  MatchListTVCell.swift
+//  LegalInfoTVCell.swift
 //  Qadsia
 //
 //  Created by Poojagabani on 31/03/26.
@@ -7,14 +7,9 @@
 
 import UIKit
 
-class MatchListTVCell: UITableViewCell {
+class LegalInfoTVCell: UITableViewCell {
 
-    @IBOutlet weak var imgPic: UIImageView!
-    @IBOutlet weak var lblStadium: UILabel!
-    @IBOutlet weak var lblDateTime: UILabel!
-    @IBOutlet weak var imgTeamPlayer: UIImageView!
-    
-    var clickedBookNow: (() -> Void)?
+    @IBOutlet weak var lblMsg: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,9 +21,6 @@ class MatchListTVCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-    }
-    @IBAction func tappedBookNow(_ sender: Any) {
-        clickedBookNow?()
     }
     
 }
