@@ -1,21 +1,21 @@
 //
-//  HomeVC.swift
+//  NewsVC.swift
 //  Qadsia
 //
-//  Created by Kenil on 27/03/26.
+//  Created by Poojagabani on 31/03/26.
 //
 
 import UIKit
 
-class HomeVC: UIViewController {
+class NewsVC: UIViewController {
 
-    @IBOutlet weak var lblUserName: UILabel!
     @IBOutlet weak var tblViewList: UITableView! {
         didSet {
-            tblViewList.contentInset.bottom = 50
+            tblViewList.contentInset.bottom = 70
             tblViewList.rowHeight = UITableView.automaticDimension
             tblViewList.estimatedRowHeight = 300
             tblViewList.register(HomeListTVCell.nib, forCellReuseIdentifier: HomeListTVCell.identifier)
+            tblViewList.register(AllNewsTVCell.nib, forCellReuseIdentifier: AllNewsTVCell.identifier)
             tblViewList.delegate = self
             tblViewList.dataSource = self
             
@@ -30,34 +30,20 @@ class HomeVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        if  AppDelegate.appDelegate.isLogin == true {
-            lblUserName.text = "Welcome, Ahmed"
-         }
-        else {
-            lblUserName.text = "Welcome, Guest"
-         }
-    }
 
     // MARK: - Action Method
-    @IBAction func tappedCart(_ sender: Any) {
-    }
-    @IBAction func tappedNotification(_ sender: Any) {
-        let vc = NotificationVC()
-        self.navigationController?.pushViewController(vc, animated: true)
+    @IBAction func tappedCategories(_ sender: Any) {
     }
     
-    // Tabbar Action
-    @IBAction func tappedTTicket(_ sender: Any) {
+    @IBAction func tappedTTickeer(_ sender: Any) {
         let vc = TicketsVC()
         self.navigationController?.pushViewController(vc, animated: false)
     }
-    @IBAction func tappedTNews(_ sender: Any) {
-        let vc = NewsVC()
+    @IBAction func tappedTHom(_ sender: Any) {
+        let vc = HomeVC()
         self.navigationController?.pushViewController(vc, animated: false)
     }
-    @IBAction func tappedTStore(_ sender: Any) {
+    @IBAction func tappedStore(_ sender: Any) {
         let vc = StoreVC()
         self.navigationController?.pushViewController(vc, animated: false)
     }
@@ -70,50 +56,46 @@ class HomeVC: UIViewController {
             let vc = LoginMobileVC()
             navigationController?.pushViewController(vc, animated: false)
         }
-        
     }
-    
     
 }
 
-// MARK: - tv Delegate & DataSource
-extension HomeVC: UITableViewDelegate, UITableViewDataSource {
+// MARK: - TV Delegate & DataSource
+extension NewsVC: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        if section == 0 {
+            return 1
+        }
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: HomeListTVCell.identifier) as! HomeListTVCell
-        
         switch indexPath.section {
-        case 0: cell.type = .upcomingMatches
-        case 1: cell.type = .trendyNews
-        case 2: cell.type = .store
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: HomeListTVCell.identifier) as! HomeListTVCell
+            cell.type = .newsTab
+            cell.onHeightUpdate = {
+                DispatchQueue.main.async {
+                    tableView.beginUpdates()
+                    tableView.endUpdates()
+                }
+            }
+            
+            return cell
+            
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: AllNewsTVCell.identifier) as! AllNewsTVCell
+            
+            return cell
+            
         default:
-            cell.type = .upcomingMatches
+            return UITableViewCell()
         }
-        
-        cell.onHeightUpdate = {
-            DispatchQueue.main.async {
-                tableView.beginUpdates()
-                tableView.endUpdates()
-            }
-        }
-        
-        cell.onBookNowTapped = { [weak self] in
-            if AppDelegate.appDelegate.isLogin == false {
-                let vc = LoginMobileVC()
-                self?.navigationController?.pushViewController(vc, animated: false)
-            }
-        }
-        
-        return cell
-        
     }
     
     // footer height
@@ -130,15 +112,16 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = Bundle.main.loadNibNamed("HomeHeaderView", owner: nil, options: nil)?.first as? HomeHeaderView
         
-        headerView?.btnSeeAll.isHidden = section == 0 ? true : false
+        headerView?.btnSeeAll.isHidden = true
         
         switch section {
-        case 0: headerView?.lblName.text = "Upcoming matches"
-        case 1: headerView?.lblName.text = "Trendy News"
-        case 2: headerView?.lblName.text = "Store"
+        case 0: headerView?.lblName.text = "Trendy News"
+        case 1: headerView?.lblName.text = "All News"
         default: break
         }
         
         return headerView
     }
+    
+    
 }

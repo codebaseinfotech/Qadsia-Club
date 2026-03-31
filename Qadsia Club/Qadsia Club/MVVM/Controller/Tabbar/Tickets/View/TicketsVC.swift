@@ -11,6 +11,7 @@ class TicketsVC: UIViewController {
 
     @IBOutlet weak var tblViewList: UITableView! {
         didSet {
+            tblViewList.contentInset.bottom = 70
             tblViewList.register(TicketTVCell.nib, forCellReuseIdentifier: TicketTVCell.identifier)
             tblViewList.delegate = self
             tblViewList.dataSource = self
@@ -26,16 +27,26 @@ class TicketsVC: UIViewController {
     
     // MARK: - Action Method
     @IBAction func tappedTNews(_ sender: Any) {
+        let vc = NewsVC()
+        self.navigationController?.pushViewController(vc, animated: false)
     }
     @IBAction func tappedTHome(_ sender: Any) {
         let vc = HomeVC()
         self.navigationController?.pushViewController(vc, animated: false)
     }
     @IBAction func tappedTStore(_ sender: Any) {
+        let vc = StoreVC()
+        self.navigationController?.pushViewController(vc, animated: false)
     }
     @IBAction func tappedTProfile(_ sender: Any) {
-        let vc = ProfileVC()
-        self.navigationController?.pushViewController(vc, animated: false)
+        if  AppDelegate.appDelegate.isLogin == true {
+            let vc = ProfileVC()
+            navigationController?.pushViewController(vc, animated: false)
+        }
+        else {
+            let vc = LoginMobileVC()
+            navigationController?.pushViewController(vc, animated: false)
+        }
     }
     
 
@@ -51,6 +62,13 @@ extension TicketsVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TicketTVCell.identifier) as! TicketTVCell
+        
+        cell.clieckedLetmeIn = { [weak self] in
+            if AppDelegate.appDelegate.isLogin == false {
+                let vc = LoginMobileVC()
+                self?.navigationController?.pushViewController(vc, animated: false)
+            }
+        }
         
         return cell
     }

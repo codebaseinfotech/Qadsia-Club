@@ -11,6 +11,7 @@ enum HomeListTVCellType {
     case upcomingMatches
     case trendyNews
     case store
+    case newsTab
 }
 
 class HomeListTVCell: UITableViewCell {
@@ -20,6 +21,7 @@ class HomeListTVCell: UITableViewCell {
             collectionViewList.register(UpcomingMatchesCVCell.nib, forCellWithReuseIdentifier: UpcomingMatchesCVCell.identifier)
             collectionViewList.register(TrendyNewsCVCell.nib, forCellWithReuseIdentifier: TrendyNewsCVCell.identifier)
             collectionViewList.register(StoreCVCell.nib, forCellWithReuseIdentifier: StoreCVCell.identifier)
+            collectionViewList.register(NewsListCVCell.nib, forCellWithReuseIdentifier: NewsListCVCell.identifier)
             collectionViewList.delegate = self
             collectionViewList.dataSource = self
         }
@@ -78,6 +80,7 @@ extension HomeListTVCell: UICollectionViewDelegate, UICollectionViewDataSource {
         case .upcomingMatches: return 1
         case .trendyNews: return 4
         case .store: return 4
+        case .newsTab: return 4
         }
     }
     
@@ -101,6 +104,12 @@ extension HomeListTVCell: UICollectionViewDelegate, UICollectionViewDataSource {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StoreCVCell.identifier, for: indexPath) as! StoreCVCell
             
             return cell
+            
+        case .newsTab:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NewsListCVCell.identifier, for: indexPath) as! NewsListCVCell
+            
+            return cell
+            
         }
         
     }
@@ -119,14 +128,14 @@ extension HomeListTVCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
+        return 15
     }
     
     // MARK: - Minimum Interitem Spacing (Horizontal)
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
+        return 15
     }
     
     // MARK:- sizeForItemAt
@@ -143,6 +152,9 @@ extension HomeListTVCell: UICollectionViewDelegateFlowLayout {
         case .store:
             let width = (collectionView.frame.width - 60) / 2
             return CGSize(width: width, height: 246)
+        case .newsTab:
+            let width = (collectionView.frame.width - 60) / 2
+            return CGSize(width: width, height: 189)
         }
         
     }

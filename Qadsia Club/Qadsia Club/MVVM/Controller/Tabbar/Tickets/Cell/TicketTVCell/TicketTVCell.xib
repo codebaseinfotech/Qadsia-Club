@@ -45,7 +45,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bA-RJ-AQF" customClass="CutCornerView" customModule="Qadsia" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="277" height="158"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_ticket_bg" translatesAutoresizingMaskIntoConstraints="NO" id="wvm-fl-mjU">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_ticket_bg" translatesAutoresizingMaskIntoConstraints="NO" id="wvm-fl-mjU">
                                         <rect key="frame" x="0.0" y="0.0" width="277" height="158"/>
                                     </imageView>
                                     <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="NiV-09-OVj">

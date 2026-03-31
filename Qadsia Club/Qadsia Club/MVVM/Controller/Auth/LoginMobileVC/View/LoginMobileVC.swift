@@ -96,9 +96,13 @@ class LoginMobileVC: UIViewController {
     
     
     @IBAction func clickedTicket(_ sender: Any) {
+        let vc = TicketsVC()
+        navigationController?.pushViewController(vc, animated: false)
     }
     
     @IBAction func clickedNews(_ sender: Any) {
+        let vc = NewsVC()
+        navigationController?.pushViewController(vc, animated: false)
     }
     
     @IBAction func clickedHome(_ sender: Any) {
@@ -108,6 +112,8 @@ class LoginMobileVC: UIViewController {
     
     
     @IBAction func clickedStore(_ sender: Any) {
+        let vc = StoreVC()
+        navigationController?.pushViewController(vc, animated: false)
     }
     
     @IBAction func clickedProfile(_ sender: Any) {

@@ -1,21 +1,17 @@
 //
-//  TicketTVCell.swift
+//  AllNewsTVCell.swift
 //  Qadsia
 //
-//  Created by Kenil on 31/03/26.
+//  Created by Poojagabani on 31/03/26.
 //
 
 import UIKit
 
-class TicketTVCell: UITableViewCell {
+class AllNewsTVCell: UITableViewCell {
 
-    @IBOutlet weak var imgLogo: UIImageView!
+    @IBOutlet weak var imgPic: UIImageView!
     @IBOutlet weak var lblDate: UILabel!
-    @IBOutlet weak var lblStadium: UILabel!
-    @IBOutlet weak var lblMatches: UILabel!
-    
-    var clieckedLetmeIn: (() -> Void)?
-    
+    @IBOutlet weak var lblMsg: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -25,9 +21,6 @@ class TicketTVCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-    }
-    @IBAction func tappedLetMe(_ sender: Any) {
-        clieckedLetmeIn?()
     }
     
 }

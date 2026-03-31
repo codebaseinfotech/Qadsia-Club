@@ -31,12 +31,18 @@ class ProfileVC: UIViewController {
     }
     
     @IBAction func tappedTTicket(_ sender: Any) {
+        let vc = TicketsVC()
+        self.navigationController?.pushViewController(vc, animated: false)
     }
     
     @IBAction func tappedTNews(_ sender: Any) {
+        let vc = NewsVC()
+        self.navigationController?.pushViewController(vc, animated: false)
     }
     
     @IBAction func tappedTStore(_ sender: Any) {
+        let vc = StoreVC()
+        self.navigationController?.pushViewController(vc, animated: false)
     }
     
     // MARK: - Action

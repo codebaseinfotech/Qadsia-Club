@@ -241,6 +241,9 @@
                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor1">
                                 <color key="value" name="ViewBorder"/>
                             </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>

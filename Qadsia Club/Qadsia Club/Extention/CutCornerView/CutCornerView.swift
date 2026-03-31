@@ -25,7 +25,7 @@ class CutCornerView: UIView {
         didSet { setNeedsLayout() }
     }
 
-    @IBInspectable var borderWidth1: CGFloat = 1 {
+    @IBInspectable var borderWidth1: CGFloat = 0 {
         didSet { setNeedsLayout() }
     }
 
@@ -93,8 +93,8 @@ class CutCornerView: UIView {
         let border = CAShapeLayer()
         border.path = path.cgPath
         border.fillColor = UIColor.clear.cgColor
-        border.strokeColor = borderColor?.cgColor
-        border.lineWidth = borderWidth
+        border.strokeColor = borderColor1.cgColor
+        border.lineWidth = borderWidth1
 
         layer.addSublayer(border)
         borderLayer = border
