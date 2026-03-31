@@ -85,6 +85,8 @@ class LegalInfoVC: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     @IBAction func tappedAgree(_ sender: Any) {
+        let vc = BookTicketVC()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }
