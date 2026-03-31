@@ -24,6 +24,7 @@ class ProductDetailsVC: UIViewController {
 
     // MARK: - Action Method
     @IBAction func tappedBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
 }

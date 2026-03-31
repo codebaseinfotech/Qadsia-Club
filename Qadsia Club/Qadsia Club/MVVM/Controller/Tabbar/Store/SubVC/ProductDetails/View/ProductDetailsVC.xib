@@ -88,8 +88,8 @@
                         <constraint firstAttribute="height" constant="130" id="v9j-95-NNN"/>
                     </constraints>
                 </view>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_profile_bg" translatesAutoresizingMaskIntoConstraints="NO" id="PVh-hg-Uey">
-                    <rect key="frame" x="0.0" y="505" width="393" height="347"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_profile_bg" translatesAutoresizingMaskIntoConstraints="NO" id="PVh-hg-Uey">
+                    <rect key="frame" x="0.0" y="425" width="393" height="347"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="347" id="Awo-hr-Fjq"/>
                     </constraints>
@@ -247,7 +247,6 @@
                                     </subviews>
                                 </stackView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="hwg-K2-0Uz" secondAttribute="trailing" constant="20" id="3zq-HP-ikc"/>
                                 <constraint firstAttribute="trailing" secondItem="wCE-0s-gIo" secondAttribute="trailing" constant="20" id="8ZV-IM-7bs"/>
@@ -393,7 +392,6 @@
                             </subviews>
                         </stackView>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="36W-ND-3iF" secondAttribute="trailing" constant="20" id="ObW-cC-lu6"/>
                         <constraint firstAttribute="bottom" secondItem="36W-ND-3iF" secondAttribute="bottom" constant="30" id="ft0-Dx-H4w"/>
@@ -410,7 +408,7 @@
                 <constraint firstItem="72t-ra-B3d" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="9yk-e7-cDT"/>
                 <constraint firstAttribute="trailing" secondItem="aTU-t0-e0J" secondAttribute="trailing" id="DBB-Bu-oma"/>
                 <constraint firstItem="PVh-hg-Uey" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="J6w-VK-hmO"/>
-                <constraint firstAttribute="bottom" secondItem="PVh-hg-Uey" secondAttribute="bottom" id="ThS-9e-IVW"/>
+                <constraint firstAttribute="bottom" secondItem="PVh-hg-Uey" secondAttribute="bottom" constant="80" id="ThS-9e-IVW"/>
                 <constraint firstItem="QK2-eo-Wiu" firstAttribute="top" secondItem="aTU-t0-e0J" secondAttribute="bottom" id="YE7-P1-tNj"/>
                 <constraint firstItem="72t-ra-B3d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Yt7-Xq-K5b"/>
                 <constraint firstItem="aTU-t0-e0J" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zj7-0G-5mv"/>
@@ -430,7 +428,7 @@
         <image name="Frame1" width="20" height="20"/>
         <image name="Tickets - Login Header" width="1500" height="948"/>
         <image name="ic_back" width="96" height="96"/>
-        <image name="img_profile_bg" width="375" height="347"/>
+        <image name="img_profile_bg" width="1500" height="1388"/>
         <namedColor name="Black">
             <color red="0.0078431372549019607" green="0.0078431372549019607" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

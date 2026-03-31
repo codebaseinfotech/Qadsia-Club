@@ -16,7 +16,7 @@ import UserNotifications
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var isLogin = false
+    var isLogin = true
 
     static var appDelegate: AppDelegate {
         get {
