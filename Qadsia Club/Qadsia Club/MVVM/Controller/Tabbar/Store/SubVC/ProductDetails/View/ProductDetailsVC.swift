@@ -9,6 +9,11 @@ import UIKit
 
 class ProductDetailsVC: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView! {
+        didSet {
+            scrollView.contentInset.bottom = 100
+        }
+    }
     
     // MARK: - view Cycle
     override func viewDidLoad() {
@@ -18,5 +23,7 @@ class ProductDetailsVC: UIViewController {
     }
 
     // MARK: - Action Method
-
+    @IBAction func tappedBack(_ sender: Any) {
+    }
+    
 }
