@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mulish-Bold.ttf">
+            <string>Mulish-Bold</string>
+        </array>
+        <array key="Mulish-ExtraBold.ttf">
+            <string>Mulish-ExtraBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeepShoppingPopUpVC" customModule="Qadsia" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jrW-3Q-1DV">
+                    <rect key="frame" x="20" y="313" width="353" height="226.33333333333337"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibp-gJ-5Dk">
+                            <rect key="frame" x="308" y="20" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="Qvz-un-Scn"/>
+                                <constraint firstAttribute="width" constant="25" id="Yep-dE-g8y"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="ic_close"/>
+                            <connections>
+                                <action selector="tappedClose:" destination="-1" eventType="touchUpInside" id="aYW-Du-hl3"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="xRf-r0-Ztl">
+                            <rect key="frame" x="20" y="55" width="313" height="141.33333333333334"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you like to proceed to payment or add another product to your cart?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RX-2d-g9e">
+                                    <rect key="frame" x="0.0" y="0.0" width="313" height="75.333333333333329"/>
+                                    <fontDescription key="fontDescription" name="Mulish-ExtraBold" family="Mulish" pointSize="20"/>
+                                    <color key="textColor" name="Black"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5Cg-Ma-Fde">
+                                    <rect key="frame" x="0.0" y="101.33333333333331" width="313" height="40"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S1R-cE-SQI" customClass="CutCornerView" customModule="Qadsia" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="149" height="40"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAH-hs-lcp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="149" height="40"/>
+                                                    <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="16"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Checkout">
+                                                        <color key="titleColor" name="Black"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="tappedCheckout:" destination="-1" eventType="touchUpInside" id="O2v-Aa-jcY"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="EAH-hs-lcp" secondAttribute="trailing" id="CfU-De-chE"/>
+                                                <constraint firstAttribute="bottom" secondItem="EAH-hs-lcp" secondAttribute="bottom" id="HS7-l6-tdN"/>
+                                                <constraint firstItem="EAH-hs-lcp" firstAttribute="top" secondItem="S1R-cE-SQI" secondAttribute="top" id="MqH-42-pU1"/>
+                                                <constraint firstItem="EAH-hs-lcp" firstAttribute="leading" secondItem="S1R-cE-SQI" secondAttribute="leading" id="Qji-jn-bfe"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="cutTopLeft" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="cutBottomRight" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth1">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor1">
+                                                    <color key="value" name="primary"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yR-xi-gat" customClass="CutCornerView" customModule="Qadsia" customModuleProvider="target">
+                                            <rect key="frame" x="164" y="0.0" width="149" height="40"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSC-eV-7Do">
+                                                    <rect key="frame" x="0.0" y="0.0" width="149" height="40"/>
+                                                    <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="16"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Keep shopping">
+                                                        <color key="titleColor" name="Black"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="tappedKeepShopping:" destination="-1" eventType="touchUpInside" id="pVx-cP-5YB"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" name="primary"/>
+                                            <constraints>
+                                                <constraint firstItem="gSC-eV-7Do" firstAttribute="top" secondItem="8yR-xi-gat" secondAttribute="top" id="2fU-Ju-hMM"/>
+                                                <constraint firstAttribute="trailing" secondItem="gSC-eV-7Do" secondAttribute="trailing" id="81S-1N-oov"/>
+                                                <constraint firstAttribute="bottom" secondItem="gSC-eV-7Do" secondAttribute="bottom" id="We2-2E-UOU"/>
+                                                <constraint firstItem="gSC-eV-7Do" firstAttribute="leading" secondItem="8yR-xi-gat" secondAttribute="leading" id="uXG-9z-2up"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="cutTopLeft" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="cutBottomRight" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="968-Dz-lev"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="xRf-r0-Ztl" secondAttribute="bottom" constant="30" id="0gL-OK-Rbg"/>
+                        <constraint firstAttribute="trailing" secondItem="xRf-r0-Ztl" secondAttribute="trailing" constant="20" id="1qW-OV-rDV"/>
+                        <constraint firstItem="Ibp-gJ-5Dk" firstAttribute="top" secondItem="jrW-3Q-1DV" secondAttribute="top" constant="20" id="Jak-sX-Gme"/>
+                        <constraint firstItem="xRf-r0-Ztl" firstAttribute="top" secondItem="Ibp-gJ-5Dk" secondAttribute="bottom" constant="10" id="cL3-Fo-V0s"/>
+                        <constraint firstAttribute="trailing" secondItem="Ibp-gJ-5Dk" secondAttribute="trailing" constant="20" id="wqm-De-3Xj"/>
+                        <constraint firstItem="xRf-r0-Ztl" firstAttribute="leading" secondItem="jrW-3Q-1DV" secondAttribute="leading" constant="20" id="yPH-FA-Fcd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jrW-3Q-1DV" secondAttribute="trailing" constant="20" id="CZt-7U-eEO"/>
+                <constraint firstItem="jrW-3Q-1DV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="M97-V1-kiy"/>
+                <constraint firstItem="jrW-3Q-1DV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="kYS-wi-ajB"/>
+            </constraints>
+            <point key="canvasLocation" x="133.58778625954199" y="93.661971830985919"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_close" width="88" height="88"/>
+        <namedColor name="Black">
+            <color red="0.0078431372549019607" green="0.0078431372549019607" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.99215686274509807" green="0.72549019607843135" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

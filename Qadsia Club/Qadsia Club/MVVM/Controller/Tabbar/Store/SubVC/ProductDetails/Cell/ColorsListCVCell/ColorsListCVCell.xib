@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ColorsListCVCell" customModule="Qadsia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N8E-ck-x0Y">
+                        <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FtP-mP-TnA">
+                                <rect key="frame" x="4" y="4" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="95W-Ce-pD4"/>
+                                    <constraint firstAttribute="height" constant="20" id="w6k-UT-0Pa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FtP-mP-TnA" firstAttribute="centerY" secondItem="N8E-ck-x0Y" secondAttribute="centerY" id="Xql-5o-zCC"/>
+                            <constraint firstItem="FtP-mP-TnA" firstAttribute="centerX" secondItem="N8E-ck-x0Y" secondAttribute="centerX" id="qSf-GV-1jM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="N8E-ck-x0Y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KLX-GF-zSX"/>
+                <constraint firstAttribute="bottom" secondItem="N8E-ck-x0Y" secondAttribute="bottom" id="LrL-Zt-6nw"/>
+                <constraint firstAttribute="trailing" secondItem="N8E-ck-x0Y" secondAttribute="trailing" id="M6y-1n-0gw"/>
+                <constraint firstItem="N8E-ck-x0Y" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dRJ-os-hxh"/>
+            </constraints>
+            <connections>
+                <outlet property="imgColors" destination="FtP-mP-TnA" id="M6r-3U-zc2"/>
+                <outlet property="viewMainColor" destination="N8E-ck-x0Y" id="Yae-Yo-VtN"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="154"/>
+        </collectionViewCell>
+    </objects>
+</document>

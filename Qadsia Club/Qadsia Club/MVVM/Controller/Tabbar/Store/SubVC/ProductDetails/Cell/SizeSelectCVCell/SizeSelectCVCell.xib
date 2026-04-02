@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mulish-Bold.ttf">
+            <string>Mulish-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SizeSelectCVCell" customModule="Qadsia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nL1-mH-ia4" customClass="CutCornerView" customModule="Qadsia" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nR-H5-pHH">
+                                <rect key="frame" x="15.333333333333334" y="15.333333333333334" width="17.333333333333329" height="17.666666666666664"/>
+                                <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="14"/>
+                                <color key="textColor" name="Black"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9nR-H5-pHH" firstAttribute="centerX" secondItem="nL1-mH-ia4" secondAttribute="centerX" id="RVP-2q-CB6"/>
+                            <constraint firstItem="9nR-H5-pHH" firstAttribute="centerY" secondItem="nL1-mH-ia4" secondAttribute="centerY" id="VPw-La-IKw"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="cutTopLeft" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="cutBottomRight" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="nL1-mH-ia4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="79p-aw-zSD"/>
+                <constraint firstAttribute="bottom" secondItem="nL1-mH-ia4" secondAttribute="bottom" id="XMv-Dh-fEs"/>
+                <constraint firstAttribute="trailing" secondItem="nL1-mH-ia4" secondAttribute="trailing" id="dn2-1n-bYQ"/>
+                <constraint firstItem="nL1-mH-ia4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kwF-IF-4bG"/>
+            </constraints>
+            <connections>
+                <outlet property="lblSize" destination="9nR-H5-pHH" id="PrO-7D-Qi5"/>
+                <outlet property="viewMainSize" destination="nL1-mH-ia4" id="pgg-c1-gk3"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="94"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Black">
+            <color red="0.0078431372549019607" green="0.0078431372549019607" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
