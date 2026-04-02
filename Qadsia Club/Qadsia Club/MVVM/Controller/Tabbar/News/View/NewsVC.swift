@@ -86,6 +86,13 @@ extension NewsVC: UITableViewDelegate, UITableViewDataSource {
                 }
             }
             
+            cell.onCellTap = { [weak self] tableIndex in
+                guard let self = self else { return }
+                let vc = NewsDetailsVC()
+                self.navigationController?.pushViewController(vc, animated: true)
+                
+            }
+            
             return cell
             
         case 1:
@@ -95,6 +102,17 @@ extension NewsVC: UITableViewDelegate, UITableViewDataSource {
             
         default:
             return UITableViewCell()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.section {
+        case 1:
+            let vc = NewsDetailsVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        default:
+            break
         }
     }
     
