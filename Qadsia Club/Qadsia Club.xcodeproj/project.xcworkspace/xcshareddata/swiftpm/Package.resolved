@@ -1,5 +1,5 @@
 {
-  "originHash" : "266f155aed79264fba7795309b9860ba2ae8c588d4a1066846880fc19ea014c5",
+  "originHash" : "97cea80d6f1a200bdaa21b0318af55bf86df10774316634596361cb819121192",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -224,6 +224,15 @@
       "state" : {
         "revision" : "ddccd20d6fb718448d9b179c454c561653fda7d5",
         "version" : "5.1.1"
+      }
+    },
+    {
+      "identity" : "uitextview-placeholder",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/devxoul/UITextView-Placeholder",
+      "state" : {
+        "revision" : "1844585d189f4c753b9bfc1e6a617baa34c66439",
+        "version" : "1.5.0"
       }
     }
   ],

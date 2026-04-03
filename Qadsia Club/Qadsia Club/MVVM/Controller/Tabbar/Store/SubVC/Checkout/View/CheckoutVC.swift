@@ -9,6 +9,12 @@ import UIKit
 
 class CheckoutVC: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView! {
+        didSet {
+            scrollView.contentInset.bottom = 80
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
