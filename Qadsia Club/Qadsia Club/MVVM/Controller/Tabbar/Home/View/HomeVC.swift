@@ -91,9 +91,12 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeListTVCell.identifier) as! HomeListTVCell
         
         switch indexPath.section {
-        case 0: cell.type = .upcomingMatches
-        case 1: cell.type = .trendyNews
-        case 2: cell.type = .store
+        case 0:
+            cell.type = .upcomingMatches
+        case 1:
+            cell.type = .trendyNews
+        case 2:
+            cell.type = .store
         default:
             cell.type = .upcomingMatches
         }
@@ -103,6 +106,13 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
                 tableView.beginUpdates()
                 tableView.endUpdates()
             }
+        }
+        
+        cell.onCellTap = { [weak self] tableIndex in
+            guard let self = self else { return }
+            let vc = NewsDetailsVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
         }
         
         cell.onBookNowTapped = { [weak self] in

