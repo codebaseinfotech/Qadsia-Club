@@ -19,6 +19,8 @@ class OrderPlacedSuccessVC: UIViewController {
     }
 
     @IBAction func tappedViewOrders(_ sender: Any) {
+        let vc = MyOrdersVC()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 
