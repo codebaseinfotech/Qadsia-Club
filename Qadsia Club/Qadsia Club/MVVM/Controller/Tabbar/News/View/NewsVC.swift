@@ -26,14 +26,28 @@ class NewsVC: UIViewController {
     @IBOutlet weak var viewDropDown: DropDownView!
     @IBOutlet weak var imgDropDown: UIImageView!
     @IBOutlet weak var lblDropName: UILabel!
+    @IBOutlet weak var heightTVDropDwon: NSLayoutConstraint!
     
     var isSelectedDrop: Bool = false
     
     // MARK: - view Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateDropdownHeight()
+        
         // Do any additional setup after loading the view.
+    }
+    
+    // MARK: - set TV height
+    func updateDropdownHeight() {
+        let rowHeight: CGFloat = 44
+        let maxHeight: CGFloat = 236
+        
+        let calculatedHeight = CGFloat(8) * rowHeight
+        let finalHeight = min(calculatedHeight, maxHeight)
+        
+        heightTVDropDwon.constant = finalHeight
+        tblViewList.isScrollEnabled = calculatedHeight > maxHeight
     }
 
     // MARK: - Action Method
