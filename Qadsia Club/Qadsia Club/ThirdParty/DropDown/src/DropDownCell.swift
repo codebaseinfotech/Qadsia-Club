@@ -11,7 +11,11 @@ import UIKit
 open class DropDownCell: UITableViewCell {
 		
 	//UI
-	@IBOutlet open weak var optionLabel: UILabel!
+    @IBOutlet open weak var optionLabel: UILabel! {
+        didSet {
+            optionLabel.font = UIFont.AppFont.semiBold(14)
+        }
+    }
 	
 	var selectedBackgroundColor: UIColor?
 

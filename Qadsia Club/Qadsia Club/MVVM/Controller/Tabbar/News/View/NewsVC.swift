@@ -23,6 +23,11 @@ class NewsVC: UIViewController {
             tblViewList.showsHorizontalScrollIndicator = false
         }
     }
+    @IBOutlet weak var viewDropDown: DropDownView!
+    @IBOutlet weak var imgDropDown: UIImageView!
+    @IBOutlet weak var lblDropName: UILabel!
+    
+    var isSelectedDrop: Bool = false
     
     // MARK: - view Cycle
     override func viewDidLoad() {
@@ -32,7 +37,10 @@ class NewsVC: UIViewController {
     }
 
     // MARK: - Action Method
-    @IBAction func tappedCategories(_ sender: Any) {
+    @IBAction func tappedCategories(_ sender: UIButton) {
+        isSelectedDrop.toggle()
+        imgDropDown.image = isSelectedDrop ? "ic_up_drop".image : "ic_dropDown".image
+        viewDropDown.isHidden = !isSelectedDrop
     }
     
     @IBAction func tappedTTickeer(_ sender: Any) {
