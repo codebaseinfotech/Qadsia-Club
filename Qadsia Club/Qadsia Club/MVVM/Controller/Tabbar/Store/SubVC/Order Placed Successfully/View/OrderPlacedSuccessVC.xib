@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -23,8 +23,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderPlacedSuccessVC" customModule="Qadsia" customModuleProvider="target">
             <connections>
+                <outlet property="btnViewDetails" destination="0Uj-kY-Ta3" id="i36-pZ-iac"/>
                 <outlet property="lblDeliveryDays" destination="RKw-Pq-HDI" id="8nJ-aF-J1G"/>
                 <outlet property="lblOrderID" destination="tor-Rx-6U5" id="ULH-Lo-1kU"/>
+                <outlet property="lblTitl" destination="ZsQ-Yr-ZoB" id="1yl-Ae-M9i"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -50,7 +52,7 @@
                     </constraints>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="cFF-fN-CBp">
-                    <rect key="frame" x="30" y="254" width="333" height="344"/>
+                    <rect key="frame" x="30" y="256.33333333333337" width="333" height="339.33333333333337"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_success" translatesAutoresizingMaskIntoConstraints="NO" id="GHk-n4-SAA">
                             <rect key="frame" x="84.666666666666686" y="0.0" width="164" height="164"/>
@@ -60,19 +62,19 @@
                             </constraints>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="nCA-Ui-RTJ">
-                            <rect key="frame" x="6.6666666666666572" y="190" width="319.66666666666674" height="88"/>
+                            <rect key="frame" x="13" y="190" width="307.33333333333326" height="83.333333333333314"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GoE-ds-dbc">
-                                    <rect key="frame" x="0.0" y="0.0" width="319.66666666666669" height="55.333333333333336"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="307.33333333333331" height="52"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Placed Successfully!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsQ-Yr-ZoB">
-                                            <rect key="frame" x="0.0" y="0.0" width="319.66666666666669" height="27.666666666666668"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="307.33333333333331" height="25.666666666666668"/>
                                             <fontDescription key="fontDescription" name="Mulish-ExtraBold" family="Mulish" pointSize="22"/>
                                             <color key="textColor" name="Black"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your order will be delivered in 5–7 business days." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKw-Pq-HDI">
-                                            <rect key="frame" x="0.0" y="37.666666666666686" width="319.66666666666669" height="17.666666666666671"/>
+                                            <rect key="frame" x="0.0" y="35.666666666666686" width="307.33333333333331" height="16.333333333333329"/>
                                             <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
                                             <color key="textColor" name="Gray"/>
                                             <nil key="highlightedColor"/>
@@ -80,7 +82,7 @@
                                     </subviews>
                                 </stackView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Id : #402-954235-1189906" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tor-Rx-6U5">
-                                    <rect key="frame" x="0.0" y="70.333333333333371" width="319.66666666666669" height="17.666666666666671"/>
+                                    <rect key="frame" x="0.0" y="67.000000000000057" width="307.33333333333331" height="16.333333333333329"/>
                                     <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
                                     <color key="textColor" name="Gray"/>
                                     <nil key="highlightedColor"/>
@@ -88,7 +90,7 @@
                             </subviews>
                         </stackView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qFF-uL-5eJ" customClass="CutCornerView" customModule="Qadsia" customModuleProvider="target">
-                            <rect key="frame" x="96.666666666666686" y="304" width="140" height="40"/>
+                            <rect key="frame" x="96.666666666666686" y="299.33333333333331" width="140" height="40"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Uj-kY-Ta3">
                                     <rect key="frame" x="0.0" y="0.0" width="140" height="40"/>

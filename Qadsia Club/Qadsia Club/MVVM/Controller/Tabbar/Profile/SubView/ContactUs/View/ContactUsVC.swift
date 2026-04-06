@@ -29,6 +29,9 @@ class ContactUsVC: UIViewController {
     @IBAction func tappedCountryCode(_ sender: Any) {
     }
     @IBAction func tappedSubmit(_ sender: Any) {
+        let vc = OrderPlacedSuccessVC()
+        vc.placeOrderSuccess = .contactUs
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 

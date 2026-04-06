@@ -63,6 +63,8 @@ class ProfileVC: UIViewController {
     }
     
     @IBAction func tappedChangePass(_ sender: Any) {
+        let vc = ChangePasswordProfileVC()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func tappedHelpAndSupport(_ sender: Any) {
@@ -72,6 +74,8 @@ class ProfileVC: UIViewController {
     }
     
     @IBAction func tappedContactUs(_ sender: Any) {
+        let vc = ContactUsVC()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func tappedTerm(_ sender: Any) {
