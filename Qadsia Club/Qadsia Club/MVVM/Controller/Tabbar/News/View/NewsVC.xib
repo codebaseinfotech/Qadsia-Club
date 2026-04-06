@@ -26,6 +26,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsVC" customModule="Qadsia" customModuleProvider="target">
             <connections>
+                <outlet property="heightTVDropDwon" destination="wxD-Kg-V01" id="SRG-iG-hKl"/>
                 <outlet property="imgDropDown" destination="fJS-TW-iXe" id="olo-ng-Wff"/>
                 <outlet property="lblDropName" destination="eJd-ok-tyg" id="BRX-eo-Ugb"/>
                 <outlet property="tblViewList" destination="hun-Fb-wEX" id="UGF-lj-cVx"/>
