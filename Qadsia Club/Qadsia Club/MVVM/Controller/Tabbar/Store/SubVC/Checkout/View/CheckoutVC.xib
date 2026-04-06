@@ -1344,6 +1344,9 @@
                             <state key="normal" title="Order Confirmation">
                                 <color key="titleColor" name="Black"/>
                             </state>
+                            <connections>
+                                <action selector="tappedOrderConfirm:" destination="-1" eventType="touchUpInside" id="c0p-KA-MGH"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" name="primary"/>

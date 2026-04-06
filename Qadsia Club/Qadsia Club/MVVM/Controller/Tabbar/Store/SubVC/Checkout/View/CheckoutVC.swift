@@ -53,5 +53,10 @@ class CheckoutVC: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func tappedOrderConfirm(_ sender: Any) {
+        let vc = OrderPlacedSuccessVC()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
 }
