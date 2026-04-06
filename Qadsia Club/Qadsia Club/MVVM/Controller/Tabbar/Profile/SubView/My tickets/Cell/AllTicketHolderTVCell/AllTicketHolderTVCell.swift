@@ -1,14 +1,15 @@
 //
-//  MyTicketListTVCell.swift
+//  AllTicketHolderTVCell.swift
 //  Qadsia
 //
-//  Created by Poojagabani on 30/03/26.
+//  Created by Kenil on 06/04/26.
 //
 
 import UIKit
 
-class MyTicketListTVCell: UITableViewCell {
+class AllTicketHolderTVCell: UITableViewCell {
 
+    @IBOutlet weak var lblName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

