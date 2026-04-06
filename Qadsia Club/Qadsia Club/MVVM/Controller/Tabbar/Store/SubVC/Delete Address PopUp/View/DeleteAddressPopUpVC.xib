@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -16,10 +16,18 @@
         <array key="Mulish-ExtraBold.ttf">
             <string>Mulish-ExtraBold</string>
         </array>
+        <array key="Mulish-SemiBold.ttf">
+            <string>Mulish-SemiBold</string>
+        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeleteAddressPopUpVC" customModule="Qadsia" customModuleProvider="target">
             <connections>
+                <outlet property="btnNo" destination="F9H-B0-wVs" id="D8J-Tr-cew"/>
+                <outlet property="btnYes" destination="AHu-dG-XB1" id="nXW-id-tyu"/>
+                <outlet property="imgPic" destination="14I-0j-e4f" id="omm-45-g3C"/>
+                <outlet property="lblSubTitle" destination="c2J-vB-uVT" id="xTV-6Y-VbN"/>
+                <outlet property="lblTitle" destination="1FE-E5-Pzj" id="qcG-gl-1HD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -29,10 +37,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42x-EI-SVL">
-                    <rect key="frame" x="20" y="242.99999999999997" width="353" height="366.33333333333326"/>
+                    <rect key="frame" x="20" y="228" width="353" height="396"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="APX-Zj-1rw">
-                            <rect key="frame" x="20" y="30" width="313" height="306.33333333333331"/>
+                            <rect key="frame" x="20" y="30" width="313" height="336"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_delete" translatesAutoresizingMaskIntoConstraints="NO" id="14I-0j-e4f">
                                     <rect key="frame" x="74.666666666666686" y="0.0" width="164" height="164"/>
@@ -41,14 +49,25 @@
                                         <constraint firstAttribute="width" constant="164" id="xFy-wb-Vev"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are your sure you want to delete this address?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FE-E5-Pzj">
-                                    <rect key="frame" x="27.666666666666686" y="190" width="258" height="50.333333333333343"/>
-                                    <fontDescription key="fontDescription" name="Mulish-ExtraBold" family="Mulish" pointSize="20"/>
-                                    <color key="textColor" name="Black"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="e2h-cl-zZ0">
+                                    <rect key="frame" x="4.6666666666666572" y="190" width="303.66666666666674" height="80"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are your sure you want to delete this address?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FE-E5-Pzj">
+                                            <rect key="frame" x="0.0" y="0.0" width="303.66666666666669" height="50.333333333333336"/>
+                                            <fontDescription key="fontDescription" name="Mulish-ExtraBold" family="Mulish" pointSize="20"/>
+                                            <color key="textColor" name="Black"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are your sure you want to delete this address?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2J-vB-uVT">
+                                            <rect key="frame" x="0.0" y="62.333333333333307" width="303.66666666666669" height="17.666666666666664"/>
+                                            <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
+                                            <color key="textColor" name="Gray"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="KfN-DV-UIS">
-                                    <rect key="frame" x="9" y="266.33333333333337" width="295" height="40"/>
+                                    <rect key="frame" x="9" y="296" width="295" height="40"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wH-7E-5CI" customClass="CutCornerView" customModule="Qadsia" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="140" height="40"/>
@@ -149,6 +168,9 @@
         <image name="img_delete" width="191" height="191"/>
         <namedColor name="Black">
             <color red="0.0078431372549019607" green="0.0078431372549019607" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray">
+            <color red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

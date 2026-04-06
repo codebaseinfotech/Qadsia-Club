@@ -45,6 +45,7 @@ extension SelectDeliveryAddressVC: UITableViewDelegate, UITableViewDataSource {
         cell.onDeleteTapped = { [self] in
             let vc = DeleteAddressPopUpVC()
             vc.modalPresentationStyle = .overFullScreen
+            vc.onPopupAction = .deleteAddress
             self.present(vc, animated: false)
         }
         

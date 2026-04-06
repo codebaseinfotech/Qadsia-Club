@@ -85,6 +85,12 @@ class ProfileVC: UIViewController {
         vc.legalInfoView = .privacyPolicy
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    @IBAction func tappedLogout(_ sender: Any) {
+        let vc = DeleteAddressPopUpVC()
+        vc.modalPresentationStyle = .overFullScreen
+        vc.onPopupAction = .logout
+        self.present(vc, animated: false)
+    }
     
     
 }
