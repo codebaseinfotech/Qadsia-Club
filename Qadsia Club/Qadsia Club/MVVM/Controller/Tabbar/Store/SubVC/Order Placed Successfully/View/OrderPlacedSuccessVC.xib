@@ -65,7 +65,7 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GoE-ds-dbc">
                                     <rect key="frame" x="0.0" y="0.0" width="319.66666666666669" height="55.333333333333336"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Placed Successfully!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsQ-Yr-ZoB">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Placed Successfully!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsQ-Yr-ZoB">
                                             <rect key="frame" x="0.0" y="0.0" width="319.66666666666669" height="27.666666666666668"/>
                                             <fontDescription key="fontDescription" name="Mulish-ExtraBold" family="Mulish" pointSize="22"/>
                                             <color key="textColor" name="Black"/>

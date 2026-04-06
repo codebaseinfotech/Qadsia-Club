@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mulish-Bold.ttf">
+            <string>Mulish-Bold</string>
+        </array>
+        <array key="Mulish-ExtraBold.ttf">
+            <string>Mulish-ExtraBold</string>
+        </array>
+        <array key="Mulish-SemiBold.ttf">
+            <string>Mulish-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrackOrderVC" customModule="Qadsia" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Vv-0j-M1I">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="130"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tickets - Login Header" translatesAutoresizingMaskIntoConstraints="NO" id="yLQ-ex-m1v">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="130"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEI-iU-seq">
+                            <rect key="frame" x="20" y="59" width="35" height="35"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_back" translatesAutoresizingMaskIntoConstraints="NO" id="JmC-Dt-yXK">
+                                    <rect key="frame" x="5.6666666666666679" y="5.6666666666666714" width="24" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="24" id="6N3-sZ-Zxe"/>
+                                        <constraint firstAttribute="height" constant="24" id="sjy-hv-TA0"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fB-cR-NyZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title=" "/>
+                                    <connections>
+                                        <action selector="tappedBack:" destination="-1" eventType="touchUpInside" id="VYM-ul-xKQ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="9fB-cR-NyZ" secondAttribute="trailing" id="4vR-sH-dE5"/>
+                                <constraint firstItem="JmC-Dt-yXK" firstAttribute="centerX" secondItem="XEI-iU-seq" secondAttribute="centerX" id="ASe-Qb-uA0"/>
+                                <constraint firstAttribute="height" constant="35" id="Us4-id-79z"/>
+                                <constraint firstAttribute="width" constant="35" id="Yev-2N-OYP"/>
+                                <constraint firstItem="9fB-cR-NyZ" firstAttribute="leading" secondItem="XEI-iU-seq" secondAttribute="leading" id="Zj6-bV-ELR"/>
+                                <constraint firstItem="JmC-Dt-yXK" firstAttribute="centerY" secondItem="XEI-iU-seq" secondAttribute="centerY" id="gLj-pg-pEY"/>
+                                <constraint firstAttribute="bottom" secondItem="9fB-cR-NyZ" secondAttribute="bottom" id="tSw-y2-aMn"/>
+                                <constraint firstItem="9fB-cR-NyZ" firstAttribute="top" secondItem="XEI-iU-seq" secondAttribute="top" id="y8e-e2-VF6"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVC-aC-MOa">
+                            <rect key="frame" x="67" y="64" width="115" height="25.333333333333329"/>
+                            <fontDescription key="fontDescription" name="Mulish-ExtraBold" family="Mulish" pointSize="20"/>
+                            <color key="textColor" name="Black"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="yLQ-ex-m1v" secondAttribute="bottom" id="DgY-tT-YHO"/>
+                        <constraint firstItem="IVC-aC-MOa" firstAttribute="leading" secondItem="XEI-iU-seq" secondAttribute="trailing" constant="12" id="EWc-nJ-4Ij"/>
+                        <constraint firstItem="yLQ-ex-m1v" firstAttribute="top" secondItem="7Vv-0j-M1I" secondAttribute="top" id="XlH-98-Wz2"/>
+                        <constraint firstItem="IVC-aC-MOa" firstAttribute="centerY" secondItem="XEI-iU-seq" secondAttribute="centerY" id="Xsk-fv-4Px"/>
+                        <constraint firstAttribute="height" constant="130" id="aMB-xv-EFm"/>
+                        <constraint firstAttribute="trailing" secondItem="yLQ-ex-m1v" secondAttribute="trailing" id="aiS-Go-xgJ"/>
+                        <constraint firstItem="XEI-iU-seq" firstAttribute="leading" secondItem="7Vv-0j-M1I" secondAttribute="leading" constant="20" id="srj-ZB-1sT"/>
+                        <constraint firstItem="XEI-iU-seq" firstAttribute="top" secondItem="7Vv-0j-M1I" secondAttribute="top" constant="59" id="tfg-Nw-io4"/>
+                        <constraint firstItem="yLQ-ex-m1v" firstAttribute="leading" secondItem="7Vv-0j-M1I" secondAttribute="leading" id="yx5-sS-raT"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_truck_bg" translatesAutoresizingMaskIntoConstraints="NO" id="zuP-38-tQu">
+                    <rect key="frame" x="0.0" y="505" width="393" height="347"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="347" id="w9e-Yo-Y1h"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="bw4-5p-7SA">
+                    <rect key="frame" x="20" y="150" width="353" height="389"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I15-H1-aNS">
+                            <rect key="frame" x="0.0" y="0.0" width="353" height="22"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Id :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDf-7S-eFM">
+                                    <rect key="frame" x="0.0" y="1" width="71" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="16"/>
+                                    <color key="textColor" name="Gray"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#402-954235-1189906" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoM-O1-cqe">
+                                    <rect key="frame" x="74.000000000000014" y="1" width="177.33333333333337" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="16"/>
+                                    <color key="textColor" name="Black"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaq-kd-4ox">
+                                    <rect key="frame" x="261.33333333333331" y="1" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="WDy-X3-U35"/>
+                                        <constraint firstAttribute="width" constant="20" id="oKf-9a-Kte"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="ic_copy"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="yDf-7S-eFM" firstAttribute="leading" secondItem="I15-H1-aNS" secondAttribute="leading" id="36F-g3-Ksm"/>
+                                <constraint firstItem="vaq-kd-4ox" firstAttribute="leading" secondItem="UoM-O1-cqe" secondAttribute="trailing" constant="10" id="5ea-TM-SRt"/>
+                                <constraint firstAttribute="height" constant="22" id="HPh-co-ST3"/>
+                                <constraint firstItem="UoM-O1-cqe" firstAttribute="centerY" secondItem="yDf-7S-eFM" secondAttribute="centerY" id="Ogp-8o-o0t"/>
+                                <constraint firstItem="UoM-O1-cqe" firstAttribute="leading" secondItem="yDf-7S-eFM" secondAttribute="trailing" constant="3" id="pej-CB-aYy"/>
+                                <constraint firstItem="vaq-kd-4ox" firstAttribute="centerY" secondItem="UoM-O1-cqe" secondAttribute="centerY" id="vzI-ey-Q4q"/>
+                                <constraint firstItem="yDf-7S-eFM" firstAttribute="centerY" secondItem="I15-H1-aNS" secondAttribute="centerY" id="xZg-z7-HWB"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r2a-eR-71x">
+                            <rect key="frame" x="0.0" y="45" width="353" height="344"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="XKN-q2-FcX">
+                                    <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPC-4p-Lwy">
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_order_confirm" translatesAutoresizingMaskIntoConstraints="NO" id="J1K-8q-ET7">
+                                                    <rect key="frame" x="8" y="8" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="gb8-Jq-EY6"/>
+                                                        <constraint firstAttribute="width" constant="24" id="u2V-S6-rGO"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="primary"/>
+                                            <constraints>
+                                                <constraint firstItem="J1K-8q-ET7" firstAttribute="centerY" secondItem="HPC-4p-Lwy" secondAttribute="centerY" id="0t9-1h-w6B"/>
+                                                <constraint firstItem="J1K-8q-ET7" firstAttribute="centerX" secondItem="HPC-4p-Lwy" secondAttribute="centerX" id="AQ2-4h-flt"/>
+                                                <constraint firstAttribute="width" constant="40" id="OCu-aP-pPR"/>
+                                            </constraints>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mi0-nL-vma">
+                                            <rect key="frame" x="56" y="0.0" width="297" height="40"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Order confirmed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJN-8k-qeS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="297" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="16"/>
+                                                    <color key="textColor" name="Black"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Jan 26, 2026" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKX-Kz-Sp1">
+                                                    <rect key="frame" x="0.0" y="20.333333333333343" width="297" height="19.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
+                                                    <color key="textColor" name="Gray"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Qdm-iA-58E"/>
+                                    </constraints>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zW-CK-Cqn">
+                                    <rect key="frame" x="0.0" y="40" width="353" height="36"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKj-xb-jTP" customClass="RectangularDashedView" customModule="Qadsia" customModuleProvider="target">
+                                            <rect key="frame" x="19.666666666666664" y="0.0" width="1" height="36"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="1" id="yhr-uO-nQQ"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="dashLength">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="betweenDashesSpace">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="dashColor">
+                                                    <color key="value" name="primary"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="dashWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="OKj-xb-jTP" secondAttribute="bottom" id="1xE-df-KQM"/>
+                                        <constraint firstItem="OKj-xb-jTP" firstAttribute="top" secondItem="8zW-CK-Cqn" secondAttribute="top" id="BlQ-vb-8BW"/>
+                                        <constraint firstAttribute="height" constant="36" id="dch-fr-nhs"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="D6F-yo-ZPP">
+                                    <rect key="frame" x="0.0" y="76" width="353" height="40"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iqb-pt-cJA">
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_order_packed" translatesAutoresizingMaskIntoConstraints="NO" id="F0Q-fX-AZX">
+                                                    <rect key="frame" x="8" y="8" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="24" id="XQb-W4-Ckm"/>
+                                                        <constraint firstAttribute="height" constant="24" id="yZ5-bW-8Ow"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="primary"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="7lL-Ey-p2x"/>
+                                                <constraint firstItem="F0Q-fX-AZX" firstAttribute="centerX" secondItem="Iqb-pt-cJA" secondAttribute="centerX" id="OGj-Xd-Cwi"/>
+                                                <constraint firstItem="F0Q-fX-AZX" firstAttribute="centerY" secondItem="Iqb-pt-cJA" secondAttribute="centerY" id="jsm-8Y-fmh"/>
+                                            </constraints>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vwN-Jp-RVR">
+                                            <rect key="frame" x="56" y="0.0" width="297" height="40"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Packed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiE-YC-nnJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="297" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="16"/>
+                                                    <color key="textColor" name="Black"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Jan 26, 2026" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObJ-Ws-VTS">
+                                                    <rect key="frame" x="0.0" y="20.333333333333314" width="297" height="19.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
+                                                    <color key="textColor" name="Gray"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="JxI-kB-YPY"/>
+                                    </constraints>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0m-Mv-E1x">
+                                    <rect key="frame" x="0.0" y="116" width="353" height="36"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PQ8-oc-4ef" customClass="RectangularDashedView" customModule="Qadsia" customModuleProvider="target">
+                                            <rect key="frame" x="19.666666666666664" y="0.0" width="1" height="36"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="1" id="IwH-X2-KNW"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="dashLength">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="betweenDashesSpace">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="dashColor">
+                                                    <color key="value" name="primary"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="dashWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="PQ8-oc-4ef" secondAttribute="bottom" id="98r-vq-8XX"/>
+                                        <constraint firstItem="PQ8-oc-4ef" firstAttribute="top" secondItem="F0m-Mv-E1x" secondAttribute="top" id="NYi-4V-PDt"/>
+                                        <constraint firstAttribute="height" constant="36" id="iGw-II-WsI"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Y7d-UT-hG4">
+                                    <rect key="frame" x="0.0" y="152" width="353" height="40"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wr6-94-wxC">
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_order_shipped" translatesAutoresizingMaskIntoConstraints="NO" id="30O-Bv-rJf">
+                                                    <rect key="frame" x="8" y="8" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="Bes-cd-wZm"/>
+                                                        <constraint firstAttribute="width" constant="24" id="IQh-3d-b4s"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="primary"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="lFg-Ka-MAP"/>
+                                                <constraint firstItem="30O-Bv-rJf" firstAttribute="centerX" secondItem="Wr6-94-wxC" secondAttribute="centerX" id="lhM-rh-3f2"/>
+                                                <constraint firstItem="30O-Bv-rJf" firstAttribute="centerY" secondItem="Wr6-94-wxC" secondAttribute="centerY" id="zUd-6b-4X4"/>
+                                            </constraints>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xpA-Ql-d6I">
+                                            <rect key="frame" x="56" y="0.0" width="297" height="40"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Shipped" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEt-Ju-MKb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="297" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="16"/>
+                                                    <color key="textColor" name="Black"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Jan 26, 2026" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCA-RW-FeW">
+                                                    <rect key="frame" x="0.0" y="20.333333333333314" width="297" height="19.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
+                                                    <color key="textColor" name="Gray"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="t22-ZQ-rP2"/>
+                                    </constraints>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0H-AC-sa4">
+                                    <rect key="frame" x="0.0" y="192" width="353" height="36"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ag5-Vt-5gt" customClass="RectangularDashedView" customModule="Qadsia" customModuleProvider="target">
+                                            <rect key="frame" x="19.666666666666664" y="0.0" width="1" height="36"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="1" id="Q0H-Ss-73G"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="dashLength">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="betweenDashesSpace">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="dashColor">
+                                                    <color key="value" name="primary"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="dashWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="CLg-xf-R9s"/>
+                                        <constraint firstItem="Ag5-Vt-5gt" firstAttribute="top" secondItem="N0H-AC-sa4" secondAttribute="top" id="NNp-bg-KPK"/>
+                                        <constraint firstAttribute="bottom" secondItem="Ag5-Vt-5gt" secondAttribute="bottom" id="ee3-cW-YKo"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Rqe-3u-yo1">
+                                    <rect key="frame" x="0.0" y="228" width="353" height="40"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oIc-nV-aIP">
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_order_delivered" translatesAutoresizingMaskIntoConstraints="NO" id="4u7-cw-WFv">
+                                                    <rect key="frame" x="8" y="8" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="24" id="DNa-l1-aYH"/>
+                                                        <constraint firstAttribute="height" constant="24" id="YXc-EH-Bbd"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="primary"/>
+                                            <constraints>
+                                                <constraint firstItem="4u7-cw-WFv" firstAttribute="centerX" secondItem="oIc-nV-aIP" secondAttribute="centerX" id="ET0-GT-cIa"/>
+                                                <constraint firstAttribute="width" constant="40" id="Q5i-XX-uL3"/>
+                                                <constraint firstItem="4u7-cw-WFv" firstAttribute="centerY" secondItem="oIc-nV-aIP" secondAttribute="centerY" id="Xgm-Tx-d4h"/>
+                                            </constraints>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oE1-fY-udI">
+                                            <rect key="frame" x="56" y="0.0" width="297" height="40"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ics-KM-5Rv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="297" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="16"/>
+                                                    <color key="textColor" name="Black"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Jan 26, 2026" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryw-Bn-lZM">
+                                                    <rect key="frame" x="0.0" y="20.333333333333314" width="297" height="19.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
+                                                    <color key="textColor" name="Gray"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Bxg-Jl-LaY"/>
+                                    </constraints>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Pc-sQ-d5X">
+                                    <rect key="frame" x="0.0" y="268" width="353" height="36"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sxj-Tq-Q2o" customClass="RectangularDashedView" customModule="Qadsia" customModuleProvider="target">
+                                            <rect key="frame" x="19.666666666666664" y="0.0" width="1" height="36"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="1" id="bmp-Ak-v4M"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="dashLength">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="betweenDashesSpace">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="dashColor">
+                                                    <color key="value" name="primary"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="dashWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="9Qw-fX-hY1"/>
+                                        <constraint firstAttribute="bottom" secondItem="Sxj-Tq-Q2o" secondAttribute="bottom" id="Fxb-mk-b3C"/>
+                                        <constraint firstItem="Sxj-Tq-Q2o" firstAttribute="top" secondItem="1Pc-sQ-d5X" secondAttribute="top" id="vxS-3B-gVT"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mw1-qk-wwR">
+                                    <rect key="frame" x="0.0" y="304" width="353" height="40"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBH-WA-1DU">
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iCi-Z8-a0q">
+                                                    <rect key="frame" x="8" y="8" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="24" id="8f5-ml-O4N"/>
+                                                        <constraint firstAttribute="height" constant="24" id="RqB-Vr-pKd"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="primary"/>
+                                            <constraints>
+                                                <constraint firstItem="iCi-Z8-a0q" firstAttribute="centerY" secondItem="WBH-WA-1DU" secondAttribute="centerY" id="Mvb-Fx-FJh"/>
+                                                <constraint firstItem="iCi-Z8-a0q" firstAttribute="centerX" secondItem="WBH-WA-1DU" secondAttribute="centerX" id="PfN-VQ-dJu"/>
+                                                <constraint firstAttribute="width" constant="40" id="Whf-Iy-PrE"/>
+                                            </constraints>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6U7-az-E46">
+                                            <rect key="frame" x="56" y="0.0" width="297" height="40"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cancelled" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1r-kJ-UxO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="297" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="16"/>
+                                                    <color key="textColor" name="Black"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Jan 26, 2026" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYy-bF-7L4">
+                                                    <rect key="frame" x="0.0" y="20.333333333333371" width="297" height="19.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
+                                                    <color key="textColor" name="Gray"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Csp-6m-eYJ"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="PQ8-oc-4ef" firstAttribute="centerX" secondItem="Iqb-pt-cJA" secondAttribute="centerX" id="G6g-42-Eu0"/>
+                                <constraint firstItem="Ag5-Vt-5gt" firstAttribute="centerX" secondItem="Wr6-94-wxC" secondAttribute="centerX" id="JCW-y9-vgI"/>
+                                <constraint firstItem="Sxj-Tq-Q2o" firstAttribute="centerX" secondItem="oIc-nV-aIP" secondAttribute="centerX" id="cSU-3k-n31"/>
+                                <constraint firstItem="OKj-xb-jTP" firstAttribute="centerX" secondItem="HPC-4p-Lwy" secondAttribute="centerX" id="lg7-Mp-dhy"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="bw4-5p-7SA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="6XB-6C-MzX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bw4-5p-7SA" secondAttribute="trailing" constant="20" id="B8T-PB-hTo"/>
+                <constraint firstAttribute="bottom" secondItem="zuP-38-tQu" secondAttribute="bottom" id="ECM-kf-LKS"/>
+                <constraint firstItem="zuP-38-tQu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PGW-Oc-GIS"/>
+                <constraint firstItem="bw4-5p-7SA" firstAttribute="top" secondItem="7Vv-0j-M1I" secondAttribute="bottom" constant="20" id="Wa2-aY-hsP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zuP-38-tQu" secondAttribute="trailing" id="gCW-6D-0w7"/>
+                <constraint firstAttribute="trailing" secondItem="7Vv-0j-M1I" secondAttribute="trailing" id="mZQ-7J-3PY"/>
+                <constraint firstItem="7Vv-0j-M1I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pHl-bJ-CEO"/>
+                <constraint firstItem="7Vv-0j-M1I" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ymm-bz-Z28"/>
+            </constraints>
+            <point key="canvasLocation" x="-21" y="83"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Tickets - Login Header" width="1500" height="948"/>
+        <image name="ic_back" width="96" height="96"/>
+        <image name="ic_copy" width="20" height="20"/>
+        <image name="ic_order_confirm" width="22" height="22"/>
+        <image name="ic_order_delivered" width="22" height="22"/>
+        <image name="ic_order_packed" width="22" height="22"/>
+        <image name="ic_order_shipped" width="22" height="22"/>
+        <image name="img_truck_bg" width="375" height="347"/>
+        <namedColor name="Black">
+            <color red="0.0078431372549019607" green="0.0078431372549019607" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray">
+            <color red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.99215686274509807" green="0.72549019607843135" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
