@@ -137,6 +137,8 @@
 		39837F212F7D165B0040A221 /* ProductListCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39837F1E2F7D165B0040A221 /* ProductListCVCell.swift */; };
 		39837F252F7D233A0040A221 /* ColorsListCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39837F242F7D233A0040A221 /* ColorsListCVCell.xib */; };
 		39837F262F7D233A0040A221 /* ColorsListCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39837F232F7D233A0040A221 /* ColorsListCVCell.swift */; };
+		399DE7192F84B7F300FE5683 /* OrderDetailsListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 399DE7182F84B7F300FE5683 /* OrderDetailsListTVCell.xib */; };
+		399DE71A2F84B7F300FE5683 /* OrderDetailsListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399DE7172F84B7F300FE5683 /* OrderDetailsListTVCell.swift */; };
 		39AE9DDA2F7F7C6700572889 /* UITextView-Placeholder in Frameworks */ = {isa = PBXBuildFile; productRef = 39AE9DD92F7F7C6700572889 /* UITextView-Placeholder */; };
 		39B0369A2F7D2C2B00E15EA2 /* SizeSelectCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39B036992F7D2C2B00E15EA2 /* SizeSelectCVCell.xib */; };
 		39B0369B2F7D2C2B00E15EA2 /* SizeSelectCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B036982F7D2C2B00E15EA2 /* SizeSelectCVCell.swift */; };
@@ -318,6 +320,9 @@
 		39837F1F2F7D165B0040A221 /* ProductListCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListCVCell.xib; sourceTree = "<group>"; };
 		39837F232F7D233A0040A221 /* ColorsListCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsListCVCell.swift; sourceTree = "<group>"; };
 		39837F242F7D233A0040A221 /* ColorsListCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorsListCVCell.xib; sourceTree = "<group>"; };
+		399DE7172F84B7F300FE5683 /* OrderDetailsListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsListTVCell.swift; sourceTree = "<group>"; };
+		399DE7182F84B7F300FE5683 /* OrderDetailsListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailsListTVCell.xib; sourceTree = "<group>"; };
+		399DE71B2F84BFE700FE5683 /* Header-Qadsia.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Header-Qadsia.h"; sourceTree = "<group>"; };
 		39B036982F7D2C2B00E15EA2 /* SizeSelectCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeSelectCVCell.swift; sourceTree = "<group>"; };
 		39B036992F7D2C2B00E15EA2 /* SizeSelectCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SizeSelectCVCell.xib; sourceTree = "<group>"; };
 		39BF531F2F7FE35400A40CAF /* DeleteAddressPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAddressPopUpVC.swift; sourceTree = "<group>"; };
@@ -856,6 +861,7 @@
 				0ABA3F7D2F763B2D00D25F03 /* Resource */,
 				0ABA3F8F2F763B2D00D25F03 /* ThirdParty */,
 				0ABA3F902F763B2D00D25F03 /* AppDelegate.swift */,
+				399DE71B2F84BFE700FE5683 /* Header-Qadsia.h */,
 				0ABA3FF02F763B3900D25F03 /* MVVM */,
 				0ABA3F912F763B2D00D25F03 /* Assets.xcassets */,
 				0ABA3F922F763B2D00D25F03 /* Info.plist */,
@@ -1007,6 +1013,7 @@
 		390479AC2F83E2FB00B98469 /* Order Details */ = {
 			isa = PBXGroup;
 			children = (
+				399DE7152F84B79200FE5683 /* Cell */,
 				390479AD2F83E30900B98469 /* View */,
 			);
 			path = "Order Details";
@@ -1229,6 +1236,23 @@
 				39837F242F7D233A0040A221 /* ColorsListCVCell.xib */,
 			);
 			path = ColorsListCVCell;
+			sourceTree = "<group>";
+		};
+		399DE7152F84B79200FE5683 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				399DE7162F84B7BF00FE5683 /* OrderDetailsListTVCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		399DE7162F84B7BF00FE5683 /* OrderDetailsListTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				399DE7172F84B7F300FE5683 /* OrderDetailsListTVCell.swift */,
+				399DE7182F84B7F300FE5683 /* OrderDetailsListTVCell.xib */,
+			);
+			path = OrderDetailsListTVCell;
 			sourceTree = "<group>";
 		};
 		39B036972F7D2BFE00E15EA2 /* SizeSelectCVCell */ = {
@@ -1730,6 +1754,7 @@ sh -c \"${AF17F99}\"";
 				39F46AF42F7BA5A7005C2B07 /* NewsListCVCell.xib in Resources */,
 				0ABA3FD42F763B2D00D25F03 /* Mulish-Bold.ttf in Resources */,
 				0ABA3FD52F763B2D00D25F03 /* Mulish-BoldItalic.ttf in Resources */,
+				399DE7192F84B7F300FE5683 /* OrderDetailsListTVCell.xib in Resources */,
 				0ABA3FD62F763B2D00D25F03 /* Mulish-ExtraBold.ttf in Resources */,
 				0ABA3FD72F763B2D00D25F03 /* Mulish-ExtraBoldItalic.ttf in Resources */,
 				0A4F52BD2F7677D500DF695B /* HomeVC.xib in Resources */,
@@ -1897,6 +1922,7 @@ sh -c \"${AF17F99}\"";
 				0ABA3FCF2F763B2D00D25F03 /* SentOTPPopupVC.swift in Sources */,
 				39FAD3612F7E285A00F1242D /* KeepShoppingPopUpVC.swift in Sources */,
 				0ABA3FD12F763B2D00D25F03 /* ViewController.swift in Sources */,
+				399DE71A2F84B7F300FE5683 /* OrderDetailsListTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1955,6 +1981,7 @@ sh -c \"${AF17F99}\"";
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Qadsia Club/Header-Qadsia.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1993,6 +2020,7 @@ sh -c \"${AF17F99}\"";
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Qadsia Club/Header-Qadsia.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
