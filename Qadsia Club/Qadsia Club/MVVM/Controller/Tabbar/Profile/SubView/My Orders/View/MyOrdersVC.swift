@@ -50,6 +50,11 @@ extension MyOrdersVC: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(vc, animated: true)
         }
         
+        cell.onOrderDetails = {
+            let vc = OrderDetailsVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
         return cell
     }
     

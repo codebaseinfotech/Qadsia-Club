@@ -24,6 +24,7 @@ class MyOrderListTVCell: UITableViewCell {
     
     var onHeightUpdate: (() -> Void)?
     var onTrackOrder: (() -> Void)?
+    var onOrderDetails: (() -> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -61,6 +62,7 @@ class MyOrderListTVCell: UITableViewCell {
     }
     
     @IBAction func tappedOrderDetails(_ sender: Any) {
+        onOrderDetails?()
     }
     
     
