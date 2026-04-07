@@ -61,7 +61,7 @@ class OrderPlacedSuccessVC: UIViewController {
             AppDelegate.appDelegate.setUpHome()
             
         case .returnOrderRequest:
-            break
+            AppDelegate.appDelegate.setUpHome()
         }
         
     }

@@ -12,6 +12,8 @@ class ReturnOrderVC: UIViewController {
 
     @IBOutlet weak var tblViewReturnItem: UITableView! {
         didSet {
+            tblViewReturnItem.addObserver(self, forKeyPath: "contentSize", options: .new,
+                                    context: nil)
             tblViewReturnItem.register(ReturnItemTVCell.nib, forCellReuseIdentifier: ReturnItemTVCell.identifier)
             tblViewReturnItem.delegate = self
             tblViewReturnItem.dataSource = self
@@ -20,6 +22,8 @@ class ReturnOrderVC: UIViewController {
     @IBOutlet weak var heightTVReturn: NSLayoutConstraint!
     @IBOutlet weak var tblViewReasonReturn: UITableView! {
         didSet {
+            tblViewReasonReturn.addObserver(self, forKeyPath: "contentSize", options: .new,
+                                    context: nil)
             tblViewReasonReturn.register(DropDownTVCell.nib, forCellReuseIdentifier: DropDownTVCell.identifier)
             tblViewReasonReturn.delegate = self
             tblViewReasonReturn.dataSource = self
@@ -54,10 +58,22 @@ class ReturnOrderVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        heightTVReason.constant = tblViewReasonReturn.contentSize.height
-        heightTVReturn.constant = tblViewReturnItem.contentSize.height
+    override func observeValue(forKeyPath keyPath: String?,
+                               of object: Any?,
+                               change: [NSKeyValueChangeKey : Any]?,
+                               context: UnsafeMutableRawPointer?) {
+        
+        guard keyPath == "contentSize" else { return }
+
+        if let tableView = object as? UITableView {
+            if tableView == tblViewReturnItem {
+                heightTVReturn.constant = tblViewReturnItem.contentSize.height
+
+            } else if tableView == tblViewReasonReturn {
+                heightTVReason.constant = tblViewReasonReturn.contentSize.height
+
+            }
+        }
     }
     
     func hideShowCollectionView() {
