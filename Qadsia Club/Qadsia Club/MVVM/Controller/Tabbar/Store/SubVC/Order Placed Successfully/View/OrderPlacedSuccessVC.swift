@@ -11,6 +11,7 @@ import UIKit
 enum onPlaceOrderSuccess {
     case placeOrderSuccess
     case contactUs
+    case returnOrderRequest
 }
 
 class OrderPlacedSuccessVC: UIViewController {
@@ -38,6 +39,13 @@ class OrderPlacedSuccessVC: UIViewController {
             btnViewDetails.setTitle("Back to home", for: .normal)
             lblOrderID.isHidden = true
             
+        case .returnOrderRequest:
+            lblTitl.text = "Return Requested Successfully"
+            lblDeliveryDays.text = "Your return request for Order #QDS10210 has been submitted."
+            lblOrderID.text = "Our courier partner will contact you within 24 hours to schedule pickup."
+            btnViewDetails.setTitle("Back to Orders", for: .normal)
+            lblOrderID.isHidden = false
+            lblOrderID.numberOfLines = 0
         }
 
         // Do any additional setup after loading the view.
@@ -52,6 +60,8 @@ class OrderPlacedSuccessVC: UIViewController {
         case .contactUs:
             AppDelegate.appDelegate.setUpHome()
             
+        case .returnOrderRequest:
+            break
         }
         
     }

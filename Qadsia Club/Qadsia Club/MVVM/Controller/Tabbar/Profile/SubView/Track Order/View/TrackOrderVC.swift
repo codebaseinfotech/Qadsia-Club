@@ -50,6 +50,11 @@ class TrackOrderVC: UIViewController {
     @IBOutlet weak var imgOrderPickedUp: UIImageView!
     @IBOutlet weak var lblOrderPickedUpDate: UILabel!
 
+    @IBOutlet weak var viewContactUs: ContactUsView! {
+        didSet {
+            viewContactUs.config(.helpAndSupport)
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
