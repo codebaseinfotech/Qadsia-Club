@@ -62,7 +62,12 @@ class OrderDetailsVC: UIViewController {
     deinit {
         tblViewOrderList.removeObserver(self, forKeyPath: "contentSize")
     }
-
+    
+    
+    @IBAction func tappedBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     @IBAction func tappedTrackRefund(_ sender: Any) {
     }
     
