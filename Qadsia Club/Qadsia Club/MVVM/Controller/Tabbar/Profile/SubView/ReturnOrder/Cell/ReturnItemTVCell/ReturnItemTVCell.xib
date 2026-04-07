@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mulish-Medium.ttf">
+            <string>Mulish-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ReturnItemTVCell" customModule="Qadsia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pj8-yz-0kn">
+                        <rect key="frame" x="10" y="5" width="300" height="52"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_primary_check" translatesAutoresizingMaskIntoConstraints="NO" id="aP3-Wf-ULI">
+                                <rect key="frame" x="0.0" y="16" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="BUl-7U-KUn"/>
+                                    <constraint firstAttribute="width" constant="20" id="c1P-rj-V3J"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ao-0Y-puG">
+                                <rect key="frame" x="30" y="0.0" width="52" height="52"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_shirt_1" translatesAutoresizingMaskIntoConstraints="NO" id="O4z-zP-dZ5">
+                                        <rect key="frame" x="6" y="6" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="CDb-Vp-nUv"/>
+                                            <constraint firstAttribute="height" constant="40" id="c18-vE-m2F"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.97647058819999999" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="O4z-zP-dZ5" firstAttribute="centerY" secondItem="1ao-0Y-puG" secondAttribute="centerY" id="MSj-Qr-DKx"/>
+                                    <constraint firstAttribute="width" constant="52" id="Pen-6Y-ZMp"/>
+                                    <constraint firstItem="O4z-zP-dZ5" firstAttribute="centerX" secondItem="1ao-0Y-puG" secondAttribute="centerX" id="lLI-9y-aio"/>
+                                    <constraint firstAttribute="height" constant="52" id="yEq-uA-I6B"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ssW-Qh-5SB">
+                                <rect key="frame" x="92" y="6.6666666666666643" width="208" height="39"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Al-Qadisiyah sports club pullover " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9L-dp-b4w">
+                                        <rect key="frame" x="0.0" y="0.0" width="208" height="17.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="Mulish-Medium" family="Mulish" pointSize="14"/>
+                                        <color key="textColor" name="Black"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.900 KD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LQ-mn-CjV">
+                                        <rect key="frame" x="0.0" y="23.666666666666671" width="208" height="15.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Mulish-Medium" family="Mulish" pointSize="12"/>
+                                        <color key="textColor" name="Gray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pj8-yz-0kn" secondAttribute="trailing" constant="10" id="7hC-dd-Qhh"/>
+                    <constraint firstItem="pj8-yz-0kn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="DSv-uw-XOK"/>
+                    <constraint firstItem="pj8-yz-0kn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="pUM-ti-K1p"/>
+                    <constraint firstAttribute="bottom" secondItem="pj8-yz-0kn" secondAttribute="bottom" constant="5" id="uew-a8-1O2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imgProduct" destination="O4z-zP-dZ5" id="QyI-Hq-lHj"/>
+                <outlet property="imgSelect" destination="aP3-Wf-ULI" id="Xsg-ZX-NXl"/>
+                <outlet property="lblName" destination="B9L-dp-b4w" id="yiA-Ld-rcx"/>
+                <outlet property="lblPrice" destination="3LQ-mn-CjV" id="i0f-eV-iCV"/>
+            </connections>
+            <point key="canvasLocation" x="-50" y="93"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_primary_check" width="20" height="20"/>
+        <image name="img_shirt_1" width="188" height="162"/>
+        <namedColor name="Black">
+            <color red="0.0078431372549019607" green="0.0078431372549019607" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray">
+            <color red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

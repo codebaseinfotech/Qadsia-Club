@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -50,6 +50,7 @@
                 <outlet property="svShipped" destination="Y7d-UT-hG4" id="0F9-L1-SAK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewCancelledImg" destination="WBH-WA-1DU" id="JFk-XX-hYG"/>
+                <outlet property="viewContactUs" destination="UIL-cX-Mza" id="l6H-zH-hv8"/>
                 <outlet property="viewDeliveryImg" destination="oIc-nV-aIP" id="fLE-bX-Iib"/>
                 <outlet property="viewFifthDash" destination="dai-yS-9iJ" id="ysS-st-vuJ"/>
                 <outlet property="viewFirstDash" destination="8zW-CK-Cqn" id="7QS-9h-8Vy"/>
@@ -765,155 +766,11 @@
                                         </stackView>
                                     </subviews>
                                 </stackView>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIL-cX-Mza">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIL-cX-Mza" customClass="ContactUsView" customModule="Qadsia" customModuleProvider="target">
                                     <rect key="frame" x="20" y="667" width="353" height="125"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Eh-oc-wen" customClass="CutCornerView" customModule="Qadsia" customModuleProvider="target">
-                                            <rect key="frame" x="2" y="2" width="351" height="123"/>
-                                            <color key="backgroundColor" name="primary"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="cutBottomRight" value="YES"/>
-                                            </userDefinedRuntimeAttributes>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EeY-NZ-YX4" customClass="CutCornerView" customModule="Qadsia" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="351" height="123"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_noti_bg" translatesAutoresizingMaskIntoConstraints="NO" id="uBM-Jc-qFa">
-                                                    <rect key="frame" x="254" y="0.0" width="97" height="123"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="97" id="uKy-Pd-T9q"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bAX-h6-KW8">
-                                                    <rect key="frame" x="10" y="10" width="331" height="103"/>
-                                                    <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kZq-zb-upo">
-                                                            <rect key="frame" x="0.0" y="0.0" width="331" height="21"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our contact details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBz-fN-Dqx">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="331" height="21"/>
-                                                                    <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="16"/>
-                                                                    <color key="textColor" name="Black"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="21" id="Iff-Cw-hjX"/>
-                                                            </constraints>
-                                                        </stackView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2z9-Vb-nuz">
-                                                            <rect key="frame" x="0.0" y="31" width="331" height="1"/>
-                                                            <color key="backgroundColor" red="0.93725490199999995" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="1" id="CXK-zt-sJb"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HUp-vU-AXZ">
-                                                            <rect key="frame" x="0.0" y="42" width="331" height="61"/>
-                                                            <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ovo-cX-R9p">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="186" height="61"/>
-                                                                    <subviews>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_email_gray" translatesAutoresizingMaskIntoConstraints="NO" id="0aS-NX-e0z">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="height" constant="20" id="CG3-hO-OAk"/>
-                                                                                <constraint firstAttribute="width" constant="20" id="Chy-Wh-ysO"/>
-                                                                            </constraints>
-                                                                        </imageView>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="J2O-Ne-zlS">
-                                                                            <rect key="frame" x="26" y="0.0" width="160" height="61"/>
-                                                                            <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoO-W4-jkr">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="92.333333333333329" height="17.666666666666668"/>
-                                                                                    <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
-                                                                                    <color key="textColor" name="Gray"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info@Qadsia.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oC5-T0-vEh">
-                                                                                    <rect key="frame" x="0.0" y="21.666666666666629" width="118" height="17.666666666666671"/>
-                                                                                    <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="14"/>
-                                                                                    <color key="textColor" name="Black"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marketing@Qadsia.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7s-2S-B3p">
-                                                                                    <rect key="frame" x="0.0" y="43.333333333333371" width="160" height="17.666666666666671"/>
-                                                                                    <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="14"/>
-                                                                                    <color key="textColor" name="Black"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                            </subviews>
-                                                                        </stackView>
-                                                                    </subviews>
-                                                                </stackView>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="vVi-NF-sS7">
-                                                                    <rect key="frame" x="196" y="0.0" width="135" height="39.333333333333336"/>
-                                                                    <subviews>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_phone_gray" translatesAutoresizingMaskIntoConstraints="NO" id="hO4-03-9Xl">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="height" constant="20" id="RvQ-FV-ZBM"/>
-                                                                                <constraint firstAttribute="width" constant="20" id="gR3-s8-5GJ"/>
-                                                                            </constraints>
-                                                                        </imageView>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="RRc-pv-llE">
-                                                                            <rect key="frame" x="26" y="0.0" width="109" height="39.333333333333336"/>
-                                                                            <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUs-JH-SlA">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="96" height="17.666666666666668"/>
-                                                                                    <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
-                                                                                    <color key="textColor" name="Gray"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+965 22632807" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aic-R8-l9o">
-                                                                                    <rect key="frame" x="0.0" y="21.666666666666629" width="104.66666666666667" height="17.666666666666671"/>
-                                                                                    <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="14"/>
-                                                                                    <color key="textColor" name="Black"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                            </subviews>
-                                                                        </stackView>
-                                                                    </subviews>
-                                                                </stackView>
-                                                            </subviews>
-                                                        </stackView>
-                                                    </subviews>
-                                                </stackView>
-                                            </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            <constraints>
-                                                <constraint firstItem="bAX-h6-KW8" firstAttribute="leading" secondItem="EeY-NZ-YX4" secondAttribute="leading" constant="10" id="5Mz-9t-HfR"/>
-                                                <constraint firstItem="bAX-h6-KW8" firstAttribute="top" secondItem="EeY-NZ-YX4" secondAttribute="top" constant="10" id="IMB-UP-Hfu"/>
-                                                <constraint firstAttribute="bottom" secondItem="uBM-Jc-qFa" secondAttribute="bottom" id="MzO-2b-FPY"/>
-                                                <constraint firstItem="uBM-Jc-qFa" firstAttribute="top" secondItem="EeY-NZ-YX4" secondAttribute="top" id="RRR-s5-HEI"/>
-                                                <constraint firstAttribute="trailing" secondItem="bAX-h6-KW8" secondAttribute="trailing" constant="10" id="S7n-ev-1VK"/>
-                                                <constraint firstAttribute="trailing" secondItem="uBM-Jc-qFa" secondAttribute="trailing" id="fzj-vs-KYm"/>
-                                                <constraint firstAttribute="bottom" secondItem="bAX-h6-KW8" secondAttribute="bottom" constant="10" id="gYK-Ig-i6E"/>
-                                            </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="cutBottomRight" value="YES"/>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth1">
-                                                    <real key="value" value="1"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor1">
-                                                    <color key="value" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </view>
-                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="0Eh-oc-wen" secondAttribute="trailing" id="0QV-2A-cv2"/>
-                                        <constraint firstAttribute="trailing" secondItem="EeY-NZ-YX4" secondAttribute="trailing" constant="2" id="JoF-Q8-3Es"/>
-                                        <constraint firstItem="0Eh-oc-wen" firstAttribute="leading" secondItem="UIL-cX-Mza" secondAttribute="leading" constant="2" id="R0Y-nt-g16"/>
-                                        <constraint firstItem="EeY-NZ-YX4" firstAttribute="leading" secondItem="UIL-cX-Mza" secondAttribute="leading" id="ZDq-U7-Opy"/>
-                                        <constraint firstItem="EeY-NZ-YX4" firstAttribute="top" secondItem="UIL-cX-Mza" secondAttribute="top" id="dQv-pU-up8"/>
-                                        <constraint firstAttribute="bottom" secondItem="0Eh-oc-wen" secondAttribute="bottom" id="ehC-2z-fWx"/>
-                                        <constraint firstAttribute="bottom" secondItem="EeY-NZ-YX4" secondAttribute="bottom" constant="2" id="rBI-Nu-Vm9"/>
-                                        <constraint firstItem="0Eh-oc-wen" firstAttribute="top" secondItem="UIL-cX-Mza" secondAttribute="top" constant="2" id="sEU-ml-m9m"/>
+                                        <constraint firstAttribute="height" constant="125" id="2fi-Pl-ptA"/>
                                     </constraints>
                                 </view>
                             </subviews>
@@ -959,13 +816,10 @@
         <image name="Tickets - Login Header" width="1500" height="948"/>
         <image name="ic_back" width="96" height="96"/>
         <image name="ic_copy" width="20" height="20"/>
-        <image name="ic_email_gray" width="18" height="18"/>
-        <image name="ic_noti_bg" width="67" height="84"/>
         <image name="ic_order_confirm" width="22" height="22"/>
         <image name="ic_order_delivered" width="22" height="22"/>
         <image name="ic_order_packed" width="22" height="22"/>
         <image name="ic_order_shipped" width="22" height="22"/>
-        <image name="ic_phone_gray" width="18" height="18"/>
         <image name="img_truck_bg" width="375" height="347"/>
         <namedColor name="Black">
             <color red="0.0078431372549019607" green="0.0078431372549019607" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
