@@ -29,6 +29,7 @@ class SelectDeliveryAddressVC: UIViewController {
     
     @IBAction func tappedAddAddress(_ sender: Any) {
         let vc = AddAddressVC()
+        vc.mode = .add
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -47,6 +48,12 @@ extension SelectDeliveryAddressVC: UITableViewDelegate, UITableViewDataSource {
             vc.modalPresentationStyle = .overFullScreen
             vc.onPopupAction = .deleteAddress
             self.present(vc, animated: false)
+        }
+        
+        cell.onEditTapped = { [self] in
+            let vc = AddAddressVC()
+            vc.mode = .edit
+            self.navigationController?.pushViewController(vc, animated: true)
         }
         
         return cell

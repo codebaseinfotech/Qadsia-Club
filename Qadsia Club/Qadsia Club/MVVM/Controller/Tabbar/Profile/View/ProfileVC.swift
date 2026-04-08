@@ -57,9 +57,13 @@ class ProfileVC: UIViewController {
     }
     
     @IBAction func tappedMyOrder(_ sender: Any) {
+        let vc = MyOrdersVC()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func tappedSavedAddress(_ sender: Any) {
+        let vc = SelectDeliveryAddressVC()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func tappedChangePass(_ sender: Any) {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -27,7 +27,9 @@
                 <outlet property="lblDeliveryDays" destination="RKw-Pq-HDI" id="8nJ-aF-J1G"/>
                 <outlet property="lblOrderID" destination="tor-Rx-6U5" id="ULH-Lo-1kU"/>
                 <outlet property="lblTitl" destination="ZsQ-Yr-ZoB" id="1yl-Ae-M9i"/>
+                <outlet property="svMainTrackOrderBtn" destination="gD5-vf-SXG" id="kjU-ay-26C"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewOrdersMain" destination="qFF-uL-5eJ" id="bKg-ey-OWe"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -52,7 +54,7 @@
                     </constraints>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="cFF-fN-CBp">
-                    <rect key="frame" x="30" y="256.33333333333337" width="333" height="339.33333333333337"/>
+                    <rect key="frame" x="30" y="254" width="333" height="344"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_success" translatesAutoresizingMaskIntoConstraints="NO" id="GHk-n4-SAA">
                             <rect key="frame" x="84.666666666666686" y="0.0" width="164" height="164"/>
@@ -62,19 +64,19 @@
                             </constraints>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="nCA-Ui-RTJ">
-                            <rect key="frame" x="13" y="190" width="307.33333333333326" height="83.333333333333314"/>
+                            <rect key="frame" x="6.6666666666666572" y="190" width="319.66666666666674" height="88"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GoE-ds-dbc">
-                                    <rect key="frame" x="0.0" y="0.0" width="307.33333333333331" height="52"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="319.66666666666669" height="55.333333333333336"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Placed Successfully!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsQ-Yr-ZoB">
-                                            <rect key="frame" x="0.0" y="0.0" width="307.33333333333331" height="25.666666666666668"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="319.66666666666669" height="27.666666666666668"/>
                                             <fontDescription key="fontDescription" name="Mulish-ExtraBold" family="Mulish" pointSize="22"/>
                                             <color key="textColor" name="Black"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your order will be delivered in 5–7 business days." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKw-Pq-HDI">
-                                            <rect key="frame" x="0.0" y="35.666666666666686" width="307.33333333333331" height="16.333333333333329"/>
+                                            <rect key="frame" x="0.0" y="37.666666666666686" width="319.66666666666669" height="17.666666666666671"/>
                                             <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
                                             <color key="textColor" name="Gray"/>
                                             <nil key="highlightedColor"/>
@@ -82,7 +84,7 @@
                                     </subviews>
                                 </stackView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Id : #402-954235-1189906" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tor-Rx-6U5">
-                                    <rect key="frame" x="0.0" y="67.000000000000057" width="307.33333333333331" height="16.333333333333329"/>
+                                    <rect key="frame" x="0.0" y="70.333333333333371" width="319.66666666666669" height="17.666666666666671"/>
                                     <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
                                     <color key="textColor" name="Gray"/>
                                     <nil key="highlightedColor"/>
@@ -90,7 +92,7 @@
                             </subviews>
                         </stackView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qFF-uL-5eJ" customClass="CutCornerView" customModule="Qadsia" customModuleProvider="target">
-                            <rect key="frame" x="96.666666666666686" y="299.33333333333331" width="140" height="40"/>
+                            <rect key="frame" x="96.666666666666686" y="304" width="140" height="40"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Uj-kY-Ta3">
                                     <rect key="frame" x="0.0" y="0.0" width="140" height="40"/>
@@ -126,6 +128,82 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
+                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gD5-vf-SXG">
+                            <rect key="frame" x="-1" y="344" width="335" height="40"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79a-nh-y6b" customClass="CutCornerView" customModule="Qadsia" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="160" height="40"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8S-W3-ytW">
+                                            <rect key="frame" x="0.0" y="0.0" width="160" height="40"/>
+                                            <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="16"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Back to home">
+                                                <color key="titleColor" name="Black"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="tappedBackToHome:" destination="-1" eventType="touchUpInside" id="rNv-IK-Zzk"/>
+                                                <action selector="tappedViewOrders:" destination="-1" eventType="touchUpInside" id="uG7-CW-5mS"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="e8S-W3-ytW" secondAttribute="bottom" id="ITO-nq-5ft"/>
+                                        <constraint firstAttribute="trailing" secondItem="e8S-W3-ytW" secondAttribute="trailing" id="KYa-DH-DNa"/>
+                                        <constraint firstAttribute="width" constant="160" id="iht-BD-Qjy"/>
+                                        <constraint firstItem="e8S-W3-ytW" firstAttribute="leading" secondItem="79a-nh-y6b" secondAttribute="leading" id="vEn-J9-j0W"/>
+                                        <constraint firstItem="e8S-W3-ytW" firstAttribute="top" secondItem="79a-nh-y6b" secondAttribute="top" id="zLC-bz-cWh"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cutSize">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="cutTopLeft" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="cutBottomRight" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth1">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor1">
+                                            <color key="value" name="primary"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1aG-by-f0n" customClass="CutCornerView" customModule="Qadsia" customModuleProvider="target">
+                                    <rect key="frame" x="175" y="0.0" width="160" height="40"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0h-s8-qwr">
+                                            <rect key="frame" x="0.0" y="0.0" width="160" height="40"/>
+                                            <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="16"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Track Refund">
+                                                <color key="titleColor" name="Black"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="tappedTrackRefund:" destination="-1" eventType="touchUpInside" id="P0K-2j-QLi"/>
+                                                <action selector="tappedViewOrders:" destination="-1" eventType="touchUpInside" id="ZC8-jm-vok"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" name="primary"/>
+                                    <constraints>
+                                        <constraint firstItem="z0h-s8-qwr" firstAttribute="top" secondItem="1aG-by-f0n" secondAttribute="top" id="3ki-A8-cq5"/>
+                                        <constraint firstAttribute="bottom" secondItem="z0h-s8-qwr" secondAttribute="bottom" id="Bj7-e2-AOY"/>
+                                        <constraint firstAttribute="trailing" secondItem="z0h-s8-qwr" secondAttribute="trailing" id="Ttn-zI-lmr"/>
+                                        <constraint firstItem="z0h-s8-qwr" firstAttribute="leading" secondItem="1aG-by-f0n" secondAttribute="leading" id="elj-z8-L1C"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cutSize">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="cutTopLeft" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="cutBottomRight" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="53p-Ui-xfa"/>
+                            </constraints>
+                        </stackView>
                     </subviews>
                 </stackView>
             </subviews>

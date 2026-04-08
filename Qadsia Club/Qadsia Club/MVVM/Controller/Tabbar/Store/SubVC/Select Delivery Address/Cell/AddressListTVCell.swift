@@ -15,6 +15,7 @@ class AddressListTVCell: UITableViewCell {
     @IBOutlet weak var lblAddress: UILabel!
     
     var onDeleteTapped: (() -> Void)?
+    var onEditTapped: (() -> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,6 +29,7 @@ class AddressListTVCell: UITableViewCell {
     }
     
     @IBAction func tappedEditAdd(_ sender: Any) {
+        onEditTapped?()
     }
     
     @IBAction func tappedDeleteAdd(_ sender: Any) {

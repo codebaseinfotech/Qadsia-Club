@@ -26,6 +26,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderDetailsVC" customModule="Qadsia" customModuleProvider="target">
             <connections>
+                <outlet property="heightConstProductListName" destination="7h5-te-mGI" id="sEn-kg-flR"/>
                 <outlet property="heightConstTblView" destination="obZ-Vt-HTZ" id="ckM-O2-z9Y"/>
                 <outlet property="imgCardType" destination="fhE-UF-6Is" id="Nye-dz-gAu"/>
                 <outlet property="imgCompanyLogo" destination="I5a-Sg-ImL" id="BYE-lX-P14"/>
@@ -48,6 +49,7 @@
                 <outlet property="svMainCancellationDetails" destination="uFH-pm-DZ0" id="YlI-Cw-hF3"/>
                 <outlet property="svMainReturnOrder" destination="Hwn-FT-vHc" id="M3J-ea-SBK"/>
                 <outlet property="tblViewOrderList" destination="Yax-Xf-g6g" id="iiq-sn-94p"/>
+                <outlet property="tblViewProductListName" destination="J6a-IR-beT" id="v3Q-zQ-LZV"/>
                 <outlet property="textViewWriteReview" destination="rLf-Am-I66" id="nty-dJ-usO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewMainWriteReview" destination="hGi-zc-2hz" id="NCj-GD-jGP"/>
@@ -936,59 +938,15 @@
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="plx-DI-LT6">
                                                                             <rect key="frame" x="0.0" y="0.0" width="331" height="241"/>
                                                                             <subviews>
-                                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fme-Gf-pRS">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="331" height="53"/>
-                                                                                    <subviews>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Al-Qadisiyah sports club pullover 25/26-Black, L x 1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWU-7k-rVa">
-                                                                                            <rect key="frame" x="0.0" y="0.0" width="160.66666666666666" height="53"/>
-                                                                                            <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
-                                                                                            <color key="textColor" name="Gray"/>
-                                                                                            <nil key="highlightedColor"/>
-                                                                                        </label>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-7.725 KD" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOl-gn-xjE">
-                                                                                            <rect key="frame" x="170.66666666666663" y="0.0" width="160.33333333333337" height="17.666666666666668"/>
-                                                                                            <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
-                                                                                            <color key="textColor" name="Black"/>
-                                                                                            <nil key="highlightedColor"/>
-                                                                                        </label>
-                                                                                    </subviews>
-                                                                                </stackView>
-                                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Sps-0e-Z6U">
-                                                                                    <rect key="frame" x="0.0" y="62.999999999999993" width="331" height="17.666666666666664"/>
-                                                                                    <subviews>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hand Gloves-Black x 2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D84-68-S8R">
-                                                                                            <rect key="frame" x="0.0" y="0.0" width="160.66666666666666" height="17.666666666666668"/>
-                                                                                            <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
-                                                                                            <color key="textColor" name="Gray"/>
-                                                                                            <nil key="highlightedColor"/>
-                                                                                        </label>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-7.725 KD" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jor-vZ-5SY">
-                                                                                            <rect key="frame" x="170.66666666666663" y="0.0" width="160.33333333333337" height="17.666666666666668"/>
-                                                                                            <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
-                                                                                            <color key="textColor" name="Black"/>
-                                                                                            <nil key="highlightedColor"/>
-                                                                                        </label>
-                                                                                    </subviews>
-                                                                                </stackView>
-                                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="22z-IR-YIa">
-                                                                                    <rect key="frame" x="0.0" y="90.666666666666742" width="331" height="17.666666666666671"/>
-                                                                                    <subviews>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silicone cover for Airtag" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jS6-Wr-37V">
-                                                                                            <rect key="frame" x="0.0" y="0.0" width="160.66666666666666" height="17.666666666666668"/>
-                                                                                            <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
-                                                                                            <color key="textColor" name="Gray"/>
-                                                                                            <nil key="highlightedColor"/>
-                                                                                        </label>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-7.725 KD" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Cl-TP-btp">
-                                                                                            <rect key="frame" x="170.66666666666663" y="0.0" width="160.33333333333337" height="17.666666666666668"/>
-                                                                                            <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="14"/>
-                                                                                            <color key="textColor" name="Black"/>
-                                                                                            <nil key="highlightedColor"/>
-                                                                                        </label>
-                                                                                    </subviews>
-                                                                                </stackView>
+                                                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="J6a-IR-beT">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="331" height="80"/>
+                                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="80" id="7h5-te-mGI"/>
+                                                                                    </constraints>
+                                                                                </tableView>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecj-Da-mb3">
-                                                                                    <rect key="frame" x="0.0" y="118.33333333333348" width="331" height="1"/>
+                                                                                    <rect key="frame" x="0.0" y="90" width="331" height="1"/>
                                                                                     <color key="backgroundColor" red="0.93725490199999995" green="0.90980392160000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="1" id="2qs-GF-pJZ"/>
@@ -998,7 +956,7 @@
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3Ja-Xc-ou9">
-                                                                                    <rect key="frame" x="0.0" y="129.33333333333348" width="331" height="17.666666666666657"/>
+                                                                                    <rect key="frame" x="0.0" y="101" width="331" height="17.666666666666671"/>
                                                                                     <subviews>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtotal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eS6-qy-T6W">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="163" height="17.666666666666668"/>
@@ -1015,7 +973,7 @@
                                                                                     </subviews>
                                                                                 </stackView>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fj5-ey-DnG">
-                                                                                    <rect key="frame" x="0.0" y="157.00000000000023" width="331" height="17.666666666666657"/>
+                                                                                    <rect key="frame" x="0.0" y="128.66666666666674" width="331" height="17.666666666666657"/>
                                                                                     <subviews>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coupon discount (25%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHF-gJ-ofx">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="163" height="17.666666666666668"/>
@@ -1032,7 +990,7 @@
                                                                                     </subviews>
                                                                                 </stackView>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BtS-HL-Jx0">
-                                                                                    <rect key="frame" x="0.0" y="184.66666666666674" width="331" height="17.666666666666657"/>
+                                                                                    <rect key="frame" x="0.0" y="156.33333333333326" width="331" height="46"/>
                                                                                     <subviews>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shipping " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jD3-kJ-OHi">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="163" height="17.666666666666668"/>

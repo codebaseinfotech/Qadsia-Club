@@ -7,6 +7,17 @@
 
 import UIKit
 
+enum PlaceType {
+    case home
+    case work
+    case other
+}
+
+enum AddressMode {
+    case add
+    case edit
+}
+
 class AddAddressVC: UIViewController {
     
     @IBOutlet weak var lblHeaderTitle: UILabel!
@@ -18,10 +29,22 @@ class AddAddressVC: UIViewController {
     @IBOutlet weak var txtPlaceType: UITextField!
     @IBOutlet weak var svPlaceType: UIStackView!
     @IBOutlet weak var viewEnterPlaceType: UIView!
+    @IBOutlet weak var lblHome: UILabel!
+    @IBOutlet weak var lblWork: UILabel!
+    @IBOutlet weak var lblOther: UILabel!
+    @IBOutlet weak var viewHome: UIView!
+    @IBOutlet weak var viewWork: UIView!
+    @IBOutlet weak var viewOther: UIView!
+        
+    var mode: AddressMode = .add
+    
+    var selectedPlaceType: PlaceType?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        updateSelectionUI()
+        setupUI()
         // Do any additional setup after loading the view.
     }
 
@@ -30,22 +53,72 @@ class AddAddressVC: UIViewController {
     }
     
     @IBAction func tappedHome(_ sender: Any) {
+        selectedPlaceType = .home
+        updateSelectionUI()
     }
     
     @IBAction func tappedWork(_ sender: Any) {
+        selectedPlaceType = .work
+        updateSelectionUI()
     }
     
     @IBAction func tappedOther(_ sender: Any) {
+        selectedPlaceType = .other
+        updateSelectionUI()
     }
     
     @IBAction func tappedCancelPT(_ sender: Any) {
+        viewEnterPlaceType.isHidden = true
     }
     
     @IBAction func tappedCheckBox(_ sender: Any) {
     }
     
     @IBAction func tappedSaveAdd(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
+    func setupUI() {
+        switch mode {
+        case .add:
+            lblHeaderTitle.text = "Add Address"
+            
+        case .edit:
+            lblHeaderTitle.text = "Edit Address"
+        }
+    }
     
+    func updateSelectionUI() {
+
+        [viewHome, viewWork, viewOther].forEach {
+            $0?.layer.borderWidth = 0
+        }
+        
+        lblHome.textColor = #colorLiteral(red: 0.5019607843, green: 0.5019607843, blue: 0.5019607843, alpha: 1)
+        lblWork.textColor = #colorLiteral(red: 0.5019607843, green: 0.5019607843, blue: 0.5019607843, alpha: 1)
+        lblOther.textColor = #colorLiteral(red: 0.5019607843, green: 0.5019607843, blue: 0.5019607843, alpha: 1)
+        
+        switch selectedPlaceType {
+        case .home:
+            viewHome.layer.borderWidth = 1
+            viewHome.layer.borderColor = #colorLiteral(red: 0.9921568627, green: 0.7254901961, blue: 0.07843137255, alpha: 1)
+            lblHome.textColor = #colorLiteral(red: 0.007843137255, green: 0.007843137255, blue: 0.007843137255, alpha: 1)
+            viewEnterPlaceType.isHidden = true
+            
+        case .work:
+            viewWork.layer.borderWidth = 1
+            viewWork.layer.borderColor = #colorLiteral(red: 0.9921568627, green: 0.7254901961, blue: 0.07843137255, alpha: 1)
+            lblWork.textColor = #colorLiteral(red: 0.007843137255, green: 0.007843137255, blue: 0.007843137255, alpha: 1)
+            viewEnterPlaceType.isHidden = true
+            
+        case .other:
+            viewOther.layer.borderWidth = 1
+            viewOther.layer.borderColor = #colorLiteral(red: 0.9921568627, green: 0.7254901961, blue: 0.07843137255, alpha: 1)
+            lblOther.textColor = #colorLiteral(red: 0.007843137255, green: 0.007843137255, blue: 0.007843137255, alpha: 1)
+            viewEnterPlaceType.isHidden = false
+            
+        case .none:
+            break
+        }
+    }
 }

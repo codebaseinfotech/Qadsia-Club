@@ -12,6 +12,7 @@ enum onPlaceOrderSuccess {
     case placeOrderSuccess
     case contactUs
     case returnOrderRequest
+    case cancelOrder
 }
 
 class OrderPlacedSuccessVC: UIViewController {
@@ -20,6 +21,8 @@ class OrderPlacedSuccessVC: UIViewController {
     @IBOutlet weak var lblDeliveryDays: UILabel!
     @IBOutlet weak var lblTitl: UILabel!
     @IBOutlet weak var btnViewDetails: UIButton!
+    @IBOutlet weak var svMainTrackOrderBtn: UIStackView!
+    @IBOutlet weak var viewOrdersMain: CutCornerView!
     
     var placeOrderSuccess: onPlaceOrderSuccess = .placeOrderSuccess
     
@@ -32,12 +35,14 @@ class OrderPlacedSuccessVC: UIViewController {
             lblDeliveryDays.text = "Your order will be delivered in 5–7 business days."
             btnViewDetails.setTitle("View Orders", for: .normal)
             lblOrderID.isHidden = false
+            svMainTrackOrderBtn.isHidden = true
             
         case .contactUs:
             lblTitl.text = "Contact Us"
             lblDeliveryDays.text = "Thanks for contacting us! Our support team has received your request and will get back to you within 24 hours."
             btnViewDetails.setTitle("Back to home", for: .normal)
             lblOrderID.isHidden = true
+            svMainTrackOrderBtn.isHidden = true
             
         case .returnOrderRequest:
             lblTitl.text = "Return Requested Successfully"
@@ -46,6 +51,14 @@ class OrderPlacedSuccessVC: UIViewController {
             btnViewDetails.setTitle("Back to Orders", for: .normal)
             lblOrderID.isHidden = false
             lblOrderID.numberOfLines = 0
+            svMainTrackOrderBtn.isHidden = true
+            
+        case .cancelOrder:
+            lblTitl.text = "Order Cancelled Successfully!"
+            lblDeliveryDays.text = "Your refund will be processed within 5–7 business days after pickup."
+            lblOrderID.text = "Order Id : #402-954235-1189906"
+            viewOrdersMain.isHidden = true
+            svMainTrackOrderBtn.isHidden = false
         }
 
         // Do any additional setup after loading the view.
@@ -62,9 +75,21 @@ class OrderPlacedSuccessVC: UIViewController {
             
         case .returnOrderRequest:
             AppDelegate.appDelegate.setUpHome()
+            
+        case .cancelOrder:
+            break
         }
         
     }
     
-
+    @IBAction func tappedBackToHome(_ sender: Any) {
+        AppDelegate.appDelegate.setUpHome()
+    }
+    
+    @IBAction func tappedTrackRefund(_ sender: Any) {
+        let vc = RefundTrackVC()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 }

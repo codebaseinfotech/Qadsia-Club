@@ -18,14 +18,60 @@ class CheckoutVC: UIViewController {
     
     @IBOutlet weak var btnChangePersonalDetails: UIButton!
     @IBOutlet weak var btnChangeShippingDetails: UIButton!
+    @IBOutlet weak var tblViewProductNameList: UITableView! {
+        didSet {
+            tblViewProductNameList.addObserver(self, forKeyPath: "contentSize", options: .new,
+                                    context: nil)
+            tblViewProductNameList.register(ProductNameListTVCell.nib, forCellReuseIdentifier: ProductNameListTVCell.identifier)
+            tblViewProductNameList.delegate = self
+            tblViewProductNameList.dataSource = self
+        }
+    }
+    @IBOutlet weak var heightConstProductName: NSLayoutConstraint!
+    
+    @IBOutlet weak var lblSubTotal: UILabel!
+    @IBOutlet weak var lblCouponDiscount: UILabel!
+    @IBOutlet weak var lblShippingAmount: UILabel!
+    @IBOutlet weak var lblShippingEnterAddress: UILabel!
+    @IBOutlet weak var lblTotalAmount: UILabel!
+    @IBOutlet weak var imgPayment: UIImageView!
+    @IBOutlet weak var lblPaymentType: UILabel!
+    @IBOutlet weak var lblPaymentDis: UILabel!
+    @IBOutlet weak var txtFName: UITextField!
+    @IBOutlet weak var txtLName: UITextField!
+    @IBOutlet weak var txtPhoneNum: UITextField!
+    @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var lbluserName: UILabel!
+    @IBOutlet weak var lblUserPhone: UILabel!
+    @IBOutlet weak var lblUserEmail: UILabel!
+    @IBOutlet weak var txtCountry: UITextField!
+    @IBOutlet weak var txtStreetAddL1: UITextField!
+    @IBOutlet weak var txtStreetAddL2: UITextField!
+    @IBOutlet weak var txtCity: UITextField!
+    @IBOutlet weak var txtPostcode: UITextField!
     
     
+    var arrProduct = ["Al-Qadisiyah sports club pullover 25/26-Black, L x 1", "Hand Gloves-Black x 2", "Silicone cover for Airtag"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setUnderlineToButton()
         // Do any additional setup after loading the view.
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?,
+                               of object: Any?,
+                               change: [NSKeyValueChangeKey : Any]?,
+                               context: UnsafeMutableRawPointer?) {
+        
+        if keyPath == "contentSize" {
+            heightConstProductName.constant = tblViewProductNameList.contentSize.height
+        }
+    }
+    
+    deinit {
+        tblViewProductNameList.removeObserver(self, forKeyPath: "contentSize")
     }
     
     func setUnderlineToButton() {
@@ -58,5 +104,20 @@ class CheckoutVC: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    
+}
+
+extension CheckoutVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arrProduct.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.tblViewProductNameList.dequeueReusableCell(withIdentifier: "ProductNameListTVCell") as! ProductNameListTVCell
+        
+        cell.lblProductName.text = arrProduct[indexPath.row]
+        
+        return cell
+    }
     
 }

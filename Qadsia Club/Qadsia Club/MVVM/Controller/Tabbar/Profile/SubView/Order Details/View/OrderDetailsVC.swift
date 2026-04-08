@@ -43,24 +43,44 @@ class OrderDetailsVC: UIViewController {
     @IBOutlet weak var lblReturnEligibility: UILabel!
     @IBOutlet weak var lblLastChanceCancel: UILabel!
     
+    @IBOutlet weak var tblViewProductListName: UITableView! {
+        didSet {
+            tblViewProductListName.addObserver(self, forKeyPath: "contentSize", options: .new,
+                                    context: nil)
+            tblViewProductListName.register(ProductNameListTVCell.nib, forCellReuseIdentifier: ProductNameListTVCell.identifier)
+            tblViewProductListName.delegate = self
+            tblViewProductListName.dataSource = self
+        }
+    }
+    @IBOutlet weak var heightConstProductListName: NSLayoutConstraint!
+    
+    var arrProduct = ["Al-Qadisiyah sports club pullover 25/26-Black, L x 1", "Hand Gloves-Black x 2", "Silicone cover for Airtag"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func observeValue(forKeyPath keyPath: String?,
-                               of object: Any?,
-                               change: [NSKeyValueChangeKey : Any]?,
-                               context: UnsafeMutableRawPointer?) {
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         
         if keyPath == "contentSize" {
-            heightConstTblView.constant = tblViewOrderList.contentSize.height
+            
+            if let tableView = object as? UITableView {
+                
+                if tableView == tblViewOrderList {
+                    heightConstTblView.constant = tableView.contentSize.height
+                }
+                else if tableView == tblViewProductListName {
+                    heightConstProductListName.constant = tableView.contentSize.height
+                }
+            }
         }
     }
     
     deinit {
         tblViewOrderList.removeObserver(self, forKeyPath: "contentSize")
+        tblViewProductListName.removeObserver(self, forKeyPath: "contentSize")
     }
     
     
@@ -83,6 +103,8 @@ class OrderDetailsVC: UIViewController {
     }
     
     @IBAction func tappedCancelOrder(_ sender: Any) {
+        let vc = CancelOrderVC()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     
@@ -90,13 +112,22 @@ class OrderDetailsVC: UIViewController {
 
 extension OrderDetailsVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        if tableView == tblViewOrderList {
+            return 2
+        } else {
+            return arrProduct.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tblViewOrderList.dequeueReusableCell(withIdentifier: "OrderDetailsListTVCell") as! OrderDetailsListTVCell
-        
-        return cell
+        if tableView == tblViewOrderList {
+            let cell = tableView.dequeueReusableCell(withIdentifier: OrderDetailsListTVCell.identifier, for: indexPath) as! OrderDetailsListTVCell
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: ProductNameListTVCell.identifier, for: indexPath) as! ProductNameListTVCell
+            cell.lblProductName.text = arrProduct[indexPath.row]
+            return cell
+        }
     }
     
 }
