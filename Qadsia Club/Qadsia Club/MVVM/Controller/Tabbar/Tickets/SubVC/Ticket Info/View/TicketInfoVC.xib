@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mulish-Bold.ttf">
+            <string>Mulish-Bold</string>
+        </array>
+        <array key="Mulish-ExtraBold.ttf">
+            <string>Mulish-ExtraBold</string>
+        </array>
+        <array key="Mulish-SemiBold.ttf">
+            <string>Mulish-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TicketInfoVC" customModule="Qadsia" customModuleProvider="target">
+            <connections>
+                <outlet property="tblViewTicketInfo" destination="zB4-Ms-8or" id="ZRz-8l-FBC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGZ-pm-EHW">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="130"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tickets - Login Header" translatesAutoresizingMaskIntoConstraints="NO" id="ZKm-AL-ccC">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="130"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jb-j9-gM1">
+                            <rect key="frame" x="20" y="62" width="35" height="35"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_back" translatesAutoresizingMaskIntoConstraints="NO" id="gMA-zh-4Qc">
+                                    <rect key="frame" x="5.6666666666666679" y="5.6666666666666714" width="24" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="24" id="fbd-lQ-SJM"/>
+                                        <constraint firstAttribute="height" constant="24" id="nhC-ha-uEy"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Z4-7H-55k">
+                                    <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title=" "/>
+                                    <connections>
+                                        <action selector="tappedBack:" destination="-1" eventType="touchUpInside" id="QTx-Vt-LLv"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="8oB-BR-i4P"/>
+                                <constraint firstItem="3Z4-7H-55k" firstAttribute="top" secondItem="0jb-j9-gM1" secondAttribute="top" id="RcW-T7-u1s"/>
+                                <constraint firstAttribute="bottom" secondItem="3Z4-7H-55k" secondAttribute="bottom" id="hcy-0k-CFg"/>
+                                <constraint firstItem="3Z4-7H-55k" firstAttribute="leading" secondItem="0jb-j9-gM1" secondAttribute="leading" id="nso-9y-1aC"/>
+                                <constraint firstItem="gMA-zh-4Qc" firstAttribute="centerY" secondItem="0jb-j9-gM1" secondAttribute="centerY" id="ohT-H9-XL5"/>
+                                <constraint firstAttribute="trailing" secondItem="3Z4-7H-55k" secondAttribute="trailing" id="pfm-oA-W9h"/>
+                                <constraint firstItem="gMA-zh-4Qc" firstAttribute="centerX" secondItem="0jb-j9-gM1" secondAttribute="centerX" id="zNZ-Re-Qtj"/>
+                                <constraint firstAttribute="height" constant="35" id="zlz-0x-JXa"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="3f9-2a-dbN">
+                            <rect key="frame" x="67" y="58.333333333333343" width="314" height="42.666666666666657"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QADSIAH vs KUWAIT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="km3-fr-YXT">
+                                    <rect key="frame" x="0.0" y="0.0" width="314" height="25.333333333333332"/>
+                                    <fontDescription key="fontDescription" name="Mulish-ExtraBold" family="Mulish" pointSize="20"/>
+                                    <color key="textColor" name="Black"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri, 06-February 06:00PM |  Mohammed Al-Hamad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtB-Vc-G7j">
+                                    <rect key="frame" x="0.0" y="27.333333333333332" width="314" height="15.333333333333332"/>
+                                    <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="12"/>
+                                    <color key="textColor" name="Black"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="0jb-j9-gM1" firstAttribute="top" secondItem="JGZ-pm-EHW" secondAttribute="top" constant="62" id="7E8-2G-EX9"/>
+                        <constraint firstItem="0jb-j9-gM1" firstAttribute="leading" secondItem="JGZ-pm-EHW" secondAttribute="leading" constant="20" id="7Jp-bl-uIg"/>
+                        <constraint firstItem="ZKm-AL-ccC" firstAttribute="leading" secondItem="JGZ-pm-EHW" secondAttribute="leading" id="KHa-4z-djC"/>
+                        <constraint firstAttribute="trailing" secondItem="ZKm-AL-ccC" secondAttribute="trailing" id="M9S-AG-VPs"/>
+                        <constraint firstAttribute="bottom" secondItem="ZKm-AL-ccC" secondAttribute="bottom" id="PI4-Cf-J7B"/>
+                        <constraint firstItem="3f9-2a-dbN" firstAttribute="centerY" secondItem="0jb-j9-gM1" secondAttribute="centerY" id="dAh-Tq-VlH"/>
+                        <constraint firstItem="ZKm-AL-ccC" firstAttribute="top" secondItem="JGZ-pm-EHW" secondAttribute="top" id="ddG-kV-koR"/>
+                        <constraint firstItem="3f9-2a-dbN" firstAttribute="leading" secondItem="0jb-j9-gM1" secondAttribute="trailing" constant="12" id="ekE-jl-iVr"/>
+                        <constraint firstAttribute="height" constant="130" id="zO4-79-Ve8"/>
+                        <constraint firstAttribute="trailing" secondItem="3f9-2a-dbN" secondAttribute="trailing" constant="12" id="zxM-IL-RKi"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zB4-Ms-8or">
+                    <rect key="frame" x="0.0" y="130" width="393" height="722"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P69-qU-2b7" customClass="CutCornerView" customModule="Qadsia" customModuleProvider="target">
+                    <rect key="frame" x="213" y="782" width="160" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c35-Ec-JIM">
+                            <rect key="frame" x="0.0" y="0.0" width="160" height="40"/>
+                            <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Next">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.72549019609999998" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="c35-Ec-JIM" firstAttribute="top" secondItem="P69-qU-2b7" secondAttribute="top" id="6Kc-Jr-cqi"/>
+                        <constraint firstAttribute="height" constant="40" id="9vz-Zw-Mci"/>
+                        <constraint firstAttribute="bottom" secondItem="c35-Ec-JIM" secondAttribute="bottom" id="FVX-Oa-wKp"/>
+                        <constraint firstAttribute="trailing" secondItem="c35-Ec-JIM" secondAttribute="trailing" id="KaL-7B-Iyr"/>
+                        <constraint firstAttribute="width" constant="160" id="gO0-kf-uei"/>
+                        <constraint firstItem="c35-Ec-JIM" firstAttribute="leading" secondItem="P69-qU-2b7" secondAttribute="leading" id="qMb-Qo-l3m"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="cutTopLeft" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="cutBottomRight" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="P69-qU-2b7" secondAttribute="bottom" constant="30" id="3AI-u0-LfY"/>
+                <constraint firstItem="zB4-Ms-8or" firstAttribute="top" secondItem="JGZ-pm-EHW" secondAttribute="bottom" id="BjS-ar-OyF"/>
+                <constraint firstItem="zB4-Ms-8or" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FmL-rj-zpC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zB4-Ms-8or" secondAttribute="trailing" id="X7r-lQ-pMa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P69-qU-2b7" secondAttribute="trailing" constant="20" id="Yep-rE-GFC"/>
+                <constraint firstItem="JGZ-pm-EHW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bxJ-tt-SVl"/>
+                <constraint firstAttribute="bottom" secondItem="zB4-Ms-8or" secondAttribute="bottom" id="fMt-0r-jLw"/>
+                <constraint firstItem="JGZ-pm-EHW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="w8b-ew-Enm"/>
+                <constraint firstAttribute="trailing" secondItem="JGZ-pm-EHW" secondAttribute="trailing" id="zzD-ma-Tcv"/>
+            </constraints>
+            <point key="canvasLocation" x="26.717557251908396" y="82.394366197183103"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Tickets - Login Header" width="1500" height="948"/>
+        <image name="ic_back" width="96" height="96"/>
+        <namedColor name="Black">
+            <color red="0.0078431372549019607" green="0.0078431372549019607" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

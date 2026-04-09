@@ -26,6 +26,8 @@ class BookTicketVC: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     @IBAction func tappedBookNow(_ sender: Any) {
+        let vc = TicketCartVC()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     
