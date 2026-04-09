@@ -35,16 +35,20 @@ class AddAddressVC: UIViewController {
     @IBOutlet weak var viewHome: UIView!
     @IBOutlet weak var viewWork: UIView!
     @IBOutlet weak var viewOther: UIView!
-        
-    var mode: AddressMode = .add
+    @IBOutlet weak var btnCheckBox: UIButton!
     
+    var mode: AddressMode = .add
     var selectedPlaceType: PlaceType?
+    var isChecked: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         updateSelectionUI()
         setupUI()
+        
+        isChecked = false
+        btnCheckBox.setImage(UIImage(named: "ic_primary_check"), for: .normal)
         // Do any additional setup after loading the view.
     }
 
@@ -72,6 +76,10 @@ class AddAddressVC: UIViewController {
     }
     
     @IBAction func tappedCheckBox(_ sender: Any) {
+        isChecked.toggle()
+        
+        let imageName = isChecked ? "ic_primary_check_fill" : "ic_primary_check"
+        btnCheckBox.setImage(UIImage(named: imageName), for: .normal)
     }
     
     @IBAction func tappedSaveAdd(_ sender: Any) {

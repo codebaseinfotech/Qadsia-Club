@@ -62,8 +62,10 @@ class CheckoutVC: UIViewController {
     @IBOutlet weak var viewHome: UIView!
     @IBOutlet weak var viewWork: UIView!
     @IBOutlet weak var viewOther: UIView!
+    @IBOutlet weak var btnCheckBox: UIButton!
     
     var selectedAddressType: AddressType? = nil
+    var isChecked: Bool = false
     
     var arrProduct = ["Al-Qadisiyah sports club pullover 25/26-Black, L x 1", "Hand Gloves-Black x 2", "Silicone cover for Airtag"]
     
@@ -72,6 +74,9 @@ class CheckoutVC: UIViewController {
 
         setUnderlineToButton()
         updateAddressSelection()
+        
+        isChecked = false
+        btnCheckBox.setImage(UIImage(named: "ic_primary_check"), for: .normal)
         // Do any additional setup after loading the view.
     }
     
@@ -120,6 +125,10 @@ class CheckoutVC: UIViewController {
     }
     
     @IBAction func tappedCheckSaveAddress(_ sender: Any) {
+        isChecked.toggle()
+        
+        let imageName = isChecked ? "ic_primary_check_fill" : "ic_primary_check"
+        btnCheckBox.setImage(UIImage(named: imageName), for: .normal)
     }
     
     @IBAction func tappedHome(_ sender: Any) {
@@ -145,9 +154,9 @@ class CheckoutVC: UIViewController {
             $0?.layer.borderColor = #colorLiteral(red: 0.9176470588, green: 0.9176470588, blue: 0.9176470588, alpha: 1)
         }
         
-        lblHome.textColor = #colorLiteral(red: 0.5019607843, green: 0.5019607843, blue: 0.5019607843, alpha: 1)
-        lblWork.textColor = #colorLiteral(red: 0.5019607843, green: 0.5019607843, blue: 0.5019607843, alpha: 1)
-        lblOther.textColor = #colorLiteral(red: 0.5019607843, green: 0.5019607843, blue: 0.5019607843, alpha: 1)
+        [lblHome, lblWork, lblOther].forEach {
+            $0?.textColor = #colorLiteral(red: 0.5019607843, green: 0.5019607843, blue: 0.5019607843, alpha: 1)
+        }
         
         // If nothing selected → do nothing
         guard let type = selectedAddressType else { return }

@@ -28,6 +28,7 @@
             <connections>
                 <outlet property="btnChangePersonalDetails" destination="vij-yw-YmO" id="6cB-Lk-IJR"/>
                 <outlet property="btnChangeShippingDetails" destination="kLX-u0-g5J" id="VhH-OD-W28"/>
+                <outlet property="btnCheckBox" destination="ukH-XW-1IQ" id="00p-r2-cv3"/>
                 <outlet property="heightConstProductName" destination="8qa-im-FvF" id="EMD-uY-qgh"/>
                 <outlet property="imgPayment" destination="UzH-nM-nNa" id="R9x-C1-gga"/>
                 <outlet property="lblAddress" destination="r46-2h-Xtb" id="KFa-HA-mgd"/>

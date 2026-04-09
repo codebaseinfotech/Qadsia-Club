@@ -23,6 +23,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddAddressVC" customModule="Qadsia" customModuleProvider="target">
             <connections>
+                <outlet property="btnCheckBox" destination="eVj-hR-jQ7" id="1qa-h6-Plz"/>
                 <outlet property="lblHeaderTitle" destination="cbQ-b7-waJ" id="UvP-wr-Ibb"/>
                 <outlet property="lblHome" destination="MSP-yd-J2C" id="3Bu-8N-z8P"/>
                 <outlet property="lblOther" destination="ZGA-HX-Uuv" id="h6c-sM-Vqo"/>
