@@ -17,6 +17,9 @@ class ProductCartListTVCell: UITableViewCell {
     @IBOutlet weak var lblPrice: UILabel!
     @IBOutlet weak var lblCount: UILabel!
     
+    var onPlusTapped: (() -> Void)?
+    var onMinusTapped: (() -> Void)?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -32,9 +35,11 @@ class ProductCartListTVCell: UITableViewCell {
     }
     
     @IBAction func tappedMinus(_ sender: Any) {
+        onMinusTapped?()
     }
     
     @IBAction func tappedPlus(_ sender: Any) {
+        onPlusTapped?()
     }
     
 }

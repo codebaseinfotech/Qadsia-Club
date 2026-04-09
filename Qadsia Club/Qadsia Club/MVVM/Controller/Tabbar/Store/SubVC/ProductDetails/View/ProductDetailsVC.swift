@@ -64,6 +64,7 @@ class ProductDetailsVC: UIViewController {
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var viewBottomCartMain: UIView!
+    @IBOutlet weak var lblProductQuantity: UILabel!
     
     
     var arrProductList = ["img_shirt_1", "img_shirt_2", "img_shirt_3"]
@@ -72,12 +73,14 @@ class ProductDetailsVC: UIViewController {
     
     var selectedColorIndex: Int = 0
     var selectedSizeIndex: Int = 0
+    var productQuantity: Int = 1
     
     // MARK: - view Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         applyGradient()
+        lblProductQuantity.text = "\(productQuantity)"
         // Do any additional setup after loading the view.
     }
 
@@ -129,6 +132,18 @@ class ProductDetailsVC: UIViewController {
         let vc = KeepShoppingPopUpVC()
         vc.modalPresentationStyle = .overFullScreen
         self.present(vc, animated: false)
+    }
+    
+    @IBAction func tappedMinusProduct(_ sender: Any) {
+        if productQuantity > 1 {
+            productQuantity -= 1
+            lblProductQuantity.text = "\(productQuantity)"
+        }
+    }
+    
+    @IBAction func tappedPlusProduct(_ sender: Any) {
+        productQuantity += 1
+        lblProductQuantity.text = "\(productQuantity)"
     }
     
     

@@ -24,8 +24,15 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShoppingCartVC" customModule="Qadsia" customModuleProvider="target">
             <connections>
                 <outlet property="heightConstTblViewList" destination="vwq-aK-hwB" id="UM4-Rl-wf7"/>
+                <outlet property="imgVerifyCoupon" destination="TbS-jL-8qu" id="HXX-ri-ayA"/>
+                <outlet property="lblCouponDiscount" destination="ufb-5l-xPt" id="GIC-IB-mbB"/>
+                <outlet property="lblEnterAddress" destination="p6R-Vj-mWt" id="jUh-T4-DpA"/>
+                <outlet property="lblShippingAmount" destination="ZKO-Qo-jDB" id="CtJ-VE-gJQ"/>
+                <outlet property="lblSubTotal" destination="1pN-5s-GdO" id="ebr-Fz-jVX"/>
+                <outlet property="lblTotalAmount" destination="IRm-kF-Tew" id="6np-bb-8Tx"/>
                 <outlet property="scrollView" destination="J07-1V-1it" id="FPz-2G-62Q"/>
                 <outlet property="tblViewProductCartList" destination="sGV-xO-cTS" id="zys-M8-XPf"/>
+                <outlet property="txtCoupon" destination="VVj-ii-lbh" id="BqE-rv-jdq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -167,6 +174,9 @@
                                                                     <state key="normal" title="Apply">
                                                                         <color key="titleColor" name="Black"/>
                                                                     </state>
+                                                                    <connections>
+                                                                        <action selector="tappedApplyCoupon:" destination="-1" eventType="touchUpInside" id="ylN-qv-9Xm"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                             <color key="backgroundColor" name="primary"/>

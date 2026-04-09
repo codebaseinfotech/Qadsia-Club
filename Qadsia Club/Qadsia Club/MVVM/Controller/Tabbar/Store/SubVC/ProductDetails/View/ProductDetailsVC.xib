@@ -42,6 +42,7 @@
                 <outlet property="lblProductDis" destination="p8S-NX-LZq" id="jfO-CS-wMK"/>
                 <outlet property="lblProductName" destination="ff1-FN-MhW" id="KdC-hs-QOI"/>
                 <outlet property="lblProductPrice" destination="j2S-Up-416" id="BCL-Wx-WVt"/>
+                <outlet property="lblProductQuantity" destination="5w8-I9-HMh" id="a91-8D-bgF"/>
                 <outlet property="lblProductStoke" destination="HdH-a0-dHV" id="Cqg-og-gid"/>
                 <outlet property="lblReviews" destination="9vx-IH-kzE" id="P68-w7-F4V"/>
                 <outlet property="scrollView" destination="QK2-eo-Wiu" id="Jhz-JC-NhF"/>
@@ -824,10 +825,21 @@
                                                                 <constraint firstAttribute="width" constant="20" id="Yh4-VM-hTU"/>
                                                             </constraints>
                                                         </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JX-2N-Sk7">
+                                                            <rect key="frame" x="0.0" y="0.0" width="56.333333333333336" height="40"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <connections>
+                                                                <action selector="tappedMinusProduct:" destination="-1" eventType="touchUpInside" id="Lsd-HN-0jT"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
+                                                        <constraint firstItem="3JX-2N-Sk7" firstAttribute="top" secondItem="KiZ-vi-YJW" secondAttribute="top" id="3Nx-ah-a7N"/>
+                                                        <constraint firstAttribute="bottom" secondItem="3JX-2N-Sk7" secondAttribute="bottom" id="KFP-gf-zHT"/>
+                                                        <constraint firstAttribute="trailing" secondItem="3JX-2N-Sk7" secondAttribute="trailing" id="OqK-V2-F49"/>
                                                         <constraint firstItem="TfA-La-kqf" firstAttribute="centerX" secondItem="KiZ-vi-YJW" secondAttribute="centerX" id="Y0a-Ua-PML"/>
+                                                        <constraint firstItem="3JX-2N-Sk7" firstAttribute="leading" secondItem="KiZ-vi-YJW" secondAttribute="leading" id="cK1-cm-uf2"/>
                                                         <constraint firstItem="TfA-La-kqf" firstAttribute="centerY" secondItem="KiZ-vi-YJW" secondAttribute="centerY" id="qAA-7F-XQa"/>
                                                     </constraints>
                                                 </view>
@@ -841,7 +853,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="5w8-I9-HMh" firstAttribute="centerY" secondItem="KPg-TZ-Acp" secondAttribute="centerY" id="Lby-jv-PBE"/>
                                                         <constraint firstItem="5w8-I9-HMh" firstAttribute="centerX" secondItem="KPg-TZ-Acp" secondAttribute="centerX" id="hve-MP-jb4"/>
@@ -857,11 +869,22 @@
                                                                 <constraint firstAttribute="height" constant="20" id="ciG-XK-u6U"/>
                                                             </constraints>
                                                         </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ol-Ff-V1W">
+                                                            <rect key="frame" x="0.0" y="0.0" width="56.333333333333336" height="40"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <connections>
+                                                                <action selector="tappedPlusProduct:" destination="-1" eventType="touchUpInside" id="t7n-Oh-tbB"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="1ol-Ff-V1W" secondAttribute="bottom" id="6ZW-kq-ZgE"/>
+                                                        <constraint firstItem="1ol-Ff-V1W" firstAttribute="leading" secondItem="hXf-gi-L45" secondAttribute="leading" id="R2R-do-fUB"/>
                                                         <constraint firstItem="iMG-Xo-Ueu" firstAttribute="centerY" secondItem="hXf-gi-L45" secondAttribute="centerY" id="pwQ-AN-1j3"/>
+                                                        <constraint firstItem="1ol-Ff-V1W" firstAttribute="top" secondItem="hXf-gi-L45" secondAttribute="top" id="qTk-qK-YiW"/>
                                                         <constraint firstItem="iMG-Xo-Ueu" firstAttribute="centerX" secondItem="hXf-gi-L45" secondAttribute="centerX" id="s1H-p5-8sB"/>
+                                                        <constraint firstAttribute="trailing" secondItem="1ol-Ff-V1W" secondAttribute="trailing" id="uEM-4v-1MM"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>

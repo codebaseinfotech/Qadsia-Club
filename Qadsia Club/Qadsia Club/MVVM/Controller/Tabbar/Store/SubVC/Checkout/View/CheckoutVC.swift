@@ -7,6 +7,10 @@
 
 import UIKit
 
+enum AddressType {
+    case home, work, other
+}
+
 class CheckoutVC: UIViewController {
 
     
@@ -49,7 +53,17 @@ class CheckoutVC: UIViewController {
     @IBOutlet weak var txtStreetAddL2: UITextField!
     @IBOutlet weak var txtCity: UITextField!
     @IBOutlet weak var txtPostcode: UITextField!
+    @IBOutlet weak var txtViewOrderNot: UITextView!
+    @IBOutlet weak var lblAddressType: UILabel!
+    @IBOutlet weak var lblAddress: UILabel!
+    @IBOutlet weak var lblHome: UILabel!
+    @IBOutlet weak var lblWork: UILabel!
+    @IBOutlet weak var lblOther: UILabel!
+    @IBOutlet weak var viewHome: UIView!
+    @IBOutlet weak var viewWork: UIView!
+    @IBOutlet weak var viewOther: UIView!
     
+    var selectedAddressType: AddressType? = nil
     
     var arrProduct = ["Al-Qadisiyah sports club pullover 25/26-Black, L x 1", "Hand Gloves-Black x 2", "Silicone cover for Airtag"]
     
@@ -57,6 +71,7 @@ class CheckoutVC: UIViewController {
         super.viewDidLoad()
 
         setUnderlineToButton()
+        updateAddressSelection()
         // Do any additional setup after loading the view.
     }
     
@@ -104,6 +119,53 @@ class CheckoutVC: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func tappedCheckSaveAddress(_ sender: Any) {
+    }
+    
+    @IBAction func tappedHome(_ sender: Any) {
+        selectedAddressType = .home
+        updateAddressSelection()
+    }
+    
+    @IBAction func tappedWork(_ sender: Any) {
+        selectedAddressType = .work
+        updateAddressSelection()
+    }
+    
+    @IBAction func tappedOther(_ sender: Any) {
+        selectedAddressType = .other
+        updateAddressSelection()
+    }
+    
+    func updateAddressSelection() {
+        
+        // Reset all
+        [viewHome, viewWork, viewOther].forEach {
+            $0?.layer.borderWidth = 1
+            $0?.layer.borderColor = #colorLiteral(red: 0.9176470588, green: 0.9176470588, blue: 0.9176470588, alpha: 1)
+        }
+        
+        lblHome.textColor = #colorLiteral(red: 0.5019607843, green: 0.5019607843, blue: 0.5019607843, alpha: 1)
+        lblWork.textColor = #colorLiteral(red: 0.5019607843, green: 0.5019607843, blue: 0.5019607843, alpha: 1)
+        lblOther.textColor = #colorLiteral(red: 0.5019607843, green: 0.5019607843, blue: 0.5019607843, alpha: 1)
+        
+        // If nothing selected → do nothing
+        guard let type = selectedAddressType else { return }
+        
+        // Highlight selected
+        switch type {
+        case .home:
+            viewHome.layer.borderColor = #colorLiteral(red: 0.9921568627, green: 0.7254901961, blue: 0.07843137255, alpha: 1)
+            lblHome.textColor = #colorLiteral(red: 0.007843137255, green: 0.007843137255, blue: 0.007843137255, alpha: 1)
+        case .work:
+            viewWork.layer.borderColor = #colorLiteral(red: 0.9921568627, green: 0.7254901961, blue: 0.07843137255, alpha: 1)
+            lblWork.textColor = #colorLiteral(red: 0.007843137255, green: 0.007843137255, blue: 0.007843137255, alpha: 1)
+        case .other:
+            viewOther.layer.borderColor = #colorLiteral(red: 0.9921568627, green: 0.7254901961, blue: 0.07843137255, alpha: 1)
+            lblOther.textColor = #colorLiteral(red: 0.007843137255, green: 0.007843137255, blue: 0.007843137255, alpha: 1)
+            
+        }
+    }
     
 }
 

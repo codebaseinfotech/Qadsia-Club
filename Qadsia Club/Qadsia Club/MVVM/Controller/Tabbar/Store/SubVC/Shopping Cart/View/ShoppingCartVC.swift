@@ -25,6 +25,16 @@ class ShoppingCartVC: UIViewController {
             scrollView.contentInset.bottom = 90
         }
     }
+    @IBOutlet weak var txtCoupon: UITextField!
+    @IBOutlet weak var imgVerifyCoupon: UIImageView!
+    @IBOutlet weak var lblSubTotal: UILabel!
+    @IBOutlet weak var lblCouponDiscount: UILabel!
+    @IBOutlet weak var lblShippingAmount: UILabel!
+    @IBOutlet weak var lblEnterAddress: UILabel!
+    @IBOutlet weak var lblTotalAmount: UILabel!
+    
+    
+    var cartItems: [Int] = [1, 1, 1, 1]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +65,11 @@ class ShoppingCartVC: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func tappedApplyCoupon(_ sender: Any) {
+    }
+    
+    
+    
 }
 
 extension ShoppingCartVC: UITableViewDelegate, UITableViewDataSource {
@@ -64,6 +79,23 @@ extension ShoppingCartVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tblViewProductCartList.dequeueReusableCell(withIdentifier: "ProductCartListTVCell", for: indexPath) as! ProductCartListTVCell
+        
+        cell.lblCount.text = "\(cartItems[indexPath.row])"
+        
+        cell.onPlusTapped = { [weak self] in
+            guard let self = self else { return }
+            self.cartItems[indexPath.row] += 1
+            cell.lblCount.text = "\(self.cartItems[indexPath.row])"
+        }
+
+        cell.onMinusTapped = { [weak self] in
+            guard let self = self else { return }
+            if self.cartItems[indexPath.row] > 1 {
+                self.cartItems[indexPath.row] -= 1
+                cell.lblCount.text = "\(self.cartItems[indexPath.row])"
+            }
+        }
+        
         return cell
     }
     

@@ -30,7 +30,11 @@
                 <outlet property="btnChangeShippingDetails" destination="kLX-u0-g5J" id="VhH-OD-W28"/>
                 <outlet property="heightConstProductName" destination="8qa-im-FvF" id="EMD-uY-qgh"/>
                 <outlet property="imgPayment" destination="UzH-nM-nNa" id="R9x-C1-gga"/>
+                <outlet property="lblAddress" destination="r46-2h-Xtb" id="KFa-HA-mgd"/>
+                <outlet property="lblAddressType" destination="hvO-v7-IMf" id="6yf-d7-nLM"/>
                 <outlet property="lblCouponDiscount" destination="nxp-sU-hOh" id="qE5-XP-G6F"/>
+                <outlet property="lblHome" destination="wSH-qu-dxq" id="8sW-TT-36K"/>
+                <outlet property="lblOther" destination="xMy-Lh-UoI" id="LY6-3n-qVa"/>
                 <outlet property="lblPaymentDis" destination="5Nu-fZ-pBt" id="QtM-iI-cc0"/>
                 <outlet property="lblPaymentType" destination="thx-bO-7NM" id="MRt-7c-mRm"/>
                 <outlet property="lblShippingAmount" destination="n5x-su-qo5" id="XwF-jY-qLR"/>
@@ -39,6 +43,7 @@
                 <outlet property="lblTotalAmount" destination="H5g-sm-dUe" id="8Ue-2l-M8o"/>
                 <outlet property="lblUserEmail" destination="65F-5v-9S7" id="DBr-QF-Zrc"/>
                 <outlet property="lblUserPhone" destination="XfK-6a-UAG" id="oNx-4e-uyF"/>
+                <outlet property="lblWork" destination="UBv-7l-MNt" id="LfM-di-qf8"/>
                 <outlet property="lbluserName" destination="0kY-bQ-6Pb" id="Ak9-k8-EqS"/>
                 <outlet property="scrollView" destination="Xxr-Jp-IhZ" id="dl6-Qm-PsJ"/>
                 <outlet property="tblViewProductNameList" destination="Fae-ja-6uW" id="hCU-hO-RhC"/>
@@ -51,7 +56,11 @@
                 <outlet property="txtPostcode" destination="OXq-EE-Pp5" id="aBl-P6-vce"/>
                 <outlet property="txtStreetAddL1" destination="u1D-M0-XbL" id="bwa-4t-eMQ"/>
                 <outlet property="txtStreetAddL2" destination="yBW-ew-qBd" id="2pG-J5-6Ti"/>
+                <outlet property="txtViewOrderNot" destination="xvo-sz-Nyh" id="vID-RY-2Q6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewHome" destination="oEW-Rv-7Hk" id="dQh-PU-9zc"/>
+                <outlet property="viewOther" destination="9A5-8o-5As" id="WgC-MD-jBs"/>
+                <outlet property="viewWork" destination="pzu-Vk-DxT" id="OIg-em-6xs"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -984,6 +993,9 @@
                                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7Y-c9-Y5d">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="111" height="50"/>
                                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                                    <connections>
+                                                                                        <action selector="tappedHome:" destination="-1" eventType="touchUpInside" id="db8-4o-qAV"/>
+                                                                                    </connections>
                                                                                 </button>
                                                                             </subviews>
                                                                             <color key="backgroundColor" name="ViewBackground"/>
@@ -1016,6 +1028,9 @@
                                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3w5-A3-MIq">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="111" height="50"/>
                                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                                    <connections>
+                                                                                        <action selector="tappedWork:" destination="-1" eventType="touchUpInside" id="bRX-0S-dtB"/>
+                                                                                    </connections>
                                                                                 </button>
                                                                             </subviews>
                                                                             <color key="backgroundColor" name="ViewBackground"/>
@@ -1048,6 +1063,9 @@
                                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbO-E2-JeP">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="111" height="50"/>
                                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                                    <connections>
+                                                                                        <action selector="tappedOther:" destination="-1" eventType="touchUpInside" id="wgy-2v-PkG"/>
+                                                                                    </connections>
                                                                                 </button>
                                                                             </subviews>
                                                                             <color key="backgroundColor" name="ViewBackground"/>
@@ -1086,6 +1104,9 @@
                                                                     </constraints>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" image="ic_primary_check"/>
+                                                                    <connections>
+                                                                        <action selector="tappedCheckSaveAddress:" destination="-1" eventType="touchUpInside" id="fwu-ly-9vc"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sy9-mz-xX0">
                                                                     <rect key="frame" x="28" y="0.0" width="325" height="20"/>
