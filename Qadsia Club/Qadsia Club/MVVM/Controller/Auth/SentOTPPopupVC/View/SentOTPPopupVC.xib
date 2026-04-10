@@ -32,6 +32,7 @@
                 <outlet property="view" destination="iN0-l3-epB" id="main-view-outlet"/>
                 <outlet property="viewClose" destination="Wdi-5y-dMn" id="z8V-vu-A83"/>
                 <outlet property="viewPopup" destination="w5V-uC-FNp" id="popup-view-outlet"/>
+                <outlet property="viewProceedBtn" destination="AQM-Qf-13m" id="qCO-00-YrY"/>
                 <outlet property="widthConProcee" destination="JCk-Fs-YpK" id="1FJ-jH-wNW"/>
             </connections>
         </placeholder>

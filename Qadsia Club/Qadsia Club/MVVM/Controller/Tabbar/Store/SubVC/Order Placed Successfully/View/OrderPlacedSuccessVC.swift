@@ -13,6 +13,7 @@ enum onPlaceOrderSuccess {
     case contactUs
     case returnOrderRequest
     case cancelOrder
+    case ticketBooked
 }
 
 class OrderPlacedSuccessVC: UIViewController {
@@ -59,6 +60,13 @@ class OrderPlacedSuccessVC: UIViewController {
             lblOrderID.text = "Order Id : #402-954235-1189906"
             viewOrdersMain.isHidden = true
             svMainTrackOrderBtn.isHidden = false
+            
+        case .ticketBooked:
+            lblTitl.text = "Ticket Booked Successfully!"
+            lblDeliveryDays.text = "Your Booking Reference number #1189906"
+            lblOrderID.isHidden = true
+            btnViewDetails.setTitle("View Ticket", for: .normal)
+            svMainTrackOrderBtn.isHidden = true
         }
 
         // Do any additional setup after loading the view.
@@ -78,6 +86,10 @@ class OrderPlacedSuccessVC: UIViewController {
             
         case .cancelOrder:
             break
+            
+        case .ticketBooked:
+            let vc = MyTicketsVC()
+            navigationController?.pushViewController(vc, animated: true)
         }
         
     }

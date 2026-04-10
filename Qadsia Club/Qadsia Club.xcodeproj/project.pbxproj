@@ -181,6 +181,8 @@
 		39DC83C62F7BD7D80050A114 /* BookTicketVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39DC83C42F7BD7D80050A114 /* BookTicketVC.xib */; };
 		39DE8CDF2F7BF9CE0015A44E /* ProductDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DE8CDD2F7BF9CE0015A44E /* ProductDetailsVC.swift */; };
 		39DE8CE02F7BF9CE0015A44E /* ProductDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39DE8CDE2F7BF9CE0015A44E /* ProductDetailsVC.xib */; };
+		39E58DDB2F88B866008EBC8E /* TicketOrderSummaryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E58DDA2F88B866008EBC8E /* TicketOrderSummaryVC.xib */; };
+		39E58DDC2F88B866008EBC8E /* TicketOrderSummaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E58DD92F88B866008EBC8E /* TicketOrderSummaryVC.swift */; };
 		39F46AE32F7B9ACA005C2B07 /* StoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39F46AE22F7B9ACA005C2B07 /* StoreVC.xib */; };
 		39F46AE42F7B9ACB005C2B07 /* StoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F46AE12F7B9ACA005C2B07 /* StoreVC.swift */; };
 		39F46AE92F7BA18A005C2B07 /* NewsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39F46AE82F7BA18A005C2B07 /* NewsVC.xib */; };
@@ -397,6 +399,8 @@
 		39DC83C42F7BD7D80050A114 /* BookTicketVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookTicketVC.xib; sourceTree = "<group>"; };
 		39DE8CDD2F7BF9CE0015A44E /* ProductDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsVC.swift; sourceTree = "<group>"; };
 		39DE8CDE2F7BF9CE0015A44E /* ProductDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailsVC.xib; sourceTree = "<group>"; };
+		39E58DD92F88B866008EBC8E /* TicketOrderSummaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketOrderSummaryVC.swift; sourceTree = "<group>"; };
+		39E58DDA2F88B866008EBC8E /* TicketOrderSummaryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketOrderSummaryVC.xib; sourceTree = "<group>"; };
 		39F46AE12F7B9ACA005C2B07 /* StoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreVC.swift; sourceTree = "<group>"; };
 		39F46AE22F7B9ACA005C2B07 /* StoreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreVC.xib; sourceTree = "<group>"; };
 		39F46AE72F7BA18A005C2B07 /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
@@ -1544,6 +1548,7 @@
 		39DC83AD2F7BC5D50050A114 /* SubVC */ = {
 			isa = PBXGroup;
 			children = (
+				39E58DD72F88B417008EBC8E /* Ticket Order Summary */,
 				393074252F87D707006CDF51 /* Ticket Info */,
 				399F5CC52F87B94C001253B4 /* Ticket Cart */,
 				39DC83C12F7BD7A50050A114 /* BookTicket */,
@@ -1659,6 +1664,23 @@
 			children = (
 				39DE8CDD2F7BF9CE0015A44E /* ProductDetailsVC.swift */,
 				39DE8CDE2F7BF9CE0015A44E /* ProductDetailsVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39E58DD72F88B417008EBC8E /* Ticket Order Summary */ = {
+			isa = PBXGroup;
+			children = (
+				39E58DD82F88B84F008EBC8E /* View */,
+			);
+			path = "Ticket Order Summary";
+			sourceTree = "<group>";
+		};
+		39E58DD82F88B84F008EBC8E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39E58DD92F88B866008EBC8E /* TicketOrderSummaryVC.swift */,
+				39E58DDA2F88B866008EBC8E /* TicketOrderSummaryVC.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1964,6 +1986,7 @@
 				39837F202F7D165B0040A221 /* ProductListCVCell.xib in Resources */,
 				0ABA3FDC2F763B2D00D25F03 /* Mulish-LightItalic.ttf in Resources */,
 				397F83462F7A455D00A07157 /* MyTicketsVC.xib in Resources */,
+				39E58DDB2F88B866008EBC8E /* TicketOrderSummaryVC.xib in Resources */,
 				39F46AEF2F7BA3B8005C2B07 /* AllNewsTVCell.xib in Resources */,
 				39837F252F7D233A0040A221 /* ColorsListCVCell.xib in Resources */,
 				0A62B57F2F7E229A0011CD31 /* DropDownView.xib in Resources */,
@@ -2071,6 +2094,7 @@
 				0ABA3FBD2F763B2D00D25F03 /* AppUtilites.swift in Sources */,
 				39DC83B22F7BC5FF0050A114 /* MatchListVC.swift in Sources */,
 				BCC0D6872F7A894200684B7D /* StoreCVCell.swift in Sources */,
+				39E58DDC2F88B866008EBC8E /* TicketOrderSummaryVC.swift in Sources */,
 				39735AA52F7BBDA2002294A5 /* MatchListTVCell.swift in Sources */,
 				39DC83B92F7BCB4C0050A114 /* LegalInfoVC.swift in Sources */,
 				39F46AF52F7BA5A7005C2B07 /* NewsListCVCell.swift in Sources */,

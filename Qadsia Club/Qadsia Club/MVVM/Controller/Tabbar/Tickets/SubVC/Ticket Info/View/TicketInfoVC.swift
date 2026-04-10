@@ -39,6 +39,8 @@ extension TicketInfoVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tblViewTicketInfo.dequeueReusableCell(withIdentifier: "TicketListTVCell") as! TicketListTVCell
         
+        cell.configure(with: .ticketInfo)
+        
         return cell
     }
     

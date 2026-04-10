@@ -27,6 +27,11 @@ class TicketCartVC: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func tappedTapToPay(_ sender: Any) {
+        let vc = TicketOrderSummaryVC()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 
 }
 
@@ -37,6 +42,8 @@ extension TicketCartVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tblViewTicketList.dequeueReusableCell(withIdentifier: "TicketListTVCell") as! TicketListTVCell
+        
+        cell.configure(with: .ticketCart)
         
         return cell
     }

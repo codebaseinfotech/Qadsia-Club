@@ -99,7 +99,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Coober" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvr-h2-CdV">
-                                                                        <rect key="frame" x="0.0" y="6.3333333333333286" width="266" height="2.3333333333333339"/>
+                                                                        <rect key="frame" x="0.0" y="6.3333333333333277" width="266" height="2.333333333333333"/>
                                                                         <fontDescription key="fontDescription" name="Mulish-Bold" family="Mulish" pointSize="14"/>
                                                                         <color key="textColor" name="Black"/>
                                                                         <nil key="highlightedColor"/>
@@ -446,9 +446,18 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="imgTicketIcon" destination="xC9-xV-v6s" id="iLg-xo-Mxv"/>
+                <outlet property="lblName" destination="cvr-h2-CdV" id="lgB-IU-5vy"/>
+                <outlet property="lblRowNum" destination="zfh-mz-1xe" id="c8T-lD-BbZ"/>
+                <outlet property="lblSeatCount" destination="szM-nc-XZq" id="oP0-xC-HBO"/>
+                <outlet property="lblSeatNumber" destination="ZyZ-JO-cL8" id="xgz-G3-sAR"/>
+                <outlet property="lblSectionNum" destination="5lA-lz-7EO" id="p4O-CE-VCd"/>
+                <outlet property="lblTicketPrice" destination="1ce-hB-oYe" id="guw-KE-eQ0"/>
                 <outlet property="svMainTicketInfo" destination="YCn-Ty-XlR" id="FgB-8q-q3B"/>
                 <outlet property="svName" destination="B9w-dM-pTU" id="sHw-Fp-YSb"/>
                 <outlet property="svSameInfoCheck" destination="FHf-Pg-OFQ" id="Moa-g0-HYq"/>
+                <outlet property="txtFName" destination="Q7g-b9-DP7" id="0XZ-y8-d1Y"/>
+                <outlet property="txtLName" destination="1Q8-o6-ev9" id="rop-ep-my3"/>
+                <outlet property="txtPhoneNum" destination="YBd-yX-MUv" id="yuK-JV-2b4"/>
             </connections>
             <point key="canvasLocation" x="27" y="83"/>
         </tableViewCell>

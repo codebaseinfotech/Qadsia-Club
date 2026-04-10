@@ -13,6 +13,7 @@ enum OTPFlow {
     case newRegistration
     case sendResetOtp
     case sentSuccessOtp
+    case agreeCondition
 }
 
 class SentOTPPopupVC: UIViewController {
@@ -28,6 +29,7 @@ class SentOTPPopupVC: UIViewController {
     @IBOutlet weak var btnProceed: UIButton!
     @IBOutlet weak var imgPic: UIImageView!
     @IBOutlet weak var widthConProcee: NSLayoutConstraint!
+    @IBOutlet weak var viewProceedBtn: CutCornerView!
     
     var onProceed: ((OTPFlow) -> Void)?
     var flow: OTPFlow = .login
@@ -79,6 +81,12 @@ class SentOTPPopupVC: UIViewController {
             lblSubTitle.isHidden = true
 
             btnProceed.setTitle("Proceed", for: [])
+            
+        case .agreeCondition:
+            imgPic.image = "ic_agree".image
+            lblTitle.text = "Agree to condition!"
+            lblSubTitle.text = "Please agree to the non-refundable and non-exchangeable condition"
+            viewProceedBtn.isHidden = true
         }
     }
     

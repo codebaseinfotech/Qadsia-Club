@@ -52,6 +52,7 @@ class OTPVC: UIViewController {
         case .newRegistration: break
         case .sendResetOtp: break
         case .sentSuccessOtp: break
+        case .agreeCondition: break
             
         }
     }

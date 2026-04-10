@@ -19,7 +19,16 @@ class TicketListTVCell: UITableViewCell {
     @IBOutlet weak var svMainTicketInfo: UIStackView!
     @IBOutlet weak var imgTicketIcon: UIImageView!
     @IBOutlet weak var svSameInfoCheck: UIStackView!
-
+    @IBOutlet weak var lblSeatCount: UILabel!
+    @IBOutlet weak var lblTicketPrice: UILabel!
+    @IBOutlet weak var lblSectionNum: UILabel!
+    @IBOutlet weak var lblRowNum: UILabel!
+    @IBOutlet weak var lblSeatNumber: UILabel!
+    @IBOutlet weak var txtFName: UITextField!
+    @IBOutlet weak var txtLName: UITextField!
+    @IBOutlet weak var txtPhoneNum: UITextField!
+    @IBOutlet weak var lblName: UILabel!
+    
     var sectionType: TicketSection = .ticketCart
 
     override func awakeFromNib() {
@@ -41,7 +50,6 @@ class TicketListTVCell: UITableViewCell {
         case .ticketCart:
             svName.isHidden = true
             svMainTicketInfo.isHidden = true
-            svSameInfoCheck.isHidden = true
             imgTicketIcon.image = UIImage(named: "ic_seat")
             
         case .ticketInfo:
@@ -51,10 +59,9 @@ class TicketListTVCell: UITableViewCell {
             imgTicketIcon.image = UIImage(named: "ic_seat")
             
         case .orderSummary:
-            svName.isHidden = true
-            svMainTicketInfo.isHidden = false
-            svSameInfoCheck.isHidden = true
-            imgTicketIcon.image = UIImage(named: "ic_seat")
+            svName.isHidden = false
+            svMainTicketInfo.isHidden = true
+            imgTicketIcon.image = UIImage(named: "ic_ticket")
         }
     }
     
